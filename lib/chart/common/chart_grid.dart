@@ -117,28 +117,28 @@ class ChartGridItem extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: Container(
-                width: size * (progressInfo!.alreadyProgress),
+                width: constraints.maxWidth * (progressInfo!.alreadyProgress),
                 color: alreadyProgressColor,
               ),
             ),
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
-                width: size * (progressInfo!.raiseProgress + progressInfo!.allInProgress + progressInfo!.callProgress)*(1-progressInfo!.alreadyProgress),
+                width: constraints.maxWidth * (progressInfo!.raiseProgress + progressInfo!.allInProgress + progressInfo!.callProgress)*(1-progressInfo!.alreadyProgress),
                 color: callProgressColor,
               ),
             ),
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
-                width: size * (progressInfo!.raiseProgress + progressInfo!.allInProgress)*(1-progressInfo!.alreadyProgress),
+                width: constraints.maxWidth * (progressInfo!.raiseProgress + progressInfo!.allInProgress)*(1-progressInfo!.alreadyProgress),
                 color: raiseProgressColor,
               ),
             ),
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
-                width: size * progressInfo!.allInProgress*(1-progressInfo!.alreadyProgress),
+                width: constraints.maxWidth * progressInfo!.allInProgress*(1-progressInfo!.alreadyProgress),
                 color: allInProgressColor,
               ),
             ),
