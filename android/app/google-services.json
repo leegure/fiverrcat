@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "454455741956",
+    "project_id": "pokercat-6ca8c",
+    "storage_bucket": "pokercat-6ca8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454455741956:android:04c2dd3522ead2f2a42f51",
+        "android_client_info": {
+          "package_name": "com.circlelee.pokercat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454455741956-cgt13fvfr335m66qr4iqjjc3gme6t0g5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.circlelee.pokercat",
+            "certificate_hash": "41e220092eca3e8b5bc09483e9ee0bf57241f1fa"
+          }
+        },
+        {
+          "client_id": "454455741956-ppir8rr5417mtc1ra41rhuet7r6c4rio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.circlelee.pokercat",
+            "certificate_hash": "1611ea9d1c952a8ac1fa05c0553477e72f144744"
+          }
+        },
+        {
+          "client_id": "454455741956-u6n8p20jbsdjctcol4k1e1q1bvalso4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.circlelee.pokercat",
+            "certificate_hash": "37cc47255a9085c0c6ad8638211d59e3b7041c99"
+          }
+        },
+        {
+          "client_id": "454455741956-8t3k01vi0phesm477a43egedk8eia8eo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVMwWNdJTr8mOKJtOKgAbqkvo7LhIa_Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454455741956-8t3k01vi0phesm477a43egedk8eia8eo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "454455741956-4q4vp235n41lk8kggbet3hu24dpbd2j0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.circlelee.pokercat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
