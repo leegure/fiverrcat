@@ -56,7 +56,46 @@ class ChartGrid extends StatelessWidget {
                         ),
                         onTap: (){
 
+                          double alreadyProgress = painting[xyToCard()['$x,$y']]!.alreadyProgress;
+                          double allinProgress = painting[xyToCard()['$x,$y']]!.allInProgress*(1-alreadyProgress);
+                          double raiseProgress = painting[xyToCard()['$x,$y']]!.raiseProgress*(1-alreadyProgress);
+                          double callProgress = painting[xyToCard()['$x,$y']]!.callProgress*(1-alreadyProgress);
 
+                          //ㅇㅣ건 전체 셀의 퍼센트를 나타낸거
+                          double alreadyPercent = alreadyProgress*100;
+                          double allinPercent = allinProgress*100;
+                          double raisePercent = raiseProgress*100;
+                          double callPercent = callProgress*100;
+                          //이건 alreadyProgress를 빼고 난 다음의 퍼센트.
+
+                          double alreadyProgress2 = painting[xyToCard()['$x,$y']]!.alreadyProgress;
+                          double allinProgress2 = painting[xyToCard()['$x,$y']]!.allInProgress;
+                          double raiseProgress2 = painting[xyToCard()['$x,$y']]!.raiseProgress;
+                          double callProgress2 = painting[xyToCard()['$x,$y']]!.callProgress;
+
+                          print(
+                              '전체// alreadyPercent=${alreadyPercent.toStringAsFixed(1)}'
+                                  ', allinPercent=${allinPercent.toStringAsFixed(0)}'
+                                  ', raisePercent=${raisePercent.toStringAsFixed(0)}'
+                                  ', callPercent=${callPercent.toStringAsFixed(0)}'
+
+                                  ',//already빼고 already progress2=$alreadyProgress2'
+                                  ', allin2=$allinProgress2'
+                                  ', raise2=$raiseProgress2'
+                                  ', call2=$callProgress2'
+
+
+
+
+
+
+
+
+
+
+                                  '////${xyToCard()['$x,$y']}'
+
+                          );
                         },
                       ),
                     );
