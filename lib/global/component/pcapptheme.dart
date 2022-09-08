@@ -17,3 +17,6 @@ class PcAppTheme {
   );
 
 }
+class ZeplinColors {
+  static const Color dark = Color(0xff272847);
+}

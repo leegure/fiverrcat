@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 
+import '../global/component/pcapptheme.dart';
 import 'bankroll.dart';
 import 'cashgame.dart';
 import 'tournament.dart';
@@ -40,6 +41,12 @@ class _BtmNaviState extends State<BtmNavi> {
       body: tabs[_currentIndex],
 
       bottomNavigationBar: BottomNavigationBar(
+
+        backgroundColor: ZeplinColors.dark,
+        unselectedItemColor: Color(0xff53558a),
+        selectedItemColor: Color(0xff59d1ff),
+
+
         currentIndex : _currentIndex,
 
         type: BottomNavigationBarType.fixed,
@@ -47,7 +54,7 @@ class _BtmNaviState extends State<BtmNavi> {
 
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            backgroundColor: Colors.grey,
+
             icon: Icon(Icons.attach_money_sharp),
             label: 'Cash Game',
           ),

@@ -8,12 +8,12 @@ import '../chart/common/chart_brain.dart';
 import '../chart/constarants/selection.dart';
 import '../global/button_handling.dart';
 import '../global/component/appbar.dart';
+import '../global/component/pcapptheme.dart';
 
 class CashGame extends StatefulWidget {
   @override
   _CashGameState createState() => _CashGameState();
 }
-
 
 final CashChartBrain cashChartBrain = CashChartBrain();
 Selection cashSelection = Selection();
@@ -22,6 +22,7 @@ class _CashGameState extends State<CashGame> {
   Random random = Random();
   double size = 30.0;
   int randomNumber = 0;
+  int diceRandomNumber = 1;
   bool isEnabled = true;
   bool disabled = false;
 
@@ -33,31 +34,67 @@ class _CashGameState extends State<CashGame> {
     }
     return buttonList;
   }
-@override
-  void initState() {
 
-  cashSelection.myPosition = Position.UTG;
+  @override
+  void initState() {
+    cashSelection.myPosition = Position.UTG;
     // TODO: implement initState
     super.initState();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Appbar(
-        title: Text('CashGame'),
+        backgroundColor: ZeplinColors.dark,
+        title: Container(
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Color(0x7f000000),
+                offset: Offset(0, 0),
+                blurRadius: 24,
+                spreadRadius: 10,
+              ),
+            ],
+          ),
+          child: Text(
+            'CashGame',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontFamily: 'Quasimoda',
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
         actions: <Widget>[
           Row(
             children: [
-              Text('$randomNumber'),
-              IconButton(
-                icon: new Icon(Icons.casino_rounded),
-                onPressed: () => {
+              Text(
+                '$randomNumber',
+                style: TextStyle(color: Color(0xffffffff),
+                  fontWeight: FontWeight.w600,
+                  fontFamily: "Quasimoda",
+                  fontStyle:  FontStyle.normal,),
+              ),
+              InkWell(
+                onTap: () {
                   setState(() {
                     randomNumber = random.nextInt(101);
-                    print(randomNumber);
-                  })
+                    diceRandomNumber = random.nextInt(24);
+
+                    print('randomNumber=$randomNumber');
+                    print('diceRandomNumber=$diceRandomNumber');
+                  });
                 },
-              )
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20.0),
+                  child: Image.asset(
+                    'assets/images/dice/dice$diceRandomNumber.png',
+                  ),
+                ),
+              ),
             ],
           )
         ],
@@ -80,56 +117,12 @@ class _CashGameState extends State<CashGame> {
       // ),
       body: Column(
         children: [
-          ChartGrid(painting : cashChartBrain.paintingProgress(cashSelection)),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
+          ChartGrid(painting: cashChartBrain.paintingProgress(cashSelection)),
 
-              Padding(
-                padding: const EdgeInsets.all(3.0),
-                child: Container(
-                  height: 10,
-                  width: 10,
-                  color: Colors.lightBlue,
-                ),
-              ),
-              Text(
-                ' Raise',
-                style: TextStyle(fontSize: 10),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(3.0),
-                child: Container(
-                  height: 10,
-                  width: 10,
-                  color: Colors.lightGreen,
-                ),
-              ),
-              Text(
-                ' Call',
-                style: TextStyle(fontSize: 10),
-              ),
-              SizedBox(
-                width: 4.0,
-              )
-            ],
-          ),
           Text(
             'My Position',
           ),
           Row(children: getButtonJH()),
-          // Row(
-          //   children: [
-          //
-          //     myPositionFlexibleWH(Position.UTG),
-          //     myPositionFlexibleWH(Position.MP),
-          //     myPositionFlexibleWH(Position.CO),
-          //     myPositionFlexibleWH(Position.BTN),
-          //     myPositionFlexibleWH(Position.SB),
-          //     myPositionFlexibleWH(Position.BB),
-          //   ],
-          // ),
-
           Text(
             'Opponent\'s Position',
           ),
@@ -153,17 +146,21 @@ class _CashGameState extends State<CashGame> {
                 Flexible(
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary:
-                      cashSelection.opponentAction == OpponentAction.threeBet
-                              ? Colors.orange
-                              : Colors.grey,
+                      primary: cashSelection.opponentAction ==
+                              OpponentAction.threeBet
+                          ? Colors.orange
+                          : Colors.grey,
                     ),
                     onPressed: cashSelection.myPosition.index <=
-                        cashSelection.opponentPosition.index ||cashSelection.opponentPosition==Position.none?  () {
-                      setState(() {
-                        cashSelection.opponentAction = OpponentAction.threeBet;
-                      });
-                    }: null,
+                                cashSelection.opponentPosition.index ||
+                            cashSelection.opponentPosition == Position.none
+                        ? () {
+                            setState(() {
+                              cashSelection.opponentAction =
+                                  OpponentAction.threeBet;
+                            });
+                          }
+                        : null,
                     child: Container(
                       child: Text(OpponentAction.threeBet.name
                           .replaceAll("three", "3")),
@@ -174,24 +171,25 @@ class _CashGameState extends State<CashGame> {
                   width: 2,
                 ),
                 Consumer<ButtonHandling>(
-                  builder: (BuildContext context, buttonHandling, Widget? child) {
+                  builder:
+                      (BuildContext context, buttonHandling, Widget? child) {
                     return Flexible(
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          primary:
-                          cashSelection.opponentAction == OpponentAction.fourBet
-                                  ? Colors.orange
-                                  : Colors.grey,
+                          primary: cashSelection.opponentAction ==
+                                  OpponentAction.fourBet
+                              ? Colors.orange
+                              : Colors.grey,
                         ),
-                        onPressed:
-
-
-                        cashSelection.myPosition.index >= cashSelection.opponentPosition.index ? () {
+                        onPressed: cashSelection.myPosition.index >=
+                                cashSelection.opponentPosition.index
+                            ? () {
                                 setState(() {
                                   cashSelection.opponentAction =
                                       OpponentAction.fourBet;
                                 });
-                              } : null,
+                              }
+                            : null,
                         child: Container(
                           child: Text(OpponentAction.fourBet.name
                               .replaceAll("four", "4")),
