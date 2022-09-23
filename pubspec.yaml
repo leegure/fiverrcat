@@ -69,6 +69,9 @@ flutter:
         - asset: assets/fonts/Quasimoda Regular.ttf
         - asset: assets/fonts/Quasimoda Medium.ttf
 
+    - family: PokerIcon
+      fonts:
+        - asset: assets/fonts/PokerIcon.ttf
 
   #
   # For details regarding fonts from package dependencies,

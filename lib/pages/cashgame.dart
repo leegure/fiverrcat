@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:pokercat/chart/common/chart_grid.dart';
 import '../chart/common/cash_chart_brain.dart';
 import '../chart/common/chart_brain.dart';
+import '../chart/common/fill.dart';
 import '../chart/constarants/selection.dart';
 import '../global/button_handling.dart';
 import '../global/component/appbar.dart';
@@ -26,11 +27,63 @@ class _CashGameState extends State<CashGame> {
   bool isEnabled = true;
   bool disabled = false;
 
-  List<Widget> getButtonJH() {
-    List<Flexible> buttonList = [];
-    for (var value in Position.values) {
-      if (value.index == 0) continue;
-      buttonList.add(myPositionFlexibleWH(value));
+  // List<Widget> getButtonJH() {
+  //   List<Flexible> buttonList = [];
+  //   for (var value in Position.values) {
+  //     if (value.index == 0) continue;
+  //     buttonList.add(myPositionFlexibleWH(value));
+  //   }
+  //   return buttonList;
+  // }
+
+  List<MyElevatedButton> getHeroButton(double width) {
+    List<MyElevatedButton> buttonList = [];
+    for (Position selectedMyPosition in Position.values) {
+      if (selectedMyPosition.index == 0) continue;
+      buttonList.add(MyElevatedButton(
+width: width,
+          selectedButtonLabel: selectedMyPosition.name,
+          onPressed: () {
+            setState(() {
+              cashSelection.myPosition = selectedMyPosition;
+              print('myPosition=${cashSelection.myPosition}');
+              cashSelection.opponentPosition = Position.none; //바꿔야함
+              cashSelection.opponentAction = OpponentAction.none;
+            });
+          },
+          isButtonSelected:
+              cashSelection.myPosition == selectedMyPosition ? true : false));
+    }
+    return buttonList;
+  }
+
+  List<MyElevatedButton> getVillainButton(double width) {
+    List<MyElevatedButton> buttonList = [];
+    for (Position selectedOpponentPosition in Position.values) {
+      if (selectedOpponentPosition.index == 0) continue;
+      buttonList.add(MyElevatedButton(
+width: width,
+          selectedButtonLabel: selectedOpponentPosition.name,
+          onPressed: cashSelection.myPosition != selectedOpponentPosition
+              ? () {
+                  setState(() {
+                    cashSelection.opponentPosition = selectedOpponentPosition;
+                    if (cashSelection.myPosition.index <
+                        selectedOpponentPosition.index) {
+                      cashSelection.opponentAction = OpponentAction.threeBet;
+                      // Provider.of<ButtonHandling>(context, listen: false)
+                      //     .deActivateFourBetButton(disabled);
+
+                    } else {
+                      cashSelection.opponentAction = OpponentAction.none;
+                    }
+                  });
+                }
+              : null,
+          isButtonSelected:
+              cashSelection.opponentPosition == selectedOpponentPosition
+                  ? true
+                  : false));
     }
     return buttonList;
   }
@@ -54,29 +107,20 @@ class _CashGameState extends State<CashGame> {
                 color: Color(0x7f000000),
                 offset: Offset(0, 0),
                 blurRadius: 24,
-                spreadRadius: 10,
+                spreadRadius: 3,
               ),
             ],
           ),
-          child: Text(
-            'CashGame',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-              fontFamily: 'Quasimoda',
-              fontWeight: FontWeight.w600,
-            ),
+          child: ReusableText(
+            text: 'CashGame',
           ),
         ),
         actions: <Widget>[
           Row(
             children: [
-              Text(
-                '$randomNumber',
-                style: TextStyle(color: Color(0xffffffff),
-                  fontWeight: FontWeight.w600,
-                  fontFamily: "Quasimoda",
-                  fontStyle:  FontStyle.normal,),
+              ReusableText(
+                text: '$randomNumber',
+                fontSize: 15.0,
               ),
               InkWell(
                 onTap: () {
@@ -84,7 +128,7 @@ class _CashGameState extends State<CashGame> {
                     randomNumber = random.nextInt(101);
                     diceRandomNumber = random.nextInt(24);
 
-                    print('randomNumber=$randomNumber');
+
                     print('diceRandomNumber=$diceRandomNumber');
                   });
                 },
@@ -115,93 +159,159 @@ class _CashGameState extends State<CashGame> {
       //     )
       //   ],
       // ),
-      body: Column(
-        children: [
-          ChartGrid(painting: cashChartBrain.paintingProgress(cashSelection)),
+      body: Container(
+        color: Color(0xff262848),
+        child: LayoutBuilder(
 
-          Text(
-            'My Position',
-          ),
-          Row(children: getButtonJH()),
-          Text(
-            'Opponent\'s Position',
-          ),
-          Row(
-            children: [
-              opponentPositionFlexible(Position.UTG),
-              opponentPositionFlexible(Position.MP),
-              opponentPositionFlexible(Position.CO),
-              opponentPositionFlexible(Position.BTN),
-              opponentPositionFlexible(Position.SB),
-              opponentPositionFlexible(Position.BB),
-            ],
-          ),
-          Text(
-            'Opponent\'s Action',
-          ),
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+          builder: (context, constraints) {
+            return Column(
               children: [
-                Flexible(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary: cashSelection.opponentAction ==
-                              OpponentAction.threeBet
-                          ? Colors.orange
-                          : Colors.grey,
-                    ),
-                    onPressed: cashSelection.myPosition.index <=
-                                cashSelection.opponentPosition.index ||
-                            cashSelection.opponentPosition == Position.none
-                        ? () {
-                            setState(() {
-                              cashSelection.opponentAction =
-                                  OpponentAction.threeBet;
-                            });
-                          }
-                        : null,
+
+                // Container(
+                //   decoration: BoxDecoration(
+                //     boxShadow: [
+                //       BoxShadow(
+                //           color: Color(0x2d9596cf),
+                //           offset: Offset(-10, -10),
+                //           blurRadius: 32,
+                //           spreadRadius: 0),
+                //       BoxShadow(
+                //           color: Colors.black,
+                //           offset: Offset(15, -10),
+                //           blurRadius: 340.8,
+                //           spreadRadius: 10),
+                //       BoxShadow(
+                //           color: Color(0x19000000),
+                //           offset: Offset(30, 20),
+                //           blurRadius: 27,
+                //           spreadRadius: 0)
+                //     ],
+                //   ),
+                // ),
+
+                Expanded(
+                  flex: 100,
+                    child: ChartGrid(painting: cashChartBrain.paintingProgress(cashSelection))),
+                Expanded(
+                  flex: 57,
+                  child: Fill(
                     child: Container(
-                      child: Text(OpponentAction.threeBet.name
-                          .replaceAll("three", "3")),
+
+                      decoration: new BoxDecoration(
+                        color: Color(0xff262848),
+                      ),
+                      child: Column(
+
+                         mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Expanded(child: ReusableText(text: 'Hero')),
+                          // Row(children: getButtonJH()),
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: getHeroButton(constraints.maxWidth*0.16),
+                            ),
+                          ),
+                          SizedBox(height: 3.0,),
+                          Expanded(child: ReusableText(text: 'Villain')),
+                          // Row(
+                          //   children: [
+                          //     opponentPositionFlexible(Position.UTG),
+                          //     opponentPositionFlexible(Position.MP),
+                          //     opponentPositionFlexible(Position.CO),
+                          //     opponentPositionFlexible(Position.BTN),
+                          //     opponentPositionFlexible(Position.SB),
+                          //     opponentPositionFlexible(Position.BB),
+                          //   ],
+                          // ),
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: getVillainButton(constraints.maxWidth*0.16),
+                            ),
+                          ),
+                          SizedBox(height: 3.0,),
+                          Expanded(
+                            child: ReusableText(
+                              text: 'Villain\'s Action',
+                            ),
+                          ),
+                          Expanded(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                MyElevatedButton(
+                                  width: constraints.maxWidth*0.16,
+                                  isButtonSelected: cashSelection.opponentAction ==
+                                          OpponentAction.threeBet
+                                      ? true
+                                      : false,
+                                  onPressed: cashSelection.myPosition.index <=
+                                              cashSelection.opponentPosition.index ||
+                                          cashSelection.opponentPosition ==
+                                              Position.none
+                                      ? () {
+                                          setState(() {
+                                            cashSelection.opponentAction =
+                                                OpponentAction.threeBet;
+                                          });
+                                        }
+                                      : null,
+                                  selectedButtonLabel: OpponentAction.threeBet.name
+                                      .replaceAll("three", "3"),
+                                ),
+                                MyElevatedButton(
+                                  width: constraints.maxWidth*0.16,
+                                  isButtonSelected: cashSelection.opponentAction ==
+                                          OpponentAction.fourBet
+                                      ? true
+                                      : false,
+                                  onPressed: cashSelection.myPosition.index >=
+                                          cashSelection.opponentPosition.index
+                                      ? () {
+                                          setState(() {
+                                            cashSelection.opponentAction =
+                                                OpponentAction.fourBet;
+                                          });
+                                        }
+                                      : null,
+                                  selectedButtonLabel: OpponentAction.fourBet.name
+                                      .replaceAll("four", "4"),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 2,
-                ),
-                Consumer<ButtonHandling>(
-                  builder:
-                      (BuildContext context, buttonHandling, Widget? child) {
-                    return Flexible(
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          primary: cashSelection.opponentAction ==
-                                  OpponentAction.fourBet
-                              ? Colors.orange
-                              : Colors.grey,
-                        ),
-                        onPressed: cashSelection.myPosition.index >=
-                                cashSelection.opponentPosition.index
-                            ? () {
-                                setState(() {
-                                  cashSelection.opponentAction =
-                                      OpponentAction.fourBet;
-                                });
-                              }
-                            : null,
-                        child: Container(
-                          child: Text(OpponentAction.fourBet.name
-                              .replaceAll("four", "4")),
-                        ),
-                      ),
-                    );
-                  },
+                SizedBox(height: 6,),
+                Container(
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                          color: Color(0x2d9596cf),
+                          offset: Offset(-10, -10),
+                          blurRadius: 32,
+                          spreadRadius: 0),
+                      BoxShadow(
+                          color: Colors.black,
+                          offset: Offset(15, 10),
+                          blurRadius: 34.8,
+                          spreadRadius: 10),
+                      BoxShadow(
+                          color: Color(0x19000000),
+                          offset: Offset(30, 20),
+                          blurRadius: 27,
+                          spreadRadius: 0)
+                    ],
+                  ),
                 ),
               ],
-            ),
-          ),
-        ],
+            );
+          }
+        ),
       ),
     );
   }
@@ -237,102 +347,202 @@ class _CashGameState extends State<CashGame> {
   //   );
   // }
 
-  Flexible myPositionFlexibleWH(Position selectedMyPosition) {
-    return Flexible(
-      child: Consumer<ButtonHandling>(
-        builder: (BuildContext context, buttonHandling, Widget? child) {
-          return ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              padding: EdgeInsets.all(0.0),
-              primary: cashSelection.myPosition == selectedMyPosition
-                  ? Colors.orange
-                  : Colors.grey,
-            ),
-            onPressed: () {
-              setState(() {
-                // if(selection.myPosition == Position.UTG){
-                //   Provider.of<ButtonHandling>(context, listen: false).deactivateButton(isEnabled);
-                // }
-                // if(selection.myPosition == Position.MP){
-                //   Provider.of<ButtonHandling>(context, listen: false).deactivateButton(disabled);
-                // }
-                cashSelection.myPosition = selectedMyPosition;
-                cashSelection.opponentPosition = Position.none; //바꿔야함
-                cashSelection.opponentAction = OpponentAction.none;
-              });
-            },
-            child: Container(
-              child: Text(
-                selectedMyPosition.name,
-                style: TextStyle(fontSize: 12.0),
-              ),
-            ),
-          );
-        },
-      ),
+  // elevated버튼 클래스를  활용하는게 아니라 클래스 내에서 위젯을 리턴해서 활용하는형태일때 썼던 위젯
+  // Flexible myPositionFlexibleWH(Position selectedMyPosition) {
+  //   return Flexible(
+  //     child:  ElevatedButton(
+  //           style: ElevatedButton.styleFrom(
+  //             padding: EdgeInsets.all(0.0),
+  //             primary: cashSelection.myPosition == selectedMyPosition
+  //                 ? Colors.orange
+  //                 : Colors.grey,
+  //           ),
+  //           onPressed: () {
+  //             setState(() {
+  //               // if(selection.myPosition == Position.UTG){
+  //               //   Provider.of<ButtonHandling>(context, listen: false).deactivateButton(isEnabled);
+  //               // }
+  //               // if(selection.myPosition == Position.MP){
+  //               //   Provider.of<ButtonHandling>(context, listen: false).deactivateButton(disabled);
+  //               // }
+  //               cashSelection.myPosition = selectedMyPosition;
+  //               cashSelection.opponentPosition = Position.none; //바꿔야함
+  //               cashSelection.opponentAction = OpponentAction.none;
+  //             });
+  //           },
+  //           child: Container(
+  //             child: Text(
+  //               selectedMyPosition.name,
+  //               style: TextStyle(fontSize: 12.0),
+  //             ),
+  //           ),
+  //         ),
+  //   );
+  // }
+  //
+  //
+  // Flexible opponentPositionFlexible(Position selectedOpponentPosition) {
+  //   return Flexible(
+  //     child: Consumer<ButtonHandling>(
+  //         builder: (BuildContext context, buttonHandling, Widget? child) {
+  //       return ElevatedButton(
+  //         style: ElevatedButton.styleFrom(
+  //
+  //           primary: cashSelection.opponentPosition == selectedOpponentPosition
+  //               ? Colors.orange
+  //               : Colors.grey,
+  //         ),
+  //         onPressed: cashSelection.myPosition != selectedOpponentPosition
+  //             ? () {
+  //                 setState(() {
+  //                   cashSelection.opponentPosition = selectedOpponentPosition;
+  //                   if (cashSelection.myPosition.index <
+  //                       selectedOpponentPosition.index) {
+  //                     cashSelection.opponentAction = OpponentAction.threeBet;
+  //                     // Provider.of<ButtonHandling>(context, listen: false)
+  //                     //     .deActivateFourBetButton(disabled);
+  //
+  //                   } else {
+  //                     cashSelection.opponentAction = OpponentAction.none;
+  //                   }
+  //                 });
+  //               }
+  //             : null,
+  //         child: Container(
+  //           child: Text(
+  //             selectedOpponentPosition.name,
+  //             style: TextStyle(fontSize: 12.0),
+  //           ),
+  //         ),
+  //       );
+  //     }),
+  //   );
+  // }
+}
+
+class ReusableText extends StatelessWidget {
+  String text;
+  double? fontSize;
+  FontWeight fontWeight;
+  Color? textColor;
+
+  ReusableText({
+    required this.text,
+    this.fontWeight = FontWeight.w600,
+    this.textColor = Colors.white,
+    this.fontSize = 18.0,
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      style: TextStyle(
+          color: textColor,
+          fontWeight: fontWeight,
+          fontFamily: "Quasimoda",
+          fontStyle: FontStyle.normal,
+          fontSize: fontSize),
+      textAlign: TextAlign.left,
+      text,
     );
   }
+}
 
-  Flexible opponentPositionFlexible(Position selectedOpponentPosition) {
-    return Flexible(
-      child: Consumer<ButtonHandling>(
-          builder: (BuildContext context, buttonHandling, Widget? child) {
-        return ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            padding: EdgeInsets.all(0.0),
-            primary: cashSelection.opponentPosition == selectedOpponentPosition
-                ? Colors.orange
-                : Colors.grey,
+class MyElevatedButton extends StatelessWidget {
+  final BorderRadiusGeometry? borderRadius;
+  final double? width;
+  final double? height;
+  final Gradient gradient;
+  final bool isButtonSelected;
+  final bool isButtonEnabled;
+  final String selectedButtonLabel;
+  final VoidCallback? onPressed;
+
+  MyElevatedButton({
+    Key? key,
+    required this.selectedButtonLabel,
+    required this.onPressed,
+    required this.isButtonSelected,
+    this.isButtonEnabled = true,
+    this.borderRadius,
+    this.width,
+    this.height = 30.0,
+    this.gradient = const LinearGradient(colors: [Colors.cyan, Colors.indigo]),
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final borderRadius = this.borderRadius ?? BorderRadius.circular(6);
+    return LayoutBuilder(
+
+      builder: (context, constraints) {
+        return Container(
+          width: width,
+          height: 40,
+          decoration: BoxDecoration(
+            gradient: isButtonSelected ? gradient : null,
+            borderRadius: borderRadius,
+            boxShadow: [
+              BoxShadow(
+                  color: const Color(0x2e9596cf),
+                  offset: Offset(-7, -7),
+                  blurRadius: 32,
+                  spreadRadius: 0),
+              BoxShadow(
+                  color: const Color(0x4d000000),
+                  offset: Offset(10, 7),
+                  blurRadius: 34.8,
+                  spreadRadius: 10.2),
+              BoxShadow(
+                  color: const Color(0x1a000000),
+                  offset: Offset(29, 21),
+                  blurRadius: 27,
+                  spreadRadius: 13)
+            ],
           ),
-          onPressed: cashSelection.myPosition != selectedOpponentPosition
-              ? () {
-                  setState(() {
-                    cashSelection.opponentPosition = selectedOpponentPosition;
-                    if (cashSelection.myPosition.index <
-                        selectedOpponentPosition.index) {
-                      cashSelection.opponentAction = OpponentAction.threeBet;
-                      // Provider.of<ButtonHandling>(context, listen: false)
-                      //     .deActivateFourBetButton(disabled);
-
-                    } else {
-                      cashSelection.opponentAction = OpponentAction.none;
-                    }
-                  });
+          child: ElevatedButton(
+            onPressed: onPressed,
+            style: ButtonStyle(
+              textStyle: MaterialStateProperty.resolveWith((states) {
+                if (states.contains(MaterialState.disabled)) {
+                  return TextStyle(
+                    decoration: TextDecoration.lineThrough,
+                    decorationThickness: 2.0,
+                  );
                 }
-              : null,
-          child: Container(
-            child: Text(
-              selectedOpponentPosition.name,
-              style: TextStyle(fontSize: 12.0),
+                return TextStyle();
+              }),
+
+
+              backgroundColor: MaterialStateProperty.all(
+                  isButtonSelected ? Colors.transparent : PcAppTheme.mainBlue),
+              foregroundColor: MaterialStateProperty.resolveWith((states) {
+                if (states.contains(MaterialState.disabled)) {
+                  return Colors.grey[700];
+                }
+                if (states.contains(MaterialState.pressed)) {
+                  return Colors.white;
+                }
+                return Colors.white;
+              }),
+
+              shadowColor: MaterialStateProperty.all(Colors.transparent),
+
+            ),
+            child: FittedBox(
+              child: Text(
+                '$selectedButtonLabel',
+                style: TextStyle(
+
+                  fontFamily: "Quasimoda",
+                  fontWeight: isButtonSelected ? FontWeight.w900 : FontWeight.w600,
+                ),
+              ),
             ),
           ),
         );
-      }),
+      }
     );
   }
-
-  // Flexible actionFlexible(OpponentAction selectedAction) {
-  //   return Flexible(
-  //     child: ElevatedButton(
-  //       style: ElevatedButton.styleFrom(
-  //         primary:
-  //             selection.opponentAction == selectedAction ? Colors.orange : Colors.grey,
-  //       ),
-  //       onPressed: () {
-  //         setState(() {
-  //           selection.opponentAction = selectedAction;
-  //
-  //           print('action==$selectedAction');
-  //         });
-  //       },
-  //       child: Container(
-  //         child: Text(
-  //           selectedAction.name
-  //               .replaceAll("three", "3")
-  //               .replaceAll("four", "4"),
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
 }

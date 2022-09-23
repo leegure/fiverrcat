@@ -57,155 +57,160 @@ class _TournamentState extends State<Tournament> {
         ],
       ),
 
-      body: Column(
-        children: [
-        ChartGrid(painting : tournaChartBrain.paintingProgress(tournaSelection)),
-          //TournaChartContainer(), 이게 원래 노가다 핸드값 입력안해도 되도록 for문돌리기전 컨테이너임.
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+      body: LayoutBuilder(
+
+        builder: (context, constraints) {
+          return Column(
             children: [
+            ChartGrid(painting : tournaChartBrain.paintingProgress(tournaSelection)),
+              //TournaChartContainer(), 이게 원래 노가다 핸드값 입력안해도 되도록 for문돌리기전 컨테이너임.
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
 
-              Padding(
-                padding: const EdgeInsets.all(3.0),
-                child: Container(
-                  height: 10,
-                  width: 10,
-                  color: Colors.lightBlue,
-                ),
-              ),
-              Text(
-                'Raise',
-                style: TextStyle(fontSize: 10),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(3.0),
-                child: Container(
-                  height: 10,
-                  width: 10,
-                  color: Colors.lightGreen,
-                ),
-              ),
-              Text(
-                'Call',
-                style: TextStyle(fontSize: 10),
-              ),
-              SizedBox(width: 4.0,)
-            ],
-          ),
-          Text(
-            'My Stack',
-          ),
-          Row(
-               children: [
-
-                 myStack(TournaStack.hundred),
-                 myStack(TournaStack.eighty),
-                 myStack(TournaStack.sixty),
-                 myStack(TournaStack.fifty),
-                 myStack(TournaStack.forty),
-                 myStack(TournaStack.thirtyfive),
-                 myStack(TournaStack.thirty),
-                 myStack(TournaStack.twentyfive),
-
-               ],
-               ),
-          Text(
-            'My Position',
-          ),
-          Row(children: getButtonJH()),
-
-
-          Text(
-            'Opponent\'s Position',
-          ),
-          Row(
-            children: [
-              opponentTournaPositionFlexible(TournaPosition.UTG),
-              opponentTournaPositionFlexible(TournaPosition.UTG1),
-              opponentTournaPositionFlexible(TournaPosition.LJ),
-              opponentTournaPositionFlexible(TournaPosition.HJ),
-              opponentTournaPositionFlexible(TournaPosition.CO),
-              opponentTournaPositionFlexible(TournaPosition.BTN),
-              opponentTournaPositionFlexible(TournaPosition.SB),
-              opponentTournaPositionFlexible(TournaPosition.BB),
-            ],
-          ),
-          Text(
-            'Opponent\'s Action',
-          ),
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                tournaSelection.myTournaPosition==TournaPosition.SB? Flexible(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary:
-                      tournaSelection.opponentAction == OpponentAction.raise
-                          ? Colors.orange
-                          : Colors.grey,
-                    ),
-                    onPressed:  () {
-                      setState(() {
-                        tournaSelection.opponentAction = OpponentAction.raise;
-                      });
-                    },
+                  Padding(
+                    padding: const EdgeInsets.all(3.0),
                     child: Container(
-                      child: Text(OpponentAction.raise.name.replaceAll("r", "R")),
+                      height: 10,
+                      width: 10,
+                      color: Colors.lightBlue,
                     ),
                   ),
-                ):SizedBox( ),
-                SizedBox(
-                  width: 2,
-                ),
-                Flexible(
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      primary:
-                      tournaSelection.opponentAction == OpponentAction.threeBet
-                          ? Colors.orange
-                          : Colors.grey,
-                    ),
-
-                    onPressed: tournaSelection.myTournaPosition.index <=
-                        tournaSelection.opponentTournaPosition.index ||tournaSelection.opponentTournaPosition==TournaPosition.none?  () {
-                      setState(() {
-                        tournaSelection.opponentAction = OpponentAction.threeBet;
-                      });
-                    }: null,
+                  Text(
+                    'Raise',
+                    style: TextStyle(fontSize: 10),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(3.0),
                     child: Container(
-                      child: Text(OpponentAction.threeBet.name
-                          .replaceAll("three", "3")),
+                      height: 10,
+                      width: 10,
+                      color: Colors.lightGreen,
                     ),
                   ),
-                ),
-                SizedBox(
-                  width: 2,
-                ),
-                Flexible(
+                  Text(
+                    'Call',
+                    style: TextStyle(fontSize: 10),
+                  ),
+                  SizedBox(width: 4.0,)
+                ],
+              ),
+              Text(
+                'My Stack',
+              ),
+              Row(
+                   children: [
+
+                     myStack(TournaStack.hundred),
+                     myStack(TournaStack.eighty),
+                     myStack(TournaStack.sixty),
+                     myStack(TournaStack.fifty),
+                     myStack(TournaStack.forty),
+                     myStack(TournaStack.thirtyfive),
+                     myStack(TournaStack.thirty),
+                     myStack(TournaStack.twentyfive),
+
+                   ],
+                   ),
+              Text(
+                'My Position',
+              ),
+              Row(children: getButtonJH()),
+
+
+              Text(
+                'Opponent\'s Position',
+              ),
+              Row(
+                children: [
+                  opponentTournaPositionFlexible(TournaPosition.UTG),
+                  opponentTournaPositionFlexible(TournaPosition.UTG1),
+                  opponentTournaPositionFlexible(TournaPosition.LJ),
+                  opponentTournaPositionFlexible(TournaPosition.HJ),
+                  opponentTournaPositionFlexible(TournaPosition.CO),
+                  opponentTournaPositionFlexible(TournaPosition.BTN),
+                  opponentTournaPositionFlexible(TournaPosition.SB),
+                  opponentTournaPositionFlexible(TournaPosition.BB),
+                ],
+              ),
+              Text(
+                'Opponent\'s Action',
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    tournaSelection.myTournaPosition==TournaPosition.SB? Flexible(
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary:
-                          tournaSelection.opponentAction == OpponentAction.fourBet
+                          tournaSelection.opponentAction == OpponentAction.raise
                               ? Colors.orange
                               : Colors.grey,
                         ),
-                        onPressed: tournaSelection.myTournaPosition.index >= tournaSelection.opponentTournaPosition.index ? () {
+                        onPressed:  () {
                           setState(() {
-                            tournaSelection.opponentAction =
-                                OpponentAction.fourBet;
+                            tournaSelection.opponentAction = OpponentAction.raise;
                           });
-                        } : null,
+                        },
                         child: Container(
-                          child: Text(OpponentAction.fourBet.name
-                              .replaceAll("four", "4")),
+                          child: Text(OpponentAction.raise.name.replaceAll("r", "R")),
+                        ),
+                      ),
+                    ):SizedBox( ),
+                    SizedBox(
+                      width: 2,
+                    ),
+                    Flexible(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary:
+                          tournaSelection.opponentAction == OpponentAction.threeBet
+                              ? Colors.orange
+                              : Colors.grey,
+                        ),
+
+                        onPressed: tournaSelection.myTournaPosition.index <=
+                            tournaSelection.opponentTournaPosition.index ||tournaSelection.opponentTournaPosition==TournaPosition.none?  () {
+                          setState(() {
+                            tournaSelection.opponentAction = OpponentAction.threeBet;
+                          });
+                        }: null,
+                        child: Container(
+                          child: Text(OpponentAction.threeBet.name
+                              .replaceAll("three", "3")),
                         ),
                       ),
                     ),
-              ],
-            ),
-          ),
-        ],
+                    SizedBox(
+                      width: 2,
+                    ),
+                    Flexible(
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary:
+                              tournaSelection.opponentAction == OpponentAction.fourBet
+                                  ? Colors.orange
+                                  : Colors.grey,
+                            ),
+                            onPressed: tournaSelection.myTournaPosition.index >= tournaSelection.opponentTournaPosition.index ? () {
+                              setState(() {
+                                tournaSelection.opponentAction =
+                                    OpponentAction.fourBet;
+                              });
+                            } : null,
+                            child: Container(
+                              child: Text(OpponentAction.fourBet.name
+                                  .replaceAll("four", "4")),
+                            ),
+                          ),
+                        ),
+                  ],
+                ),
+              ),
+            ],
+          );
+        }
       ),
     );
   }

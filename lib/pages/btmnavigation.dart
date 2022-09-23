@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 
+import '../chart/common/poker_icon_icons.dart';
 import '../global/component/pcapptheme.dart';
 import 'bankroll.dart';
 import 'cashgame.dart';
@@ -54,8 +55,8 @@ class _BtmNaviState extends State<BtmNavi> {
 
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-
-            icon: Icon(Icons.attach_money_sharp),
+            backgroundColor: Colors.grey,
+            icon: Icon(PokerIcon.money_1),
             label: 'Cash Game',
           ),
           BottomNavigationBarItem(
@@ -64,11 +65,11 @@ class _BtmNaviState extends State<BtmNavi> {
 
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.people),
+            icon: Icon(PokerIcon.trophy),
             label: 'Tournament',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.money_sharp),
+            icon: Icon(PokerIcon.chart_line),
             label: 'Bankroll',
           ),
           BottomNavigationBarItem(
@@ -77,10 +78,18 @@ class _BtmNaviState extends State<BtmNavi> {
           ),
 
         ],
+        selectedLabelStyle:TextStyle(
+          fontFamily: 'Quasimoda',
+          fontWeight: FontWeight.w700,
+        ) ,
+        unselectedLabelStyle: TextStyle(
 
+          fontFamily: 'Quasimoda',
+          fontWeight: FontWeight.w500,
+        ),
         onTap: _onItemTap,
-        selectedFontSize: 13.0,
-        unselectedFontSize: 13.0,
+        selectedFontSize: 12.0,
+        unselectedFontSize: 12.0,
       ),
     );
   }

@@ -6,7 +6,7 @@ class CashChartBrain {
   CashChartBrain({Key? key});
 
   Map<String, ProgressInfo> paintingProgress(Selection cashSelection) {
-
+print('11111${cashSelection.myPosition}');
 
       // 내 포지션,상대 포지션,상대 액션 선택됨
         if (cashSelection.opponentAction != OpponentAction.none &&

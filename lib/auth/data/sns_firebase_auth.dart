@@ -41,7 +41,7 @@ class SnsAuthWithFirebase {
           idToken: googleAuth?.idToken,
         );
       } on AssertionError catch(e){
-        BotToast.showText(text: '취소되었습니다');
+        BotToast.showText(text: 'Cancelled');
         BotToast.closeAllLoading();
         // toast
         // 취소되었습니다.
@@ -62,7 +62,7 @@ class SnsAuthWithFirebase {
         "authMethod": 'google',
       };
       final user = await UserRepository.fetchUser();
-      print('이멜주소=${userData['email']}');
+
       if (user != null) {
 
         await authProvider.login();
