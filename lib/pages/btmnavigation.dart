@@ -41,55 +41,65 @@ class _BtmNaviState extends State<BtmNavi> {
 
       body: tabs[_currentIndex],
 
-      bottomNavigationBar: BottomNavigationBar(
-
-        backgroundColor: ZeplinColors.dark,
-        unselectedItemColor: Color(0xff53558a),
-        selectedItemColor: Color(0xff59d1ff),
-
-
-        currentIndex : _currentIndex,
-
-        type: BottomNavigationBarType.fixed,
-        iconSize: 20,
-
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            backgroundColor: Colors.grey,
-            icon: Icon(PokerIcon.money_1),
-            label: 'Cash Game',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.grid_on_sharp),
-            label: 'Push Fold',
-
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(PokerIcon.trophy),
-            label: 'Tournament',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(PokerIcon.chart_line),
-            label: 'Bankroll',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-
-        ],
-        selectedLabelStyle:TextStyle(
-          fontFamily: 'Quasimoda',
-          fontWeight: FontWeight.w700,
-        ) ,
-        unselectedLabelStyle: TextStyle(
-
-          fontFamily: 'Quasimoda',
-          fontWeight: FontWeight.w500,
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+              color: Colors.black,
+              blurRadius: 10,
+            ),
+          ],
         ),
-        onTap: _onItemTap,
-        selectedFontSize: 12.0,
-        unselectedFontSize: 12.0,
+        child: BottomNavigationBar(
+
+          backgroundColor: ZeplinColors.dark,
+          unselectedItemColor: Color(0xff53558a),
+          selectedItemColor: Color(0xff59d1ff),
+
+
+          currentIndex : _currentIndex,
+
+          type: BottomNavigationBarType.fixed,
+          iconSize: 20,
+
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              backgroundColor: Colors.grey,
+              icon: Icon(PokerIcon.money_1),
+              label: 'Cash Game',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.grid_on_sharp),
+              label: 'Push Fold',
+
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(PokerIcon.trophy),
+              label: 'Tournament',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(PokerIcon.chart_line),
+              label: 'Bankroll',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'Profile',
+            ),
+
+          ],
+          selectedLabelStyle:TextStyle(
+            fontFamily: 'Quasimoda',
+            fontWeight: FontWeight.w700,
+          ) ,
+          unselectedLabelStyle: TextStyle(
+
+            fontFamily: 'Quasimoda',
+            fontWeight: FontWeight.w500,
+          ),
+          onTap: _onItemTap,
+          selectedFontSize: 12.0,
+          unselectedFontSize: 12.0,
+        ),
       ),
     );
   }

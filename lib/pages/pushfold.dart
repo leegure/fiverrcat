@@ -3,6 +3,8 @@ import 'dart:ffi';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart' hide Card;
 import 'package:poker/poker.dart';
+import 'package:pokercat/global/component/pcapptheme.dart';
+import 'package:pokercat/global/component/reusable_button.dart';
 
 import '../chart/common/range_calculator.dart';
 import '../chart/common/rank_pair_select_grid.dart';
@@ -11,6 +13,7 @@ import '../chart/view_model/hand_range_draft.dart';
 import 'dart:math';
 
 import '../global/component/appbar.dart';
+import '../global/component/reusable_text.dart';
 
 
 
@@ -63,137 +66,138 @@ class _PushFoldState extends State<PushFold> {
     return SafeArea(
       child: Scaffold(
         appBar: Appbar(
-          title: Text('PushFold'),
+          titleStr: 'PushFold',
           actions: <Widget>[
             Row(
               children: [
-                Text('$randomNumber'),
-
-                IconButton( icon: new Icon(Icons.casino_rounded),onPressed: () => {
-                  setState(() {
-                    randomNumber = random.nextInt(101);
-                    print(randomNumber);
-                  })}, )
+                ReusableText(
+                  text: '$randomNumber',
+                  fontSize: 15.0,
+                ),
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      randomNumber = random.nextInt(101);
+                      diceRandomNumber = random.nextInt(24);
+                    });
+                  },
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Image.asset(
+                      'assets/images/dice/dice$diceRandomNumber.png',
+                    ),
+                  ),
+                ),
               ],
             )
           ],
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(4.0),
-          child: Center(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  child: Padding(
-                    padding: _controlPadding,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.rectangle,
-                        boxShadow: null,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: AnimatedBuilder(
-                        animation: _stateBus,
-                        builder: (context, _) => Column(
-                          children: [
-                            AspectRatio(
-                              aspectRatio: 1.2,
-                              child: RankPairSelectGrid(
-                                value: _stateBus.rankPairs,
-                                onChanged: (rankPairs) {
-                                  _stateBus.rankPairs = rankPairs;
-                                  print('_stateBus.rankPairs=${_stateBus.rankPairs}');
-                                },
-                              ),
-                            ),
-                          ],
-                        ),
+        body: Container(
+          color: ZeplinColors.dark,
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              return Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Expanded(
+                    flex: 100,
+                    child: AnimatedBuilder(
+                      animation: _stateBus,
+                      builder: (context, _) => Column(
+                        children: [
+                          RankPairSelectGrid(
+                            value: _stateBus.rankPairs,
+                            onChanged: (rankPairs) {
+                              _stateBus.rankPairs = rankPairs;
+                              print('_stateBus.rankPairs=${_stateBus.rankPairs}');
+                            },
+                          ),
+                        ],
                       ),
                     ),
                   ),
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      Text('Antes'),
 
-                      Container(
-                        height: 20,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            anteFlexible('No Ante'),
-                            SizedBox(
-                              width: 2,
-                            ),
-                            anteFlexible('10% Ante'),
-                          ],
+                  Expanded(
+                    flex: 67,
+                    child: Column(
+                      children: [
+
+                        Expanded(child: ReusableText(text: 'Antes')),
+                        Container(
+                          width: constraints.maxWidth*0.4,
+                          height: constraints.maxHeight*0.04,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              anteFlexible('No Ante'),
+                              SizedBox(
+                                width: 2,
+                              ),
+                              anteFlexible('10% Ante'),
+                            ],
+                          ),
                         ),
-                      ),
-
-                      Text(
-                        'My Blinds',
-                      ),
-
-                      Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              BlindFlexible(1),
-                              BlindFlexible(2),
-                              BlindFlexible(3),
-                              BlindFlexible(4),
-                              BlindFlexible(5),
-                              BlindFlexible(6),
-                              BlindFlexible(7),
-                              BlindFlexible(8),
-                            ],
-                          ),
-                          Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              BlindFlexible(9),
-                              BlindFlexible(10),
-                              BlindFlexible(11),
-                              BlindFlexible(12),
-                              BlindFlexible(13),
-                              BlindFlexible(14),
-                              BlindFlexible(15),
-                              BlindFlexible(16),
-                            ],
-                          ),
-
-                        ],
-                      ),
-
-                      Text(
-                        'My Position',
-                      ),
-                      Expanded(
-                        child: Row(
+                        SizedBox(height: 3.0,),
+                        Expanded(child: ReusableText(text: 'My Blinds')),
+                        Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            PositionFlexible('UTG'),
-                            PositionFlexible('UTG1'),
-                            PositionFlexible('MP'),
-                            PositionFlexible('MP1'),
-                            PositionFlexible('HJ'),
-                            PositionFlexible('CO'),
-                            PositionFlexible('BTN'),
-                            PositionFlexible('SB'),
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                BlindFlexible(1),
+                                BlindFlexible(2),
+                                BlindFlexible(3),
+                                BlindFlexible(4),
+                                BlindFlexible(5),
+                                BlindFlexible(6),
+                                BlindFlexible(7),
+                                BlindFlexible(8),
+                              ],
+                            ),
+                            Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                BlindFlexible(9),
+                                BlindFlexible(10),
+                                BlindFlexible(11),
+                                BlindFlexible(12),
+                                BlindFlexible(13),
+                                BlindFlexible(14),
+                                BlindFlexible(15),
+                                BlindFlexible(16),
+                              ],
+                            ),
+
                           ],
                         ),
-                      ),
-                    ],
-                  ),
-                ),
+                        SizedBox(height: 3.0,),
+                        Expanded(child: ReusableText(text: 'My Position')),
+                        Expanded(
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              PositionFlexible('UTG'),
+                              PositionFlexible('UTG1'),
+                              PositionFlexible('MP'),
+                              PositionFlexible('MP1'),
+                              PositionFlexible('HJ'),
+                              PositionFlexible('CO'),
+                              PositionFlexible('BTN'),
+                              PositionFlexible('SB'),
+                            ],
+                          ),
+                        ),
+                        SizedBox(height: 6,),
 
-              ],
-            ),
+                      ],
+                    ),
+                  ),
+
+                ],
+              );
+            }
           ),
         ),
       ),
@@ -202,12 +206,7 @@ class _PushFoldState extends State<PushFold> {
 
   Flexible anteFlexible(String ante) {
     return Flexible(
-      child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            primary: anteIndex == listAnte.indexOf(ante)
-                ? Colors.orange
-                : Colors.grey,
-          ),
+      child: MyElevatedButton(
           onPressed: () {
             setState(() {
               anteIndex = listAnte.indexOf(ante);
@@ -220,21 +219,15 @@ class _PushFoldState extends State<PushFold> {
               print('anteindex=$anteIndex');
             });
           },
-          child: Container(
-            child: Text(
-              '$ante',
-            ),
-          )),
+          isButtonSelected: anteIndex == listAnte.indexOf(ante)?true : false,
+          selectedButtonLabel: '$ante',
+          ),
     );
   }
 
   Flexible BlindFlexible(int blind) {
     return Flexible(
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          padding:EdgeInsets.all(0.0),
-          primary: blindIndex == blind ? Colors.orange : Colors.grey,
-        ),
+      child: MyElevatedButton(
         onPressed: () {
           setState(() {
             blindIndex = blind;
@@ -243,27 +236,17 @@ class _PushFoldState extends State<PushFold> {
             _stateBus.rankPairs = calc.rangeStateApply();
           });
         },
-        child: Padding(
-          padding: const EdgeInsets.all(1.0),
-          child: Container(
-              child: Text(
-                '$blind',
-                style: TextStyle(fontSize: 14.0),
-              )),
-        ),
+        selectedButtonLabel: '$blind',
+        isButtonSelected:  blindIndex == blind ? true:false,
+
       ),
     );
   }
 
   Flexible PositionFlexible(String position) {
     return Flexible(
-      child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            padding:EdgeInsets.all(0.0),
-            primary: positionIndex == listPosition.indexOf(position)
-                ? Colors.orange
-                : Colors.grey,
-          ),
+      child: MyElevatedButton(
+
           onPressed: () {
             setState(() {
               positionIndex = listPosition.indexOf(position);
@@ -274,11 +257,10 @@ class _PushFoldState extends State<PushFold> {
               print('positionIndex=${positionIndex}');
             });
           },
-          child: Container(
-              child: Text(
-                position,
-                style: TextStyle(fontSize: 12.0),
-              ))),
+          isButtonSelected: positionIndex == listPosition.indexOf(position)
+              ? true:false,
+          selectedButtonLabel: '$position',
+          ),
     );
   }
 }

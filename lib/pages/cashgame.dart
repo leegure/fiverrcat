@@ -10,6 +10,8 @@ import '../chart/constarants/selection.dart';
 import '../global/button_handling.dart';
 import '../global/component/appbar.dart';
 import '../global/component/pcapptheme.dart';
+import '../global/component/reusable_button.dart';
+import '../global/component/reusable_text.dart';
 
 class CashGame extends StatefulWidget {
   @override
@@ -99,22 +101,22 @@ width: width,
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Appbar(
-        backgroundColor: ZeplinColors.dark,
-        title: Container(
-          decoration: BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                color: Color(0x7f000000),
-                offset: Offset(0, 0),
-                blurRadius: 24,
-                spreadRadius: 3,
-              ),
-            ],
-          ),
-          child: ReusableText(
-            text: 'CashGame',
-          ),
-        ),
+        titleStr: 'CashGame',
+        // title: Container(
+        //   decoration: BoxDecoration(
+        //     boxShadow: [
+        //       BoxShadow(
+        //         color: Color(0x7f000000),
+        //         offset: Offset(0, 0),
+        //         blurRadius: 24,
+        //         spreadRadius: 3,
+        //       ),
+        //     ],
+        //   ),
+        //   child: ReusableText(
+        //     text: 'CashGame',
+        //   ),
+        // ),
         actions: <Widget>[
           Row(
             children: [
@@ -198,7 +200,7 @@ width: width,
                     child: Container(
 
                       decoration: new BoxDecoration(
-                        color: Color(0xff262848),
+                        color: ZeplinColors.dark,
                       ),
                       child: Column(
 
@@ -287,27 +289,7 @@ width: width,
                   ),
                 ),
                 SizedBox(height: 6,),
-                Container(
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                          color: Color(0x2d9596cf),
-                          offset: Offset(-10, -10),
-                          blurRadius: 32,
-                          spreadRadius: 0),
-                      BoxShadow(
-                          color: Colors.black,
-                          offset: Offset(15, 10),
-                          blurRadius: 34.8,
-                          spreadRadius: 10),
-                      BoxShadow(
-                          color: Color(0x19000000),
-                          offset: Offset(30, 20),
-                          blurRadius: 27,
-                          spreadRadius: 0)
-                    ],
-                  ),
-                ),
+
               ],
             );
           }
@@ -420,129 +402,6 @@ width: width,
   // }
 }
 
-class ReusableText extends StatelessWidget {
-  String text;
-  double? fontSize;
-  FontWeight fontWeight;
-  Color? textColor;
-
-  ReusableText({
-    required this.text,
-    this.fontWeight = FontWeight.w600,
-    this.textColor = Colors.white,
-    this.fontSize = 18.0,
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      style: TextStyle(
-          color: textColor,
-          fontWeight: fontWeight,
-          fontFamily: "Quasimoda",
-          fontStyle: FontStyle.normal,
-          fontSize: fontSize),
-      textAlign: TextAlign.left,
-      text,
-    );
-  }
-}
-
-class MyElevatedButton extends StatelessWidget {
-  final BorderRadiusGeometry? borderRadius;
-  final double? width;
-  final double? height;
-  final Gradient gradient;
-  final bool isButtonSelected;
-  final bool isButtonEnabled;
-  final String selectedButtonLabel;
-  final VoidCallback? onPressed;
-
-  MyElevatedButton({
-    Key? key,
-    required this.selectedButtonLabel,
-    required this.onPressed,
-    required this.isButtonSelected,
-    this.isButtonEnabled = true,
-    this.borderRadius,
-    this.width,
-    this.height = 30.0,
-    this.gradient = const LinearGradient(colors: [Colors.cyan, Colors.indigo]),
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final borderRadius = this.borderRadius ?? BorderRadius.circular(6);
-    return LayoutBuilder(
-
-      builder: (context, constraints) {
-        return Container(
-          width: width,
-          height: 40,
-          decoration: BoxDecoration(
-            gradient: isButtonSelected ? gradient : null,
-            borderRadius: borderRadius,
-            boxShadow: [
-              BoxShadow(
-                  color: const Color(0x2e9596cf),
-                  offset: Offset(-7, -7),
-                  blurRadius: 32,
-                  spreadRadius: 0),
-              BoxShadow(
-                  color: const Color(0x4d000000),
-                  offset: Offset(10, 7),
-                  blurRadius: 34.8,
-                  spreadRadius: 10.2),
-              BoxShadow(
-                  color: const Color(0x1a000000),
-                  offset: Offset(29, 21),
-                  blurRadius: 27,
-                  spreadRadius: 13)
-            ],
-          ),
-          child: ElevatedButton(
-            onPressed: onPressed,
-            style: ButtonStyle(
-              textStyle: MaterialStateProperty.resolveWith((states) {
-                if (states.contains(MaterialState.disabled)) {
-                  return TextStyle(
-                    decoration: TextDecoration.lineThrough,
-                    decorationThickness: 2.0,
-                  );
-                }
-                return TextStyle();
-              }),
 
 
-              backgroundColor: MaterialStateProperty.all(
-                  isButtonSelected ? Colors.transparent : PcAppTheme.mainBlue),
-              foregroundColor: MaterialStateProperty.resolveWith((states) {
-                if (states.contains(MaterialState.disabled)) {
-                  return Colors.grey[700];
-                }
-                if (states.contains(MaterialState.pressed)) {
-                  return Colors.white;
-                }
-                return Colors.white;
-              }),
 
-              shadowColor: MaterialStateProperty.all(Colors.transparent),
-
-            ),
-            child: FittedBox(
-              child: Text(
-                '$selectedButtonLabel',
-                style: TextStyle(
-
-                  fontFamily: "Quasimoda",
-                  fontWeight: isButtonSelected ? FontWeight.w900 : FontWeight.w600,
-                ),
-              ),
-            ),
-          ),
-        );
-      }
-    );
-  }
-}

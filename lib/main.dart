@@ -51,7 +51,11 @@ class _AppState extends State<App> {
         title: '포커캣',
         //botToast 사용을 위한 builder 등록
         //왜 이런 형태로 하는지 이해는 안됨. 하라니까 함.
-        builder: (_, w) => BotToastInit()(_, w),
+        // builder: (_, w) => BotToastInit()(_, w),
+        builder: (context, w) {
+          return MediaQuery(
+            data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+              child: BotToastInit()(context, w)); },
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.grey,

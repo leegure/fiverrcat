@@ -5,6 +5,7 @@ import 'package:pokercat/chart/common/tourna_chart_brain.dart';
 import 'package:pokercat/chart/constarants/selection.dart';
 import 'package:pokercat/global/component/pcapptheme.dart';
 import 'package:pokercat/pages/cashgame.dart';
+import '../../global/component/reusable_text.dart';
 import '../constarants/card.dart';
 import 'fill.dart';
 import 'progress_info_model.dart';
@@ -177,7 +178,7 @@ class ChartGridItem extends StatelessWidget {
     this.progressInfo,
   }) : super(key: key) {}
 
-  final Color backgroundColor = ZeplinColors.gridBackgroundColor;
+  final Color backgroundColor = ZeplinColors.foldColor;
   final Color callProgressColor = ZeplinColors.callColor;
   final Color raiseProgressColor =  ZeplinColors.raiseColor;
   final Color alreadyProgressColor = ZeplinColors.alreadyProgressColor;

@@ -38,8 +38,10 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ZeplinColors.dark,
       appBar: Appbar(
         titleStr: 'Login',
+
       ),
 
       body: Center(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:pokercat/global/component/reusable_text.dart';
 
 import '../../imports.dart';
 import '../auth/data/sns_firebase_auth.dart';
@@ -12,11 +12,9 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-
   bool isURL(String s) => RegExp(
-    r"^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?))\://)?(www.|[a-zA-Z0-9].)[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,6}(\:[0-9]{1,5})*(/($|[a-zA-Z0-9\.\,\;\?\'\\\+&amp;%\$#\=~_\-]+))*$",
-  ).hasMatch(s);
-
+        r"^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?))\://)?(www.|[a-zA-Z0-9].)[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,6}(\:[0-9]{1,5})*(/($|[a-zA-Z0-9\.\,\;\?\'\\\+&amp;%\$#\=~_\-]+))*$",
+      ).hasMatch(s);
 
   TextEditingController _emailController = TextEditingController();
   TextEditingController _nameController = TextEditingController();
@@ -35,37 +33,62 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: ZeplinColors.dark,
         appBar: Appbar(
-            title: Text(
-              'Profile body',
-            )),
+          titleStr: 'Profile body',
+        ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
-
-
-              isURL(user!.photoURL)?CircleAvatar(
-                radius: 60,
-                backgroundImage: NetworkImage(user!.photoURL),
-              ): CircleAvatar(
-                radius: 60,
-                backgroundImage: AssetImage('assets/images/human_000.png'),
+              isURL(user!.photoURL)
+                  ? CircleAvatar(
+                      radius: 60,
+                      backgroundImage: NetworkImage(user!.photoURL),
+                    )
+                  : CircleAvatar(
+                      radius: 60,
+                      backgroundImage:
+                          AssetImage('assets/images/human_000.png'),
+                    ),
+              SizedBox(
+                height: 10,
               ),
-              SizedBox(height: 10,),
               _username(context),
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               _userBio(),
-              SizedBox(height: 10,),
-              ElevatedButton(
-                  onPressed: () async {
+              SizedBox(
+                height: 10,
+              ),
+
+              Center(
+                child: GestureDetector(
+                  onTap: () async {
                     await authProvider.logout();
                     await SnsAuthWithFirebase().googleLogout();
                     AppRoutes.moveToPage(AppLinks.signIn, getOffAll: true);
                   },
+                  child: Container(
+                    height: 45,
+                    width: 120,
+                    decoration: BoxDecoration(
+                      color: Color(0xff004e6d),
+                      borderRadius: BorderRadius.circular(15),
 
-                  child: Text('Log out Button'))
+                    ),
+                    child: Center(
+                      child: ReusableText(
+                        fontWeight: FontWeight.w700,
+                        text: 'Log Out',
+
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
             ],
           ),
         ),
@@ -94,7 +117,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
           onPressed: () {
             AppRoutes.moveToPage(AppLinks.editProfileScreen, getOff: true);
           },
-
           child: Text(
             'Edit Profile',
             style: TextStyle(fontWeight: FontWeight.bold),
@@ -125,21 +147,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget _username(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: common_gap),
-      child: Text(
-        '${authProvider.user!.username}',
-        style: TextStyle(
-          fontWeight: FontWeight.bold,
-        ),
+      child: ReusableText(
+        text: '${authProvider.user!.username}',
       ),
+
     );
   }
 
   Widget _userBio() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: common_gap),
-      child: Text(
-        '${authProvider.user!.email}',
-        style: TextStyle(fontWeight: FontWeight.w400),
+      child: ReusableText(
+        text: '${authProvider.user!.email}',
+
       ),
     );
   }
