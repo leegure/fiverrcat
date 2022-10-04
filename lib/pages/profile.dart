@@ -31,66 +31,64 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: ZeplinColors.dark,
-        appBar: Appbar(
-          titleStr: 'Profile body',
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              isURL(user!.photoURL)
-                  ? CircleAvatar(
-                      radius: 60,
-                      backgroundImage: NetworkImage(user!.photoURL),
-                    )
-                  : CircleAvatar(
-                      radius: 60,
-                      backgroundImage:
-                          AssetImage('assets/images/human_000.png'),
-                    ),
-              SizedBox(
-                height: 10,
-              ),
-              _username(context),
-              SizedBox(
-                height: 10,
-              ),
-              _userBio(),
-              SizedBox(
-                height: 10,
-              ),
+    return Scaffold(
+      backgroundColor: ZeplinColors.dark,
+      appBar: Appbar(
+        titleStr: 'Profile body',
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            isURL(user!.photoURL)
+                ? CircleAvatar(
+                    radius: 60,
+                    backgroundImage: NetworkImage(user!.photoURL),
+                  )
+                : CircleAvatar(
+                    radius: 60,
+                    backgroundImage:
+                        AssetImage('assets/images/human_000.png'),
+                  ),
+            SizedBox(
+              height: 10,
+            ),
+            _username(context),
+            SizedBox(
+              height: 10,
+            ),
+            _userBio(),
+            SizedBox(
+              height: 10,
+            ),
 
-              Center(
-                child: GestureDetector(
-                  onTap: () async {
-                    await authProvider.logout();
-                    await SnsAuthWithFirebase().googleLogout();
-                    AppRoutes.moveToPage(AppLinks.signIn, getOffAll: true);
-                  },
-                  child: Container(
-                    height: 45,
-                    width: 120,
-                    decoration: BoxDecoration(
-                      color: Color(0xff004e6d),
-                      borderRadius: BorderRadius.circular(15),
+            Center(
+              child: GestureDetector(
+                onTap: () async {
+                  await authProvider.logout();
+                  await SnsAuthWithFirebase().googleLogout();
+                  AppRoutes.moveToPage(AppLinks.signIn, getOffAll: true);
+                },
+                child: Container(
+                  height: 45,
+                  width: 120,
+                  decoration: BoxDecoration(
+                    color: Color(0xff004e6d),
+                    borderRadius: BorderRadius.circular(15),
 
-                    ),
-                    child: Center(
-                      child: ReusableText(
-                        fontWeight: FontWeight.w700,
-                        text: 'Log Out',
+                  ),
+                  child: Center(
+                    child: ReusableText(
+                      fontWeight: FontWeight.w700,
+                      text: 'Log Out',
 
-                      ),
                     ),
                   ),
                 ),
               ),
+            ),
 
-            ],
-          ),
+          ],
         ),
       ),
     );

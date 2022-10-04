@@ -2,6 +2,7 @@
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:flutter/widgets.dart";
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import "package:poker/poker.dart";
 
 import '../../global/component/pcapptheme.dart';
@@ -56,128 +57,118 @@ class _RankPairSelectGridState extends State<RankPairSelectGrid> {
 
   @override
   Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.all(6.0),
-    child: Container(
-      child: Column(
-        children: [
-          AspectRatio(
-            aspectRatio: 1.2,
-            child: LayoutBuilder(
-              builder: (context, constraints) => GestureDetector(
-                onPanStart: (details) {
-                  final x = details.localPosition.dx *
-                      Rank.values.length ~/
-                      constraints.maxWidth;
-                  final y = details.localPosition.dy *
-                      Rank.values.length ~/
-                      constraints.maxHeight;
-                  final rankPairsPart = x > y
-                      ? RankPair.suited(
-                          high: ranksInStrongnessOrder[y],
-                          kicker: ranksInStrongnessOrder[x],
-                        )
-                      : RankPair.ofsuit(
-                          high: ranksInStrongnessOrder[x],
-                          kicker: ranksInStrongnessOrder[y],
+    padding:  EdgeInsets.all(6.w),
+    child: Column(
+      children: [
+        AspectRatio(
+          aspectRatio: 1.2,
+          child: LayoutBuilder(
+            builder: (context, constraints) => GestureDetector(
+              onPanStart: (details) {
+                final x = details.localPosition.dx *
+                    Rank.values.length ~/
+                    constraints.maxWidth;
+                final y = details.localPosition.dy *
+                    Rank.values.length ~/
+                    constraints.maxHeight;
+                final rankPairsPart = x > y
+                    ? RankPair.suited(
+                        high: ranksInStrongnessOrder[y],
+                        kicker: ranksInStrongnessOrder[x],
+                      )
+                    : RankPair.ofsuit(
+                        high: ranksInStrongnessOrder[x],
+                        kicker: ranksInStrongnessOrder[y],
+                      );
+              },
+              onPanUpdate: (details) {
+                final x = details.localPosition.dx *
+                    Rank.values.length ~/
+                    constraints.maxWidth;
+                final y = details.localPosition.dy *
+                    Rank.values.length ~/
+                    constraints.maxHeight;
+
+                if (x < 0 || x >= Rank.values.length) return;
+                if (y < 0 || y >= Rank.values.length) return;
+
+                final rankPairsPart = x > y
+                    ? RankPair.suited(
+                        high: ranksInStrongnessOrder[y],
+                        kicker: ranksInStrongnessOrder[x],
+                      )
+                    : RankPair.ofsuit(
+                        high: ranksInStrongnessOrder[x],
+                        kicker: ranksInStrongnessOrder[y],
+                      );
+              },
+              behavior: HitTestBehavior.opaque,
+              child: Column(
+                children: List.generate(Rank.values.length * 2 - 1, (i) {
+                  if (i % 2 == 1) return SizedBox(height: 2);
+                  final y = i ~/ 2;
+                  return Expanded(
+                    child: Row(
+                      children: List.generate(Rank.values.length * 2 - 1, (j) {
+                        if (j % 2 == 1) return SizedBox(width: 2);
+                        final x = j ~/ 2;
+                        final rankPairsPart = x > y
+                            ? RankPair.suited(
+                                high: ranksInStrongnessOrder[y],
+                                kicker: ranksInStrongnessOrder[x],
+                              )
+                            : RankPair.ofsuit(
+                                high: ranksInStrongnessOrder[x],
+                                kicker: ranksInStrongnessOrder[y],
+                              );
+
+                        return Expanded(
+                          child: RankPairSelectGridItem(
+                            rankPairsPart: rankPairsPart,
+                            isSelected: selectedRange.contains(rankPairsPart),
+                          ),
                         );
-
-
-
-
-                },
-                onPanUpdate: (details) {
-                  final x = details.localPosition.dx *
-                      Rank.values.length ~/
-                      constraints.maxWidth;
-                  final y = details.localPosition.dy *
-                      Rank.values.length ~/
-                      constraints.maxHeight;
-
-                  if (x < 0 || x >= Rank.values.length) return;
-                  if (y < 0 || y >= Rank.values.length) return;
-
-                  final rankPairsPart = x > y
-                      ? RankPair.suited(
-                          high: ranksInStrongnessOrder[y],
-                          kicker: ranksInStrongnessOrder[x],
-                        )
-                      : RankPair.ofsuit(
-                          high: ranksInStrongnessOrder[x],
-                          kicker: ranksInStrongnessOrder[y],
-                        );
-
-
-                },
-
-                behavior: HitTestBehavior.opaque,
-                child: Column(
-                  children: List.generate(Rank.values.length * 2 - 1, (i) {
-                    if (i % 2 == 1) return SizedBox(height: 2);
-                    final y = i ~/ 2;
-                    return Expanded(
-                      child: Row(
-                        children: List.generate(Rank.values.length * 2 - 1, (j) {
-                          if (j % 2 == 1) return SizedBox(width: 2);
-                          final x = j ~/ 2;
-                          final rankPairsPart = x > y
-                              ? RankPair.suited(
-                                  high: ranksInStrongnessOrder[y],
-                                  kicker: ranksInStrongnessOrder[x],
-                                )
-                              : RankPair.ofsuit(
-                                  high: ranksInStrongnessOrder[x],
-                                  kicker: ranksInStrongnessOrder[y],
-                                );
-
-                          return Expanded(
-                            child: RankPairSelectGridItem(
-                              rankPairsPart: rankPairsPart,
-                              isSelected: selectedRange.contains(rankPairsPart),
-                            ),
-                          );
-                        }),
-                      ),
-                    );
-                  }),
-                ),
+                      }),
+                    ),
+                  );
+                }),
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(2.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Padding(
-                    padding: const EdgeInsets.all(3.0),
-                    child: Container(
-                        width: 14,
-                        height: 14,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                                Radius.circular(3)
-                            ),
-                            color: ZeplinColors.raiseColor
-                        )
-                    )
-                ),
-                ReusableText(
-                  text: ' All in',
-                  fontWeight: FontWeight.w500,
-                  fontSize: 14.0,
-                ),
+        ),
+        Padding(
+          padding: EdgeInsets.fromLTRB(0.0, 2.h, 0.0,0.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
 
-                SizedBox(width: 5.0,),
+              Container(
+                  width: 12.w,
+                  height: 12.w,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(
+                          Radius.circular(3)
+                      ),
+                      color: ZeplinColors.raiseColor
+                  )
+              ),
+              SizedBox(width: 2.0.h),
+              ReusableText(
+                text: ' All in',
+                fontWeight: FontWeight.w500,
+                fontSize: 13.sp,
+              ),
 
-              ],
-            ),
+              SizedBox(width: 5.0.w),
+
+            ],
           ),
-          Divider(
-            color: Colors.grey,
-            thickness: 0.5,
-          ),
-        ],
-      ),
+        ),
+        Divider(
+          color: Colors.grey,
+          thickness: 0.5,
+        ),
+      ],
     ),
   );
 }

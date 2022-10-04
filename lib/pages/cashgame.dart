@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ Selection cashSelection = Selection();
 
 class _CashGameState extends State<CashGame> {
   Random random = Random();
-  double size = 30.0;
+
   int randomNumber = 0;
   int diceRandomNumber = 1;
   bool isEnabled = true;
@@ -42,8 +43,10 @@ class _CashGameState extends State<CashGame> {
     List<MyElevatedButton> buttonList = [];
     for (Position selectedMyPosition in Position.values) {
       if (selectedMyPosition.index == 0) continue;
-      buttonList.add(MyElevatedButton(
-width: width,
+      buttonList.add(
+          MyElevatedButton(
+              fontsize: 12.sp,
+          width: width,
           selectedButtonLabel: selectedMyPosition.name,
           onPressed: () {
             setState(() {
@@ -64,6 +67,7 @@ width: width,
     for (Position selectedOpponentPosition in Position.values) {
       if (selectedOpponentPosition.index == 0) continue;
       buttonList.add(MyElevatedButton(
+          fontsize: 12.sp,
 width: width,
           selectedButtonLabel: selectedOpponentPosition.name,
           onPressed: cashSelection.myPosition != selectedOpponentPosition
@@ -99,6 +103,7 @@ width: width,
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: Appbar(
         titleStr: 'CashGame',
@@ -122,12 +127,12 @@ width: width,
             children: [
               ReusableText(
                 text: '$randomNumber',
-                fontSize: 15.0,
+                fontSize: 14.sp,
               ),
               InkWell(
                 onTap: () {
                   setState(() {
-                    randomNumber = random.nextInt(101);
+                    randomNumber = random.nextInt(100)+1;
                     diceRandomNumber = random.nextInt(24);
 
 
@@ -214,7 +219,7 @@ width: width,
                               children: getHeroButton(constraints.maxWidth*0.16),
                             ),
                           ),
-                          SizedBox(height: 3.0,),
+                          SizedBox(height: 3.0.h),
                           Expanded(child: ReusableText(text: 'Villain')),
                           // Row(
                           //   children: [
@@ -232,7 +237,7 @@ width: width,
                               children: getVillainButton(constraints.maxWidth*0.16),
                             ),
                           ),
-                          SizedBox(height: 3.0,),
+                          SizedBox(height: 3.0.h),
                           Expanded(
                             child: ReusableText(
                               text: 'Villain\'s Action',
@@ -243,6 +248,7 @@ width: width,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 MyElevatedButton(
+                                  fontsize: 12.sp,
                                   width: constraints.maxWidth*0.16,
                                   isButtonSelected: cashSelection.opponentAction ==
                                           OpponentAction.threeBet
@@ -263,6 +269,7 @@ width: width,
                                       .replaceAll("three", "3"),
                                 ),
                                 MyElevatedButton(
+                                  fontsize: 12.sp,
                                   width: constraints.maxWidth*0.16,
                                   isButtonSelected: cashSelection.opponentAction ==
                                           OpponentAction.fourBet
@@ -288,7 +295,7 @@ width: width,
                     ),
                   ),
                 ),
-                SizedBox(height: 6,),
+                SizedBox(height: 8.h),
 
               ],
             );

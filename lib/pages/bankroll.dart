@@ -13,17 +13,15 @@ class Bankroll extends StatefulWidget {
 class _BankrollState extends State<Bankroll> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: ZeplinColors.dark,
-        appBar: Appbar(
-          titleStr: 'Bankroll',
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [ReusableText(text: 'Hi')],
-          ),
+    return Scaffold(
+      backgroundColor: ZeplinColors.dark,
+      appBar: Appbar(
+        titleStr: 'Bankroll',
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [ReusableText(text: 'Hi')],
         ),
       ),
     );

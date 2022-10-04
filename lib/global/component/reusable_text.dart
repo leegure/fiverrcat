@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ReusableText extends StatelessWidget {
   String text;
-  double? fontSize;
+  double fontSize;
   FontWeight fontWeight;
   Color? textColor;
 
@@ -10,7 +10,7 @@ class ReusableText extends StatelessWidget {
     required this.text,
     this.fontWeight = FontWeight.w600,
     this.textColor = Colors.white,
-    this.fontSize = 18.0,
+    this.fontSize = 16.0,
     Key? key,
   }) : super(key: key);
 
@@ -22,7 +22,7 @@ class ReusableText extends StatelessWidget {
           fontWeight: fontWeight,
           fontFamily: "Quasimoda",
           fontStyle: FontStyle.normal,
-          fontSize: fontSize),
+          fontSize: fontSize ),
       textAlign: TextAlign.left,
       text,
     );

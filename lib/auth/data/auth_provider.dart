@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart' hide User;
 import 'package:flutter/material.dart';
 import '../../../../imports.dart';
 import 'user_repository.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 AuthProvider get authProvider => Get.find();
 
@@ -14,11 +15,13 @@ class AuthProvider {
   User? get user => rxUser.value;
   final isLoggedIn = false.obs;
   RxBool isAuthenticated=  true.obs;
-  
+
+
+
   static Future<AuthProvider> init() async {
     final c = AuthProvider._();
     Get.put(c);
-    
+
     return c;
   }
 
@@ -35,7 +38,7 @@ class AuthProvider {
     if (uid.isEmpty) return;
     final user = await UserRepository.fetchUser();//db에서 data usermodel에 올리는부분
     if (user != null) {
-      
+
       isLoggedIn(true);
       updateUser(user); //usermodel data를 getx에 태우는 부분.
       UserRepository.updateActiveAt(true);
