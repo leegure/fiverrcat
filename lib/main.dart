@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'auth/data/auth_provider.dart';
+import 'auth/data/localdb.dart';
 import 'getx_route/routes.dart';
 import 'global/button_handling.dart';
 import 'global/component/preferences.dart';
@@ -37,11 +38,28 @@ class App extends StatefulWidget {
 
 class _AppState extends State<App> {
 
+  bool isLogIn = false;
+
+  getLoggedInState() async{
+    await LocalDataSaver.getLogData().then((value){
+      setState((){
+        isLogIn = value!;
+      });
+    });
+  }
 
   @override
   void dispose() {
     super.dispose();
   }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getLoggedInState();
+  }
+  // This widget is the root of your application.
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +92,8 @@ class _AppState extends State<App> {
               appPrefs.routeObserver,
             ],
             //home: HomePage(),
-            initialRoute: AppLinks.signIn,
+            initialRoute: isLogIn ?AppLinks.btmNavi :AppLinks.signIn,
+
             getPages: AppRoutes.pages,
           );
         },

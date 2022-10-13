@@ -1,5 +1,6 @@
 
 import 'package:flutter/painting.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,10 @@ import '../../../global/component/google_login_button.dart';
 import '../../../imports.dart';
 import '../../global/common_size.dart';
 import '../../global/component/appbar.dart';
+import '../data/constant.dart';
+import '../data/localdb.dart';
 import '../data/sns_firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart' ;
 
 class SignInScreen extends StatefulWidget {
   @override
@@ -16,22 +20,29 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
+  Future<void> checkUserLog() async
+  {
+
+    final FirebaseAuth auth = await FirebaseAuth.instance;
+    final user = await auth.currentUser;
+    if(user != null)
+    {
+      print('이름은  ${user.email}');
+      Constant.name = (await LocalDataSaver.getName())??'aa';
+      Constant.email = (await LocalDataSaver.getEmail())??'bb';
+      Constant.img = (await LocalDataSaver.getImg())??'cc';
+      AppRoutes.moveToPage(AppLinks.btmNavi, getOffAll: true);
+      print('name = ${Constant.name},email = ${Constant.email},img = ${Constant.img}');
+    }
+  }
+
+
+
   @override
   void initState() {
     super.initState();
+    checkUserLog();
 
-    PcTextStyle.changeFontFamily(GoogleFonts.quicksand);
-    PcTextStyle.changeDefaultFontWeight({
-      100: FontWeight.w200,
-      200: FontWeight.w300,
-      300: FontWeight.w400,
-      400: FontWeight.w500,
-      500: FontWeight.w600,
-      600: FontWeight.w700,
-      700: FontWeight.w800,
-      800: FontWeight.w900,
-      900: FontWeight.w900,
-    });
   }
 
 
@@ -46,7 +57,7 @@ class _SignInScreenState extends State<SignInScreen> {
 
       body: Center(
         child: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0.w),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -60,12 +71,15 @@ class _SignInScreenState extends State<SignInScreen> {
               ),
 
 
-              SizedBox(height: 10),
+              SizedBox(height: 10.h),
               GoogleSignInButton(
                   centered: true,
                   onPressed: () async {
                     await SnsAuthWithFirebase().signInWithGoogle();
                     if (authProvider.isLoggedIn()) {
+                      Constant.name = (await LocalDataSaver.getName())??'a';
+                      Constant.email = (await LocalDataSaver.getEmail())??'b';
+                      Constant.img = (await LocalDataSaver.getImg())??'c';
                       BotToast.showText(text: 'Google Login Success');
                       AppRoutes.moveToPage(AppLinks.btmNavi, getOffAll: true);
 

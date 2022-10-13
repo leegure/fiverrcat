@@ -1,4 +1,6 @@
 
+import 'package:pokercat/pages/cashgame.dart';
+
 import '../auth/screens/sign_in_screen.dart';
 import '../imports.dart';
 
@@ -31,6 +33,11 @@ class AppRoutes {
       page: () => BtmNavi(),
       transition: Transition.fadeIn,
     ),
+    GetPage(
+      name: AppLinks.cashGame,
+      page: () => CashGame(),
+      transition: Transition.fadeIn,
+    ),
 
   ];
 
@@ -50,11 +57,9 @@ class AppRoutes {
 class AppLinks {
 
   static const String login = "/login";
-  static const String emailRegister = "/email_register";
+
   static const String signIn = "/sign_in";
-  static const String forgotPassword = "/forgot_password";
-  static const String navigateScreens = "/profile_screen";
-  static const String editProfileScreen = "/edit_profile_screen";
-  static const String changePwScreen = "/change_pw_screen";
+  static const String cashGame = "/cash_game";
+
   static const String btmNavi = "/bottom_navigation_screen";
 }

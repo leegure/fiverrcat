@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pokercat/global/component/reusable_text.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../imports.dart';
+import '../auth/data/constant.dart';
 import '../auth/data/sns_firebase_auth.dart';
 import '../global/common_size.dart';
 import '../global/component/appbar.dart';
@@ -21,13 +22,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   User? edited;
   User? get user => edited ?? authProvider.user;
-  @override
-  void dispose() {
-    _emailController.dispose();
-    _nameController.dispose();
-
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   _emailController.dispose();
+  //   _nameController.dispose();
+  //
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -40,10 +41,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            isURL(user!.photoURL)
+            isURL(Constant.img)
                 ? CircleAvatar(
                     radius: 60,
-                    backgroundImage: NetworkImage(user!.photoURL),
+                    backgroundImage: NetworkImage(Constant.img),
                   )
                 : CircleAvatar(
                     radius: 60,
@@ -67,6 +68,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 onTap: () async {
                   await authProvider.logout();
                   await SnsAuthWithFirebase().googleLogout();
+
                   AppRoutes.moveToPage(AppLinks.signIn, getOffAll: true);
                 },
                 child: Container(
@@ -106,47 +108,49 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  Padding _editProfileBtn() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-          horizontal: common_gap, vertical: common_xxs_gap),
-      child: SizedBox(
-        child: ElevatedButton(
-          onPressed: () {
-            AppRoutes.moveToPage(AppLinks.editProfileScreen, getOff: true);
-          },
-          child: Text(
-            'Edit Profile',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-        ),
-      ),
-    );
-  }
-
-  Padding _changePasswordBtn() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(
-          horizontal: common_gap, vertical: common_xxs_gap),
-      child: SizedBox(
-        child: ElevatedButton(
-          onPressed: () {
-            AppRoutes.moveToPage(AppLinks.changePwScreen, getOff: true);
-          },
-          child: Text(
-            'Change Password',
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-        ),
-      ),
-    );
-  }
+  // Padding _editProfileBtn() {
+  //   return Padding(
+  //     padding: const EdgeInsets.symmetric(
+  //         horizontal: common_gap, vertical: common_xxs_gap),
+  //     child: SizedBox(
+  //       child: ElevatedButton(
+  //         onPressed: () {
+  //           AppRoutes.moveToPage(AppLinks.editProfileScreen, getOff: true);
+  //         },
+  //         child: Text(
+  //           'Edit Profile',
+  //           style: TextStyle(fontWeight: FontWeight.bold),
+  //         ),
+  //       ),
+  //     ),
+  //   );
+  // }
+  //
+  // Padding _changePasswordBtn() {
+  //   return Padding(
+  //     padding: const EdgeInsets.symmetric(
+  //         horizontal: common_gap, vertical: common_xxs_gap),
+  //     child: SizedBox(
+  //       child: ElevatedButton(
+  //         onPressed: () {
+  //           AppRoutes.moveToPage(AppLinks.changePwScreen, getOff: true);
+  //         },
+  //         child: Text(
+  //           'Change Password',
+  //           style: TextStyle(fontWeight: FontWeight.bold),
+  //         ),
+  //       ),
+  //     ),
+  //   );
+  // }
 
   Widget _username(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: common_gap),
       child: ReusableText(
-        text: '${authProvider.user!.username}',
+        text:
+        '${Constant.name}'
+        // '${authProvider.user!.username}',
       ),
 
     );
@@ -156,7 +160,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: common_gap),
       child: ReusableText(
-        text: '${authProvider.user!.email}',
+        text: '${Constant.email}',
 
       ),
     );

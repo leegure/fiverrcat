@@ -45,9 +45,9 @@ class _TournamentState extends State<Tournament> {
     for (TournaStack selectedTournaStack in TournaStack.values) {
       if (selectedTournaStack.index == 0) continue;
       buttonList.add(MyElevatedButton(
-
-        onPressed: selectedTournaStack == TournaStack.hundred
-            ? () {
+        width: 38.w,
+        height: 25.h,
+        onPressed:() {
           setState(() {
             print('$selectedTournaStack');
             tournaSelection.tournaStack = selectedTournaStack;
@@ -56,7 +56,7 @@ class _TournamentState extends State<Tournament> {
             tournaSelection.opponentAction = OpponentAction.none;
           });
         }
-            : null,
+            ,
         isButtonSelected: tournaSelection.tournaStack == selectedTournaStack
             ?true: false,
         selectedButtonLabel: '${selectedTournaStack.name
@@ -67,7 +67,8 @@ class _TournamentState extends State<Tournament> {
             .replaceAll("forty", "40bb")
             .replaceAll("thirtyfive", "35bb")
             .replaceAll("thirty", "30bb")
-            .replaceAll("twentyfive", "25bb")}',
+            .replaceAll("twentyfive", "25bb")
+            .replaceAll("twenty", "20bb")}',
       ));
     }
     return buttonList;
@@ -232,24 +233,23 @@ class _TournamentState extends State<Tournament> {
                         children: [
                           tournaSelection.myTournaPosition == TournaPosition.SB
                               ? Flexible(
-                                  child: ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      primary: tournaSelection.opponentAction ==
-                                              OpponentAction.raise
-                                          ? Colors.orange
-                                          : Colors.grey,
-                                    ),
+                                  child:
+                                  MyElevatedButton(
+
                                     onPressed: () {
                                       setState(() {
                                         tournaSelection.opponentAction =
                                             OpponentAction.raise;
                                       });
                                     },
-                                    child: Container(
-                                      child: Text(OpponentAction.raise.name
-                                          .replaceAll("r", "R")),
-                                    ),
+                                    selectedButtonLabel: '${OpponentAction.raise.name
+                                        .replaceAll("r", "R")}',
+                                    isButtonSelected:  tournaSelection.opponentAction ==
+                                        OpponentAction.raise
+                                        ? true:false,
+
                                   ),
+
                                 )
                               : SizedBox(),
                           SizedBox(

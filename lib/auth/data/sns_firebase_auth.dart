@@ -16,6 +16,7 @@ import 'package:firebase_auth/firebase_auth.dart' hide User;
 import 'dart:io';
 
 import '../../global/utils.dart';
+import 'localdb.dart';
 import 'register.dart';
 import 'user_repository.dart';
 // Needed because we can't import `dart:html` into a mobile app,
@@ -63,10 +64,9 @@ class SnsAuthWithFirebase {
       };
       final user = await UserRepository.fetchUser();
 
+
       if (user != null) {
-
         await authProvider.login();
-
       } else {
         String username = userData['displayName'];
 
@@ -94,6 +94,12 @@ class SnsAuthWithFirebase {
         await authProvider.login();
 
       }
+      //CHECKING IS ON
+
+      LocalDataSaver.saveLoginData(true);
+      LocalDataSaver.saveName(userresult.user!.displayName.toString());
+      LocalDataSaver.saveMail(userresult.user!.email.toString());
+      LocalDataSaver.saveImg(userresult.user!.photoURL.toString());
 
     BotToast.closeAllLoading();
 }
