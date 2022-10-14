@@ -97,6 +97,8 @@ width: width,
   @override
   void initState() {
     cashSelection.myPosition = Position.UTG;
+    cashSelection.opponentPosition = Position.none;
+    cashSelection.opponentAction = OpponentAction.none;
     // TODO: implement initState
     super.initState();
   }

@@ -36,6 +36,8 @@ class _TournamentState extends State<Tournament> {
   void initState() {
     tournaSelection.myTournaPosition = TournaPosition.UTG;
     tournaSelection.tournaStack = TournaStack.hundred;
+    tournaSelection.opponentTournaPosition = TournaPosition.none;
+    tournaSelection.opponentAction = OpponentAction.none;
     // TODO: implement initState
     super.initState();
   }
