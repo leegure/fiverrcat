@@ -226,12 +226,10 @@ class ChartGridItem extends StatelessWidget {
             Center(
               child: ReusableText(
                 text: "${rankChars[rankPairsPart.high]}${rankChars[rankPairsPart.kicker]}${rankPairsPart.isPocketPair ? "" : rankPairsPart.isSuited ? "s" : "o"}",
-                textColor: progressInfo!.raiseProgress == 0.0 &&
-                    progressInfo!.callProgress == 0.0
+                textColor: progressInfo!.raiseProgress == 0.0 && progressInfo!.callProgress == 0.0 && progressInfo!.alreadyProgress == 0.0
                     ? Colors.grey[700]
                     : Colors.white,
-                fontWeight: progressInfo!.raiseProgress == 0.0 &&
-                    progressInfo!.callProgress == 0.0
+                fontWeight: progressInfo!.raiseProgress == 0.0 && progressInfo!.callProgress == 0.0 && progressInfo!.alreadyProgress == 0.0
                     ?FontWeight.w500:FontWeight.w700,
                 fontSize: constraints.maxWidth / 2.6,
               ),

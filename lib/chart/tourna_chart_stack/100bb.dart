@@ -9290,5 +9290,84 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
         };
     }
   }
-  return {};
+  return {
+    'AA' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'KK' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'QQ' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'JJ' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'TT' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '99' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '88' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '77' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '66' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '55' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '44' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '33' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '22' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    'AKs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'AQs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'AJs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'ATs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'A9s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'A8s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'A7s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'A6s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'A5s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'A4s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'A3s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'A2s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    'AKo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'KQs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'KJs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'KTs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'K9s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'K8s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'K7s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'K6s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    'AQo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'KQo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'QJs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'QTs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'Q9s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    'AJo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'KJo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'QJo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'JTs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'J9s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'J8s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    'ATo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'KTo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'QTo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'JTo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'T9s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'T8s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    'T7s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    '98s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '97s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '96s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    '87s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '86s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    '76s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '75s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    '65s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '64s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    '54s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '53s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '52s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+    '43s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+    '42s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
+
+
+  };
 }
