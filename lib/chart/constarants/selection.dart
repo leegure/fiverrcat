@@ -21,7 +21,7 @@ enum Position {
 }
 //tournament
 enum TournaStack {
-  none,hundred,eighty,sixty,fifty,forty,thirtyfive,thirty,twentyfive,twenty
+  none,hundred,eighty,sixty,fifty,forty,thirtyfive,thirty,twentyfive
 }
 
 enum TournaPosition {

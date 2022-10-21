@@ -47,8 +47,9 @@ class _TournamentState extends State<Tournament> {
     for (TournaStack selectedTournaStack in TournaStack.values) {
       if (selectedTournaStack.index == 0) continue;
       buttonList.add(MyElevatedButton(
-        width: 38.w,
-        height: 25.h,
+        //20bb까지 추가된다면 적용될 버튼의 가로세로 길이.
+        // width: 38.w,
+        // height: 25.h,
         onPressed:() {
           setState(() {
             print('$selectedTournaStack');
@@ -233,7 +234,7 @@ class _TournamentState extends State<Tournament> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          tournaSelection.myTournaPosition == TournaPosition.SB
+                          tournaSelection.myTournaPosition == TournaPosition.SB && tournaSelection.tournaStack != TournaStack.twentyfive
                               ? Flexible(
                                   child:
                                   MyElevatedButton(

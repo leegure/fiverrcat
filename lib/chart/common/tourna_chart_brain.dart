@@ -34,8 +34,8 @@ class TournaChartBrain {
         return thirtyStack(tournaSelection);
       case TournaStack.twentyfive:
         return twentyfiveStack(tournaSelection);
-      case TournaStack.twenty:
-        return twentyStack(tournaSelection);
+      // case TournaStack.twenty:
+      //   return twentyStack(tournaSelection);
     }
     return {
       'AA' :ProgressInfo(raiseProgress: 0.0 , callProgress: 0.0 ),

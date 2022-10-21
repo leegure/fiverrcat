@@ -7467,7 +7467,7 @@ Map<String, ProgressInfo> eightyStack(Selection tournaSelection) {
         };
     }
   }
-
+//수딧어느정도붙여노흔
   return {
     'AA' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     'KK' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
@@ -7557,58 +7557,33 @@ Map<String, ProgressInfo> eightyStack(Selection tournaSelection) {
     '98s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '97s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '96s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '95s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '94s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '93s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '92s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+
 
     'A8o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     'K8o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'Q8o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'J8o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'T8o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '98o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '87s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '86s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '85s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '84s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '83s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '82s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+
 
     'A7o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     'K7o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'Q7o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'J7o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'T7o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '97o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '87o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '76s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '75s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '74s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '73s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '72s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+
 
     'A6o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     'K6o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'Q6o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'J6o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'T6o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '96o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '86o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '76o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '65s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '64s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '63s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '62s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+
 
     'A5o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     'K5o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'Q5o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'J5o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    'T5o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '95o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '85o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
-    '75o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '65o':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '54s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
     '53s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),

@@ -83,16 +83,16 @@ class ChartGrid extends StatelessWidget {
                                       double callProgress2 = painting[xyToCard()['$x,$y']]!.callProgress;
 
                                       print(
-                                          '전체// alreadyPercent=${alreadyPercent.toStringAsFixed(1)}'
+                                          '전체 : alreadyPercent=${alreadyPercent.toStringAsFixed(1)}'
                                               ', allinPercent=${allinPercent.toStringAsFixed(0)}'
                                               ', raisePercent=${raisePercent.toStringAsFixed(0)}'
                                               ', callPercent=${callPercent.toStringAsFixed(0)}'
 
-                                              ',//already빼고 already progress2=$alreadyProgress2'
+                                              '// already빼고 : already progress2=$alreadyProgress2'
                                               ', allin2=$allinProgress2'
                                               ', raise2=$raiseProgress2'
                                               ', call2=$callProgress2'
-                                              '////${xyToCard()['$x,$y']}'
+                                              '///${xyToCard()['$x,$y']}'
 
                                       );
                                     },
