@@ -370,13 +370,93 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
 
       switch (tournaSelection.opponentTournaPosition) {
         case TournaPosition.UTG:
-          return {};
+          return {
+            'AA' :ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'KK' :ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'QQ' :ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'JJ' :ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'TT' :ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            '99' :ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+
+
+
+            'AKs':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'AQs':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'AJs':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'ATs':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+
+
+            'AKo':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'KQs':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'KJs':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'KTs':ProgressInfo(raiseProgress: 0.45, callProgress: 0.0),
+
+
+            'AQo':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'KQo':ProgressInfo(raiseProgress: 0.35, callProgress: 0.0),
+            'QJs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+
+          };
       }
 
     } else if (tournaSelection.myTournaPosition == TournaPosition.LJ) {
       switch (tournaSelection.opponentTournaPosition) {
         case TournaPosition.UTG:
-          return {};
+          return {
+            'AA' :ProgressInfo(raiseProgress: 0.4, callProgress: 0.6),
+            'KK' :ProgressInfo(raiseProgress: 0.8, callProgress: 0.2),
+            'QQ' :ProgressInfo(raiseProgress: 0.85, callProgress: 0.15),
+            'JJ' :ProgressInfo(raiseProgress: 0.9, callProgress: 0.1),
+            'TT' :ProgressInfo(raiseProgress: 0.7, callProgress: 0.3),
+            '99' :ProgressInfo(raiseProgress: 0.2, callProgress: 0.8),
+            '88' :ProgressInfo(raiseProgress: 0.2, callProgress: 0.8),
+            '77' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.9),
+            '66' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.5),
+            '55' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.15),
+            '44' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            '33' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            '22' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+
+
+            'AKs':ProgressInfo(raiseProgress: 0.9, callProgress: 0.1),
+            'AQs':ProgressInfo(raiseProgress: 0.0, callProgress: 1.0),
+            'AJs':ProgressInfo(raiseProgress: 0.0, callProgress: 1.0),
+            'ATs':ProgressInfo(raiseProgress: 0.0, callProgress: 1.0),
+            'A9s':ProgressInfo(raiseProgress: 0.3, callProgress: 0.7),
+            'A8s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'A7s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'A6s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'A5s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.2),
+            'A4s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'A3s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'A2s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+
+            'AKo':ProgressInfo(raiseProgress: 1.0, callProgress: 0.0),
+            'KQs':ProgressInfo(raiseProgress: 0.75, callProgress: 0.25),
+            'KJs':ProgressInfo(raiseProgress: 0.0, callProgress: 1.0),
+            'KTs':ProgressInfo(raiseProgress: 0.5, callProgress: 0.5),
+            'K9s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.2),
+
+
+            'AQo':ProgressInfo(raiseProgress: 0.5, callProgress: 0.5),
+            'KQo':ProgressInfo(raiseProgress: 0.4, callProgress: 0.6),
+            'QJs':ProgressInfo(raiseProgress: 0.8, callProgress: 0.2),
+            'QTs':ProgressInfo(raiseProgress: 0.0, callProgress: 0.5),
+
+
+            'AJo':ProgressInfo(raiseProgress: 0.5, callProgress: 0.3),
+            'KJo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'QJo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'JTs':ProgressInfo(raiseProgress: 0.2, callProgress: 0.8),
+
+
+            'ATo':ProgressInfo(raiseProgress: 0.15, callProgress: 0.0),
+            'KTo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'QTo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'JTo':ProgressInfo(raiseProgress: 0.0, callProgress: 0.0),
+            'T9s':ProgressInfo(raiseProgress: 0.0, callProgress: 0.15),
+
+          };
         case TournaPosition.UTG1:
           return {};
       }

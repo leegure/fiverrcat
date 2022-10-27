@@ -13,6 +13,7 @@ import '../global/component/appbar.dart';
 import '../global/component/pcapptheme.dart';
 import '../global/component/reusable_button.dart';
 import '../global/component/reusable_text.dart';
+import '../imports.dart';
 
 class CashGame extends StatefulWidget {
   @override

@@ -7,18 +7,31 @@ import 'package:pokercat/chart/constarants/selection.dart';
 import 'package:pokercat/global/component/pcapptheme.dart';
 import 'package:pokercat/pages/cashgame.dart';
 import '../../global/component/reusable_text.dart';
+import '../../imports.dart';
 import '../constarants/card.dart';
 import 'fill.dart';
 import 'progress_info_model.dart';
+import 'package:provider/provider.dart';
 
-class ChartGrid extends StatelessWidget {
+class ChartGrid extends StatefulWidget {
   ChartGrid({Key? key, this.value = const {}, required this.painting})
       : super(key: key);
 
   final Set<RankPair> value;
-
   Map<String, ProgressInfo> painting;
+
+  @override
+  State<ChartGrid> createState() => _ChartGridState();
+}
+
+class _ChartGridState extends State<ChartGrid> {
   RankPair? lastChangedPart;
+
+
+
+  int callPercentt = 0;
+
+  int raisePercentt = 0;
 
   @override
   Widget build(BuildContext context) =>
@@ -57,44 +70,55 @@ class ChartGrid extends StatelessWidget {
                                   child: GestureDetector(
                                     child: ChartGridItem(
                                       rankPairsPart: rankPairsPart,
-                                      progressInfo: painting[xyToCard()['$x,$y']] ??
-                                          ProgressInfo(
+                                      progressInfo: widget.painting[xyToCard()['$x,$y']]
+                                          ?? ProgressInfo(
                                               raiseProgress: 0.0,
                                               callProgress: 0.0,
-                                              alreadyProgress: 0.0),
+                                              alreadyProgress: 0.0,
+                                              allInProgress: 0.0),
                                     ),
                                     onTap: () {
-                                      //
-                                      double alreadyProgress = painting[xyToCard()['$x,$y']]!.alreadyProgress;
-                                      double allinProgress = painting[xyToCard()['$x,$y']]!.allInProgress*(1-alreadyProgress);
-                                      double raiseProgress = painting[xyToCard()['$x,$y']]!.raiseProgress*(1-alreadyProgress);
-                                      double callProgress = painting[xyToCard()['$x,$y']]!.callProgress*(1-alreadyProgress);
 
-                                      //ㅇㅣ건 전체 셀의 퍼센트를 나타낸거
-                                      double alreadyPercent = alreadyProgress*100;
-                                      double allinPercent = allinProgress*100;
-                                      double raisePercent = raiseProgress*100;
-                                      double callPercent = callProgress*100;
-                                      //이건 alreadyProgress를 빼고 난 다음의 퍼센트.
 
-                                      double alreadyProgress2 = painting[xyToCard()['$x,$y']]!.alreadyProgress;
-                                      double allinProgress2 = painting[xyToCard()['$x,$y']]!.allInProgress;
-                                      double raiseProgress2 = painting[xyToCard()['$x,$y']]!.raiseProgress;
-                                      double callProgress2 = painting[xyToCard()['$x,$y']]!.callProgress;
 
-                                      print(
-                                          '전체 : alreadyPercent=${alreadyPercent.toStringAsFixed(1)}'
-                                              ', allinPercent=${allinPercent.toStringAsFixed(0)}'
-                                              ', raisePercent=${raisePercent.toStringAsFixed(0)}'
-                                              ', callPercent=${callPercent.toStringAsFixed(0)}'
+                                      setState(() {
 
-                                              '// already빼고 : already progress2=$alreadyProgress2'
-                                              ', allin2=$allinProgress2'
-                                              ', raise2=$raiseProgress2'
-                                              ', call2=$callProgress2'
-                                              '///${xyToCard()['$x,$y']}'
 
-                                      );
+                                        //
+                                        double alreadyProgress = widget.painting[xyToCard()['$x,$y']]?.alreadyProgress??0.0;
+                                        double allinProgress = widget.painting[xyToCard()['$x,$y']]?.allInProgress??0.0*(1-alreadyProgress);
+                                        double raiseProgress = widget.painting[xyToCard()['$x,$y']]?.raiseProgress??0.0*(1-alreadyProgress);
+                                        double callProgress = widget.painting[xyToCard()['$x,$y']]?.callProgress??0.0*(1-alreadyProgress);
+
+                                        //ㅇㅣ건 전체 셀의 퍼센트를 나타낸거
+                                        double alreadyPercent = alreadyProgress*100;
+                                        double allinPercent = allinProgress*100;
+                                        double raisePercent = raiseProgress*100;
+                                        double callPercent = callProgress*100;
+                                        //이건 alreadyProgress를 빼고 난 다음의 소수점값.
+
+                                        double alreadyProgress2 = widget.painting[xyToCard()['$x,$y']]?.alreadyProgress??0.0;
+                                        double allinProgress2 = widget.painting[xyToCard()['$x,$y']]?.allInProgress??0.0;
+                                        double raiseProgress2 = widget.painting[xyToCard()['$x,$y']]?.raiseProgress??0.0;
+                                        double callProgress2 = widget.painting[xyToCard()['$x,$y']]?.callProgress??0.0;
+
+                                        print(
+                                            '전체 : alreadyPercent=${alreadyPercent.toStringAsFixed(1)}'
+                                                ', allinPercent=${allinPercent.toStringAsFixed(0)}'
+                                                ', raisePercent=${raisePercent.toStringAsFixed(0)}'
+                                                ', callPercent=${callPercent.toStringAsFixed(0)}'
+
+                                                '// already빼고 : already progress2=$alreadyProgress2'
+                                                ', allin2=$allinProgress2'
+                                                ', raise2=$raiseProgress2'
+                                                ', call2=$callProgress2'
+                                                '///${xyToCard()['$x,$y']}'
+                                        );
+                                        callPercentt = callPercent.round().toInt();
+                                        raisePercentt = raisePercent.round().toInt();
+
+                                      });
+
                                     },
                                   ),
                                 );
@@ -116,6 +140,12 @@ class ChartGrid extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
+
+                        // Text(
+                        //   'raise: ${raisePercentt},call: ${callPercentt}',
+                        //   style: TextStyle(
+                        //       fontSize: 16, color: Colors.red, fontWeight: FontWeight.bold),
+                        // ),
                         Container(
                             width: 12.w,
                             height: 12.w,
@@ -132,8 +162,15 @@ class ChartGrid extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           fontSize: 13.sp,
                         ),
+                        Container(
+                          width: 42.sp,
+                          child: ReusableText(
+                            text: ' $raisePercentt%',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.sp,
+                          ),
+                        ),
 
-                        SizedBox(width: 8.0.h),
                         Container(
                             width: 12.w,
                             height: 12.w,
@@ -150,7 +187,16 @@ class ChartGrid extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           fontSize: 13.sp,
                         ),
-                        SizedBox(width: 4.0.h),
+
+                        Container(
+                          width: 40.sp,
+                          child: ReusableText(
+                            text: ' $callPercentt%',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.sp,
+                          ),
+                        ),
+
                       ],
                     ),
                   ),

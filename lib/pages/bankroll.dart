@@ -21,7 +21,7 @@ class _BankrollState extends State<Bankroll> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [ReusableText(text: 'Hi')],
+          children: [ReusableText(text: 'developing in progress !')],
         ),
       ),
     );
