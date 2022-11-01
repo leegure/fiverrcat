@@ -9,6 +9,7 @@ import '../../../global/component/google_login_button.dart';
 import '../../../imports.dart';
 import '../../global/common_size.dart';
 import '../../global/component/appbar.dart';
+import '../../pages/splash_screen.dart';
 import '../data/constant.dart';
 import '../data/localdb.dart';
 import '../data/sns_firebase_auth.dart';
@@ -20,17 +21,16 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
-  Future<void> checkUserLog() async
+  Future<void> checkUserLogged() async
   {
 
     final FirebaseAuth auth = await FirebaseAuth.instance;
     final user = await auth.currentUser;
     if(user != null)
     {
-      print('이름은  ${user.email}');
-      Constant.name = (await LocalDataSaver.getName())??'aa';
-      Constant.email = (await LocalDataSaver.getEmail())??'bb';
-      Constant.img = (await LocalDataSaver.getImg())??'cc';
+      Constant.name = (await LocalDataSaver.getName())??'name123';
+      Constant.email = (await LocalDataSaver.getEmail())??'email@123.com';
+      Constant.img = (await LocalDataSaver.getImg())??'image123';
       AppRoutes.moveToPage(AppLinks.btmNavi, getOffAll: true);
       print('name = ${Constant.name},email = ${Constant.email},img = ${Constant.img}');
     }
@@ -41,7 +41,8 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   void initState() {
     super.initState();
-    checkUserLog();
+    print('여기는 로긘페이지');
+    checkUserLogged();
 
   }
 
@@ -76,6 +77,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   centered: true,
                   onPressed: () async {
                     await SnsAuthWithFirebase().signInWithGoogle();
+
                     if (authProvider.isLoggedIn()) {
                       Constant.name = (await LocalDataSaver.getName())??'a';
                       Constant.email = (await LocalDataSaver.getEmail())??'b';

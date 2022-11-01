@@ -5,26 +5,25 @@ import 'package:pokercat/global/component/reusable_text.dart';
 import '../global/component/appbar.dart';
 import '../global/component/pcapptheme.dart';
 
-class Bankroll extends StatefulWidget {
+class AppGame extends StatefulWidget {
   @override
-  State<Bankroll> createState() => _BankrollState();
+  State<AppGame> createState() => _AppGameState();
 }
 
-class _BankrollState extends State<Bankroll> {
+class _AppGameState extends State<AppGame> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ZeplinColors.dark,
       appBar: Appbar(
-        titleStr: 'Bankroll',
+        titleStr: 'App Games',
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [ReusableText(text: 'developing in progress !')],
+          children: [ReusableText(text: 'Coming Soon !')],
         ),
       ),
     );
   }
 }
-//선택된 레인지가 카드 두개 조합을 포함하는가?

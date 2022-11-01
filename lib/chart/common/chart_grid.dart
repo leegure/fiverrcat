@@ -102,16 +102,19 @@ class _ChartGridState extends State<ChartGrid> {
                                         double raiseProgress2 = widget.painting[xyToCard()['$x,$y']]?.raiseProgress??0.0;
                                         double callProgress2 = widget.painting[xyToCard()['$x,$y']]?.callProgress??0.0;
 
-                                        print(
-                                            '전체 : alreadyPercent=${alreadyPercent.toStringAsFixed(1)}'
-                                                ', allinPercent=${allinPercent.toStringAsFixed(0)}'
-                                                ', raisePercent=${raisePercent.toStringAsFixed(0)}'
-                                                ', callPercent=${callPercent.toStringAsFixed(0)}'
 
-                                                '// already빼고 : already progress2=$alreadyProgress2'
-                                                ', allin2=$allinProgress2'
-                                                ', raise2=$raiseProgress2'
-                                                ', call2=$callProgress2'
+
+                                        double noraise = 100-raisePercent;
+                                        print(
+                                            '전체 : alreadyP=${alreadyPercent.toStringAsFixed(1)}'
+                                                ', allinP=${allinPercent.toStringAsFixed(0)}'
+                                                ', raiseP=${raisePercent.toStringAsFixed(0)}'
+                                                ', callP=${callPercent.toStringAsFixed(0)}'
+                                                ',레이즈안한영역 = ${noraise.toStringAsFixed(0)}'
+                                                // '// already빼고 : already progress2=$alreadyProgress2'
+                                                // ', allin2=$allinProgress2'
+                                                // ', raise2=$raiseProgress2'
+                                                // ', call2=$callProgress2'
                                                 '///${xyToCard()['$x,$y']}'
                                         );
                                         callPercentt = callPercent.round().toInt();

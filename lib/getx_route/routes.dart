@@ -1,5 +1,6 @@
 
 import 'package:pokercat/pages/cashgame.dart';
+import 'package:pokercat/pages/splash_screen.dart';
 
 import '../auth/screens/sign_in_screen.dart';
 import '../imports.dart';
@@ -38,7 +39,11 @@ class AppRoutes {
       page: () => CashGame(),
       transition: Transition.fadeIn,
     ),
-
+    GetPage(
+      name: AppLinks.splash,
+      page: () => SplashScreen(),
+      transition: Transition.fadeIn,
+    ),
   ];
 
 
@@ -62,4 +67,6 @@ class AppLinks {
   static const String cashGame = "/cash_game";
 
   static const String btmNavi = "/bottom_navigation_screen";
+  static const String splash = "/splash_screen";
+
 }

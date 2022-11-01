@@ -6,7 +6,7 @@ class CashChartBrain {
   CashChartBrain({Key? key});
 
   Map<String, ProgressInfo> paintingProgress(Selection cashSelection) {
-print('11111${cashSelection.myPosition}');
+
 
       // 내 포지션,상대 포지션,상대 액션 선택됨
         if (cashSelection.opponentAction != OpponentAction.none &&
@@ -3623,7 +3623,7 @@ print('11111${cashSelection.myPosition}');
 
 
                     'ATo':ProgressInfo(raiseProgress: 0.00, callProgress: 0.00, alreadyProgress: 0.00),
-                    'KTo':ProgressInfo(raiseProgress: 0.00, callProgress: 1.00, alreadyProgress: 0.85),
+                    'KTo':ProgressInfo(raiseProgress: 0.00, callProgress: 0.00, alreadyProgress: 0.00),
                     'QTo':ProgressInfo(raiseProgress: 0.00, callProgress: 0.00, alreadyProgress: 0.00),
                     'JTo':ProgressInfo(raiseProgress: 0.00, callProgress: 0.00, alreadyProgress: 0.00),
                     'T9s':ProgressInfo(raiseProgress: 0.00, callProgress: 1.00, alreadyProgress: 0.30),
@@ -6316,7 +6316,7 @@ print('11111${cashSelection.myPosition}');
                   'AKs':ProgressInfo(raiseProgress: 1.00, callProgress: 0.00),
                   'AQs':ProgressInfo(raiseProgress: 1.00, callProgress: 0.00),
                   'AJs':ProgressInfo(raiseProgress: 1.00, callProgress: 0.00),
-                  'ATs':ProgressInfo(raiseProgress: 0.30, callProgress: 0.70),
+                  'ATs':ProgressInfo(raiseProgress: 0.00, callProgress: 1.00),
                   'A9s':ProgressInfo(raiseProgress: 0.00, callProgress: 1.00),
                   'A8s':ProgressInfo(raiseProgress: 0.00, callProgress: 1.00),
                   'A7s':ProgressInfo(raiseProgress: 0.20, callProgress: 0.80),
@@ -6366,7 +6366,7 @@ print('11111${cashSelection.myPosition}');
                   'J2s':ProgressInfo(raiseProgress: 0.33, callProgress: 0.67),
 
                   'ATo':ProgressInfo(raiseProgress: 0.00, callProgress: 1.00),
-                  'KTo':ProgressInfo(raiseProgress: 0.15, callProgress: 0.85),
+                  'KTo':ProgressInfo(raiseProgress: 0.1, callProgress: 0.9),
                   'QTo':ProgressInfo(raiseProgress: 0.00, callProgress: 1.00),
                   'JTo':ProgressInfo(raiseProgress: 0.00, callProgress: 1.00),
                   'T9s':ProgressInfo(raiseProgress: 0.70, callProgress: 0.30),

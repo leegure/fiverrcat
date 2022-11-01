@@ -9290,6 +9290,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
         };
     }
   }
+  //4벳팟위한 수딧좀 붙여놓고 얼레디 들어감.
   return {
     'AA' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),
     'KK' :ProgressInfo(raiseProgress: 0.0, callProgress: 0.0, alreadyProgress: 0.0),

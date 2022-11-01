@@ -37,12 +37,12 @@ static Future<bool> saveName(String username) async{
   static Future<String?> getImg() async{
     SharedPreferences preferences = await SharedPreferences.getInstance();
     return await preferences.getString(imgKey);
-
   }
 
 
   static Future<bool> saveLoginData(bool isUserLoggedIn)
   async {
+  print('isuserloggendin?$isUserLoggedIn');
     SharedPreferences preferences = await SharedPreferences.getInstance();
     return await preferences.setBool(logKey, isUserLoggedIn);
   }

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../chart/common/poker_icon_icons.dart';
 import '../global/component/pcapptheme.dart';
-import 'bankroll.dart';
+import 'appgame.dart';
 import 'cashgame.dart';
 import 'tournament.dart';
 import 'profile.dart';
@@ -23,7 +23,7 @@ class _BtmNaviState extends State<BtmNavi> {
     Center(child: CashGame(),),
     Center(child: PushFold(),),
     Center(child: Tournament(),),
-    Center(child: Bankroll(),),
+    Center(child: AppGame(),),
     Center(child: ProfileScreen(),),
 
 
@@ -77,9 +77,13 @@ class _BtmNaviState extends State<BtmNavi> {
               icon: Icon(PokerIcon.trophy),
               label: 'Tournament',
             ),
+            // BottomNavigationBarItem(
+            //   icon: Icon(PokerIcon.chart_line),
+            //   label: 'Bankroll',
+            // ),
             BottomNavigationBarItem(
-              icon: Icon(PokerIcon.chart_line),
-              label: 'Bankroll',
+              icon: Icon(Icons.attach_money_sharp),
+              label: 'App Games',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),

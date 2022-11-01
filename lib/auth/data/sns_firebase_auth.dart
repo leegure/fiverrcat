@@ -280,8 +280,12 @@ class SnsAuthWithFirebase {
     }
   }
 
+
+
+
   Future<void> googleLogout() async {
     await GoogleSignIn().disconnect();
+    LocalDataSaver.saveLoginData(false);
     FirebaseAuth.instance.signOut();
   }
 
