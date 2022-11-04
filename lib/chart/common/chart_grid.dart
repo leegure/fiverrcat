@@ -72,10 +72,10 @@ class _ChartGridState extends State<ChartGrid> {
                                       rankPairsPart: rankPairsPart,
                                       progressInfo: widget.painting[xyToCard()['$x,$y']]
                                           ?? ProgressInfo(
-                                              raiseProgress: 0.0,
-                                              callProgress: 0.0,
-                                              alreadyProgress: 0.0,
-                                              allInProgress: 0.0),
+                                              raiseP: 0.0,
+                                              callP: 0.0,
+                                              alreadyP: 0.0,
+                                              allinP: 0.0),
                                     ),
                                     onTap: () {
 
@@ -85,22 +85,22 @@ class _ChartGridState extends State<ChartGrid> {
 
 
                                         //
-                                        double alreadyProgress = widget.painting[xyToCard()['$x,$y']]?.alreadyProgress??0.0;
-                                        double allinProgress = widget.painting[xyToCard()['$x,$y']]?.allInProgress??0.0*(1-alreadyProgress);
-                                        double raiseProgress = widget.painting[xyToCard()['$x,$y']]?.raiseProgress??0.0*(1-alreadyProgress);
-                                        double callProgress = widget.painting[xyToCard()['$x,$y']]?.callProgress??0.0*(1-alreadyProgress);
+                                        double alreadyP = widget.painting[xyToCard()['$x,$y']]?.alreadyP??0.0;
+                                        double allinP = widget.painting[xyToCard()['$x,$y']]?.allinP??0.0*(1-alreadyP);
+                                        double raiseP = widget.painting[xyToCard()['$x,$y']]?.raiseP??0.0*(1-alreadyP);
+                                        double callP = widget.painting[xyToCard()['$x,$y']]?.callP??0.0*(1-alreadyP);
 
                                         //ㅇㅣ건 전체 셀의 퍼센트를 나타낸거
-                                        double alreadyPercent = alreadyProgress*100;
-                                        double allinPercent = allinProgress*100;
-                                        double raisePercent = raiseProgress*100;
-                                        double callPercent = callProgress*100;
-                                        //이건 alreadyProgress를 빼고 난 다음의 소수점값.
+                                        double alreadyPercent = alreadyP*100;
+                                        double allinPercent = allinP*100;
+                                        double raisePercent = raiseP*100;
+                                        double callPercent = callP*100;
+                                        //이건 alreadyP를 빼고 난 다음의 소수점값.
 
-                                        double alreadyProgress2 = widget.painting[xyToCard()['$x,$y']]?.alreadyProgress??0.0;
-                                        double allinProgress2 = widget.painting[xyToCard()['$x,$y']]?.allInProgress??0.0;
-                                        double raiseProgress2 = widget.painting[xyToCard()['$x,$y']]?.raiseProgress??0.0;
-                                        double callProgress2 = widget.painting[xyToCard()['$x,$y']]?.callProgress??0.0;
+                                        double alreadyP2 = widget.painting[xyToCard()['$x,$y']]?.alreadyP??0.0;
+                                        double allinP2 = widget.painting[xyToCard()['$x,$y']]?.allinP??0.0;
+                                        double raiseP2 = widget.painting[xyToCard()['$x,$y']]?.raiseP??0.0;
+                                        double callP2 = widget.painting[xyToCard()['$x,$y']]?.callP??0.0;
 
 
 
@@ -111,10 +111,10 @@ class _ChartGridState extends State<ChartGrid> {
                                                 ', raiseP=${raisePercent.toStringAsFixed(0)}'
                                                 ', callP=${callPercent.toStringAsFixed(0)}'
                                                 ',레이즈안한영역 = ${noraise.toStringAsFixed(0)}'
-                                                // '// already빼고 : already progress2=$alreadyProgress2'
-                                                // ', allin2=$allinProgress2'
-                                                // ', raise2=$raiseProgress2'
-                                                // ', call2=$callProgress2'
+                                                // '// already빼고 : already progress2=$alreadyP2'
+                                                // ', allin2=$allinP2'
+                                                // ', raise2=$raiseP2'
+                                                // ', call2=$callP2'
                                                 '///${xyToCard()['$x,$y']}'
                                         );
                                         callPercentt = callPercent.round().toInt();
@@ -227,9 +227,10 @@ class ChartGridItem extends StatelessWidget {
   }) : super(key: key) {}
 
   final Color backgroundColor = ZeplinColors.foldColor;
-  final Color callProgressColor = ZeplinColors.callColor;
-  final Color raiseProgressColor =  ZeplinColors.raiseColor;
-  final Color alreadyProgressColor = ZeplinColors.alreadyProgressColor;
+  final Color allInPColor = ZeplinColors.allInColor;
+  final Color callPColor = ZeplinColors.callColor;
+  final Color raisePColor =  ZeplinColors.raiseColor;
+  final Color alreadyPColor = ZeplinColors.alreadyPColor;
   final RankPair rankPairsPart;
 
   @override
@@ -247,38 +248,47 @@ class ChartGridItem extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: Container(
-                width: constraints.maxWidth * (progressInfo!.alreadyProgress),
-                color: alreadyProgressColor,
+                width: constraints.maxWidth * (progressInfo!.alreadyP),
+                color: alreadyPColor,
               ),
             ),
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
                 width: constraints.maxWidth *
-                    (progressInfo!.raiseProgress +
-                        progressInfo!.allInProgress +
-                        progressInfo!.callProgress) *
-                    (1 - progressInfo!.alreadyProgress),
-                color: callProgressColor,
+                    (progressInfo!.raiseP +
+                        progressInfo!.allinP +
+                        progressInfo!.callP) *
+                    (1 - progressInfo!.alreadyP),
+                color: callPColor,
               ),
             ),
             Align(
               alignment: Alignment.centerLeft,
               child: Container(
                 width: constraints.maxWidth *
-                    (progressInfo!.raiseProgress +
-                        progressInfo!.allInProgress) *
-                    (1 - progressInfo!.alreadyProgress),
-                color: raiseProgressColor,
+                    (progressInfo!.raiseP +
+                        progressInfo!.allinP) *
+                    (1 - progressInfo!.alreadyP),
+                color: raisePColor,
+              ),
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Container(
+                width: constraints.maxWidth *
+                    (progressInfo!.allinP) *
+                    (1 - progressInfo!.alreadyP),
+                color: allInPColor,
               ),
             ),
             Center(
               child: ReusableText(
                 text: "${rankChars[rankPairsPart.high]}${rankChars[rankPairsPart.kicker]}${rankPairsPart.isPocketPair ? "" : rankPairsPart.isSuited ? "s" : "o"}",
-                textColor: progressInfo!.raiseProgress == 0.0 && progressInfo!.callProgress == 0.0 && progressInfo!.alreadyProgress == 0.0
+                textColor: progressInfo!.raiseP == 0.0 && progressInfo!.callP == 0.0 && progressInfo!.alreadyP == 0.0 && progressInfo!.allinP == 0
                     ? Colors.grey[700]
                     : Colors.white,
-                fontWeight: progressInfo!.raiseProgress == 0.0 && progressInfo!.callProgress == 0.0 && progressInfo!.alreadyProgress == 0.0
+                fontWeight: progressInfo!.raiseP == 0.0 && progressInfo!.callP == 0.0 && progressInfo!.alreadyP == 0.0 && progressInfo!.allinP == 0
                     ?FontWeight.w500:FontWeight.w700,
                 fontSize: constraints.maxWidth / 2.6,
               ),

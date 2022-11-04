@@ -22,8 +22,8 @@ class ZeplinColors {
   static const Color dark = Color(0xff272847);
   static const Color callColor = Color(0xff1e646e);
   static const Color raiseColor = Color(0xfffeb75d);
-  static const Color allInColor = Color(0xfffeb75d);
+  static const Color allInColor = Color(0xff9A1B27);
   static const Color raiseColor2 = Color(0xff034b61);
-  static final Color alreadyProgressColor = Colors.grey[700]!;
+  static final Color alreadyPColor = Colors.grey[700]!;
   static const Color foldColor = Color(0xff323348);
 }

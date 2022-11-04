@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pokercat/chart/common/chart_grid.dart';
 import 'package:pokercat/global/component/pcapptheme.dart';
+import '../chart/common/4bet_to_allin.dart';
 import '../chart/common/chart_brain.dart';
 import '../chart/common/tourna_chart_brain.dart';
 import '../chart/constarants/selection.dart';
@@ -122,6 +123,7 @@ class _TournamentState extends State<Tournament> {
               tournaSelection.opponentAction = OpponentAction.none;
             }
           });
+          print('tournaoppoposi= ${tournaSelection.opponentTournaPosition}');
         }
             : null,
         isButtonSelected: tournaSelection.opponentTournaPosition ==
@@ -239,12 +241,14 @@ class _TournamentState extends State<Tournament> {
                                   child:
                                   MyElevatedButton(
 
-                                    onPressed: () {
+                                    onPressed:  tournaSelection.myTournaPosition.index <= tournaSelection.opponentTournaPosition.index ||
+                                        tournaSelection.opponentTournaPosition ==
+                                            TournaPosition.none? () {
                                       setState(() {
                                         tournaSelection.opponentAction =
                                             OpponentAction.raise;
                                       });
-                                    },
+                                    } : null,
                                     selectedButtonLabel: '${OpponentAction.raise.name
                                         .replaceAll("r", "R")}',
                                     isButtonSelected:  tournaSelection.opponentAction ==
@@ -296,8 +300,12 @@ class _TournamentState extends State<Tournament> {
                                 });
                               }
                                   : null,
-                              selectedButtonLabel: '${OpponentAction.fourBet.name
-                                  .replaceAll("four", "4")}',
+                              selectedButtonLabel:
+                              FourBetToAllin(opponentTournaPosition: tournaSelection.opponentTournaPosition, myTournaPosition: tournaSelection.myTournaPosition, tournaStack: tournaSelection.tournaStack,).changeString()
+            ,
+                              // tournaSelection.tournaStack ==TournaStack.sixty && tournaSelection.myTournaPosition ==TournaPosition.SB &&tournaSelection.opponentTournaPosition ==TournaPosition.HJ
+                              //     ? 'All-in':'${OpponentAction.fourBet.name
+                              //     .replaceAll("four", "4")}',
                               isButtonSelected:  tournaSelection.opponentAction ==
                                          OpponentAction.fourBet
                                      ?true:false,

@@ -33,27 +33,27 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        allInProgress : 0.43,
-                        raiseProgress: 1,
+                        allinP : 0.43,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.22,
-                        callProgress:1,
+                        raiseP: 0.22,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.6,
-                        callProgress:1,
+                        raiseP: 0.6,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.23,
-                        callProgress: 0.54,
+                        raiseP: 0.23,
+                        callP: 0.54,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
@@ -69,17 +69,17 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.45,
-                        callProgress: 0.74,
+                        raiseP: 0.45,
+                        callP: 0.74,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.03,
-                        callProgress: 0.21,
+                        raiseP: 0.03,
+                        callP: 0.21,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
@@ -90,28 +90,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.95,
-                        callProgress: 1,
+                        allinP : 0.95,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        allInProgress : 0.49,
-                        raiseProgress: 1,
+                        allinP : 0.49,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.66,
-                        callProgress: 1,
+                        raiseP : 0.66,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress : 0.67,
-                        callProgress: 1,
+                        raiseP : 0.67,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.34,
-                        callProgress: 0.5,
+                        raiseP : 0.34,
+                        callP: 0.5,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
@@ -143,16 +143,16 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.43,
+                        raiseP : 0.43,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        allInProgress : 0.16,
-                        raiseProgress : 0.67,
-                        callProgress: 1,
+                        allinP : 0.16,
+                        raiseP : 0.67,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
@@ -199,12 +199,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.6,
-                        callProgress: 1,
+                        raiseP : 0.6,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.21,
+                        callP: 0.21,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -248,12 +248,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.18,
-                        callProgress: 0.49,
+                        raiseP : 0.18,
+                        callP: 0.49,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -297,12 +297,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.15,
-                        callProgress: 0.44,
+                        raiseP : 0.15,
+                        callP: 0.44,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -346,12 +346,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress : 0.01,
-                        callProgress: 0.27,
+                        raiseP : 0.01,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -395,11 +395,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.28,
+                        callP: 0.28,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.21,
+                        callP: 0.21,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -443,11 +443,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.26,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -491,11 +491,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -539,7 +539,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -586,7 +586,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -633,7 +633,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                     ],
                   ),
@@ -648,28 +648,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        allInProgress : 0.36,
-                        raiseProgress: 1,
+                        allinP : 0.36,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.31,
-                        callProgress:1,
+                        raiseP: 0.31,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.63,
-                        callProgress:1,
+                        raiseP: 0.63,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        allInProgress : 0.04,
-                        raiseProgress: 0.45,
-                        callProgress: 0.77,
+                        allinP : 0.04,
+                        raiseP: 0.45,
+                        callP: 0.77,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
@@ -685,16 +685,16 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.54,
-                        callProgress: 0.82,
+                        raiseP: 0.54,
+                        callP: 0.82,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        callProgress: 0.16,
+                        callP: 0.16,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
@@ -705,28 +705,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.97,
-                        callProgress: 1,
+                        allinP : 0.97,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        allInProgress : 0.28,
-                        raiseProgress: 1,
+                        allinP : 0.28,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.63,
-                        callProgress: 1,
+                        raiseP : 0.63,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress : 0.71,
-                        callProgress: 1,
+                        raiseP : 0.71,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.42,
-                        callProgress: 0.62,
+                        raiseP : 0.42,
+                        callP: 0.62,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
@@ -758,17 +758,17 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.41,
-                        callProgress: 0.44,
+                        raiseP : 0.41,
+                        callP: 0.44,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        allInProgress : 0.39,
-                        raiseProgress : 0.78,
-                        callProgress: 1,
+                        allinP : 0.39,
+                        raiseP : 0.78,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
@@ -815,12 +815,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.64,
-                        callProgress: 1,
+                        raiseP : 0.64,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -864,12 +864,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.33,
-                        callProgress: 0.67,
+                        raiseP : 0.33,
+                        callP: 0.67,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -913,12 +913,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.17,
-                        callProgress: 0.46,
+                        raiseP : 0.17,
+                        callP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -962,12 +962,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress : 0.04,
-                        callProgress: 0.3,
+                        raiseP : 0.04,
+                        callP: 0.3,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -1011,11 +1011,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.26,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -1059,11 +1059,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.24,
+                        callP: 0.24,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -1107,11 +1107,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -1155,7 +1155,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -1202,7 +1202,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -1249,7 +1249,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                     ],
                   ),
@@ -1264,50 +1264,50 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.03,
-                        callProgress:1,
+                        raiseP: 0.03,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.53,
-                        callProgress:1,
+                        raiseP: 0.53,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.61,
-                        callProgress: 1,
+                        raiseP: 0.61,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.15,
+                        raiseP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.08,
+                        raiseP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.32,
-                        callProgress: 0.54,
+                        raiseP: 0.32,
+                        callP: 0.54,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.05,
-                        callProgress: 0.08,
+                        raiseP: 0.05,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
@@ -1321,28 +1321,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.88,
-                        callProgress: 1,
+                        allinP : 0.88,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        allInProgress : 0.31,
-                        raiseProgress: 1,
+                        allinP : 0.31,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.63,
-                        callProgress: 1,
+                        raiseP : 0.63,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.57,
-                        callProgress: 0.7,
+                        raiseP: 0.57,
+                        callP: 0.7,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.54,
-                        callProgress: 0.68,
+                        raiseP : 0.54,
+                        callP: 0.68,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
@@ -1374,16 +1374,16 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.4,
+                        raiseP : 0.4,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        allInProgress : 0.26,
-                        raiseProgress : 0.65,
-                        callProgress: 1,
+                        allinP : 0.26,
+                        raiseP : 0.65,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
@@ -1430,12 +1430,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.57,
-                        callProgress: 1,
+                        raiseP : 0.57,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -1479,12 +1479,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.37,
-                        callProgress: 0.69,
+                        raiseP : 0.37,
+                        callP: 0.69,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -1528,12 +1528,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.07,
-                        callProgress: 0.39,
+                        raiseP : 0.07,
+                        callP: 0.39,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -1577,11 +1577,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 0.27,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -1625,11 +1625,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.26,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -1673,11 +1673,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.23,
+                        callP: 0.23,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -1721,11 +1721,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -1769,7 +1769,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -1816,7 +1816,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -1863,7 +1863,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                     ],
                   ),
@@ -1878,37 +1878,37 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 0.97,
-                        callProgress: 1,
+                        raiseP: 0.97,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 0.98,
-                        callProgress: 1,
+                        raiseP: 0.98,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
 
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.43,
-                        callProgress:1,
+                        raiseP: 0.43,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.35,
-                        callProgress: 1,
+                        raiseP: 0.35,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.05,
+                        raiseP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.11,
-                        callProgress: 0.12,
+                        raiseP: 0.11,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
@@ -1918,13 +1918,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.33,
-                        callProgress: 0.7,
+                        raiseP: 0.33,
+                        callP: 0.7,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.06,
-                        callProgress: 0.18,
+                        raiseP: 0.06,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
@@ -1938,29 +1938,29 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.6,
-                        callProgress: 1,
+                        allinP : 0.6,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        allInProgress : 0.45,
-                        raiseProgress: 0.79,
-                        callProgress: 1,
+                        allinP : 0.45,
+                        raiseP: 0.79,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.27,
-                        callProgress: 0.81,
+                        raiseP : 0.27,
+                        callP: 0.81,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.16,
-                        callProgress: 0.63,
+                        raiseP: 0.16,
+                        callP: 0.63,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.23,
-                        callProgress: 0.37,
+                        raiseP : 0.23,
+                        callP: 0.37,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
@@ -1992,15 +1992,15 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.11,
+                        raiseP : 0.11,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 0.23,
-                        callProgress: 1,
+                        raiseP : 0.23,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
@@ -2047,12 +2047,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.42,
-                        callProgress: 1,
+                        raiseP : 0.42,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -2096,12 +2096,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.17,
-                        callProgress: 0.65,
+                        raiseP : 0.17,
+                        callP: 0.65,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -2145,12 +2145,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.13,
-                        callProgress: 0.53,
+                        raiseP : 0.13,
+                        callP: 0.53,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -2194,11 +2194,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 0.33,
+                        callP: 0.33,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.05,
+                        callP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -2242,11 +2242,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.3,
+                        callP: 0.3,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -2290,11 +2290,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.27,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -2338,11 +2338,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -2386,7 +2386,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -2433,7 +2433,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -2480,7 +2480,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                     ],
                   ),
@@ -2495,59 +2495,59 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        allInProgress: 0.09,
-                        raiseProgress: 0.87,
-                        callProgress: 1,
+                        allinP: 0.09,
+                        raiseP: 0.87,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.06,
-                        callProgress: 1,
+                        raiseP: 0.06,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.32,
-                        callProgress:1,
+                        raiseP: 0.32,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.31,
-                        callProgress: 1,
+                        raiseP: 0.31,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.31,
-                        callProgress: 0.37,
+                        raiseP: 0.31,
+                        callP: 0.37,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.14,
-                        callProgress: 0.16,
+                        raiseP: 0.14,
+                        callP: 0.16,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.32,
+                        raiseP: 0.32,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.26,
+                        raiseP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.08,
-                        callProgress: 0.46,
+                        raiseP: 0.08,
+                        callP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        callProgress: 0.05,
+                        callP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.03,
+                        raiseP: 0.03,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
@@ -2558,30 +2558,30 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.2,
-                        raiseProgress: 0.5,
-                        callProgress: 1,
+                        allinP : 0.2,
+                        raiseP: 0.5,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        allInProgress : 0.14,
-                        raiseProgress: 0.69,
-                        callProgress: 1,
+                        allinP : 0.14,
+                        raiseP: 0.69,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.26,
-                        callProgress: 0.96,
+                        raiseP : 0.26,
+                        callP: 0.96,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.13,
-                        callProgress: 0.56,
+                        raiseP: 0.13,
+                        callP: 0.56,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.05,
-                        callProgress: 0.15,
+                        raiseP : 0.05,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
@@ -2619,8 +2619,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 0.11,
-                        callProgress: 1,
+                        raiseP : 0.11,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
@@ -2667,12 +2667,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.13,
-                        callProgress: 0.65,
+                        raiseP : 0.13,
+                        callP: 0.65,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -2716,11 +2716,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        callProgress: 0.39,
+                        callP: 0.39,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -2764,12 +2764,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.06,
-                        callProgress: 0.42,
+                        raiseP : 0.06,
+                        callP: 0.42,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -2813,11 +2813,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 0.31,
+                        callP: 0.31,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -2861,11 +2861,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.31,
+                        callP: 0.31,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -2909,11 +2909,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.31,
+                        callP: 0.31,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.11,
+                        callP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -2957,7 +2957,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.14,
+                        callP: 0.14,
                       ),
                       MyCustomContainer(
                         hand: '54s',
@@ -3004,7 +3004,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -3051,7 +3051,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -3098,7 +3098,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.03,
+                        callP: 0.03,
                       ),
                     ],
                   ),
@@ -3117,26 +3117,26 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.18,
-                        callProgress:1,
+                        raiseP: 0.18,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.41,
-                        callProgress:1,
+                        raiseP: 0.41,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.5,
-                        callProgress: 0.81,
+                        raiseP: 0.5,
+                        callP: 0.81,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
@@ -3152,12 +3152,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.34,
-                        callProgress: 0.54,
+                        raiseP: 0.34,
+                        callP: 0.54,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
@@ -3171,31 +3171,31 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.85,
-                        raiseProgress: 1,
+                        allinP : 0.85,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.63,
-                        callProgress: 1,
+                        raiseP : 0.63,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress : 0.88,
-                        callProgress: 1,
+                        raiseP : 0.88,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.72,
-                        callProgress: 1,
+                        raiseP : 0.72,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress : 0.11,
+                        raiseP : 0.11,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -3205,7 +3205,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        callProgress : 0.12,
+                        callP : 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
@@ -3225,17 +3225,17 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.88,
-                        callProgress : 1.00,
+                        raiseP : 0.88,
+                        callP : 1.00,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress : 0.04,
+                        raiseP : 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        allInProgress : 0.5,
-                        raiseProgress : 1,
+                        allinP : 0.5,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
@@ -3282,12 +3282,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.67,
-                        callProgress: 1,
+                        raiseP : 0.67,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -3331,12 +3331,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.63,
-                        callProgress: 1,
+                        raiseP : 0.63,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -3380,12 +3380,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.22,
-                        callProgress: 0.57,
+                        raiseP : 0.22,
+                        callP: 0.57,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.16,
+                        callP: 0.16,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -3429,12 +3429,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress : 0.07,
-                        callProgress: 0.38,
+                        raiseP : 0.07,
+                        callP: 0.38,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.14,
+                        callP: 0.14,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -3478,11 +3478,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.3,
+                        callP: 0.3,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -3526,11 +3526,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.25,
+                        callP: 0.25,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.11,
+                        callP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -3574,11 +3574,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -3622,7 +3622,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.24,
+                        callP: 0.24,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -3669,7 +3669,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.22,
+                        callP: 0.22,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -3716,7 +3716,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                     ],
                   ),
@@ -3731,32 +3731,32 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.41,
-                        callProgress:1,
+                        raiseP: 0.41,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.59,
-                        callProgress: 0.97,
+                        raiseP: 0.59,
+                        callP: 0.97,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.07,
+                        raiseP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
@@ -3766,8 +3766,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.26,
-                        callProgress: 0.35,
+                        raiseP: 0.26,
+                        callP: 0.35,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
@@ -3784,32 +3784,32 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.68,
-                        raiseProgress: 95.5,
-                         callProgress:1,
+                        allinP : 0.68,
+                        raiseP: 95.5,
+                         callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.56,
-                        callProgress: 1,
+                        raiseP : 0.56,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress : 0.91,
-                        callProgress: 1,
+                        raiseP : 0.91,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.81,
-                        callProgress: 1,
+                        raiseP : 0.81,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress : 0.14,
+                        raiseP : 0.14,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -3838,17 +3838,17 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.97,
+                        raiseP : 0.97,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress : 0.04,
+                        raiseP : 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        allInProgress : 0.44,
-                        raiseProgress : 0.98,
-                        callProgress : 1,
+                        allinP : 0.44,
+                        raiseP : 0.98,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
@@ -3895,12 +3895,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.61,
-                        callProgress: 1,
+                        raiseP : 0.61,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -3944,12 +3944,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.62,
-                        callProgress: 1,
+                        raiseP : 0.62,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.03,
+                        callP: 0.03,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -3993,12 +3993,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.24,
-                        callProgress: 0.56,
+                        raiseP : 0.24,
+                        callP: 0.56,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -4042,12 +4042,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress : 0.02,
-                        callProgress: 0.3,
+                        raiseP : 0.02,
+                        callP: 0.3,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -4091,11 +4091,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.25,
+                        callP: 0.25,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -4139,11 +4139,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.11,
+                        callP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -4187,11 +4187,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -4235,7 +4235,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -4282,7 +4282,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -4329,7 +4329,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                     ],
                   ),
@@ -4344,34 +4344,34 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        allInProgress: 0.13,
-                        raiseProgress: 1,
+                        allinP: 0.13,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.26,
-                        callProgress: 1,
+                        raiseP: 0.26,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.39,
-                        callProgress: 1.0,
+                        raiseP: 0.39,
+                        callP: 1.0,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.1,
-                        callProgress: 0.14,
+                        raiseP: 0.1,
+                        callP: 0.14,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
@@ -4381,8 +4381,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.41,
-                        callProgress: 0.77,
+                        raiseP: 0.41,
+                        callP: 0.77,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
@@ -4399,28 +4399,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.59,
-                        callProgress:1,
+                        allinP : 0.59,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        allInProgress : 0.5,
-                        raiseProgress: 1,
+                        allinP : 0.5,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.28,
-                        callProgress: 1,
+                        raiseP : 0.28,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress : 0.52,
-                        callProgress: 0.95,
+                        raiseP : 0.52,
+                        callP: 0.95,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.28,
-                        callProgress: 0.62,
+                        raiseP : 0.28,
+                        callP: 0.62,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
@@ -4452,16 +4452,16 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.38,
-                        callProgress : 0.5,
+                        raiseP : 0.38,
+                        callP : 0.5,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 0.18,
-                        callProgress : 1,
+                        raiseP : 0.18,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
@@ -4508,12 +4508,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.31,
-                        callProgress: 1,
+                        raiseP : 0.31,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -4557,12 +4557,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.23,
-                        callProgress: 0.78,
+                        raiseP : 0.23,
+                        callP: 0.78,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -4606,12 +4606,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.04,
-                        callProgress: 0.49,
+                        raiseP : 0.04,
+                        callP: 0.49,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -4655,7 +4655,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 0.38,
+                        callP: 0.38,
                       ),
                       MyCustomContainer(
                         hand: '87s',
@@ -4702,11 +4702,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.35,
+                        callP: 0.35,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -4750,11 +4750,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.32,
+                        callP: 0.32,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.02,
+                        callP: 0.02,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -4798,11 +4798,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.03,
+                        callP: 0.03,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -4846,7 +4846,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -4893,7 +4893,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.16,
+                        callP: 0.16,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -4940,7 +4940,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                     ],
                   ),
@@ -4955,49 +4955,49 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        allInProgress: 0.23,
-                        raiseProgress: 1,
+                        allinP: 0.23,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.11,
-                        callProgress: 1.0,
+                        raiseP: 0.11,
+                        callP: 1.0,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.3,
-                        callProgress: 0.61,
+                        raiseP: 0.3,
+                        callP: 0.61,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.26,
-                        callProgress: 0.45,
+                        raiseP: 0.26,
+                        callP: 0.45,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.02,
+                        raiseP: 0.02,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.07,
+                        raiseP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.19,
-                        callProgress: 0.75,
+                        raiseP: 0.19,
+                        callP: 0.75,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
@@ -5007,7 +5007,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.32,
+                        raiseP: 0.32,
                       ),
                     ],
                   ),
@@ -5015,29 +5015,29 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress : 0.59,
-                        callProgress:1,
+                        allinP : 0.59,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        allInProgress : 0.51,
-                        raiseProgress: 0.85,
-                        callProgress:1,
+                        allinP : 0.51,
+                        raiseP: 0.85,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.07,
-                        callProgress: 1,
+                        raiseP : 0.07,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress : 0.3,
-                        callProgress: 0.96,
+                        raiseP : 0.3,
+                        callP: 0.96,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.37,
-                        callProgress: 0.68,
+                        raiseP : 0.37,
+                        callP: 0.68,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
@@ -5069,22 +5069,22 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.17,
+                        raiseP : 0.17,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        callProgress : 1,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        callProgress : 0.07,
+                        callP : 0.07,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        callProgress : 0.05,
+                        callP : 0.05,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -5125,12 +5125,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.14,
-                        callProgress: 0.80,
+                        raiseP : 0.14,
+                        callP: 0.80,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -5174,11 +5174,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        callProgress: 0.53,
+                        callP: 0.53,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -5222,7 +5222,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        callProgress: 0.46,
+                        callP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: '98s',
@@ -5269,7 +5269,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 0.47,
+                        callP: 0.47,
                       ),
                       MyCustomContainer(
                         hand: '87s',
@@ -5316,11 +5316,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.41,
+                        callP: 0.41,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -5364,11 +5364,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.41,
+                        callP: 0.41,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -5412,7 +5412,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.23,
+                        callP: 0.23,
                       ),
                       MyCustomContainer(
                         hand: '54s',
@@ -5459,7 +5459,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.14,
+                        callP: 0.14,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -5506,7 +5506,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -5553,7 +5553,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.02,
+                        callP: 0.02,
                       ),
                     ],
                   ),
@@ -5572,50 +5572,50 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
 
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.67,
-                        callProgress: 1,
+                        raiseP: 0.67,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.09,
-                        callProgress: 0.26,
+                        raiseP: 0.09,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.25,
+                        raiseP: 0.25,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.07,
+                        raiseP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
                         ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.75,
-                        callProgress: 1,
+                        raiseP: 0.75,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
@@ -5629,30 +5629,30 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress : 0.05,
-                        callProgress: 1,
+                        raiseP : 0.05,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress : 0.74,
-                        callProgress: 1,
+                        raiseP : 0.74,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.84,
-                        callProgress: 1,
+                        raiseP : 0.84,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress : 0.5,
+                        raiseP : 0.5,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -5662,11 +5662,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        callProgress : 0.04,
+                        callP : 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress : 0.11,
+                        raiseP : 0.11,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -5683,25 +5683,25 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.96,
-                        callProgress : 1.00,
+                        raiseP : 0.96,
+                        callP : 1.00,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress : 0.29,
+                        raiseP : 0.29,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 1,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress : 0.11,
-                        callProgress : 0.25,
+                        raiseP : 0.11,
+                        callP : 0.25,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        callProgress : 0.17,
+                        callP : 0.17,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -5733,23 +5733,23 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress : 0.48,
+                        raiseP : 0.48,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress : 0.14,
+                        raiseP : 0.14,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 1,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress : 0.45,
-                        callProgress: 0.69,
+                        raiseP : 0.45,
+                        callP: 0.69,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -5793,12 +5793,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.61,
-                        callProgress: 1,
+                        raiseP : 0.61,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.27,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -5842,16 +5842,16 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.53,
-                        callProgress: 1,
+                        raiseP : 0.53,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '97s',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '96s',
@@ -5892,12 +5892,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress : 0.26,
-                        callProgress: 0.66,
+                        raiseP : 0.26,
+                        callP: 0.66,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -5941,11 +5941,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.36,
+                        callP: 0.36,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -5989,11 +5989,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.31,
+                        callP: 0.31,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -6037,11 +6037,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.23,
+                        callP: 0.23,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -6085,7 +6085,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.29,
+                        callP: 0.29,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -6132,7 +6132,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.32,
+                        callP: 0.32,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -6179,7 +6179,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                     ],
                   ),
@@ -6194,25 +6194,25 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
 
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.75,
-                        callProgress: 1,
+                        raiseP: 0.75,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
@@ -6228,8 +6228,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.18,
-                        callProgress: 0.43,
+                        raiseP: 0.18,
+                        callP: 0.43,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
@@ -6246,27 +6246,27 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress:0.05,
-                        raiseProgress: 0.8,
-                        callProgress: 1,
+                        allinP:0.05,
+                        raiseP: 0.8,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress : 0.45,
-                        callProgress: 1,
+                        raiseP : 0.45,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.77,
-                        callProgress: 1,
+                        raiseP : 0.77,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
@@ -6298,24 +6298,24 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.74,
-                        callProgress : 1.00,
+                        raiseP : 0.74,
+                        callP : 1.00,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress : 0.23,
+                        raiseP : 0.23,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 0.95,
-                        callProgress : 1.00,
+                        raiseP : 0.95,
+                        callP : 1.00,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        callProgress : 0.2,
+                        callP : 0.2,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -6347,24 +6347,24 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress : 0.43,
+                        raiseP : 0.43,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress : 0.14,
+                        raiseP : 0.14,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        allInProgress: 0.03,
-                        raiseProgress : 0.66,
-                        callProgress: 1.0,
+                        allinP: 0.03,
+                        raiseP : 0.66,
+                        callP: 1.0,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.41,
+                        callP: 0.41,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -6408,12 +6408,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.41,
-                        callProgress: 1,
+                        raiseP : 0.41,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.27,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -6457,12 +6457,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.23,
-                        callProgress: 0.67,
+                        raiseP : 0.23,
+                        callP: 0.67,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -6506,12 +6506,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress : 0.09,
-                        callProgress: 0.37,
+                        raiseP : 0.09,
+                        callP: 0.37,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -6555,11 +6555,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.26,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -6603,11 +6603,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -6651,11 +6651,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -6699,7 +6699,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -6746,7 +6746,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.11,
+                        callP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -6793,7 +6793,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                     ],
                   ),
@@ -6808,52 +6808,52 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 0.92,
-                        callProgress: 1,
+                        raiseP: 0.92,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
 
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.18,
-                        callProgress: 1,
+                        raiseP: 0.18,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.32,
-                        callProgress: 0.59,
+                        raiseP: 0.32,
+                        callP: 0.59,
                         ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.36,
-                        callProgress: 0.45,
+                        raiseP: 0.36,
+                        callP: 0.45,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.24,
+                        raiseP: 0.24,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.05,
-                        callProgress: 0.62,
+                        raiseP: 0.05,
+                        callP: 0.62,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
@@ -6867,31 +6867,31 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress:0.11,
-                        raiseProgress: 0.86,
-                        callProgress: 1,
+                        allinP:0.11,
+                        raiseP: 0.86,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
 
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.32,
-                        callProgress: 1,
+                        raiseP : 0.32,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress : 0.13,
+                        raiseP : 0.13,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -6920,24 +6920,24 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress : 0.76,
-                        callProgress : 1.00,
+                        raiseP : 0.76,
+                        callP : 1.00,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 0.82,
-                        callProgress : 1.00,
+                        raiseP : 0.82,
+                        callP : 1.00,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        callProgress : 0.34,
+                        callP : 0.34,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        callProgress : 0.15,
+                        callP : 0.15,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -6969,24 +6969,24 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress : 0.19,
+                        raiseP : 0.19,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress : 0.38,
+                        raiseP : 0.38,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        allInProgress: 0.04,
-                        raiseProgress : 0.4,
-                        callProgress: 1.0,
+                        allinP: 0.04,
+                        raiseP : 0.4,
+                        callP: 1.0,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -7030,8 +7030,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress : 0.08,
-                        callProgress: 0.76,
+                        raiseP : 0.08,
+                        callP: 0.76,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
@@ -7078,11 +7078,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        callProgress: 0.47,
+                        callP: 0.47,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -7126,11 +7126,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 0.38
+                        callP: 0.38
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -7174,11 +7174,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.34,
+                        callP: 0.34,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -7222,11 +7222,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.27,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -7270,11 +7270,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -7318,7 +7318,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.05,
+                        callP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -7430,46 +7430,46 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 0.88,
-                        callProgress: 1,
+                        raiseP: 0.88,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.78,
-                        callProgress:1,
+                        raiseP: 0.78,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.61,
-                        callProgress: 1,
+                        raiseP: 0.61,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.49,
+                        raiseP: 0.49,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.21,
+                        raiseP: 0.21,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.22,
-                        callProgress: 0.58,
+                        raiseP: 0.22,
+                        callP: 0.58,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
@@ -7486,29 +7486,29 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress: 0.18,
-                        raiseProgress: 1,
+                        allinP: 0.18,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress : 0.11,
-                        callProgress: 1,
+                        raiseP : 0.11,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        callProgress : 0.13,
+                        callP : 0.13,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -7537,31 +7537,31 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        allInProgress : 0.6,
-                        callProgress : 1.00,
+                        allinP : 0.6,
+                        callP : 1.00,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress : 0.7,
-                        callProgress : 0.8,
+                        raiseP : 0.7,
+                        callP : 0.8,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 1,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        allInProgress : 0.05,
-                        callProgress : 0.62,
+                        allinP : 0.05,
+                        callP : 0.62,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress : 0.57,
-                        callProgress : 0.92,
+                        raiseP : 0.57,
+                        callP : 0.92,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        raiseProgress : 0.41,
+                        raiseP : 0.41,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
@@ -7590,8 +7590,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress : 0.6,
-                        callProgress: 0.78,
+                        raiseP : 0.6,
+                        callP: 0.78,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
@@ -7601,11 +7601,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 1,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.38,
+                        callP: 0.38,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -7637,7 +7637,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress : 0.23,
+                        raiseP : 0.23,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
@@ -7650,12 +7650,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        allInProgress : 0.69,
-                        raiseProgress : 1,
+                        allinP : 0.69,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress : 0.38,
+                        callP : 0.38,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -7699,13 +7699,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        allInProgress : 0.27,
-                        raiseProgress : 0.48,
-                        callProgress: 1,
+                        allinP : 0.27,
+                        raiseP : 0.48,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.29,
+                        callP: 0.29,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -7749,12 +7749,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                           hand: '88',
-                          raiseProgress: 0.17,
-                          callProgress: 1,
+                          raiseP: 0.17,
+                          callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -7798,11 +7798,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.48,
+                        callP: 0.48,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -7846,12 +7846,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        allInProgress : 0.28,
-                        callProgress: 0.63,
+                        allinP : 0.28,
+                        callP: 0.63,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -7895,11 +7895,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.28,
+                        callP: 0.28,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -7943,7 +7943,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.14,
+                        callP: 0.14,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -7990,7 +7990,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress : 0.11,
+                        callP : 0.11,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -8037,7 +8037,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress : 0.05,
+                        callP : 0.05,
                       ),
                     ],
                   ),
@@ -8052,57 +8052,57 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 0.78,
-                        callProgress: 1,
+                        raiseP: 0.78,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.48,
-                        callProgress:1,
+                        raiseP: 0.48,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.41,
-                        callProgress: 0.72,
+                        raiseP: 0.41,
+                        callP: 0.72,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.34,
+                        raiseP: 0.34,
                         ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.04,
-                        callProgress: 1,
+                        raiseP: 0.04,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.05,
-                        callProgress: 0.46,
+                        raiseP: 0.05,
+                        callP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.13,
+                        raiseP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
@@ -8113,29 +8113,29 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress: 0.15,
-                        raiseProgress: 1,
+                        allinP: 0.15,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.35,
-                        callProgress : 1,
+                        raiseP: 0.35,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -8145,7 +8145,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        callProgress: 0.54,
+                        callP: 0.54,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
@@ -8165,25 +8165,25 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        allInProgress : 0.63,
-                        callProgress : 1.00,
+                        allinP : 0.63,
+                        callP : 1.00,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress : 0.66,
-                        callProgress : 1,
+                        raiseP : 0.66,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 1,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        callProgress : 1,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        callProgress : 1,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -8215,8 +8215,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress : 0.67,
-                        callProgress: 1,
+                        raiseP : 0.67,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
@@ -8226,16 +8226,16 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 0.86,
-                        callProgress: 1,
+                        raiseP : 0.86,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
-                        callProgress: 0.21,
+                        callP: 0.21,
                         ),
                       MyCustomContainer(
                         hand: 'J8s',
@@ -8264,11 +8264,11 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress : 0.37,
+                        raiseP : 0.37,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress : 0.05,
+                        raiseP : 0.05,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
@@ -8278,13 +8278,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        allInProgress : 0.5,
-                        raiseProgress : 0.63,
-                        callProgress : 1,
+                        allinP : 0.5,
+                        raiseP : 0.63,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress : 0.46,
+                        callP : 0.46,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -8328,12 +8328,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.04,
-                        callProgress: 1,
+                        raiseP : 0.04,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -8377,12 +8377,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.19,
-                        callProgress: 1,
+                        raiseP: 0.19,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.26,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -8426,11 +8426,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 0.75,
+                        callP: 0.75,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -8474,11 +8474,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 0.53,
+                        callP: 0.53,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -8522,11 +8522,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.26,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -8570,7 +8570,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.11,
+                        callP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -8617,7 +8617,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress : 0.03,
+                        callP : 0.03,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -8681,58 +8681,58 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        callProgress:1,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.22,
-                        callProgress: 1,
+                        raiseP: 0.22,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.08,
-                        callProgress: 1,
+                        raiseP: 0.08,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.65,
-                        callProgress: 1,
+                        raiseP: 0.65,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.36,
-                        callProgress: 1,
+                        raiseP: 0.36,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.77,
-                        callProgress: 1,
+                        raiseP: 0.77,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.71,
-                        callProgress: 1,
+                        raiseP: 0.71,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
@@ -8743,35 +8743,35 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        allInProgress: 0.18,
-                        raiseProgress: 1,
+                        allinP: 0.18,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        allInProgress: 0.33,
-                        callProgress: 1,
+                        allinP: 0.33,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.36,
-                        callProgress : 1,
+                        raiseP: 0.36,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
-                        raiseProgress: 0.08,
-                        callProgress : 0.45,
+                        raiseP: 0.08,
+                        callP : 0.45,
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
@@ -8781,7 +8781,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.5,
+                        raiseP: 0.5,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -8798,32 +8798,32 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        allInProgress : 0.67,
-                        raiseProgress: 0.9,
-                        callProgress : 1,
+                        allinP : 0.67,
+                        raiseP: 0.9,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress : 0.9,
-                        callProgress : 1,
+                        raiseP : 0.9,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress : 1,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        callProgress : 1,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.19,
-                        callProgress : 1,
+                        raiseP: 0.19,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        raiseProgress: 0.65,
-                        callProgress : 1,
+                        raiseP: 0.65,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
@@ -8852,30 +8852,30 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress : 0.98,
-                        callProgress: 1,
+                        raiseP : 0.98,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress : 0.32,
+                        raiseP : 0.32,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
-                        raiseProgress : 0.2,
+                        raiseP : 0.2,
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress : 1,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress : 0.16,
-                        callProgress: 1,
+                        raiseP : 0.16,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
-                        raiseProgress : 0.6,
-                        callProgress: 1,
+                        raiseP : 0.6,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J8s',
@@ -8904,11 +8904,11 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress : 0.8,
+                        raiseP : 0.8,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress : 0.2,
+                        raiseP : 0.2,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
@@ -8918,18 +8918,18 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        allInProgress : 0.44,
-                        raiseProgress : 1,
+                        allinP : 0.44,
+                        raiseP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress : 0.48,
-                        callProgress : 1,
+                        raiseP : 0.48,
+                        callP : 1,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
-                        raiseProgress : 0.19,
-                        callProgress: 0.35,
+                        raiseP : 0.19,
+                        callP: 0.35,
                       ),
                       MyCustomContainer(
                         hand: 'T7s',
@@ -8970,12 +8970,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress : 0.24,
-                        callProgress: 1,
+                        raiseP : 0.24,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -9019,12 +9019,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.21,
-                        callProgress: 1,
+                        raiseP: 0.21,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -9068,12 +9068,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress : 0.24,
-                        callProgress: 1,
+                        raiseP : 0.24,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -9117,8 +9117,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress : 0.04,
-                        callProgress: 0.59,
+                        raiseP : 0.04,
+                        callP: 0.59,
                       ),
                       MyCustomContainer(
                         hand: '65s',
@@ -9166,13 +9166,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        allInProgress : 0.18,
-                        raiseProgress: 0.29,
-                        callProgress: 0.6,
+                        allinP : 0.18,
+                        raiseP: 0.29,
+                        callP: 0.6,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.19,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -9216,7 +9216,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -9263,7 +9263,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress : 0.04,
+                        callP : 0.04,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -9331,26 +9331,26 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.53,
-                          raiseProgress: 0.6,
-                          callProgress: 1,
+                          allinP: 0.53,
+                          raiseP: 0.6,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 0.96,
-                          raiseProgress: 1,
+                          allinP: 0.96,
+                          raiseP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.48,
+                          callP: 0.48,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -9366,12 +9366,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress:0.23,
-                          callProgress: 0.67,
+                          allinP:0.23,
+                          callP: 0.67,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
@@ -9385,21 +9385,21 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.58,
-                          callProgress: 1,
+                          allinP: 0.58,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.76,
-                          callProgress: 1,
+                          allinP: 0.76,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          callProgress: 0.94,
+                          callP: 0.94,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
@@ -9434,14 +9434,14 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          callProgress: 0.97,
+                          callP: 0.97,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -9488,7 +9488,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          callProgress: 0.78,
+                          callP: 0.78,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
@@ -9535,7 +9535,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.32,
+                          callP: 0.32,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
@@ -9582,7 +9582,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.25,
+                          callP: 0.25,
                         ),
                         MyCustomContainer(
                           hand: '98s',
@@ -9629,7 +9629,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.26,
+                          callP: 0.26,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -9676,7 +9676,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.26,
+                          callP: 0.26,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -9723,11 +9723,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.22,
+                          callP: 0.22,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -9771,11 +9771,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.09,
+                          callP: 0.09,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -9819,7 +9819,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.09,
+                          callP: 0.09,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -9866,7 +9866,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '33',
-                          callProgress: 0.11,
+                          callP: 0.11,
                         ),
                         MyCustomContainer(
                           hand: '32s',
@@ -9913,7 +9913,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '22',
-                          callProgress: 0.09,
+                          callP: 0.09,
                         ),
                       ],
                     ),
@@ -9933,29 +9933,29 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.34,
-                          raiseProgress: 0.57,
-                          callProgress: 1,
+                          allinP: 0.34,
+                          raiseP: 0.57,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 0.9,
-                          raiseProgress: 1,
+                          allinP: 0.9,
+                          raiseP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 0.86,
+                          callP: 0.86,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          raiseProgress: 0.05,
-                          callProgress: 0.73,
+                          raiseP: 0.05,
+                          callP: 0.73,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          allInProgress: 0.06,
-                          raiseProgress: 0.1,
-                          callProgress: 0.79,
+                          allinP: 0.06,
+                          raiseP: 0.1,
+                          callP: 0.79,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -9971,12 +9971,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          raiseProgress: 0.07,
-                          callProgress: 0.61,
+                          raiseP: 0.07,
+                          callP: 0.61,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
@@ -9990,22 +9990,22 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.6,
-                          callProgress: 1,
+                          allinP: 0.6,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.75,
-                          callProgress: 1,
+                          allinP: 0.75,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          callProgress: 0.72,
+                          callP: 0.72,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          raiseProgress: 0.05,
-                          callProgress: 0.7,
+                          raiseP: 0.05,
+                          callP: 0.7,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
@@ -10040,16 +10040,16 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          raiseProgress: 0.04,
-                          callProgress: 0.31,
+                          raiseP: 0.04,
+                          callP: 0.31,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          raiseProgress: 0.03,
-                          callProgress: 0.91,
+                          raiseP: 0.03,
+                          callP: 0.91,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -10096,7 +10096,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          callProgress: 0.75,
+                          callP: 0.75,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
@@ -10143,7 +10143,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.4,
+                          callP: 0.4,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
@@ -10190,7 +10190,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.3,
+                          callP: 0.3,
                         ),
                         MyCustomContainer(
                           hand: '98s',
@@ -10237,7 +10237,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.28,
+                          callP: 0.28,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -10284,7 +10284,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.3,
+                          callP: 0.3,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -10331,11 +10331,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.22,
+                          callP: 0.22,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.21,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -10379,11 +10379,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.11,
+                          callP: 0.11,
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -10427,7 +10427,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -10474,7 +10474,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '33',
-                          callProgress: 0.13,
+                          callP: 0.13,
                         ),
                         MyCustomContainer(
                           hand: '32s',
@@ -10521,7 +10521,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '22',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                       ],
                     ),
@@ -10537,27 +10537,27 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          raiseProgress: 0.72,
-                          callProgress: 1,
+                          raiseP: 0.72,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 0.51,
-                          raiseProgress: 0.92,
-                          callProgress: 1,
+                          allinP: 0.51,
+                          raiseP: 0.92,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          raiseProgress: 0.05,
-                          callProgress: 0.8,
+                          raiseP: 0.05,
+                          callP: 0.8,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.37,
+                          callP: 0.37,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -10573,13 +10573,13 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          raiseProgress: 0.16,
-                          callProgress: 0.66,
+                          raiseP: 0.16,
+                          callP: 0.66,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          raiseProgress: 0.11,
-                          callProgress: 0.21,
+                          raiseP: 0.11,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
@@ -10593,27 +10593,27 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.76,
-                          callProgress: 1,
+                          allinP: 0.76,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.9,
-                          callProgress: 1,
+                          allinP: 0.9,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          callProgress: 0.81,
+                          callP: 0.81,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          raiseProgress: 0.18,
-                          callProgress: 0.92,
+                          raiseP: 0.18,
+                          callP: 0.92,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          raiseProgress: 0.14,
-                          callProgress: 0.57,
+                          raiseP: 0.14,
+                          callP: 0.57,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
@@ -10645,17 +10645,17 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          raiseProgress: 0.1,
-                          callProgress: 0.39,
+                          raiseP: 0.1,
+                          callP: 0.39,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 0.31,
-                          raiseProgress: 0.43,
-                          callProgress: 1,
+                          allinP: 0.31,
+                          raiseP: 0.43,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -10702,8 +10702,8 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          raiseProgress: 0.05,
-                          callProgress: 0.92,
+                          raiseP: 0.05,
+                          callP: 0.92,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
@@ -10750,7 +10750,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.73,
+                          callP: 0.73,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
@@ -10797,7 +10797,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.35,
+                          callP: 0.35,
                         ),
                         MyCustomContainer(
                           hand: '98s',
@@ -10844,7 +10844,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.31,
+                          callP: 0.31,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -10891,7 +10891,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.37,
+                          callP: 0.37,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -10938,11 +10938,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.27,
+                          callP: 0.27,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.07,
+                          callP: 0.07,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -10986,7 +10986,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: '54s',
@@ -11033,7 +11033,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -11080,7 +11080,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '33',
-                          callProgress: 0.19,
+                          callP: 0.19,
                         ),
                         MyCustomContainer(
                           hand: '32s',
@@ -11127,7 +11127,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '22',
-                          callProgress: 0.15,
+                          callP: 0.15,
                         ),
                       ],
                     ),
@@ -11147,27 +11147,27 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.58,
-                          raiseProgress: 0.71,
-                          callProgress: 1,
+                          allinP: 0.58,
+                          raiseP: 0.71,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 0.65,
-                          raiseProgress: 0.8,
+                          allinP: 0.65,
+                          raiseP: 0.8,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 0.59,
+                          callP: 0.59,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          raiseProgress: 0.01,
-                          callProgress: 0.24,
+                          raiseP: 0.01,
+                          callP: 0.24,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.37,
+                          callP: 0.37,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -11183,14 +11183,14 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 0.41,
-                          raiseProgress: 0.43,
-                          callProgress: 0.59,
+                          allinP: 0.41,
+                          raiseP: 0.43,
+                          callP: 0.59,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          raiseProgress: 0.4,
-                          callProgress: 0.23,
+                          raiseP: 0.4,
+                          callP: 0.23,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
@@ -11204,27 +11204,27 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.80,
-                          callProgress: 1,
+                          allinP: 0.80,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.9,
-                          callProgress: 1,
+                          allinP: 0.9,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          callProgress: 0.28,
+                          callP: 0.28,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          raiseProgress: 0.03,
-                          callProgress: 0.35,
+                          raiseP: 0.03,
+                          callP: 0.35,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          raiseProgress: 0.05,
-                          callProgress: 0.18,
+                          raiseP: 0.05,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
@@ -11256,17 +11256,17 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          raiseProgress: 0.04,
-                          callProgress: 0.22,
+                          raiseP: 0.04,
+                          callP: 0.22,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 0.11,
-                          raiseProgress: 0.13,
-                          callProgress: 0.7,
+                          allinP: 0.11,
+                          raiseP: 0.13,
+                          callP: 0.7,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -11313,8 +11313,8 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          raiseProgress: 0.02,
-                          callProgress: 0.32,
+                          raiseP: 0.02,
+                          callP: 0.32,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
@@ -11361,7 +11361,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
@@ -11408,7 +11408,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.13,
+                          callP: 0.13,
                         ),
                         MyCustomContainer(
                           hand: '98s',
@@ -11455,7 +11455,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.19,
+                          callP: 0.19,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -11502,7 +11502,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -11549,11 +11549,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.21,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.09,
+                          callP: 0.09,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -11597,7 +11597,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: '54s',
@@ -11644,7 +11644,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -11691,7 +11691,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '33',
-                          callProgress: 0.11,
+                          callP: 0.11,
                         ),
                         MyCustomContainer(
                           hand: '32s',
@@ -11738,7 +11738,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '22',
-                          callProgress: 0.09,
+                          callP: 0.09,
                         ),
                       ],
                     ),
@@ -11753,26 +11753,26 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.55,
-                          raiseProgress: 0.59,
-                          callProgress: 1,
+                          allinP: 0.55,
+                          raiseP: 0.59,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 0.985,
-                          raiseProgress: 1,
+                          allinP: 0.985,
+                          raiseP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 0.87,
+                          callP: 0.87,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.23,
+                          callP: 0.23,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -11788,18 +11788,18 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 0.51,
+                          allinP: 0.51,
 
-                          callProgress: 0.65,
+                          callP: 0.65,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          allInProgress: 0.15,
-                          callProgress: 0.47,
+                          allinP: 0.15,
+                          callP: 0.47,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
-                          callProgress: 0.23,
+                          callP: 0.23,
                         ),
                         MyCustomContainer(
                           hand: 'A2s',
@@ -11810,24 +11810,24 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.93,
-                          callProgress: 1,
+                          allinP: 0.93,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          callProgress: 0.21,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          callProgress: 0.72,
+                          callP: 0.72,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          callProgress: 0.41,
+                          callP: 0.41,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
@@ -11859,15 +11859,15 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          callProgress: 0.25,
+                          callP: 0.25,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 0.61,
-                          callProgress: 0.9,
+                          allinP: 0.61,
+                          callP: 0.9,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -11914,13 +11914,13 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          allInProgress: 0.06,
-                          raiseProgress: 0.08,
-                          callProgress: 0.42,
+                          allinP: 0.06,
+                          raiseP: 0.08,
+                          callP: 0.42,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.21,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -11964,7 +11964,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.33,
+                          callP: 0.33,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
@@ -12011,7 +12011,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.21,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: '98s',
@@ -12058,7 +12058,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.23,
+                          callP: 0.23,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -12105,7 +12105,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.3,
+                          callP: 0.3,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -12152,7 +12152,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.23,
+                          callP: 0.23,
                         ),
                         MyCustomContainer(
                           hand: '65s',
@@ -12199,7 +12199,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.17,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: '54s',
@@ -12246,7 +12246,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -12293,7 +12293,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '33',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: '32s',
@@ -12340,7 +12340,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '22',
-                          callProgress: 0.13,
+                          callP: 0.13,
                         ),
                       ],
                     ),
@@ -12355,25 +12355,25 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.34,
-                          callProgress: 1,
+                          allinP: 0.34,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 1,
+                          allinP: 1,
 
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 0.5,
+                          callP: 0.5,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -12389,17 +12389,17 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 0.7,
-                          callProgress: 0.85,
+                          allinP: 0.7,
+                          callP: 0.85,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          allInProgress: 0.64,
-                          callProgress: 0.83,
+                          allinP: 0.64,
+                          callP: 0.83,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: 'A2s',
@@ -12410,24 +12410,24 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          allInProgress: 0.06,
-                          callProgress: 0.56,
+                          allinP: 0.06,
+                          callP: 0.56,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          callProgress: 0.6,
+                          callP: 0.6,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          callProgress: 0.54,
+                          callP: 0.54,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
@@ -12459,18 +12459,18 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          callProgress: 0.19,
+                          callP: 0.19,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
-                          callProgress: 0.19,
+                          callP: 0.19,
                         ),
                         MyCustomContainer(
                           hand: 'QTs',
@@ -12514,11 +12514,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          allInProgress: 0.93,
+                          allinP: 0.93,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.45,
+                          callP: 0.45,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -12562,11 +12562,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.6,
+                          callP: 0.6,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
-                          callProgress: 0.11,
+                          callP: 0.11,
                         ),
                         MyCustomContainer(
                           hand: 'T8s',
@@ -12610,7 +12610,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.44,
+                          callP: 0.44,
                         ),
                         MyCustomContainer(
                           hand: '98s',
@@ -12657,7 +12657,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.27,
+                          callP: 0.27,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -12704,12 +12704,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          allInProgress: 0.08,
-                          callProgress: 0.25,
+                          allinP: 0.08,
+                          callP: 0.25,
                         ),
                         MyCustomContainer(
                           hand: '76s',
-                          callProgress: 0.07,
+                          callP: 0.07,
                         ),
                         MyCustomContainer(
                           hand: '75s',
@@ -12753,12 +12753,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          allInProgress: 0.08,
-                          callProgress: 0.25,
+                          allinP: 0.08,
+                          callP: 0.25,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -12802,11 +12802,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.01,
+                          callP: 0.01,
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -12963,36 +12963,36 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          raiseProgress: 1,
+                          raiseP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 0.37,
-                          raiseProgress: 1,
+                          allinP: 0.37,
+                          raiseP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 0.25,
+                          callP: 0.25,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          raiseProgress: 0.04,
-                          callProgress: 0.3,
+                          raiseP: 0.04,
+                          callP: 0.3,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
                         ),
                         MyCustomContainer(
                           hand: 'A8s',
-                          raiseProgress: 0.06,
+                          raiseP: 0.06,
                         ),
                         MyCustomContainer(
                           hand: 'A7s',
-                          raiseProgress: 0.12,
+                          raiseP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: 'A6s',
@@ -13000,22 +13000,22 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: 'A5s',
 
-                          raiseProgress: 0.04,
-                          callProgress: 0.45,
+                          raiseP: 0.04,
+                          callP: 0.45,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          raiseProgress: 0.46,
-                          callProgress: 0.65,
+                          raiseP: 0.46,
+                          callP: 0.65,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
-                          raiseProgress: 0.19,
-                          callProgress: 0.26,
+                          raiseP: 0.19,
+                          callP: 0.26,
                         ),
                         MyCustomContainer(
                           hand: 'A2s',
-                          raiseProgress: 0.02,
+                          raiseP: 0.02,
                         ),
                       ],
                     ),
@@ -13023,23 +13023,23 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.23,
-                          raiseProgress: 0.4,
-                          callProgress: 0.76,
+                          allinP: 0.23,
+                          raiseP: 0.4,
+                          callP: 0.76,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.43,
-                          raiseProgress: 0.91,
-                          callProgress: 1,
+                          allinP: 0.43,
+                          raiseP: 0.91,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          callProgress: 0.36,
+                          callP: 0.36,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          callProgress: 0.09,
+                          callP: 0.09,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
@@ -13082,7 +13082,7 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: 'QQ',
 
-                          callProgress: 0.67,
+                          callP: 0.67,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -13130,11 +13130,11 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: 'JJ',
 
-                          callProgress: 0.42,
+                          callP: 0.42,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.31,
+                          callP: 0.31,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -13178,11 +13178,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.27,
+                          callP: 0.27,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
-                          callProgress: 0.06,
+                          callP: 0.06,
                         ),
                         MyCustomContainer(
                           hand: 'T8s',
@@ -13226,7 +13226,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: '98s',
@@ -13273,7 +13273,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -13320,7 +13320,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.22,
+                          callP: 0.22,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -13367,11 +13367,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -13415,11 +13415,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -13463,7 +13463,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -13510,7 +13510,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '33',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: '32s',
@@ -13557,7 +13557,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '22',
-                          callProgress: 0.11,
+                          callP: 0.11,
                         ),
                       ],
                     ),
@@ -13572,24 +13572,24 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.97,
-                          callProgress: 1,
+                          allinP: 0.97,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 0.33,
+                          callP: 0.33,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -13606,17 +13606,17 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 0.44,
-                          callProgress: 0.54,
+                          allinP: 0.44,
+                          callP: 0.54,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          allInProgress: 0.54,
-                          callProgress: 0.69,
+                          allinP: 0.54,
+                          callP: 0.69,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: 'A2s',
@@ -13627,25 +13627,25 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.81,
-                          callProgress: 0.93,
+                          allinP: 0.81,
+                          callP: 0.93,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.97,
-                          raiseProgress: 1,
+                          allinP: 0.97,
+                          raiseP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          callProgress: 0.29,
+                          callP: 0.29,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          callProgress: 0.35,
+                          callP: 0.35,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          callProgress: 0.05,
+                          callP: 0.05,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
@@ -13685,8 +13685,8 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: 'QQ',
 
-                          allInProgress: 0.44,
-                          callProgress: 0.85,
+                          allinP: 0.44,
+                          callP: 0.85,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -13733,11 +13733,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          callProgress: 0.43,
+                          callP: 0.43,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.07,
+                          callP: 0.07,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -13782,7 +13782,7 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: 'TT',
 
-                          callProgress: 0.25,
+                          callP: 0.25,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
@@ -13830,7 +13830,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.13,
+                          callP: 0.13,
                         ),
                         MyCustomContainer(
                           hand: '98s',
@@ -13878,7 +13878,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.17,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -13925,7 +13925,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.21,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -13973,7 +13973,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: '65s',
@@ -14021,11 +14021,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.15,
+                          callP: 0.15,
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.03,
+                          callP: 0.03,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -14069,7 +14069,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.09,
+                          callP: 0.09,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -14116,7 +14116,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '33',
-                          callProgress: 0.05,
+                          callP: 0.05,
                         ),
                         MyCustomContainer(
                           hand: '32s',
@@ -14163,7 +14163,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '22',
-                          callProgress: 0.02,
+                          callP: 0.02,
                         ),
                       ],
                     ),
@@ -14178,26 +14178,26 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
 
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
 
-                          callProgress: 0.51,
+                          callP: 0.51,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
 
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -14215,13 +14215,13 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: 'A5s',
 
-                          allInProgress: 0.87,
-                          callProgress: 0.44,
+                          allinP: 0.87,
+                          callP: 0.44,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          allInProgress: 0.8,
-                          callProgress: 0.85,
+                          allinP: 0.8,
+                          callP: 0.85,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
@@ -14235,26 +14235,26 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 1,
+                          allinP: 1,
 
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          allInProgress:0.09,
-                          callProgress: 0.55,
+                          allinP:0.09,
+                          callP: 0.55,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          callProgress: 0.47,
+                          callP: 0.47,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
 
-                          callProgress: 0.32,
+                          callP: 0.32,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
@@ -14294,7 +14294,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 1,
+                          allinP: 1,
 
                         ),
                         MyCustomContainer(
@@ -14344,11 +14344,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          allInProgress: 0.96,
+                          allinP: 0.96,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -14392,8 +14392,8 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          allInProgress: 0.2,
-                          callProgress: 0.69,
+                          allinP: 0.2,
+                          callP: 0.69,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
@@ -14440,11 +14440,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.49,
+                          callP: 0.49,
                         ),
                         MyCustomContainer(
                           hand: '98s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '97s',
@@ -14488,7 +14488,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: '87s',
@@ -14535,7 +14535,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.19,
+                          callP: 0.19,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -14582,11 +14582,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.21,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.02,
+                          callP: 0.02,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -14630,7 +14630,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.06,
+                          callP: 0.06,
                         ),
                         MyCustomContainer(
                           hand: '54s',
@@ -14677,7 +14677,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.05,
+                          callP: 0.05,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -14785,28 +14785,28 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.97,
-                          raiseProgress: 1,
+                          allinP: 0.97,
+                          raiseP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 1,
+                          allinP: 1,
 
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          allInProgress: 0.81,
-                          callProgress: 1,
+                          allinP: 0.81,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          allInProgress: 0.11,
-                          callProgress: 0.93,
+                          allinP: 0.11,
+                          callP: 0.93,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          allInProgress: 0.25,
-                          callProgress: 0.66,
+                          allinP: 0.25,
+                          callP: 0.66,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -14823,8 +14823,8 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 0.88,
-                          callProgress: 1,
+                          allinP: 0.88,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
@@ -14841,26 +14841,26 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 1,
+                          allinP: 1,
 
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          allInProgress: 0.22,
-                          callProgress: 0.95,
+                          allinP: 0.22,
+                          callP: 0.95,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                            allInProgress: 0.69,
-                            callProgress: 0.75
+                            allinP: 0.69,
+                            callP: 0.75
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          callProgress: 0.39,
+                          callP: 0.39,
 
                         ),
                         MyCustomContainer(
@@ -14893,23 +14893,23 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          allInProgress: 0.66,
-                          callProgress: 1,
+                          allinP: 0.66,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: 'QTs',
-                          callProgress: 0.06,
+                          callP: 0.06,
                         ),
                         MyCustomContainer(
                           hand: 'Q9s',
@@ -14951,11 +14951,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -14999,12 +14999,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          allInProgress: 0.97,
-                          callProgress: 1,
+                          allinP: 0.97,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: 'T8s',
@@ -15048,12 +15048,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          allInProgress: 0.46,
-                          callProgress: 0.93,
+                          allinP: 0.46,
+                          callP: 0.93,
                         ),
                         MyCustomContainer(
                           hand: '98s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '97s',
@@ -15097,12 +15097,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          allInProgress: 0.23,
-                          callProgress: 0.66,
+                          allinP: 0.23,
+                          callP: 0.66,
                         ),
                         MyCustomContainer(
                           hand: '87s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '86s',
@@ -15146,8 +15146,8 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          allInProgress: 0.13,
-                          callProgress: 0.31,
+                          allinP: 0.13,
+                          callP: 0.31,
                         ),
                         MyCustomContainer(
                           hand: '76s',
@@ -15195,8 +15195,8 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          allInProgress: 0.01,
-                          callProgress: 0.17,
+                          allinP: 0.01,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: '65s',
@@ -15400,31 +15400,31 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.28,
-                          raiseProgress: 0.88,
-                          callProgress: 1,
+                          allinP: 0.28,
+                          raiseP: 0.88,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 0.88,
-                          raiseProgress: 1,
+                          allinP: 0.88,
+                          raiseP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          raiseProgress: 0.07,
-                          callProgress: 0.35,
+                          raiseP: 0.07,
+                          callP: 0.35,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.17,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
-                          callProgress: 0.01,
+                          callP: 0.01,
                         ),
                         MyCustomContainer(
                           hand: 'A8s',
@@ -15438,20 +15438,20 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          raiseProgress: 0.12,
+                          raiseP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          raiseProgress: 0.14,
+                          raiseP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
-                          raiseProgress: 0.16,
-                          callProgress: 0.17,
+                          raiseP: 0.16,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: 'A2s',
-                          raiseProgress: 0.04,
+                          raiseP: 0.04,
                         ),
                       ],
                     ),
@@ -15459,19 +15459,19 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.37,
-                          raiseProgress: 0.41,
-                          callProgress: 0.66,
+                          allinP: 0.37,
+                          raiseP: 0.41,
+                          callP: 0.66,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.66,
-                          raiseProgress: 0.76,
-                          callProgress: 1,
+                          allinP: 0.66,
+                          raiseP: 0.76,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          raiseProgress: 0.03,
+                          raiseP: 0.03,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
@@ -15516,16 +15516,16 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          raiseProgress: 0.01,
-                          callProgress: 0.47,
+                          raiseP: 0.01,
+                          callP: 0.47,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
-                          callProgress: 0.06,
+                          callP: 0.06,
                           ),
                         MyCustomContainer(
                           hand: 'QTs',
-                          callProgress: 0.06,
+                          callP: 0.06,
                         ),
                         MyCustomContainer(
                           hand: 'Q9s',
@@ -15567,11 +15567,11 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: 'JJ',
 
-                          callProgress: 0.07,
+                          callP: 0.07,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.24,
+                          callP: 0.24,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -15615,11 +15615,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.03,
+                          callP: 0.03,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
-                          callProgress: 0.23,
+                          callP: 0.23,
                         ),
                         MyCustomContainer(
                           hand: 'T8s',
@@ -15666,7 +15666,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '98s',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: '97s',
@@ -15714,7 +15714,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '87s',
-                          callProgress: 0.3,
+                          callP: 0.3,
                         ),
                         MyCustomContainer(
                           hand: '86s',
@@ -15761,7 +15761,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '76s',
-                          callProgress: 0.31,
+                          callP: 0.31,
                         ),
                         MyCustomContainer(
                           hand: '75s',
@@ -15805,11 +15805,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          callProgress: 0.02,
+                          callP: 0.02,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.38,
+                          callP: 0.38,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -15853,11 +15853,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.05,
+                          callP: 0.05,
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.25,
+                          callP: 0.25,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -16007,24 +16007,24 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.97,
-                          callProgress: 1,
+                          allinP: 0.97,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 0.54,
+                          callP: 0.54,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 0.17,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.13,
+                          callP: 0.13,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -16041,11 +16041,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 0.28,
+                          allinP: 0.28,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          allInProgress: 0.18,
+                          allinP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
@@ -16059,14 +16059,14 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 0.72,
+                          allinP: 0.72,
 
-                          callProgress: 0.94,
+                          callP: 0.94,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.8,
-                          callProgress: 1,
+                          allinP: 0.8,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
@@ -16114,8 +16114,8 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 0.18,
-                          callProgress: 0.68,
+                          allinP: 0.18,
+                          callP: 0.68,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -16162,11 +16162,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          callProgress: 0.03,
+                          callP: 0.03,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -16213,7 +16213,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: 'T8s',
@@ -16260,7 +16260,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '98s',
-                          callProgress: 0.05,
+                          callP: 0.05,
                         ),
                         MyCustomContainer(
                           hand: '97s',
@@ -16308,7 +16308,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '87s',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: '86s',
@@ -16355,7 +16355,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '76s',
-                          callProgress: 0.15,
+                          callP: 0.15,
                         ),
                         MyCustomContainer(
                           hand: '75s',
@@ -16402,7 +16402,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -16449,7 +16449,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -16599,16 +16599,16 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.89,
-                          callProgress: 1,
+                          allinP: 0.89,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
@@ -16632,11 +16632,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 0.56,
+                          allinP: 0.56,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          allInProgress: 0.33,
+                          allinP: 0.33,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
@@ -16650,23 +16650,23 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          callProgress: 0.03,
+                          callP: 0.03,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          callProgress: 0.38,
+                          callP: 0.38,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
@@ -16704,7 +16704,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -16751,12 +16751,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          allInProgress: 0.74,
-                          callProgress: 1,
+                          allinP: 0.74,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
@@ -16800,11 +16800,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          callProgress: 0.11,
+                          callP: 0.11,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
-                          callProgress: 0.16,
+                          callP: 0.16,
                         ),
                         MyCustomContainer(
                           hand: 'T8s',
@@ -16851,7 +16851,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '98s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '97s',
@@ -16899,7 +16899,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '87s',
-                          callProgress: 0.17,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: '86s',
@@ -16943,11 +16943,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.03,
+                          callP: 0.03,
                         ),
                         MyCustomContainer(
                           hand: '76s',
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: '75s',
@@ -16991,12 +16991,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '66',
-                          allInProgress: 0.07,
-                          callProgress: 0.13,
+                          allinP: 0.07,
+                          callP: 0.13,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.20,
+                          callP: 0.20,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -17040,12 +17040,12 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          allInProgress: 0.08,
-                          callProgress: 0.09,
+                          allinP: 0.08,
+                          callP: 0.09,
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -17089,7 +17089,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.05,
+                          callP: 0.05,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -17196,21 +17196,21 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          allInProgress: 0.71,
-                          callProgress: 1,
+                          allinP: 0.71,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          allInProgress: 0.9,
-                          callProgress: 1,
+                          allinP: 0.9,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
@@ -17231,19 +17231,19 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          allInProgress: 0.38,
+                          allinP: 0.38,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
-                          callProgress: 0.05,
+                          callP: 0.05,
                         ),
                         MyCustomContainer(
                           hand: 'A2s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                       ],
                     ),
@@ -17251,24 +17251,24 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          allInProgress: 0.47,
-                          callProgress: 1,
+                          allinP: 0.47,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          callProgress: 0.38,
+                          callP: 0.38,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          callProgress: 0.44,
+                          callP: 0.44,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
@@ -17278,19 +17278,19 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'K7s',
-                          callProgress: 0.23,
+                          callP: 0.23,
                         ),
                         MyCustomContainer(
                           hand: 'K6s',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: 'K5s',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: 'K4s',
-                          callProgress: 0.04,
+                          callP: 0.04,
                         ),
                         MyCustomContainer(
                           hand: 'K3s',
@@ -17304,16 +17304,16 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          allInProgress: 0.26,
-                          callProgress: 0.83,
+                          allinP: 0.26,
+                          callP: 0.83,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
-                          callProgress: 0.04,
+                          callP: 0.04,
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
@@ -17360,16 +17360,16 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          allInProgress: 0.94,
-                          callProgress: 1,
+                          allinP: 0.94,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.44,
+                          callP: 0.44,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
-                          callProgress: 0.17,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: 'J8s',
@@ -17410,16 +17410,16 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          allInProgress: 0.72,
-                          callProgress: 1,
+                          allinP: 0.72,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
-                          callProgress: 0.61,
+                          callP: 0.61,
                         ),
                         MyCustomContainer(
                           hand: 'T8s',
-                          callProgress: 0.11,
+                          callP: 0.11,
                         ),
                         MyCustomContainer(
                           hand: 'T7s',
@@ -17460,16 +17460,16 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          allInProgress: 0.27,
-                          callProgress: 0.4,
+                          allinP: 0.27,
+                          callP: 0.4,
                         ),
                         MyCustomContainer(
                           hand: '98s',
-                          callProgress: 0.29,
+                          callP: 0.29,
                         ),
                         MyCustomContainer(
                           hand: '97s',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: '96s',
@@ -17510,15 +17510,15 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: '87s',
-                          callProgress: 0.19,
+                          callP: 0.19,
                         ),
                         MyCustomContainer(
                           hand: '86s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '85s',
@@ -17559,15 +17559,15 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.07,
+                          callP: 0.07,
                         ),
                         MyCustomContainer(
                           hand: '76s',
-                          callProgress: 0.28,
+                          callP: 0.28,
                         ),
                         MyCustomContainer(
                           hand: '75s',
-                          callProgress: 0.03,
+                          callP: 0.03,
                         ),
                         MyCustomContainer(
                           hand: '74s',
@@ -17609,11 +17609,11 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: '66',
 
-                          callProgress: 0.04,
+                          callP: 0.04,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.31,
+                          callP: 0.31,
                         ),
                         MyCustomContainer(
                           hand: '64s',
@@ -17657,11 +17657,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '55',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.4,
+                          callP: 0.4,
                         ),
                         MyCustomContainer(
                           hand: '53s',
@@ -17705,7 +17705,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '44',
-                          callProgress: 0.05,
+                          callP: 0.05,
                         ),
                         MyCustomContainer(
                           hand: '43s',
@@ -17812,23 +17812,23 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AA',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AKs',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AQs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'AJs',
-                          callProgress: 1,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'ATs',
-                          callProgress: 0.34,
+                          callP: 0.34,
                         ),
                         MyCustomContainer(
                           hand: 'A9s',
@@ -17838,28 +17838,28 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'A7s',
-                          callProgress: 0.19,
+                          callP: 0.19,
                         ),
                         MyCustomContainer(
                           hand: 'A6s',
                         ),
                         MyCustomContainer(
                           hand: 'A5s',
-                          allInProgress: 0.89,
-                          callProgress: 1,
+                          allinP: 0.89,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'A4s',
-                          allInProgress: 0.94,
-                          callProgress: 1,
+                          allinP: 0.94,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'A3s',
-                          callProgress: 0.14,
+                          callP: 0.14,
                         ),
                         MyCustomContainer(
                           hand: 'A2s',
-                          callProgress: 0.17,
+                          callP: 0.17,
                         ),
                       ],
                     ),
@@ -17867,30 +17867,30 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AKo',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KK',
-                          allInProgress: 0.86,
-                          callProgress: 1,
+                          allinP: 0.86,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KQs',
-                          allInProgress: 0.07,
-                          callProgress: 1,
+                          allinP: 0.07,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'KJs',
-                          allInProgress: 0.3,
-                          callProgress: 0.63,
+                          allinP: 0.3,
+                          callP: 0.63,
                         ),
                         MyCustomContainer(
                           hand: 'KTs',
-                          callProgress: 0.42,
+                          callP: 0.42,
                         ),
                         MyCustomContainer(
                           hand: 'K9s',
-                          callProgress: 0.34,
+                          callP: 0.34,
                         ),
                         MyCustomContainer(
                           hand: 'K8s',
@@ -17901,23 +17901,23 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'K6s',
-                          callProgress: 0.21,
+                          callP: 0.21,
                         ),
                         MyCustomContainer(
                           hand: 'K5s',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: 'K4s',
-                          callProgress: 0.2,
+                          callP: 0.2,
                         ),
                         MyCustomContainer(
                           hand: 'K3s',
-                          callProgress: 0.18,
+                          callP: 0.18,
                         ),
                         MyCustomContainer(
                           hand: 'K2s',
-                          callProgress: 0.03,
+                          callP: 0.03,
                         ),
                       ],
                     ),
@@ -17925,29 +17925,29 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AQo',
-                          allInProgress: 0.59,
-                          callProgress: 0.83,
+                          allinP: 0.59,
+                          callP: 0.83,
                         ),
                         MyCustomContainer(
                           hand: 'KQo',
-                          callProgress: 0.12,
+                          callP: 0.12,
                         ),
                         MyCustomContainer(
                           hand: 'QQ',
-                          allInProgress: 1,
+                          allinP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'QJs',
-                          allInProgress: 0.8,
-                          callProgress: 0.82,
+                          allinP: 0.8,
+                          callP: 0.82,
                         ),
                         MyCustomContainer(
                           hand: 'QTs',
-                          callProgress: 0.34,
+                          callP: 0.34,
                         ),
                         MyCustomContainer(
                           hand: 'Q9s',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: 'Q8s',
@@ -17976,7 +17976,7 @@ class ChartContainer extends StatelessWidget {
                       children: [
                         MyCustomContainer(
                           hand: 'AJo',
-                          callProgress: 0.22,
+                          callP: 0.22,
                         ),
                         MyCustomContainer(
                           hand: 'KJo',
@@ -17986,24 +17986,24 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'JJ',
-                          allInProgress: 0.85,
-                          callProgress: 1,
+                          allinP: 0.85,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'JTs',
-                          callProgress: 0.5,
+                          callP: 0.5,
                         ),
                         MyCustomContainer(
                           hand: 'J9s',
-                          callProgress: 0.3,
+                          callP: 0.3,
                         ),
                         MyCustomContainer(
                           hand: 'J8s',
-                          callProgress: 0.08,
+                          callP: 0.08,
                         ),
                         MyCustomContainer(
                           hand: 'J7s',
-                          callProgress: 0.03,
+                          callP: 0.03,
                         ),
                         MyCustomContainer(
                           hand: 'J6s',
@@ -18038,16 +18038,16 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: 'TT',
-                          allInProgress: 0.86,
-                          callProgress: 1,
+                          allinP: 0.86,
+                          callP: 1,
                         ),
                         MyCustomContainer(
                           hand: 'T9s',
-                          callProgress: 0.61,
+                          callP: 0.61,
                         ),
                         MyCustomContainer(
                           hand: 'T8s',
-                          callProgress: 0.37,
+                          callP: 0.37,
                         ),
                         MyCustomContainer(
                           hand: 'T7s',
@@ -18088,19 +18088,19 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '99',
-                          callProgress: 0.34,
+                          callP: 0.34,
                         ),
                         MyCustomContainer(
                           hand: '98s',
-                          callProgress: 0.64,
+                          callP: 0.64,
                         ),
                         MyCustomContainer(
                           hand: '97s',
-                          callProgress: 0.15,
+                          callP: 0.15,
                         ),
                         MyCustomContainer(
                           hand: '96s',
-                          callProgress: 0.07,
+                          callP: 0.07,
                         ),
                         MyCustomContainer(
                           hand: '95s',
@@ -18138,15 +18138,15 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '88',
-                          callProgress: 0.13,
+                          callP: 0.13,
                         ),
                         MyCustomContainer(
                           hand: '87s',
-                          callProgress: 0.5,
+                          callP: 0.5,
                         ),
                         MyCustomContainer(
                           hand: '86s',
-                          callProgress: 0.11,
+                          callP: 0.11,
                         ),
                         MyCustomContainer(
                           hand: '85s',
@@ -18187,15 +18187,15 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '77',
-                          callProgress: 0.07,
+                          callP: 0.07,
                         ),
                         MyCustomContainer(
                           hand: '76s',
-                          callProgress: 0.58,
+                          callP: 0.58,
                         ),
                         MyCustomContainer(
                           hand: '75s',
-                          callProgress: 0.02,
+                          callP: 0.02,
                         ),
                         MyCustomContainer(
                           hand: '74s',
@@ -18237,15 +18237,15 @@ class ChartContainer extends StatelessWidget {
                         MyCustomContainer(
                           hand: '66',
 
-                          callProgress: 0.01,
+                          callP: 0.01,
                         ),
                         MyCustomContainer(
                           hand: '65s',
-                          callProgress: 0.37,
+                          callP: 0.37,
                         ),
                         MyCustomContainer(
                           hand: '64s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '63s',
@@ -18289,11 +18289,11 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '54s',
-                          callProgress: 0.51,
+                          callP: 0.51,
                         ),
                         MyCustomContainer(
                           hand: '53s',
-                          callProgress: 0.17,
+                          callP: 0.17,
                         ),
                         MyCustomContainer(
                           hand: '52s',
@@ -18338,7 +18338,7 @@ class ChartContainer extends StatelessWidget {
                         ),
                         MyCustomContainer(
                           hand: '43s',
-                          callProgress: 0.1,
+                          callP: 0.1,
                         ),
                         MyCustomContainer(
                           hand: '42s',
@@ -18456,50 +18456,50 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.29,
+                        raiseP: 0.29,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.24,
+                        raiseP: 0.24,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.19,
+                        raiseP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.4,
+                        raiseP: 0.4,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
@@ -18510,27 +18510,27 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.08,
+                        raiseP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -18543,7 +18543,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.11,
+                        raiseP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -18560,19 +18560,19 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.19,
+                        raiseP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
@@ -18607,7 +18607,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.2,
+                        raiseP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
@@ -18617,7 +18617,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
@@ -18664,7 +18664,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.65,
+                        raiseP: 0.65,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
@@ -18711,7 +18711,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.33,
+                        raiseP: 0.33,
                       ),
                       MyCustomContainer(
                         hand: '98s',
@@ -18758,7 +18758,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.26,
+                        raiseP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: '87s',
@@ -18805,7 +18805,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.25,
+                        raiseP: 0.25,
                       ),
                       MyCustomContainer(
                         hand: '76s',
@@ -18852,11 +18852,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.17,
+                        raiseP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.22,
+                        raiseP: 0.22,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -18900,11 +18900,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.11,
+                        raiseP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.09,
+                        raiseP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -18948,7 +18948,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.09,
+                        raiseP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -18995,7 +18995,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.11,
+                        raiseP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -19042,7 +19042,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        raiseProgress: 0.09,
+                        raiseP: 0.09,
                       ),
                     ],
                   ),
@@ -19060,56 +19060,56 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.86,
-                        callProgress: 1,
+                        raiseP: 0.86,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.73,
-                        callProgress: 1,
+                        raiseP: 0.73,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.78,
-                        callProgress: 1,
+                        raiseP: 0.78,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.25,
+                        raiseP: 0.25,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.46,
+                        raiseP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.13,
+                        raiseP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.88,
-                        callProgress: 1,
+                        raiseP: 0.88,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.91,
-                        callProgress: 1,
+                        raiseP: 0.91,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.7,
-                        callProgress: 0.75,
+                        raiseP: 0.7,
+                        callP: 0.75,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
@@ -19120,31 +19120,31 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 0.93,
-                        callProgress: 1,
+                        raiseP: 0.93,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.73,
-                        callProgress: 1,
+                        raiseP: 0.73,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.79,
-                        callProgress: 1,
+                        raiseP: 0.79,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.89,
-                        callProgress: 1,
+                        raiseP: 0.89,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.32,
+                        raiseP: 0.32,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -19157,7 +19157,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.18,
+                        raiseP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -19174,25 +19174,25 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.92,
+                        raiseP: 0.92,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 0.92,
+                        raiseP: 0.92,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.57,
-                        callProgress: 0.68,
+                        raiseP: 0.57,
+                        callP: 0.68,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.1,
-                        callProgress: 0.19,
+                        raiseP: 0.1,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -19224,23 +19224,23 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.47,
+                        raiseP: 0.47,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.11,
+                        raiseP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.76,
-                        callProgress: 1,
+                        raiseP: 0.76,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -19284,8 +19284,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.72,
-                        callProgress: 1,
+                        raiseP: 0.72,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
@@ -19332,12 +19332,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.38,
-                        callProgress: 0.63,
+                        raiseP: 0.38,
+                        callP: 0.63,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.05,
+                        callP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -19381,8 +19381,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.28,
-                        callProgress: 0.46,
+                        raiseP: 0.28,
+                        callP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: '87s',
@@ -19429,8 +19429,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.3,
-                        callProgress: 0.44,
+                        raiseP: 0.3,
+                        callP: 0.44,
                       ),
                       MyCustomContainer(
                         hand: '76s',
@@ -19477,13 +19477,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.21,
-                        callProgress: 0.31,
+                        raiseP: 0.21,
+                        callP: 0.31,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.21,
-                        callProgress: 0.27,
+                        raiseP: 0.21,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -19527,12 +19527,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.1,
+                        raiseP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.08,
-                        callProgress: 0.15,
+                        raiseP: 0.08,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -19576,8 +19576,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.12,
-                        callProgress: 0.16,
+                        raiseP: 0.12,
+                        callP: 0.16,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -19624,8 +19624,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.12,
-                        callProgress: 0.15,
+                        raiseP: 0.12,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -19672,8 +19672,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        raiseProgress: 0.1,
-                        callProgress: 0.14,
+                        raiseP: 0.1,
+                        callP: 0.14,
                       ),
                     ],
                   ),
@@ -19688,56 +19688,56 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.98,
-                        callProgress: 1,
+                        raiseP: 0.98,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.77,
-                        callProgress: 1,
+                        raiseP: 0.77,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.86,
-                        callProgress: 1,
+                        raiseP: 0.86,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.73,
+                        raiseP: 0.73,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.43,
+                        raiseP: 0.43,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.44,
+                        raiseP: 0.44,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.93,
-                        callProgress: 1,
+                        raiseP: 0.93,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.96,
-                        callProgress: 1,
+                        raiseP: 0.96,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.98,
-                        callProgress: 1,
+                        raiseP: 0.98,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
@@ -19748,31 +19748,31 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 0.99,
-                        callProgress: 1,
+                        raiseP: 0.99,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.81,
-                        callProgress: 1,
+                        raiseP: 0.81,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.92,
-                        callProgress: 1,
+                        raiseP: 0.92,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.92,
-                        callProgress: 1,
+                        raiseP: 0.92,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.11,
+                        raiseP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -19782,11 +19782,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.21,
+                        raiseP: 0.21,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.01,
+                        raiseP: 0.01,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -19803,23 +19803,23 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.95,
+                        raiseP: 0.95,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.94,
+                        raiseP: 0.94,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.98,
+                        raiseP: 0.98,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -19851,23 +19851,23 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.22,
+                        raiseP: 0.22,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 09,
-                        callProgress: 1,
+                        raiseP: 09,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        callProgress: 0.05,
+                        callP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -19911,8 +19911,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.85,
-                        callProgress: 1,
+                        raiseP: 0.85,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
@@ -19959,8 +19959,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.48,
-                        callProgress: 0.61,
+                        raiseP: 0.48,
+                        callP: 0.61,
                       ),
                       MyCustomContainer(
                         hand: '98s',
@@ -20007,8 +20007,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.3,
-                        callProgress: 0.4,
+                        raiseP: 0.3,
+                        callP: 0.4,
                       ),
                       MyCustomContainer(
                         hand: '87s',
@@ -20055,8 +20055,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.36,
-                        callProgress: 0.43,
+                        raiseP: 0.36,
+                        callP: 0.43,
                       ),
                       MyCustomContainer(
                         hand: '76s',
@@ -20103,12 +20103,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.26,
-                        callProgress: 0.3,
+                        raiseP: 0.26,
+                        callP: 0.3,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.06,
+                        raiseP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -20152,8 +20152,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.16,
-                        callProgress: 0.18,
+                        raiseP: 0.16,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '54s',
@@ -20200,7 +20200,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.2,
+                        raiseP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -20247,7 +20247,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.18,
+                        raiseP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -20294,7 +20294,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        raiseProgress: 0.14,
+                        raiseP: 0.14,
                       ),
                     ],
                   ),
@@ -20312,66 +20312,66 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.59,
-                        callProgress: 1,
+                        raiseP: 0.59,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.22,
-                        callProgress: 1,
+                        raiseP: 0.22,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.37,
-                        callProgress: 1,
+                        raiseP: 0.37,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.29,
-                        callProgress: 0.72,
+                        raiseP: 0.29,
+                        callP: 0.72,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.52,
-                        callProgress: 1,
+                        raiseP: 0.52,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.61,
-                        callProgress: 0.87,
+                        raiseP: 0.61,
+                        callP: 0.87,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.04,
-                        callProgress: 0.12,
+                        raiseP: 0.04,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.59,
-                        callProgress: 1,
+                        raiseP: 0.59,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.65,
-                        callProgress: 1,
+                        raiseP: 0.65,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.67,
-                        callProgress: 1,
+                        raiseP: 0.67,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.49,
-                        callProgress: 0.55,
+                        raiseP: 0.49,
+                        callP: 0.55,
                       ),
                     ],
                   ),
@@ -20379,48 +20379,48 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 0.81,
-                        callProgress: 1,
+                        raiseP: 0.81,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.28,
-                        callProgress: 1,
+                        raiseP: 0.28,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.33,
-                        callProgress: 1,
+                        raiseP: 0.33,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.59,
-                        callProgress: 0.86,
+                        raiseP: 0.59,
+                        callP: 0.86,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
-                        raiseProgress: 0.15,
+                        raiseP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.03,
-                        callProgress: 0.2,
+                        raiseP: 0.03,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.7,
+                        raiseP: 0.7,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -20437,28 +20437,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.48,
-                        callProgress: 1,
+                        raiseP: 0.48,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.89,
-                        callProgress: 1,
+                        raiseP: 0.89,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 0.7,
-                        callProgress: 1,
+                        raiseP: 0.7,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.31,
-                        callProgress: 1,
+                        raiseP: 0.31,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -20490,25 +20490,25 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.44,
-                        callProgress: 0.49,
+                        raiseP: 0.44,
+                        callP: 0.49,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.17,
+                        raiseP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.11,
-                        callProgress: 1,
+                        raiseP: 0.11,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -20540,11 +20540,11 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress: 0.06,
+                        raiseP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress: 0.06,
+                        raiseP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
@@ -20554,13 +20554,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress: 0.11,
-                        callProgress: 0.55,
+                        raiseP: 0.11,
+                        callP: 0.55,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -20604,12 +20604,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.13,
-                        callProgress: 1,
+                        raiseP: 0.13,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.33,
+                        callP: 0.33,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -20653,12 +20653,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.19,
-                        callProgress: 1,
+                        raiseP: 0.19,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.21,
+                        callP: 0.21,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -20702,12 +20702,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.23,
-                        callProgress: 1,
+                        raiseP: 0.23,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.22,
+                        callP: 0.22,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -20751,13 +20751,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.21,
-                        callProgress: 0.81,
+                        raiseP: 0.21,
+                        callP: 0.81,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.09,
-                        callProgress: 0.42,
+                        raiseP: 0.09,
+                        callP: 0.42,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -20801,12 +20801,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.14,
-                        callProgress: 0.54,
+                        raiseP: 0.14,
+                        callP: 0.54,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.46,
+                        callP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -20850,8 +20850,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.16,
-                        callProgress: 0.5,
+                        raiseP: 0.16,
+                        callP: 0.5,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -20898,8 +20898,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.11,
-                        callProgress: 0.39,
+                        raiseP: 0.11,
+                        callP: 0.39,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -20946,8 +20946,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        raiseProgress: 0.08,
-                        callProgress: 0.39,
+                        raiseP: 0.08,
+                        callP: 0.39,
                       ),
                     ],
                   ),
@@ -20962,65 +20962,65 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.87,
-                        callProgress: 1,
+                        raiseP: 0.87,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.23,
-                        callProgress: 1,
+                        raiseP: 0.23,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.55,
-                        callProgress: 1,
+                        raiseP: 0.55,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.57,
-                        callProgress: 1,
+                        raiseP: 0.57,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.84,
-                        callProgress: 1,
+                        raiseP: 0.84,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.39,
-                        callProgress: 0.47,
+                        raiseP: 0.39,
+                        callP: 0.47,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.64,
-                        callProgress: 1,
+                        raiseP: 0.64,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.64,
-                        callProgress: 1,
+                        raiseP: 0.64,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.77,
-                        callProgress: 1,
+                        raiseP: 0.77,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.82,
+                        raiseP: 0.82,
                       ),
                     ],
                   ),
@@ -21028,32 +21028,32 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 0.97,
-                        callProgress: 1,
+                        raiseP: 0.97,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.21,
-                        callProgress: 1,
+                        raiseP: 0.21,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.72,
-                        callProgress: 1,
+                        raiseP: 0.72,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.41,
-                        callProgress: 1,
+                        raiseP: 0.41,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.69,
-                        callProgress: 1,
+                        raiseP: 0.69,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -21063,11 +21063,11 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.12,
+                        raiseP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -21084,28 +21084,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.54,
-                        callProgress: 1,
+                        raiseP: 0.54,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.94,
-                        callProgress: 1,
+                        raiseP: 0.94,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 0.9,
-                        callProgress: 1,
+                        raiseP: 0.9,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.28,
-                        callProgress: 1,
+                        raiseP: 0.28,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.7,
-                        callProgress: 1,
+                        raiseP: 0.7,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -21137,26 +21137,26 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.81,
-                        callProgress: 1,
+                        raiseP: 0.81,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.26,
-                        callProgress: 0.38,
+                        raiseP: 0.26,
+                        callP: 0.38,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.42,
-                        callProgress: 1,
+                        raiseP: 0.42,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.21,
-                        callProgress: 1,
+                        raiseP: 0.21,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -21188,11 +21188,11 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress: 0.29,
+                        raiseP: 0.29,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress: 0.29,
+                        raiseP: 0.29,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
@@ -21202,12 +21202,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.33,
-                        callProgress: 1,
+                        raiseP: 0.33,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -21251,12 +21251,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.14,
+                        callP: 0.14,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -21300,12 +21300,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.22,
-                        callProgress: 1,
+                        raiseP: 0.22,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -21349,12 +21349,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -21398,12 +21398,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.22,
-                        callProgress: 0.71,
+                        raiseP: 0.22,
+                        callP: 0.71,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -21447,12 +21447,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.17,
-                        callProgress: 0.45,
+                        raiseP: 0.17,
+                        callP: 0.45,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        callProgress: 0.24,
+                        callP: 0.24,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -21496,8 +21496,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.17,
-                        callProgress: 0.37,
+                        raiseP: 0.17,
+                        callP: 0.37,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -21544,8 +21544,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.16,
-                        callProgress: 0.31,
+                        raiseP: 0.16,
+                        callP: 0.31,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -21592,8 +21592,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        raiseProgress: 0.12,
-                        callProgress: 0.25,
+                        raiseP: 0.12,
+                        callP: 0.25,
                       ),
                     ],
                   ),
@@ -21608,64 +21608,64 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.5,
-                        callProgress: 1,
+                        raiseP: 0.5,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.18,
-                        callProgress: 1,
+                        raiseP: 0.18,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.76,
-                        callProgress: 1,
+                        raiseP: 0.76,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.64,
-                        callProgress: 1,
+                        raiseP: 0.64,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.85,
-                        callProgress: 1,
+                        raiseP: 0.85,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.97,
-                        callProgress: 1,
+                        raiseP: 0.97,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.85,
-                        callProgress: 1,
+                        raiseP: 0.85,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.82,
-                        callProgress: 1,
+                        raiseP: 0.82,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.87,
-                        callProgress: 1,
+                        raiseP: 0.87,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.65,
+                        raiseP: 0.65,
                       ),
                     ],
                   ),
@@ -21673,31 +21673,31 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.56,
-                        callProgress: 1,
+                        raiseP: 0.56,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.6,
-                        callProgress: 1,
+                        raiseP: 0.6,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.53,
-                        callProgress: 1,
+                        raiseP: 0.53,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.8,
-                        callProgress: 1,
+                        raiseP: 0.8,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -21707,8 +21707,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.38,
-                        callProgress: 0.54,
+                        raiseP: 0.38,
+                        callP: 0.54,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
@@ -21728,32 +21728,32 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.7,
-                        callProgress: 1,
+                        raiseP: 0.7,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.91,
-                        callProgress: 1,
+                        raiseP: 0.91,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 0.92,
-                        callProgress: 1,
+                        raiseP: 0.92,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.45,
-                        callProgress: 1,
+                        raiseP: 0.45,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.62,
-                        callProgress: 1,
+                        raiseP: 0.62,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        raiseProgress: 0.45,
+                        raiseP: 0.45,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
@@ -21782,27 +21782,27 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.94,
-                        callProgress: 1,
+                        raiseP: 0.94,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.97,
-                        callProgress: 0.6,
+                        raiseP: 0.97,
+                        callP: 0.6,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
-                        raiseProgress: 0.4,
+                        raiseP: 0.4,
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.93,
-                        callProgress: 1,
+                        raiseP: 0.93,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.47,
-                        callProgress: 1,
+                        raiseP: 0.47,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -21834,11 +21834,11 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress: 0.73,
+                        raiseP: 0.73,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress: 0.08,
+                        raiseP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
@@ -21848,13 +21848,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.6,
-                        callProgress: 1,
+                        raiseP: 0.6,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress: 0.11,
-                        callProgress: 0.25,
+                        raiseP: 0.11,
+                        callP: 0.25,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -21898,12 +21898,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -21947,12 +21947,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.27,
-                        callProgress: 0.79,
+                        raiseP: 0.27,
+                        callP: 0.79,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -21996,13 +21996,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.25,
-                        callProgress: 0.66,
+                        raiseP: 0.25,
+                        callP: 0.66,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        raiseProgress: 0.06,
-                        callProgress: 0.11,
+                        raiseP: 0.06,
+                        callP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -22046,13 +22046,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.25,
-                        callProgress: 0.53,
+                        raiseP: 0.25,
+                        callP: 0.53,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.09,
-                        callProgress: 0.17,
+                        raiseP: 0.09,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -22096,12 +22096,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.17,
+                        callP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.13,
-                        callProgress: 0.23,
+                        raiseP: 0.13,
+                        callP: 0.23,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -22145,7 +22145,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -22192,7 +22192,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -22239,7 +22239,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                     ],
                   ),
@@ -22257,64 +22257,64 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.97,
-                        callProgress: 1,
+                        raiseP: 0.97,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.25,
-                        callProgress: 1,
+                        raiseP: 0.25,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.16,
-                        callProgress: 0.73,
+                        raiseP: 0.16,
+                        callP: 0.73,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.38,
-                        callProgress: 0.82,
+                        raiseP: 0.38,
+                        callP: 0.82,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.15,
-                        callProgress: 0.36,
+                        raiseP: 0.15,
+                        callP: 0.36,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.45,
-                        callProgress: 1,
+                        raiseP: 0.45,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.68,
-                        callProgress: 1,
+                        raiseP: 0.68,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.7,
-                        callProgress: 1,
+                        raiseP: 0.7,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.1,
+                        raiseP: 0.1,
                       ),
                     ],
                   ),
@@ -22322,32 +22322,32 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 0.75,
-                        callProgress: 1,
+                        raiseP: 0.75,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.35,
-                        callProgress: 1,
+                        raiseP: 0.35,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.51,
-                        callProgress: 1,
+                        raiseP: 0.51,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.64,
-                        callProgress: 1,
+                        raiseP: 0.64,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.26,
-                        callProgress: 0.42,
+                        raiseP: 0.26,
+                        callP: 0.42,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -22357,12 +22357,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.05,
-                        callProgress: 0.21,
+                        raiseP: 0.05,
+                        callP: 0.21,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.05,
+                        raiseP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -22379,28 +22379,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.42,
-                        callProgress: 1,
+                        raiseP: 0.42,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.51,
-                        callProgress: 0.57,
+                        raiseP: 0.51,
+                        callP: 0.57,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 0.67,
-                        callProgress: 1,
+                        raiseP: 0.67,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.46,
-                        callProgress: 1,
+                        raiseP: 0.46,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.18,
-                        callProgress: 0.73,
+                        raiseP: 0.18,
+                        callP: 0.73,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -22432,7 +22432,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.05,
+                        raiseP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
@@ -22442,13 +22442,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.42,
-                        callProgress: 1,
+                        raiseP: 0.42,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.35,
-                        callProgress: 1,
+                        raiseP: 0.35,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -22492,13 +22492,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.27,
-                        callProgress: 1,
+                        raiseP: 0.27,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress: 0.06,
-                        callProgress: 0.37,
+                        raiseP: 0.06,
+                        callP: 0.37,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -22542,12 +22542,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.26,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -22591,12 +22591,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -22640,12 +22640,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.21,
-                        callProgress: 1,
+                        raiseP: 0.21,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -22689,13 +22689,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.16,
-                        callProgress: 0.81,
+                        raiseP: 0.16,
+                        callP: 0.81,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.2,
-                        callProgress: 0.36,
+                        raiseP: 0.2,
+                        callP: 0.36,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -22739,13 +22739,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.15,
-                        callProgress: 0.58,
+                        raiseP: 0.15,
+                        callP: 0.58,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.12,
-                        callProgress: 0.27,
+                        raiseP: 0.12,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: '53s',
@@ -22789,8 +22789,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.13,
-                        callProgress: 0.49,
+                        raiseP: 0.13,
+                        callP: 0.49,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -22837,8 +22837,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.08,
-                        callProgress: 0.44,
+                        raiseP: 0.08,
+                        callP: 0.44,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -22885,8 +22885,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        raiseProgress: 0.11,
-                        callProgress: 0.55,
+                        raiseP: 0.11,
+                        callP: 0.55,
                       ),
                     ],
                   ),
@@ -22901,64 +22901,64 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.97,
-                        callProgress: 1,
+                        raiseP: 0.97,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.32,
-                        callProgress: 1,
+                        raiseP: 0.32,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.06,
-                        callProgress: 1,
+                        raiseP: 0.06,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.36,
-                        callProgress: 1,
+                        raiseP: 0.36,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.53,
-                        callProgress: 0.88,
+                        raiseP: 0.53,
+                        callP: 0.88,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.54,
-                        callProgress: 1,
+                        raiseP: 0.54,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.75,
-                        callProgress: 1,
+                        raiseP: 0.75,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.81,
-                        callProgress: 1,
+                        raiseP: 0.81,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.59,
+                        raiseP: 0.59,
                       ),
                     ],
                   ),
@@ -22966,48 +22966,48 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 0.93,
-                        callProgress: 1,
+                        raiseP: 0.93,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.28,
-                        callProgress: 1,
+                        raiseP: 0.28,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.34,
-                        callProgress: 1,
+                        raiseP: 0.34,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.26,
-                        callProgress: 0.38,
+                        raiseP: 0.26,
+                        callP: 0.38,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
-                        raiseProgress: 0.31,
+                        raiseP: 0.31,
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.5,
-                        callProgress: 0.65,
+                        raiseP: 0.5,
+                        callP: 0.65,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.12,
+                        raiseP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
@@ -23024,28 +23024,28 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.54,
-                        callProgress: 1,
+                        raiseP: 0.54,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.84,
-                        callProgress: 1,
+                        raiseP: 0.84,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 0.84,
-                        callProgress: 1,
+                        raiseP: 0.84,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.52,
-                        callProgress: 1,
+                        raiseP: 0.52,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.63,
-                        callProgress: 1,
+                        raiseP: 0.63,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -23077,8 +23077,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.38,
-                        callProgress: 0.72,
+                        raiseP: 0.38,
+                        callP: 0.72,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
@@ -23088,13 +23088,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.43,
-                        callProgress: 1,
+                        raiseP: 0.43,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -23138,12 +23138,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.24,
-                        callProgress: 1,
+                        raiseP: 0.24,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        callProgress: 0.26,
+                        callP: 0.26,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
@@ -23187,12 +23187,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.13,
-                        callProgress: 1,
+                        raiseP: 0.13,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: '97s',
@@ -23236,12 +23236,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.16,
-                        callProgress: 1,
+                        raiseP: 0.16,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '86s',
@@ -23285,12 +23285,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '75s',
@@ -23334,8 +23334,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.2,
-                        callProgress: 0.91,
+                        raiseP: 0.2,
+                        callP: 0.91,
                       ),
                       MyCustomContainer(
                         hand: '65s',
@@ -23382,8 +23382,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.14,
-                        callProgress: 0.65,
+                        raiseP: 0.14,
+                        callP: 0.65,
                       ),
                       MyCustomContainer(
                         hand: '54s',
@@ -23430,8 +23430,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.08,
-                        callProgress: 0.46,
+                        raiseP: 0.08,
+                        callP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -23478,8 +23478,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.04,
-                        callProgress: 0.37,
+                        raiseP: 0.04,
+                        callP: 0.37,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -23526,8 +23526,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        raiseProgress: 0.015,
-                        callProgress: 0.33,
+                        raiseP: 0.015,
+                        callP: 0.33,
                       ),
                     ],
                   ),
@@ -23542,64 +23542,64 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.51,
-                        callProgress: 1,
+                        raiseP: 0.51,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.36,
-                        callProgress: 1,
+                        raiseP: 0.36,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.77,
-                        callProgress: 1,
+                        raiseP: 0.77,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.14,
-                        callProgress: 0.33,
+                        raiseP: 0.14,
+                        callP: 0.33,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.32,
-                        callProgress: 0.4,
+                        raiseP: 0.32,
+                        callP: 0.4,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.25,
-                        callProgress: 0.27,
+                        raiseP: 0.25,
+                        callP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.87,
-                        callProgress: 1,
+                        raiseP: 0.87,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.85,
-                        callProgress: 1,
+                        raiseP: 0.85,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.96,
-                        callProgress: 1,
+                        raiseP: 0.96,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.38,
+                        raiseP: 0.38,
                       ),
                     ],
                   ),
@@ -23607,31 +23607,31 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.55,
-                        callProgress: 1,
+                        raiseP: 0.55,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.51,
-                        callProgress: 1,
+                        raiseP: 0.51,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.70,
-                        callProgress: 1,
+                        raiseP: 0.70,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.41,
-                        callProgress: 0.47,
+                        raiseP: 0.41,
+                        callP: 0.47,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
@@ -23641,8 +23641,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.24,
-                        callProgress: 0.28,
+                        raiseP: 0.24,
+                        callP: 0.28,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
@@ -23662,26 +23662,26 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.87,
-                        callProgress: 1,
+                        raiseP: 0.87,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.76,
-                        callProgress: 1,
+                        raiseP: 0.76,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.81,
-                        callProgress: 1,
+                        raiseP: 0.81,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
@@ -23713,24 +23713,24 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.85,
+                        raiseP: 0.85,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.95,
-                        callProgress: 1,
+                        raiseP: 0.95,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.81,
-                        callProgress: 1,
+                        raiseP: 0.81,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -23774,8 +23774,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.69,
-                        callProgress: 1,
+                        raiseP: 0.69,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
@@ -23822,8 +23822,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.49,
-                        callProgress: 1,
+                        raiseP: 0.49,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
@@ -23870,8 +23870,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        raiseProgress: 0.18,
-                        callProgress: 0.52,
+                        raiseP: 0.18,
+                        callP: 0.52,
                       ),
                       MyCustomContainer(
                         hand: '87s',
@@ -23918,8 +23918,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.19,
-                        callProgress: 0.48,
+                        raiseP: 0.19,
+                        callP: 0.48,
                       ),
                       MyCustomContainer(
                         hand: '76s',
@@ -23966,13 +23966,13 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.2,
-                        callProgress: 0.41,
+                        raiseP: 0.2,
+                        callP: 0.41,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.016,
-                        callProgress: 0.018,
+                        raiseP: 0.016,
+                        callP: 0.018,
                       ),
                       MyCustomContainer(
                         hand: '64s',
@@ -24016,8 +24016,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.06,
-                        callProgress: 0.19,
+                        raiseP: 0.06,
+                        callP: 0.19,
                       ),
                       MyCustomContainer(
                         hand: '54s',
@@ -24064,8 +24064,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.046,
-                        callProgress: 0.136,
+                        raiseP: 0.046,
+                        callP: 0.136,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -24112,7 +24112,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -24159,7 +24159,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                     ],
                   ),
@@ -24174,63 +24174,63 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.93,
-                        callProgress: 1,
+                        raiseP: 0.93,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.88,
-                        callProgress: 1,
+                        raiseP: 0.88,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.9,
-                        callProgress: 1,
+                        raiseP: 0.9,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        raiseProgress: 0.95,
-                        callProgress: 1,
+                        raiseP: 0.95,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.9,
-                        callProgress: 0.93,
+                        raiseP: 0.9,
+                        callP: 0.93,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        raiseProgress: 0.72,
-                        callProgress: 0.73,
+                        raiseP: 0.72,
+                        callP: 0.73,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.97,
-                        callProgress: 1,
+                        raiseP: 0.97,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.96,
-                        callProgress: 1,
+                        raiseP: 0.96,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.66,
+                        raiseP: 0.66,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.35,
+                        raiseP: 0.35,
                       ),
                     ],
                   ),
@@ -24238,42 +24238,42 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.95,
-                        callProgress: 1,
+                        raiseP: 0.95,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.89,
-                        callProgress: 1,
+                        raiseP: 0.89,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.92,
-                        callProgress: 1,
+                        raiseP: 0.92,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.95,
-                        callProgress: 1,
+                        raiseP: 0.95,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
-                        raiseProgress: 0.09,
+                        raiseP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.18,
+                        raiseP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
@@ -24293,32 +24293,32 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.97,
-                        callProgress: 1,
+                        raiseP: 0.97,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 99.5,
-                        callProgress: 1,
+                        raiseP: 99.5,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.91,
-                        callProgress: 1,
+                        raiseP: 0.91,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.94,
-                        callProgress: 1,
+                        raiseP: 0.94,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        raiseProgress: 0.98,
-                        callProgress: 1,
+                        raiseP: 0.98,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
@@ -24347,21 +24347,21 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
-                        raiseProgress: 0.34,
+                        raiseP: 0.34,
                       ),
-                      MyCustomContainer(hand: 'JJ', raiseProgress: 1),
+                      MyCustomContainer(hand: 'JJ', raiseP: 1),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.93,
-                        callProgress: 1,
+                        raiseP: 0.93,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
@@ -24391,18 +24391,18 @@ class ChartContainer extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      MyCustomContainer(hand: 'ATo', raiseProgress: 1),
-                      MyCustomContainer(hand: 'KTo', raiseProgress: 0.35),
-                      MyCustomContainer(hand: 'QTo', raiseProgress: 0.11),
+                      MyCustomContainer(hand: 'ATo', raiseP: 1),
+                      MyCustomContainer(hand: 'KTo', raiseP: 0.35),
+                      MyCustomContainer(hand: 'QTo', raiseP: 0.11),
                       MyCustomContainer(
                         hand: 'JTo',
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.99,
-                        callProgress: 1,
+                        raiseP: 0.99,
+                        callP: 1,
                       ),
-                      MyCustomContainer(hand: 'T9s', raiseProgress: 0.3),
+                      MyCustomContainer(hand: 'T9s', raiseP: 0.3),
                       MyCustomContainer(
                         hand: 'T8s',
                       ),
@@ -24445,8 +24445,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        raiseProgress: 0.93,
-                        callProgress: 1,
+                        raiseP: 0.93,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
@@ -24492,7 +24492,7 @@ class ChartContainer extends StatelessWidget {
                         hand: '98o',
                       ),
                       MyCustomContainer(
-                          hand: '88', raiseProgress: 0.9, callProgress: 1),
+                          hand: '88', raiseP: 0.9, callP: 1),
                       MyCustomContainer(
                         hand: '87s',
                       ),
@@ -24538,8 +24538,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.31,
-                        callProgress: 0.38,
+                        raiseP: 0.31,
+                        callP: 0.38,
                       ),
                       MyCustomContainer(
                         hand: '76s',
@@ -24586,8 +24586,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.17,
-                        callProgress: 0.22,
+                        raiseP: 0.17,
+                        callP: 0.22,
                       ),
                       MyCustomContainer(
                         hand: '65s',
@@ -24634,7 +24634,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: '54s',
@@ -24681,7 +24681,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        callProgress: 0.03,
+                        callP: 0.03,
                       ),
                       MyCustomContainer(
                         hand: '43s',
@@ -24726,7 +24726,7 @@ class ChartContainer extends StatelessWidget {
                       MyCustomContainer(
                         hand: '43o',
                       ),
-                      MyCustomContainer(hand: '33', callProgress: 0.02),
+                      MyCustomContainer(hand: '33', callP: 0.02),
                       MyCustomContainer(
                         hand: '32s',
                       ),
@@ -24772,7 +24772,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 0.02,
+                        callP: 0.02,
                       ),
                     ],
                   ),
@@ -24790,63 +24790,63 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.34,
-                        callProgress: 1,
+                        raiseP: 0.34,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.14,
-                        callProgress: 1,
+                        raiseP: 0.14,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        raiseProgress: 0.01,
-                        callProgress: 1,
+                        raiseP: 0.01,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.11,
-                        callProgress: 1,
+                        raiseP: 0.11,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.14,
-                        callProgress: 1,
+                        raiseP: 0.14,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A2s',
-                        raiseProgress: 0.43,
-                        callProgress: 1,
+                        raiseP: 0.43,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -24854,63 +24854,63 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 0.65,
-                        callProgress: 1,
+                        raiseP: 0.65,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.08,
-                        callProgress: 1,
+                        raiseP: 0.08,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.23,
-                        callProgress: 1,
+                        raiseP: 0.23,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
-                        raiseProgress: 0.32,
-                        callProgress: 1,
+                        raiseP: 0.32,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K3s',
-                        raiseProgress: 0.36,
-                        callProgress: 1,
+                        raiseP: 0.36,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K2s',
-                        raiseProgress: 0.12,
-                        callProgress: 1,
+                        raiseP: 0.12,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -24918,65 +24918,65 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.27,
-                        callProgress: 1,
+                        raiseP: 0.27,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 0.46,
-                        callProgress: 1,
+                        raiseP: 0.46,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.6,
-                        callProgress: 1,
+                        raiseP: 0.6,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.24,
-                        callProgress: 1,
+                        raiseP: 0.24,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        raiseProgress: 0.09,
-                        callProgress: 1,
+                        raiseP: 0.09,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
-                        raiseProgress: 0.19,
-                        callProgress: 1,
+                        raiseP: 0.19,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q7s',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q6s',
-                        raiseProgress: 0.12,
-                        callProgress: 1,
+                        raiseP: 0.12,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q5s',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q4s',
-                        raiseProgress: 0.02,
-                        callProgress: 1,
+                        raiseP: 0.02,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q3s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q2s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -24984,50 +24984,50 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.07,
-                        callProgress: 1,
+                        raiseP: 0.07,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.23,
-                        callProgress: 1,
+                        raiseP: 0.23,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J5s',
-                        callProgress: 0.95,
+                        callP: 0.95,
                       ),
                       MyCustomContainer(
                         hand: 'J4s',
-                        callProgress: 0.35,
+                        callP: 0.35,
                       ),
                       MyCustomContainer(
                         hand: 'J3s',
@@ -25041,51 +25041,51 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress: 0.09,
-                        callProgress: 1,
+                        raiseP: 0.09,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
-                        callProgress: 0.82,
+                        callP: 0.82,
                       ),
                       MyCustomContainer(
                         hand: 'JTo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T5s',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'T4s',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: 'T3s',
@@ -25099,12 +25099,12 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A9o',
-                        raiseProgress: 0.09,
-                        callProgress: 1,
+                        raiseP: 0.09,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9o',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: 'Q9o',
@@ -25114,35 +25114,35 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'T9o',
-                        callProgress: 0.58,
+                        callP: 0.58,
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        raiseProgress: 0.14,
-                        callProgress: 1,
+                        raiseP: 0.14,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '97s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '96s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '95s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '94s',
                       ),
                       MyCustomContainer(
                         hand: '93s',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '92s',
@@ -25153,8 +25153,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A8o',
-                        raiseProgress: 0.12,
-                        callProgress: 0.29,
+                        raiseP: 0.12,
+                        callP: 0.29,
                       ),
                       MyCustomContainer(
                         hand: 'K8o',
@@ -25167,33 +25167,33 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'T8o',
-                        raiseProgress: 0.0,
-                        callProgress: 0.05,
+                        raiseP: 0.0,
+                        callP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: '98o',
-                        callProgress: 0.41,
+                        callP: 0.41,
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '86s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '85s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '84s',
-                        callProgress: 0.22,
+                        callP: 0.22,
                       ),
                       MyCustomContainer(
                         hand: '83s',
@@ -25207,7 +25207,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A7o',
-                        raiseProgress: 0.05,
+                        raiseP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: 'K7o',
@@ -25223,29 +25223,29 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '97o',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '87o',
-                        callProgress: 0.42,
+                        callP: 0.42,
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        raiseProgress: 0.34,
-                        callProgress: 1,
+                        raiseP: 0.34,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '74s',
-                        raiseProgress: 0.02,
-                        callProgress: 1,
+                        raiseP: 0.02,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '73s',
@@ -25280,24 +25280,24 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '76o',
-                        callProgress: 0.32,
+                        callP: 0.32,
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.38,
-                        callProgress: 1,
+                        raiseP: 0.38,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '64s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '63s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '62s',
@@ -25308,8 +25308,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A5o',
-                        raiseProgress: 0.23,
-                        callProgress: 0.59,
+                        raiseP: 0.23,
+                        callP: 0.59,
                       ),
                       MyCustomContainer(
                         hand: 'K5o',
@@ -25334,25 +25334,25 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '65o',
-                        callProgress: 0.28,
+                        callP: 0.28,
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.05,
-                        callProgress: 1,
+                        raiseP: 0.05,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.25,
-                        callProgress: 1,
+                        raiseP: 0.25,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '53s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '52s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -25360,7 +25360,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A4o',
-                        raiseProgress: 0.11,
+                        raiseP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: 'K4o',
@@ -25388,22 +25388,22 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '54o',
-                        callProgress: 0.15,
+                        callP: 0.15,
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '43s',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '42s',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -25444,12 +25444,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '32s',
-                        callProgress: 0.94,
+                        callP: 0.94,
                       ),
                     ],
                   ),
@@ -25493,7 +25493,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -25508,123 +25508,123 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 0.54,
-                        callProgress: 1,
+                        raiseP: 0.54,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.28,
-                        callProgress: 1,
+                        raiseP: 0.28,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: 'A2s', raiseProgress: 0.12, callProgress: 1),
+                          hand: 'A2s', raiseP: 0.12, callP: 1),
                     ],
                   ),
                   Row(
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 0.94,
-                        callProgress: 1,
+                        raiseP: 0.94,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.14,
-                        callProgress: 1,
+                        raiseP: 0.14,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
-                        raiseProgress: 0.02,
-                        callProgress: 1,
+                        raiseP: 0.02,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.13,
-                        callProgress: 1,
+                        raiseP: 0.13,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.30,
-                        callProgress: 1,
+                        raiseP: 0.30,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
-                        raiseProgress: 0.38,
-                        callProgress: 1,
+                        raiseP: 0.38,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K3s',
-                        raiseProgress: 0.29,
-                        callProgress: 1,
+                        raiseP: 0.29,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K2s',
-                        raiseProgress: 0.33,
-                        callProgress: 1,
+                        raiseP: 0.33,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -25632,65 +25632,65 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.27,
-                        callProgress: 1,
+                        raiseP: 0.27,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 0.68,
-                        callProgress: 1,
+                        raiseP: 0.68,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.49,
-                        callProgress: 1,
+                        raiseP: 0.49,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.42,
-                        callProgress: 1,
+                        raiseP: 0.42,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        raiseProgress: 0.19,
-                        callProgress: 1,
+                        raiseP: 0.19,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
-                        raiseProgress: 0.20,
-                        callProgress: 1,
+                        raiseP: 0.20,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q7s',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q6s',
-                        raiseProgress: 0.12,
-                        callProgress: 1,
+                        raiseP: 0.12,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q5s',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q4s',
-                        raiseProgress: 0.05,
-                        callProgress: 1,
+                        raiseP: 0.05,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q3s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q2s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -25698,48 +25698,48 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.15,
-                        callProgress: 1,
+                        raiseP: 0.15,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.21,
-                        callProgress: 1,
+                        raiseP: 0.21,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
-                        raiseProgress: 0.06,
-                        callProgress: 1,
+                        raiseP: 0.06,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J7s',
-                        raiseProgress: 0.09,
-                        callProgress: 1,
+                        raiseP: 0.09,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
-                      MyCustomContainer(hand: 'J5s', callProgress: 1),
-                      MyCustomContainer(hand: 'J4s', callProgress: 1),
-                      MyCustomContainer(hand: 'J3s', callProgress: 0.69),
+                      MyCustomContainer(hand: 'J5s', callP: 1),
+                      MyCustomContainer(hand: 'J4s', callP: 1),
+                      MyCustomContainer(hand: 'J3s', callP: 0.69),
                       MyCustomContainer(
                         hand: 'J2s',
                       ),
@@ -25749,46 +25749,46 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress: 0.13,
-                        callProgress: 1,
+                        raiseP: 0.13,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress: 0.27,
-                        callProgress: 1,
+                        raiseP: 0.27,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T5s',
-                        callProgress: 0.45,
+                        callP: 0.45,
                       ),
                       MyCustomContainer(
                         hand: 'T4s',
@@ -25805,51 +25805,51 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A9o',
-                        raiseProgress: 0.01,
-                        callProgress: 1,
+                        raiseP: 0.01,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9o',
-                        callProgress: 0.58,
+                        callP: 0.58,
                       ),
                       MyCustomContainer(
                         hand: 'Q9o',
                       ),
                       MyCustomContainer(
                         hand: 'J9o',
-                        callProgress: 0.24,
+                        callP: 0.24,
                       ),
                       MyCustomContainer(
                         hand: 'T9o',
-                        callProgress: 0.79,
+                        callP: 0.79,
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        raiseProgress: 0.15,
-                        callProgress: 1,
+                        raiseP: 0.15,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '97s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '96s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '95s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '94s',
                       ),
                       MyCustomContainer(
                         hand: '93s',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '92s',
@@ -25860,12 +25860,12 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A8o',
-                        raiseProgress: 0.13,
-                        callProgress: 1,
+                        raiseP: 0.13,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8o',
-                        callProgress: 0.16,
+                        callP: 0.16,
                       ),
                       MyCustomContainer(
                         hand: 'Q8o',
@@ -25875,32 +25875,32 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'T8o',
-                        callProgress: 0.1,
+                        callP: 0.1,
                       ),
                       MyCustomContainer(
                         hand: '98o',
-                        callProgress: 0.65,
+                        callP: 0.65,
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        raiseProgress: 0.36,
-                        callProgress: 1,
+                        raiseP: 0.36,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '86s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '85s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '84s',
-                        callProgress: 0.4,
+                        callP: 0.4,
                       ),
                       MyCustomContainer(
                         hand: '83s',
@@ -25914,8 +25914,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A7o',
-                        raiseProgress: 0.2,
-                        callProgress: 0.94,
+                        raiseP: 0.2,
+                        callP: 0.94,
                       ),
                       MyCustomContainer(
                         hand: 'K7o',
@@ -25931,28 +25931,28 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '97o',
-                        callProgress: 0.18,
+                        callP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: '87o',
-                        callProgress: 0.42,
+                        callP: 0.42,
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '74s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '73s',
@@ -25966,11 +25966,11 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A6o',
-                        callProgress: 0.09,
+                        callP: 0.09,
                       ),
                       MyCustomContainer(
                         hand: 'K6o',
-                        callProgress: 0.13,
+                        callP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: 'Q6o',
@@ -25986,28 +25986,28 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '86o',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: '76o',
-                        callProgress: 0.48,
+                        callP: 0.48,
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.55,
-                        callProgress: 1,
+                        raiseP: 0.55,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '64s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '63s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '62s',
@@ -26017,7 +26017,7 @@ class ChartContainer extends StatelessWidget {
                   Row(
                     children: [
                       MyCustomContainer(
-                          hand: 'A5o', raiseProgress: 0.14, callProgress: 1),
+                          hand: 'A5o', raiseP: 0.14, callP: 1),
                       MyCustomContainer(
                         hand: 'K5o',
                       ),
@@ -26041,24 +26041,24 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '65o',
-                        callProgress: 0.4,
+                        callP: 0.4,
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.24,
-                        callProgress: 1,
+                        raiseP: 0.24,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '53s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '52s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -26066,8 +26066,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A4o',
-                        raiseProgress: 0.33,
-                        callProgress: 0.81,
+                        raiseP: 0.33,
+                        callP: 0.81,
                       ),
                       MyCustomContainer(
                         hand: 'K4o',
@@ -26095,22 +26095,22 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '54o',
-                        callProgress: 0.08,
+                        callP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '43s',
-                        raiseProgress: 0.1,
-                        callProgress: 1,
+                        raiseP: 0.1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '42s',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -26118,7 +26118,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A3o',
-                        raiseProgress: 0.23,
+                        raiseP: 0.23,
                       ),
                       MyCustomContainer(
                         hand: 'K3o',
@@ -26152,12 +26152,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '32s',
-                        callProgress: 0.79,
+                        callP: 0.79,
                       ),
                     ],
                   ),
@@ -26165,7 +26165,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A2o',
-                        raiseProgress: 0.08,
+                        raiseP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'K2o',
@@ -26202,7 +26202,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -26217,120 +26217,120 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 0.55,
-                        callProgress: 1,
+                        raiseP: 0.55,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.33,
-                        callProgress: 1,
+                        raiseP: 0.33,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.01,
-                        callProgress: 1,
+                        raiseP: 0.01,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: 'A2s', raiseProgress: 0.01, callProgress: 1),
+                          hand: 'A2s', raiseP: 0.01, callP: 1),
                     ],
                   ),
                   Row(
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 1,
-                        callProgress: 1,
+                        raiseP: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 0.1,
-                        callProgress: 1,
+                        raiseP: 0.1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.37,
-                        callProgress: 1,
+                        raiseP: 0.37,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.15,
-                        callProgress: 1,
+                        raiseP: 0.15,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.02,
-                        callProgress: 1,
+                        raiseP: 0.02,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
-                        raiseProgress: 0.12,
-                        callProgress: 1,
+                        raiseP: 0.12,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K3s',
-                        raiseProgress: 0.51,
-                        callProgress: 1,
+                        raiseP: 0.51,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K2s',
-                        raiseProgress: 0.47,
-                        callProgress: 1,
+                        raiseP: 0.47,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -26338,63 +26338,63 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.15,
-                        callProgress: 1,
+                        raiseP: 0.15,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.48,
-                        callProgress: 1,
+                        raiseP: 0.48,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q7s',
-                        raiseProgress: 0.09,
-                        callProgress: 1,
+                        raiseP: 0.09,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q6s',
-                        raiseProgress: 0.41,
-                        callProgress: 1,
+                        raiseP: 0.41,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q5s',
-                        raiseProgress: 0.2,
-                        callProgress: 1,
+                        raiseP: 0.2,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q4s',
-                        raiseProgress: 0.48,
-                        callProgress: 1,
+                        raiseP: 0.48,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q3s',
-                        raiseProgress: 0.57,
-                        callProgress: 1,
+                        raiseP: 0.57,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q2s',
-                        raiseProgress: 0.48,
-                        callProgress: 1,
+                        raiseP: 0.48,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -26402,50 +26402,50 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.28,
-                        callProgress: 1,
+                        raiseP: 0.28,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.35,
-                        callProgress: 1,
+                        raiseP: 0.35,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJo',
-                        raiseProgress: 0.36,
-                        callProgress: 1,
+                        raiseP: 0.36,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 0.98,
-                        callProgress: 1,
+                        raiseP: 0.98,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.14,
-                        callProgress: 1,
+                        raiseP: 0.14,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J7s',
-                        raiseProgress: 0.25,
-                        callProgress: 1,
+                        raiseP: 0.25,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J6s',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
-                      MyCustomContainer(hand: 'J5s', callProgress: 0.4),
+                      MyCustomContainer(hand: 'J5s', callP: 0.4),
                       MyCustomContainer(
-                          hand: 'J4s', raiseProgress: 0.04, callProgress: 0.26),
+                          hand: 'J4s', raiseP: 0.04, callP: 0.26),
                       MyCustomContainer(
                         hand: 'J3s',
                       ),
@@ -26458,44 +26458,44 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
-                        raiseProgress: 0.22,
-                        callProgress: 1,
+                        raiseP: 0.22,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTo',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'TT',
-                        raiseProgress: 0.1,
-                        callProgress: 1,
+                        raiseP: 0.1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress: 0.16,
-                        callProgress: 1,
+                        raiseP: 0.16,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T6s',
-                        callProgress: 0.2,
+                        callP: 0.2,
                       ),
                       MyCustomContainer(
                         hand: 'T5s',
@@ -26515,41 +26515,41 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A9o',
-                        raiseProgress: 0.16,
-                        callProgress: 1,
+                        raiseP: 0.16,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9o',
-                        raiseProgress: 0.15,
-                        callProgress: 0.28,
+                        raiseP: 0.15,
+                        callP: 0.28,
                       ),
                       MyCustomContainer(
                         hand: 'Q9o',
                       ),
                       MyCustomContainer(
                         hand: 'J9o',
-                        callProgress: 0.24,
+                        callP: 0.24,
                       ),
                       MyCustomContainer(
                         hand: 'T9o',
-                        callProgress: 0.21,
+                        callP: 0.21,
                       ),
                       MyCustomContainer(
                         hand: '99',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98s',
-                        raiseProgress: 0.1,
-                        callProgress: 1,
+                        raiseP: 0.1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '97s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '96s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '95s',
@@ -26569,8 +26569,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A8o',
-                        raiseProgress: 0.29,
-                        callProgress: 0.83,
+                        raiseP: 0.29,
+                        callP: 0.83,
                       ),
                       MyCustomContainer(
                         hand: 'K8o',
@@ -26586,24 +26586,24 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '98o',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: '88',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '87s',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '86s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '85s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '84s',
@@ -26620,7 +26620,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A7o',
-                        raiseProgress: 0.18,
+                        raiseP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: 'K7o',
@@ -26642,21 +26642,21 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.02,
-                        callProgress: 1,
+                        raiseP: 0.02,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '74s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '73s',
@@ -26673,7 +26673,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: 'K6o',
-                        callProgress: 0.07,
+                        callP: 0.07,
                       ),
                       MyCustomContainer(
                         hand: 'Q6o',
@@ -26695,21 +26695,21 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.12,
-                        callProgress: 1,
+                        raiseP: 0.12,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.19,
-                        callProgress: 1,
+                        raiseP: 0.19,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '64s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '63s',
-                        callProgress: 0.7,
+                        callP: 0.7,
                       ),
                       MyCustomContainer(
                         hand: '62s',
@@ -26719,7 +26719,7 @@ class ChartContainer extends StatelessWidget {
                   Row(
                     children: [
                       MyCustomContainer(
-                          hand: 'A5o', raiseProgress: 0.39, callProgress: 0.89),
+                          hand: 'A5o', raiseP: 0.39, callP: 0.89),
                       MyCustomContainer(
                         hand: 'K5o',
                       ),
@@ -26746,21 +26746,21 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.09,
-                        callProgress: 1,
+                        raiseP: 0.09,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.18,
-                        callProgress: 1,
+                        raiseP: 0.18,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '53s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '52s',
-                        callProgress: 0.58,
+                        callP: 0.58,
                       ),
                     ],
                   ),
@@ -26768,7 +26768,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A4o',
-                        raiseProgress: 0.17,
+                        raiseP: 0.17,
                       ),
                       MyCustomContainer(
                         hand: 'K4o',
@@ -26796,20 +26796,20 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '54o',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '43s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '42s',
-                        callProgress: 0.32,
+                        callP: 0.32,
                       ),
                     ],
                   ),
@@ -26817,7 +26817,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A3o',
-                        raiseProgress: 0.27,
+                        raiseP: 0.27,
                       ),
                       MyCustomContainer(
                         hand: 'K3o',
@@ -26851,8 +26851,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -26899,7 +26899,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -26914,119 +26914,119 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 0.37,
-                        callProgress: 1,
+                        raiseP: 0.37,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.05,
-                        callProgress: 1,
+                        raiseP: 0.05,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: 'A2s', raiseProgress: 0.1, callProgress: 1),
+                          hand: 'A2s', raiseP: 0.1, callP: 1),
                     ],
                   ),
                   Row(
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.06,
-                        callProgress: 1,
+                        raiseP: 0.06,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
-                        raiseProgress: 0.22,
-                        callProgress: 1,
+                        raiseP: 0.22,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.14,
-                        callProgress: 1,
+                        raiseP: 0.14,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.12,
-                        callProgress: 1,
+                        raiseP: 0.12,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K3s',
-                        raiseProgress: 0.21,
-                        callProgress: 1,
+                        raiseP: 0.21,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K2s',
-                        raiseProgress: 0.22,
-                        callProgress: 1,
+                        raiseP: 0.22,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -27034,64 +27034,64 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.82,
-                        callProgress: 1,
+                        raiseP: 0.82,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.28,
-                        callProgress: 1,
+                        raiseP: 0.28,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
-                        raiseProgress: 0.16,
-                        callProgress: 1,
+                        raiseP: 0.16,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q7s',
-                        raiseProgress: 0.19,
-                        callProgress: 1,
+                        raiseP: 0.19,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q6s',
-                        raiseProgress: 0.11,
-                        callProgress: 1,
+                        raiseP: 0.11,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q5s',
-                        raiseProgress: 0.04,
-                        callProgress: 1,
+                        raiseP: 0.04,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q4s',
-                        raiseProgress: 0.29,
-                        callProgress: 1,
+                        raiseP: 0.29,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q3s',
-                        raiseProgress: 0.43,
-                        callProgress: 1,
+                        raiseP: 0.43,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q2s',
-                        raiseProgress: 0.49,
-                        callProgress: 1,
+                        raiseP: 0.49,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -27099,50 +27099,50 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        raiseProgress: 0.49,
-                        callProgress: 1,
+                        raiseP: 0.49,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: 'QJo', raiseProgress: 0.42, callProgress: 1),
+                          hand: 'QJo', raiseP: 0.42, callP: 1),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.43,
-                        callProgress: 1,
+                        raiseP: 0.43,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
-                        raiseProgress: 0.16,
-                        callProgress: 1,
+                        raiseP: 0.16,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J8s',
-                        raiseProgress: 0.11,
-                        callProgress: 1,
+                        raiseP: 0.11,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J7s',
-                        raiseProgress: 0.33,
-                        callProgress: 1,
+                        raiseP: 0.33,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J6s',
-                        raiseProgress: 0.49,
-                        callProgress: 1,
+                        raiseP: 0.49,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: 'J5s', raiseProgress: 0.36, callProgress: 1),
+                          hand: 'J5s', raiseP: 0.36, callP: 1),
                       MyCustomContainer(
-                          hand: 'J4s', raiseProgress: 0.39, callProgress: 0.85),
-                      MyCustomContainer(hand: 'J3s', callProgress: 0.06),
+                          hand: 'J4s', raiseP: 0.39, callP: 0.85),
+                      MyCustomContainer(hand: 'J3s', callP: 0.06),
                       MyCustomContainer(
                         hand: 'J2s',
                       ),
@@ -27152,44 +27152,44 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        raiseProgress: 0.34,
-                        callProgress: 1,
+                        raiseP: 0.34,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        raiseProgress: 0.42,
-                        callProgress: 1,
+                        raiseP: 0.42,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
-                        raiseProgress: 0.44,
-                        callProgress: 1,
+                        raiseP: 0.44,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTo',
-                        raiseProgress: 0.26,
-                        callProgress: 1,
+                        raiseP: 0.26,
+                        callP: 1,
                       ),
-                      MyCustomContainer(hand: 'TT', raiseProgress: 1),
+                      MyCustomContainer(hand: 'TT', raiseP: 1),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress: 0.6,
-                        callProgress: 1,
+                        raiseP: 0.6,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
-                        raiseProgress: 0.1,
-                        callProgress: 1,
+                        raiseP: 0.1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T7s',
-                        raiseProgress: 0.09,
-                        callProgress: 1,
+                        raiseP: 0.09,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T6s',
-                        raiseProgress: 0.41,
-                        callProgress: 1,
+                        raiseP: 0.41,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T5s',
@@ -27209,41 +27209,41 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A9o',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9o',
-                        raiseProgress: 0.52,
-                        callProgress: 1,
+                        raiseP: 0.52,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9o',
-                        raiseProgress: 0.18,
-                        callProgress: 0.49,
+                        raiseP: 0.18,
+                        callP: 0.49,
                       ),
                       MyCustomContainer(
                         hand: 'J9o',
-                        raiseProgress: 0.17,
-                        callProgress: 0.53,
+                        raiseP: 0.17,
+                        callP: 0.53,
                       ),
                       MyCustomContainer(
                         hand: 'T9o',
-                        raiseProgress: 0.23,
-                        callProgress: 0.92,
+                        raiseP: 0.23,
+                        callP: 0.92,
                       ),
                       MyCustomContainer(
-                          hand: '99', raiseProgress: 0.4, callProgress: 1),
+                          hand: '99', raiseP: 0.4, callP: 1),
                       MyCustomContainer(
                         hand: '98s',
-                        raiseProgress: 0.29,
-                        callProgress: 1,
+                        raiseP: 0.29,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: '97s', raiseProgress: 0.08, callProgress: 1),
+                          hand: '97s', raiseP: 0.08, callP: 1),
                       MyCustomContainer(
                         hand: '96s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '95s',
@@ -27263,12 +27263,12 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A8o',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8o',
-                        raiseProgress: 0.12,
+                        raiseP: 0.12,
                       ),
                       MyCustomContainer(
                         hand: 'Q8o',
@@ -27283,20 +27283,20 @@ class ChartContainer extends StatelessWidget {
                         hand: '98o',
                       ),
                       MyCustomContainer(
-                          hand: '88', raiseProgress: 0.14, callProgress: 1),
+                          hand: '88', raiseP: 0.14, callP: 1),
                       MyCustomContainer(
                         hand: '87s',
-                        raiseProgress: 0.18,
-                        callProgress: 1,
+                        raiseP: 0.18,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '86s',
-                        raiseProgress: 0.1,
-                        callProgress: 1,
+                        raiseP: 0.1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '85s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '84s',
@@ -27313,7 +27313,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A7o',
-                        raiseProgress: 0.54,
+                        raiseP: 0.54,
                       ),
                       MyCustomContainer(
                         hand: 'K7o',
@@ -27335,22 +27335,22 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.07,
-                        callProgress: 1,
+                        raiseP: 0.07,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        raiseProgress: 0.28,
-                        callProgress: 1,
+                        raiseP: 0.28,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '74s',
-                        callProgress: 0.83,
+                        callP: 0.83,
                       ),
                       MyCustomContainer(
                         hand: '73s',
@@ -27364,7 +27364,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A6o',
-                        raiseProgress: 0.11,
+                        raiseP: 0.11,
                       ),
                       MyCustomContainer(
                         hand: 'K6o',
@@ -27389,21 +27389,21 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.04,
-                        callProgress: 1,
+                        raiseP: 0.04,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.31,
-                        callProgress: 1,
+                        raiseP: 0.31,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '64s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '63s',
-                        callProgress: 0.43,
+                        callP: 0.43,
                       ),
                       MyCustomContainer(
                         hand: '62s',
@@ -27413,7 +27413,7 @@ class ChartContainer extends StatelessWidget {
                   Row(
                     children: [
                       MyCustomContainer(
-                          hand: 'A5o', raiseProgress: 0.39, callProgress: 1),
+                          hand: 'A5o', raiseP: 0.39, callP: 1),
                       MyCustomContainer(
                         hand: 'K5o',
                       ),
@@ -27440,21 +27440,21 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        raiseProgress: 0.08,
-                        callProgress: 1,
+                        raiseP: 0.08,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.4,
-                        callProgress: 1,
+                        raiseP: 0.4,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '53s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '52s',
-                        callProgress: 0.58,
+                        callP: 0.58,
                       ),
                     ],
                   ),
@@ -27462,8 +27462,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A4o',
-                        raiseProgress: 0.3,
-                        callProgress: 0.39,
+                        raiseP: 0.3,
+                        callP: 0.39,
                       ),
                       MyCustomContainer(
                         hand: 'K4o',
@@ -27491,20 +27491,20 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '54o',
-                        callProgress: 0.04,
+                        callP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '43s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '42s',
-                        callProgress: 0.12,
+                        callP: 0.12,
                       ),
                     ],
                   ),
@@ -27512,7 +27512,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A3o',
-                        raiseProgress: 0.08,
+                        raiseP: 0.08,
                       ),
                       MyCustomContainer(
                         hand: 'K3o',
@@ -27546,8 +27546,8 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '32s',
@@ -27594,7 +27594,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -27609,120 +27609,120 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AA',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AKs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'AJs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'ATs',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A9s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A7s',
-                        raiseProgress: 0.18,
-                        callProgress: 1,
+                        raiseP: 0.18,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A5s',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A4s',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'A3s',
-                        raiseProgress: 0.13,
-                        callProgress: 1,
+                        raiseP: 0.13,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: 'A2s', raiseProgress: 0.17, callProgress: 1),
+                          hand: 'A2s', raiseP: 0.17, callP: 1),
                     ],
                   ),
                   Row(
                     children: [
                       MyCustomContainer(
                         hand: 'AKo',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KK',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQs',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJs',
-                        raiseProgress: 0.63,
-                        callProgress: 1,
+                        raiseP: 0.63,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTs',
-                        raiseProgress: 0.41,
-                        callProgress: 1,
+                        raiseP: 0.41,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9s',
-                        raiseProgress: 0.33,
-                        callProgress: 1,
+                        raiseP: 0.33,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K6s',
-                        raiseProgress: 0.21,
-                        callProgress: 1,
+                        raiseP: 0.21,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K5s',
-                        raiseProgress: 0.11,
-                        callProgress: 1,
+                        raiseP: 0.11,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K4s',
-                        raiseProgress: 0.19,
-                        callProgress: 1,
+                        raiseP: 0.19,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K3s',
-                        raiseProgress: 0.18,
-                        callProgress: 1,
+                        raiseP: 0.18,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K2s',
-                        raiseProgress: 0.02,
-                        callProgress: 1,
+                        raiseP: 0.02,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -27730,60 +27730,60 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AQo',
-                        raiseProgress: 0.95,
-                        callProgress: 1,
+                        raiseP: 0.95,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KQo',
-                        raiseProgress: 0.11,
-                        callProgress: 1,
+                        raiseP: 0.11,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QQ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QJs',
-                        raiseProgress: 0.82,
-                        callProgress: 1,
+                        raiseP: 0.82,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTs',
-                        raiseProgress: 0.33,
-                        callProgress: 1,
+                        raiseP: 0.33,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9s',
-                        raiseProgress: 0.07,
-                        callProgress: 1,
+                        raiseP: 0.07,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q8s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q7s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q5s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q4s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q3s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q2s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -27791,107 +27791,107 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'AJo',
-                        raiseProgress: 0.22,
-                        callProgress: 1,
+                        raiseP: 0.22,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KJo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
-                      MyCustomContainer(hand: 'QJo', callProgress: 1),
+                      MyCustomContainer(hand: 'QJo', callP: 1),
                       MyCustomContainer(
                         hand: 'JJ',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTs',
-                        raiseProgress: 0.49,
-                        callProgress: 1,
+                        raiseP: 0.49,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9s',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J8s',
-                        raiseProgress: 0.07,
-                        callProgress: 1,
+                        raiseP: 0.07,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J7s',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
-                      MyCustomContainer(hand: 'J5s', callProgress: 1),
+                      MyCustomContainer(hand: 'J5s', callP: 1),
                       MyCustomContainer(
-                          hand: 'J4s', raiseProgress: 0.11, callProgress: 1),
+                          hand: 'J4s', raiseP: 0.11, callP: 1),
                       MyCustomContainer(
-                          hand: 'J3s', raiseProgress: 0.36, callProgress: 1),
+                          hand: 'J3s', raiseP: 0.36, callP: 1),
                       MyCustomContainer(
-                          hand: 'J2s', raiseProgress: 0.66, callProgress: 1),
+                          hand: 'J2s', raiseP: 0.66, callP: 1),
                     ],
                   ),
                   Row(
                     children: [
                       MyCustomContainer(
                         hand: 'ATo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'KTo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'QTo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'JTo',
-                        callProgress: 1,
+                        callP: 1,
                       ),
-                      MyCustomContainer(hand: 'TT', raiseProgress: 1,),
+                      MyCustomContainer(hand: 'TT', raiseP: 1,),
                       MyCustomContainer(
                         hand: 'T9s',
-                        raiseProgress: 0.61,
-                        callProgress: 1,
+                        raiseP: 0.61,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T8s',
-                        raiseProgress: 0.36,
-                        callProgress: 1,
+                        raiseP: 0.36,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T7s',
-                        raiseProgress: 0.03,
-                        callProgress: 1,
+                        raiseP: 0.03,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T6s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T5s',
-                        raiseProgress: 0.67,
-                        callProgress: 1,
+                        raiseP: 0.67,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T4s',
-                        raiseProgress: 0.5,
-                        callProgress: 1,
+                        raiseP: 0.5,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T3s',
-                        raiseProgress: 0.78,
-                        callProgress: 1,
+                        raiseP: 0.78,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T2s',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                     ],
                   ),
@@ -27899,45 +27899,45 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A9o',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K9o',
-                        raiseProgress: 0.19,
-                        callProgress: 1,
+                        raiseP: 0.19,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'Q9o',
-                        raiseProgress: 0.42,
-                        callProgress: 1,
+                        raiseP: 0.42,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'J9o',
-                        raiseProgress: 0.36,
-                        callProgress: 1,
+                        raiseP: 0.36,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'T9o',
-                        raiseProgress: 0.05,
-                        callProgress: 1,
+                        raiseP: 0.05,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: '99', raiseProgress: 0.34, callProgress: 1,),
+                          hand: '99', raiseP: 0.34, callP: 1,),
                       MyCustomContainer(
                         hand: '98s',
-                        raiseProgress: 0.63,
-                        callProgress: 1,
+                        raiseP: 0.63,
+                        callP: 1,
                       ),
                       MyCustomContainer(
-                          hand: '97s', raiseProgress: 0.14, callProgress: 1,),
+                          hand: '97s', raiseP: 0.14, callP: 1,),
                       MyCustomContainer(
                         hand: '96s',
-                          raiseProgress: 0.06,
-                          callProgress: 1
+                          raiseP: 0.06,
+                          callP: 1
                       ),
                       MyCustomContainer(
                         hand: '95s',
-                          callProgress: 1
+                          callP: 1
                       ),
                       MyCustomContainer(
                         hand: '94s',
@@ -27954,51 +27954,51 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A8o',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K8o',
-                          raiseProgress: 0.15,
-                          callProgress: 0.63
+                          raiseP: 0.15,
+                          callP: 0.63
                       ),
                       MyCustomContainer(
                         hand: 'Q8o',
-                          raiseProgress: 0.43,
-                          callProgress: 0.46,
+                          raiseP: 0.43,
+                          callP: 0.46,
                       ),
                       MyCustomContainer(
                         hand: 'J8o',
-                        raiseProgress: 0.48,
-                        callProgress: 0.62,
+                        raiseP: 0.48,
+                        callP: 0.62,
                       ),
                       MyCustomContainer(
                         hand: 'T8o',
-                        raiseProgress: 0.42,
-                        callProgress: 1,
+                        raiseP: 0.42,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '98o',
-                        callProgress: 0.61,
+                        callP: 0.61,
                       ),
                       MyCustomContainer(
-                          hand: '88', raiseProgress: 0.13, callProgress: 1,),
+                          hand: '88', raiseP: 0.13, callP: 1,),
                       MyCustomContainer(
                         hand: '87s',
-                        raiseProgress: 0.49,
-                        callProgress: 1,
+                        raiseP: 0.49,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '86s',
-                        raiseProgress: 0.1,
-                        callProgress: 1,
+                        raiseP: 0.1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '85s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '84s',
-                        callProgress: 0.38,
+                        callP: 0.38,
                       ),
                       MyCustomContainer(
                         hand: '83s',
@@ -28012,51 +28012,51 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A7o',
-                        raiseProgress: 0.23,
-                        callProgress: 1.0,
+                        raiseP: 0.23,
+                        callP: 1.0,
                       ),
                       MyCustomContainer(
                         hand: 'K7o',
-                        raiseProgress: 0.7,
-                        callProgress: 0.75,
+                        raiseP: 0.7,
+                        callP: 0.75,
                       ),
                       MyCustomContainer(
                         hand: 'Q7o',
-                        raiseProgress: 0.13,
+                        raiseP: 0.13,
                       ),
                       MyCustomContainer(
                         hand: 'J7o',
-                        raiseProgress: 0.04,
+                        raiseP: 0.04,
                       ),
                       MyCustomContainer(
                         hand: 'T7o',
-                        raiseProgress: 0.05,
+                        raiseP: 0.05,
                       ),
                       MyCustomContainer(
                         hand: '97o',
                       ),
                       MyCustomContainer(
                         hand: '87o',
-                        callProgress: 0.51,
+                        callP: 0.51,
                       ),
                       MyCustomContainer(
                         hand: '77',
-                        raiseProgress: 0.07,
-                        callProgress: 1,
+                        raiseP: 0.07,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '76s',
-                        raiseProgress: 0.58,
-                        callProgress: 1,
+                        raiseP: 0.58,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '75s',
-                        raiseProgress: 0.02,
-                        callProgress: 1,
+                        raiseP: 0.02,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '74s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '73s',
@@ -28070,17 +28070,17 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A6o',
-                        raiseProgress: 0.58,
-                        callProgress:1,
+                        raiseP: 0.58,
+                        callP:1,
                       ),
                       MyCustomContainer(
                         hand: 'K6o',
-                        raiseProgress: 0.43,
-                        callProgress: 0.47,
+                        raiseP: 0.43,
+                        callP: 0.47,
                       ),
                       MyCustomContainer(
                         hand: 'Q6o',
-                        raiseProgress: 0.18,
+                        raiseP: 0.18,
                       ),
                       MyCustomContainer(
                         hand: 'J6o',
@@ -28096,26 +28096,26 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '76o',
-                        callProgress: 0.43,
+                        callP: 0.43,
                       ),
                       MyCustomContainer(
                         hand: '66',
-                        raiseProgress: 0.04,
-                        callProgress: 1,
+                        raiseP: 0.04,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '65s',
-                        raiseProgress: 0.37,
-                        callProgress: 1,
+                        raiseP: 0.37,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '64s',
-                        raiseProgress: 0.1,
-                        callProgress: 1,
+                        raiseP: 0.1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '63s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '62s',
@@ -28125,14 +28125,14 @@ class ChartContainer extends StatelessWidget {
                   Row(
                     children: [
                       MyCustomContainer(
-                          hand: 'A5o', raiseProgress: 0.04, callProgress: 1,),
+                          hand: 'A5o', raiseP: 0.04, callP: 1,),
                       MyCustomContainer(
                         hand: 'K5o',
-                        raiseProgress: 0.37,
+                        raiseP: 0.37,
                       ),
                       MyCustomContainer(
                         hand: 'Q5o',
-                        raiseProgress: 0.06,
+                        raiseP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: 'J5o',
@@ -28151,25 +28151,25 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '65o',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '55',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '54s',
-                        raiseProgress: 0.51,
-                        callProgress: 1,
+                        raiseP: 0.51,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '53s',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '52s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -28177,8 +28177,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A4o',
-                        raiseProgress: 0.3,
-                        callProgress: 1,
+                        raiseP: 0.3,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K4o',
@@ -28206,21 +28206,21 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '54o',
-                        callProgress: 0.06,
+                        callP: 0.06,
                       ),
                       MyCustomContainer(
                         hand: '44',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '43s',
-                        raiseProgress: 0.17,
-                        callProgress: 1,
+                        raiseP: 0.17,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '42s',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -28228,8 +28228,8 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A3o',
-                        raiseProgress: 0.77,
-                           callProgress: 1,
+                        raiseP: 0.77,
+                           callP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K3o',
@@ -28263,12 +28263,12 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '33',
-                        raiseProgress: 0.0,
-                        callProgress: 1,
+                        raiseP: 0.0,
+                        callP: 1,
                       ),
                       MyCustomContainer(
                         hand: '32s',
-                        callProgress: 0.67,
+                        callP: 0.67,
                         ),
                     ],
                   ),
@@ -28276,7 +28276,7 @@ class ChartContainer extends StatelessWidget {
                     children: [
                       MyCustomContainer(
                         hand: 'A2o',
-                        raiseProgress: 1,
+                        raiseP: 1,
                       ),
                       MyCustomContainer(
                         hand: 'K2o',
@@ -28313,7 +28313,7 @@ class ChartContainer extends StatelessWidget {
                       ),
                       MyCustomContainer(
                         hand: '22',
-                        callProgress: 1,
+                        callP: 1,
                       ),
                     ],
                   ),
@@ -28334,55 +28334,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AA',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AKs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'ATs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A2s',
-                      raiseProgress: 0.43,
+                      raiseP: 0.43,
                     ),
                   ],
                 ),
@@ -28390,43 +28390,43 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AKo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KK',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K8s',
-                      raiseProgress: 0.98,
+                      raiseP: 0.98,
                     ),
                     MyCustomContainer(
                       hand: 'K7s',
-                      raiseProgress: 0.67,
+                      raiseP: 0.67,
                     ),
                     MyCustomContainer(
                       hand: 'K6s',
-                      raiseProgress: 0.52,
+                      raiseP: 0.52,
                     ),
                     MyCustomContainer(
                       hand: 'K5s',
-                      raiseProgress: 0.52,
+                      raiseP: 0.52,
                     ),
                     MyCustomContainer(
                       hand: 'K4s',
@@ -28443,31 +28443,31 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QQ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q8s',
-                      raiseProgress: 0.08,
+                      raiseP: 0.08,
                     ),
                     MyCustomContainer(
                       hand: 'Q7s',
@@ -28493,27 +28493,27 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJo',
-                      raiseProgress: 0.84,
+                      raiseP: 0.84,
                     ),
                     MyCustomContainer(
                       hand: 'QJo',
-                      raiseProgress: 0.41,
+                      raiseP: 0.41,
                     ),
                     MyCustomContainer(
                       hand: 'JJ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J9s',
-                      raiseProgress: 0.66,
+                      raiseP: 0.66,
                     ),
                     MyCustomContainer(
                       hand: 'J8s',
@@ -28542,7 +28542,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'ATo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTo',
@@ -28555,11 +28555,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: 'TT',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T8s',
@@ -28603,11 +28603,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '99',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '98s',
-                      raiseProgress: 0.16,
+                      raiseP: 0.16,
                     ),
                     MyCustomContainer(
                       hand: '97s',
@@ -28651,11 +28651,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '88',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '87s',
-                      raiseProgress: 0.18,
+                      raiseP: 0.18,
                     ),
                     MyCustomContainer(
                       hand: '86s',
@@ -28699,11 +28699,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '77',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '76s',
-                      raiseProgress: 0.1,
+                      raiseP: 0.1,
                     ),
                     MyCustomContainer(
                       hand: '75s',
@@ -28747,11 +28747,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '66',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '65s',
-                      raiseProgress: 0.12,
+                      raiseP: 0.12,
                     ),
                     MyCustomContainer(
                       hand: '64s',
@@ -28795,11 +28795,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '55',
-                      raiseProgress: 0.5,
+                      raiseP: 0.5,
                     ),
                     MyCustomContainer(
                       hand: '54s',
-                      raiseProgress: 0.07,
+                      raiseP: 0.07,
                     ),
                     MyCustomContainer(
                       hand: '53s',
@@ -28843,7 +28843,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '44',
-                      raiseProgress: 0.2,
+                      raiseP: 0.2,
                     ),
                     MyCustomContainer(
                       hand: '43s',
@@ -28890,7 +28890,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '33',
-                      raiseProgress: 0.2,
+                      raiseP: 0.2,
                     ),
                     MyCustomContainer(
                       hand: '32s',
@@ -28937,7 +28937,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '22',
-                      raiseProgress: 0.18,
+                      raiseP: 0.18,
                     ),
                   ],
                 ),
@@ -28952,55 +28952,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AA',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AKs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'ATs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A2s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                   ],
                 ),
@@ -29008,43 +29008,43 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AKo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KK',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K5s',
-                      raiseProgress: 0.89,
+                      raiseP: 0.89,
                     ),
                     MyCustomContainer(
                       hand: 'K4s',
@@ -29061,31 +29061,31 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QQ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q8s',
-                      raiseProgress: 0.8,
+                      raiseP: 0.8,
                     ),
                     MyCustomContainer(
                       hand: 'Q7s',
@@ -29111,31 +29111,31 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JJ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J8s',
-                      raiseProgress: 0.08,
+                      raiseP: 0.08,
                     ),
                     MyCustomContainer(
                       hand: 'J7s',
@@ -29161,31 +29161,31 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'ATo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTo',
-                      raiseProgress: 0.74,
+                      raiseP: 0.74,
                     ),
                     MyCustomContainer(
                       hand: 'QTo',
-                      raiseProgress: 0.29,
+                      raiseP: 0.29,
                     ),
                     MyCustomContainer(
                       hand: 'JTo',
-                      raiseProgress: 0.26,
+                      raiseP: 0.26,
                     ),
                     MyCustomContainer(
                       hand: 'TT',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T8s',
-                      raiseProgress: 0.64,
+                      raiseP: 0.64,
                     ),
                     MyCustomContainer(
                       hand: 'T7s',
@@ -29211,7 +29211,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A9o',
-                      raiseProgress: 0.57,
+                      raiseP: 0.57,
                     ),
                     MyCustomContainer(
                       hand: 'K9o',
@@ -29227,15 +29227,15 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '99',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '98s',
-                      raiseProgress: 0.78,
+                      raiseP: 0.78,
                     ),
                     MyCustomContainer(
                       hand: '97s',
-                      raiseProgress: 0.01,
+                      raiseP: 0.01,
                     ),
                     MyCustomContainer(
                       hand: '96s',
@@ -29276,11 +29276,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '88',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '87s',
-                      raiseProgress: 0.14,
+                      raiseP: 0.14,
                     ),
                     MyCustomContainer(
                       hand: '86s',
@@ -29324,11 +29324,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '77',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '76s',
-                      raiseProgress: 0.08,
+                      raiseP: 0.08,
                     ),
                     MyCustomContainer(
                       hand: '75s',
@@ -29372,11 +29372,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '66',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '65s',
-                      raiseProgress: 0.1,
+                      raiseP: 0.1,
                     ),
                     MyCustomContainer(
                       hand: '64s',
@@ -29420,11 +29420,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '55',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '54s',
-                      raiseProgress: 0.05,
+                      raiseP: 0.05,
                     ),
                     MyCustomContainer(
                       hand: '53s',
@@ -29468,7 +29468,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '44',
-                      raiseProgress: 0.44,
+                      raiseP: 0.44,
                     ),
                     MyCustomContainer(
                       hand: '43s',
@@ -29515,7 +29515,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '33',
-                      raiseProgress: 0.21,
+                      raiseP: 0.21,
                     ),
                     MyCustomContainer(
                       hand: '32s',
@@ -29562,7 +29562,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '22',
-                      raiseProgress: 0.19,
+                      raiseP: 0.19,
                     ),
                   ],
                 ),
@@ -29577,55 +29577,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AA',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AKs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'ATs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A2s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                   ],
                 ),
@@ -29633,55 +29633,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AKo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KK',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K2s',
-                      raiseProgress: 0.5,
+                      raiseP: 0.5,
                     ),
                   ],
                 ),
@@ -29689,43 +29689,43 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QQ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q4s',
@@ -29742,39 +29742,39 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JJ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J6s',
-                      raiseProgress: 0.08,
+                      raiseP: 0.08,
                     ),
                     MyCustomContainer(
                       hand: 'J5s',
@@ -29794,35 +29794,35 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'ATo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'TT',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T7s',
-                      raiseProgress: 0.2,
+                      raiseP: 0.2,
                     ),
                     MyCustomContainer(
                       hand: 'T6s',
@@ -29845,31 +29845,31 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K9o',
-                      raiseProgress: 0.2,
+                      raiseP: 0.2,
                     ),
                     MyCustomContainer(
                       hand: 'Q9o',
                     ),
                     MyCustomContainer(
                       hand: 'J9o',
-                      raiseProgress: 0.08,
+                      raiseP: 0.08,
                     ),
                     MyCustomContainer(hand: 'T9o'),
                     MyCustomContainer(
                       hand: '99',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '98s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '97s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '96s',
@@ -29892,7 +29892,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A8o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K8o',
@@ -29911,11 +29911,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '88',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '87s',
-                      raiseProgress: 0.74,
+                      raiseP: 0.74,
                     ),
                     MyCustomContainer(
                       hand: '86s',
@@ -29938,7 +29938,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A7o',
-                      raiseProgress: 0.04,
+                      raiseP: 0.04,
                     ),
                     MyCustomContainer(
                       hand: 'K7o',
@@ -29960,11 +29960,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '77',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '76s',
-                      raiseProgress: 0.19,
+                      raiseP: 0.19,
                     ),
                     MyCustomContainer(
                       hand: '75s',
@@ -30008,11 +30008,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '66',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '65s',
-                      raiseProgress: 0.18,
+                      raiseP: 0.18,
                     ),
                     MyCustomContainer(
                       hand: '64s',
@@ -30029,7 +30029,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A5o',
-                      raiseProgress: 0.78,
+                      raiseP: 0.78,
                     ),
                     MyCustomContainer(
                       hand: 'K5o',
@@ -30057,11 +30057,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '55',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '54s',
-                      raiseProgress: 0.13,
+                      raiseP: 0.13,
                     ),
                     MyCustomContainer(
                       hand: '53s',
@@ -30105,7 +30105,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '44',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '43s',
@@ -30152,7 +30152,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '33',
-                      raiseProgress: 0.32,
+                      raiseP: 0.32,
                     ),
                     MyCustomContainer(
                       hand: '32s',
@@ -30199,7 +30199,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '22',
-                      raiseProgress: 0.28,
+                      raiseP: 0.28,
                     ),
                   ],
                 ),
@@ -30214,55 +30214,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AA',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AKs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'ATs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A2s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                   ],
                 ),
@@ -30270,55 +30270,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AKo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KK',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K2s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                   ],
                 ),
@@ -30326,55 +30326,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QQ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q2s',
-                      raiseProgress: 0.9,
+                      raiseP: 0.9,
                     ),
                   ],
                 ),
@@ -30382,47 +30382,47 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JJ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J4s',
-                      raiseProgress: 0.7,
+                      raiseP: 0.7,
                     ),
                     MyCustomContainer(
                       hand: 'J3s',
@@ -30436,39 +30436,39 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'ATo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'TT',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T5s',
@@ -30488,39 +30488,39 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '99',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '98s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '97s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '96s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '95s',
@@ -30540,39 +30540,39 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A8o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K8o',
-                      raiseProgress: 0.68,
+                      raiseP: 0.68,
                     ),
                     MyCustomContainer(
                       hand: 'Q8o',
-                      raiseProgress: 0.04,
+                      raiseP: 0.04,
                     ),
                     MyCustomContainer(
                       hand: 'J8o',
-                      raiseProgress: 0.17,
+                      raiseP: 0.17,
                     ),
                     MyCustomContainer(
                       hand: 'T8o',
-                      raiseProgress: 0.70,
+                      raiseP: 0.70,
                     ),
                     MyCustomContainer(
                       hand: '98o',
-                      raiseProgress: 0.05,
+                      raiseP: 0.05,
                     ),
                     MyCustomContainer(
                       hand: '88',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '87s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '86s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '85s',
@@ -30592,11 +30592,11 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A7o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K7o',
-                      raiseProgress: 0.27,
+                      raiseP: 0.27,
                     ),
                     MyCustomContainer(
                       hand: 'Q7o',
@@ -30615,15 +30615,15 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '77',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '76s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '75s',
-                      raiseProgress: 0.84,
+                      raiseP: 0.84,
                     ),
                     MyCustomContainer(
                       hand: '74s',
@@ -30640,7 +30640,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A6o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K6o',
@@ -30665,11 +30665,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '66',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '65s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '64s',
@@ -30686,7 +30686,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A5o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K5o',
@@ -30714,11 +30714,11 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '55',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '54s',
-                      raiseProgress: 0.67,
+                      raiseP: 0.67,
                     ),
                     MyCustomContainer(
                       hand: '53s',
@@ -30732,7 +30732,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A4o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K4o',
@@ -30763,7 +30763,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '44',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '43s',
@@ -30777,7 +30777,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A3o',
-                      raiseProgress: 0.75,
+                      raiseP: 0.75,
                     ),
                     MyCustomContainer(
                       hand: 'K3o',
@@ -30811,7 +30811,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '33',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '32s',
@@ -30858,7 +30858,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '22',
-                      raiseProgress: 0.66,
+                      raiseP: 0.66,
                     ),
                   ],
                 ),
@@ -30873,55 +30873,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AA',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AKs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'AJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'ATs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'A2s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                   ],
                 ),
@@ -30929,55 +30929,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AKo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KK',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K2s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                   ],
                 ),
@@ -30985,55 +30985,55 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KQo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QQ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q4s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q3s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q2s',
-                      raiseProgress: 0.8,
+                      raiseP: 0.8,
                     ),
                   ],
                 ),
@@ -31041,47 +31041,47 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'AJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QJo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JJ',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JTs',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J5s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J4s',
-                      raiseProgress: 0.25,
+                      raiseP: 0.25,
                     ),
                     MyCustomContainer(
                       hand: 'J3s',
@@ -31095,39 +31095,39 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'ATo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'KTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'QTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'JTo',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'TT',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T9s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T8s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T7s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T6s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T5s',
@@ -31147,39 +31147,39 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'J9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'T9o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '99',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '98s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '97s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '96s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '95s',
@@ -31199,11 +31199,11 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A8o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K8o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'Q8o',
@@ -31213,27 +31213,27 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: 'T8o',
-                      raiseProgress: 0.60,
+                      raiseP: 0.60,
                     ),
                     MyCustomContainer(
                       hand: '98o',
-                      raiseProgress: 0.55,
+                      raiseP: 0.55,
                     ),
                     MyCustomContainer(
                       hand: '88',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '87s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '86s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '85s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '84s',
@@ -31250,7 +31250,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A7o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K7o'
@@ -31272,15 +31272,15 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '77',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '76s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '75s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '74s',
@@ -31297,7 +31297,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A6o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K6o',
@@ -31322,15 +31322,15 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '66',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '65s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '64s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '63s',
@@ -31344,7 +31344,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A5o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K5o',
@@ -31372,15 +31372,15 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '55',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '54s',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '53s',
-                      raiseProgress: 0.15,
+                      raiseP: 0.15,
                     ),
                     MyCustomContainer(
                       hand: '52s',
@@ -31391,7 +31391,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A4o',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: 'K4o',
@@ -31422,7 +31422,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '44',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '43s',
@@ -31436,7 +31436,7 @@ class ChartContainer extends StatelessWidget {
                   children: [
                     MyCustomContainer(
                       hand: 'A3o',
-                      raiseProgress: 0.15,
+                      raiseP: 0.15,
                     ),
                     MyCustomContainer(
                       hand: 'K3o',
@@ -31470,7 +31470,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '33',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                     MyCustomContainer(
                       hand: '32s',
@@ -31517,7 +31517,7 @@ class ChartContainer extends StatelessWidget {
                     ),
                     MyCustomContainer(
                       hand: '22',
-                      raiseProgress: 1,
+                      raiseP: 1,
                     ),
                   ],
                 ),
@@ -32099,11 +32099,11 @@ class ChartContainer extends StatelessWidget {
               children: [
                 MyCustomContainer(
                   hand: 'AA',
-                  raiseProgress: 1,
+                  raiseP: 1,
                 ),
                 MyCustomContainer(
                   hand: 'AKs',
-                  raiseProgress: 1,
+                  raiseP: 1,
                 ),
                 MyCustomContainer(
                   hand: 'AQs',
@@ -32668,7 +32668,7 @@ class ChartContainer extends StatelessWidget {
             children: [
               MyCustomContainer(
                 hand: 'AA',
-                raiseProgress: 1,
+                raiseP: 1,
               ),
               MyCustomContainer(
                 hand: 'AKs',
@@ -33232,29 +33232,29 @@ class ChartContainer extends StatelessWidget {
 
 class MyCustomContainer extends StatelessWidget {
   final Color backgroundColor;
-  final Color allInProgressColor;
+  final Color allinPColor;
 
-  final Color callProgressColor;
-  final Color raiseProgressColor;
+  final Color callPColor;
+  final Color raisePColor;
 
-  final double allInProgress;
+  final double allinP;
 
-  final double callProgress;
-  final double raiseProgress;
+  final double callP;
+  final double raiseP;
   final String hand;
   final double size = 30;
 
   const MyCustomContainer(
       {Key? key,
       this.backgroundColor = Colors.grey,
-      this.allInProgressColor = Colors.red,
-      this.callProgressColor = Colors.lightGreen,
-      this.raiseProgressColor = Colors.lightBlue,
+      this.allinPColor = Colors.red,
+      this.callPColor = Colors.lightGreen,
+      this.raisePColor = Colors.lightBlue,
 
-      this.allInProgress = 0,
+      this.allinP = 0,
 
-      this.callProgress = 0,
-      this.raiseProgress = 0,
+      this.callP = 0,
+      this.raiseP = 0,
       required this.hand})
       : super(key: key);
 
@@ -33276,23 +33276,23 @@ class MyCustomContainer extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Container(
-                    width: size * callProgress,
-                    color: callProgressColor,
+                    width: size * callP,
+                    color: callPColor,
                   ),
                 ),
                 
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Container(
-                    width: size * raiseProgress,
-                    color: raiseProgressColor,
+                    width: size * raiseP,
+                    color: raisePColor,
                   ),
                 ),
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Container(
-                    width: size * allInProgress,
-                    color: allInProgressColor,
+                    width: size * allinP,
+                    color: allinPColor,
                   ),
                 ),
 

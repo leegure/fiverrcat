@@ -4,15 +4,15 @@ import '../constarants/selection.dart';
 
 class ProgressInfo{
   const ProgressInfo({
-    this.allInProgress=0.0,
-    this.callProgress=0.0,
-    this.raiseProgress=0.0,
-    this.alreadyProgress=0.0,
+    this.allinP=0.0,
+    this.callP=0.0,
+    this.raiseP=0.0,
+    this.alreadyP=0.0,
   });
-  final double allInProgress;
-  final double callProgress;
-  final double raiseProgress;
-  final double alreadyProgress;
+  final double allinP;
+  final double callP;
+  final double raiseP;
+  final double alreadyP;
 
 }
 Map<String, String> xyToCard(){
@@ -192,6 +192,6 @@ Map<String, String> xyToCard(){
 }
 
 // const Map<String,ProgressInfo> progressInfoData={
-//   '0,0':ProgressInfo(allInProgress:0.0, raiseProgress: 0.0, openRaiseProgress: 0.0, callProgress: 0.0),
+//   '0,0':ProgressInfo(allinP:0.0, raiseP: 0.0, openraiseP: 0.0, callP: 0.0),
 // };
 
