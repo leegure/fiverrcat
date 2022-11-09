@@ -15,7 +15,13 @@ class FourBetToAllin {
         myTournaPosition == TournaPosition.SB &&
         opponentTournaPosition == TournaPosition.HJ) {
       return 'All-in';
-    } else
+    } else if (tournaStack == TournaStack.sixty &&
+        myTournaPosition == TournaPosition.BB &&
+        opponentTournaPosition == TournaPosition.HJ) {
+      return 'All-in';
+    } else if (tournaStack == TournaStack.fifty|| tournaStack == TournaStack.forty|| tournaStack == TournaStack.thirtyfive|| tournaStack == TournaStack.thirty || tournaStack == TournaStack.twentyfive){
+      return 'All-in';
+    }
       return '4Bet';
   }
 }

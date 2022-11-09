@@ -3323,7 +3323,8 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
             '32o':ProgressInfo(raiseP: 0.0, callP: 0.0),
           };
         case TournaPosition.SB:
-          return {
+          return
+          {
             'AA' :ProgressInfo(allinP: 0.0, callP: 1.0),
             'KK' :ProgressInfo(allinP: 0.0, callP: 1.0),
             'QQ' :ProgressInfo(raiseP: 0.15, callP: 0.85),
