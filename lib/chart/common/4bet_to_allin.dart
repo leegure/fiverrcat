@@ -11,15 +11,16 @@ class FourBetToAllin {
       required this.opponentTournaPosition});
 
   String changeString() {
-    if (tournaStack == TournaStack.sixty &&
-        myTournaPosition == TournaPosition.SB &&
-        opponentTournaPosition == TournaPosition.HJ) {
+    if (tournaStack == TournaStack.sixty &&opponentTournaPosition == TournaPosition.HJ && myTournaPosition == TournaPosition.SB
+        ||tournaStack == TournaStack.sixty &&opponentTournaPosition == TournaPosition.HJ && myTournaPosition == TournaPosition.BB
+        ) {
       return 'All-in';
-    } else if (tournaStack == TournaStack.sixty &&
-        myTournaPosition == TournaPosition.BB &&
-        opponentTournaPosition == TournaPosition.HJ) {
+    } else if(tournaStack == TournaStack.fifty&&myTournaPosition == TournaPosition.BB
+        ||tournaStack == TournaStack.fifty&&myTournaPosition == TournaPosition.SB){
+      print('aaa');
       return 'All-in';
-    } else if (tournaStack == TournaStack.fifty|| tournaStack == TournaStack.forty|| tournaStack == TournaStack.thirtyfive|| tournaStack == TournaStack.thirty || tournaStack == TournaStack.twentyfive){
+    }
+    else if ( tournaStack == TournaStack.forty|| tournaStack == TournaStack.thirtyfive|| tournaStack == TournaStack.thirty || tournaStack == TournaStack.twentyfive){
       return 'All-in';
     }
       return '4Bet';

@@ -284,79 +284,1409 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
       if (tournaSelection.myTournaPosition == TournaPosition.UTG1) {
         switch (tournaSelection.opponentTournaPosition) {
           case TournaPosition.UTG:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.85, alreadyP: 0.1),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.4, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
         }
       } else if (tournaSelection.myTournaPosition == TournaPosition.LJ) {
         switch (tournaSelection.opponentTournaPosition) {
           case TournaPosition.UTG:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.2),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.15),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.8),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.1),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.UTG1:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.2),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.8, alreadyP: 0.8),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
         }
       } else if (tournaSelection.myTournaPosition == TournaPosition.HJ) {
         switch (tournaSelection.opponentTournaPosition) {
           case TournaPosition.UTG:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.2),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.UTG1:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.LJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.25),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.25),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.45),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.25, alreadyP: 0.6),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
         }
       } else if (tournaSelection.myTournaPosition == TournaPosition.CO) {
         switch (tournaSelection.opponentTournaPosition) {
           case TournaPosition.UTG:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.2),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.UTG1:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.LJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.5, alreadyP: 0.75),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.HJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
         }
       } else if (tournaSelection.myTournaPosition == TournaPosition.BTN) {
         switch (tournaSelection.opponentTournaPosition) {
           case TournaPosition.UTG:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.UTG1:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.LJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.HJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.CO:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
         }
       } else if (tournaSelection.myTournaPosition == TournaPosition.SB) {
         switch (tournaSelection.opponentTournaPosition) {
           case TournaPosition.UTG:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.UTG1:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.1),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.LJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.2),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.HJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '44' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.CO:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '44' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '33' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.7, alreadyP: 0.8),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.BTN:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.1),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '33' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              '22' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.1),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'A8s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.65),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A7o':ProgressInfo(raiseP: 0.0, callP: 0.6, alreadyP: 0.7),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
         }
       } else if (tournaSelection.myTournaPosition == TournaPosition.BB) {
         switch (tournaSelection.opponentTournaPosition) {
           case TournaPosition.UTG:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.UTG1:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.LJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.HJ:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              '44' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.CO:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '44' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.15),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
           case TournaPosition.BTN:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.0),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.2),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'A9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.25),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              '76s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+            };
           case TournaPosition.SB:
-            return {};
+            return {
+              'AA' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KK' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.3),
+              'AQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.6),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KQo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'KJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+
+              'ATo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A9o':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '98s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '87s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+            };
 
         }
       }
@@ -438,7 +1768,7 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
             'K9s':ProgressInfo(raiseP: 0.0, callP: 0.2),
 
 
-            'AQo':ProgressInfo(raiseP: 0.5, callP: 0.5),
+            'AQo':ProgressInfo(raiseP: 0.35, callP: 0.5, allinP: 0.15),
             'KQo':ProgressInfo(raiseP: 0.4, callP: 0.6),
             'QJs':ProgressInfo(raiseP: 0.0, callP: 0.2, allinP: 0.8),
             'QTs':ProgressInfo(raiseP: 0.0, callP: 0.5),
@@ -1309,7 +2639,7 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
             '99' :ProgressInfo(raiseP: 0.0, callP: 0.0, allinP: 1.0),
             '88' :ProgressInfo(raiseP: 0.0, callP: 0.2, allinP: 0.8),
             '77' :ProgressInfo(raiseP: 0.0, callP: 1.0),
-            '66' :ProgressInfo(raiseP: 0.0, callP: 1.0),
+            '66' :ProgressInfo(raiseP: 0.1, callP: 0.9),
             '55' :ProgressInfo(raiseP: 0.0, callP: 1.0),
             '44' :ProgressInfo(raiseP: 0.0, callP: 1.0),
             '33' :ProgressInfo(raiseP: 0.0, callP: 1.0),
@@ -1417,7 +2747,7 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
             '22' :ProgressInfo(allinP: 0.0, callP: 0.5),
 
 
-            'AKs':ProgressInfo(allinP: 1.0, callP: 0.0),
+            'AKs':ProgressInfo(allinP: 0.9, raiseP: 0.1),
             'AQs':ProgressInfo(allinP: 0.8, callP: 0.2),
             'AJs':ProgressInfo(allinP: 0.0, callP: 1.0),
             'ATs':ProgressInfo(allinP: 0.0, callP: 1.0),
@@ -1922,7 +3252,7 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
             'JJ' :ProgressInfo(allinP: 1.0, callP: 0.0),
             'TT' :ProgressInfo(allinP: 1.0, callP: 0.0),
             '99' :ProgressInfo(allinP: 1.0, callP: 0.0),
-            '88' :ProgressInfo(allinP: 1.0, callP: 0.0),
+            '88' :ProgressInfo(allinP: 0.85, raiseP: 0.15),
             '77' :ProgressInfo(allinP: 1.0, callP: 0.0),
             '66' :ProgressInfo(allinP: 1.0, callP: 0.0),
             '55' :ProgressInfo(allinP: 0.7, callP: 0.2, raiseP: 0.1),
@@ -2436,7 +3766,7 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
             'A3s':ProgressInfo(raiseP: 0.0, callP: 1.0),
             'A2s':ProgressInfo(raiseP: 0.0, callP: 1.0),
 
-            'AKo':ProgressInfo(raiseP: 0.0, callP: 0.0, allinP: 1.0),
+            'AKo':ProgressInfo(raiseP: 0.1, callP: 0.0, allinP: 0.9),
             'KQs':ProgressInfo(raiseP: 0.0, callP: 1.0),
             'KJs':ProgressInfo(raiseP: 0.0, callP: 1.0),
             'KTs':ProgressInfo(raiseP: 0.0, callP: 0.25, allinP: 0.75),
@@ -3251,7 +4581,7 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
             'T7o':ProgressInfo(raiseP: 0.1, callP: 0.9),
             '97o':ProgressInfo(raiseP: 0.0, callP: 1.0),
             '87o':ProgressInfo(raiseP: 0.0, callP: 1.0),
-            '76s':ProgressInfo(raiseP: 0.0, callP: 1.0),
+            '76s':ProgressInfo(raiseP: 0.25, callP: 0.75),
             '75s':ProgressInfo(raiseP: 0.0, callP: 1.0),
             '74s':ProgressInfo(raiseP: 0.0, callP: 1.0),
             '73s':ProgressInfo(raiseP: 0.0, callP: 1.0),
@@ -3323,8 +4653,7 @@ Map<String, ProgressInfo> twentyfiveStack(Selection tournaSelection) {
             '32o':ProgressInfo(raiseP: 0.0, callP: 0.0),
           };
         case TournaPosition.SB:
-          return
-          {
+          return {
             'AA' :ProgressInfo(allinP: 0.0, callP: 1.0),
             'KK' :ProgressInfo(allinP: 0.0, callP: 1.0),
             'QQ' :ProgressInfo(raiseP: 0.15, callP: 0.85),
