@@ -139,7 +139,7 @@ class _ChartGridState extends State<ChartGrid> {
                 Expanded(
                   flex: 1,
                   child: Padding(
-                    padding:  EdgeInsets.fromLTRB(0.0, 2.h, 0.0,0.0),
+                    padding:  EdgeInsets.fromLTRB(0.0, 1.h, 0.0,0.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [

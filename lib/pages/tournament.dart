@@ -116,8 +116,7 @@ class _TournamentState extends State<Tournament> {
             tournaSelection.opponentTournaPosition =
                 selectedOpponentTournaPosition;
             if (tournaSelection.myTournaPosition != TournaPosition.SB &&
-                tournaSelection.myTournaPosition.index <
-                    selectedOpponentTournaPosition.index) {
+                tournaSelection.myTournaPosition.index < selectedOpponentTournaPosition.index || tournaSelection.tournaStack ==TournaStack.twentyfive &&tournaSelection.myTournaPosition.index < selectedOpponentTournaPosition.index) {
               tournaSelection.opponentAction = OpponentAction.threeBet;
             } else {
               tournaSelection.opponentAction = OpponentAction.none;
@@ -186,7 +185,7 @@ class _TournamentState extends State<Tournament> {
                   children: [
 
 
-                    ReusableText(text: 'Stack',fontSize: 14.0.sp,),
+                    ReusableText(text: 'Stack',fontSize: 13.0.sp,),
                     Expanded(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -206,7 +205,7 @@ class _TournamentState extends State<Tournament> {
                     //     myStack(TournaStack.twentyfive),
                     //   ],
                     // ),
-                    ReusableText(text: 'Hero',fontSize: 14.0.sp,),
+                    ReusableText(text: 'Hero',fontSize: 13.0.sp,),
 
                     Row(mainAxisAlignment: MainAxisAlignment.center,
                         children:
@@ -214,7 +213,7 @@ class _TournamentState extends State<Tournament> {
                         // getButtonJH()
                     ),
                     ReusableText(
-                      text:  'Villain',fontSize: 14.0.sp,
+                      text:  'Villain',fontSize: 13.0.sp,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -230,7 +229,7 @@ class _TournamentState extends State<Tournament> {
 
                     ),
                     ReusableText(
-                      text: 'Villain\'s Action',fontSize: 14.0.sp,
+                      text: 'Villain\'s Action',fontSize: 13.0.sp,
                     ),
                     Expanded(
                       child: Row(

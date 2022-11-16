@@ -20,12 +20,12 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
 
-  bool isLogin = false;
+  bool? isLogin = false;
 
   loginControl() async{
     await LocalDataSaver.getLogData().then((value){
       setState((){
-        isLogin = value!;
+        isLogin = value;
       });
     });
       if (isLogin == true) {

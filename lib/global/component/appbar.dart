@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pokercat/global/component/pcapptheme.dart';
 
 import 'reusable_text.dart';
@@ -53,6 +54,7 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
             ),
             child: ReusableText(
               text: '$titleStr',
+              fontSize: 15.0.sp,
             ),
           ),
 

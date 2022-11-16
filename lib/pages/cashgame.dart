@@ -214,7 +214,7 @@ width: width,
 
                          mainAxisSize: MainAxisSize.min,
                         children: [
-                          Expanded(child: ReusableText(text: 'Hero')),
+                          Expanded(child: ReusableText(text: 'Hero',fontSize: 13.0.sp)),
                           // Row(children: getButtonJH()),
                           Expanded(
                             child: Row(
@@ -223,7 +223,7 @@ width: width,
                             ),
                           ),
                           SizedBox(height: 3.0.h),
-                          Expanded(child: ReusableText(text: 'Villain')),
+                          Expanded(child: ReusableText(text: 'Villain',fontSize: 13.0.sp)),
                           // Row(
                           //   children: [
                           //     opponentPositionFlexible(Position.UTG),
@@ -243,7 +243,7 @@ width: width,
                           SizedBox(height: 3.0.h),
                           Expanded(
                             child: ReusableText(
-                              text: 'Villain\'s Action',
+                              text: 'Villain\'s Action',fontSize: 13.0.sp
                             ),
                           ),
                           Expanded(
