@@ -211,7 +211,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.UTG1:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.55, callP: 0.00, allinP: 0.45),
               'QQ' :ProgressInfo(raiseP: 0.27, callP: 0.73),
               'JJ' :ProgressInfo(raiseP: 0.34, callP: 0.66),
               'TT' :ProgressInfo(raiseP: 0.23, callP: 0.77),
@@ -220,12 +220,12 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '77' :ProgressInfo(raiseP: 0.0 , callP: 0.88),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.74),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.57),
-              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.64),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.51),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.56),
+              '44' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.4),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
-              'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'AKs':ProgressInfo(raiseP: 0.5, callP: 0.00, allinP: 0.5),
               'AQs':ProgressInfo(raiseP: 0.42, callP: 0.58),
               'AJs':ProgressInfo(raiseP: 0.52, callP: 0.48),
               'ATs':ProgressInfo(raiseP: 0.27, callP: 0.73),
@@ -235,10 +235,10 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.28, callP: 0.72),
               'A4s':ProgressInfo(raiseP: 0.17, callP: 0.59),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.38),
+              'A3s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.6),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.60, callP: 0.41),
+              'AKo':ProgressInfo(raiseP: 0.2, callP: 0.4, allinP: 0.4),
               'KQs':ProgressInfo(raiseP: 0.17, callP: 0.83),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.13, callP: 0.83),
@@ -264,19 +264,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.49),
+              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.9, alreadyP: 0.5),
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.32),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.24),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.8),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.2 ),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.8 ),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -296,7 +296,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.LJ:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.55, callP: 0.00, allinP: 0.45),
               'QQ' :ProgressInfo(raiseP: 0.25, callP: 0.75),
               'JJ' :ProgressInfo(raiseP: 0.33, callP: 0.67),
               'TT' :ProgressInfo(raiseP: 0.20, callP: 0.80),
@@ -305,12 +305,12 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.0),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.87),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.65),
-              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.64),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.51),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.56),
+              '44' :ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.4),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.5),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.5),
 
 
-              'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'AKs':ProgressInfo(raiseP: 0.6, callP: 0.00, allinP: 0.4),
               'AQs':ProgressInfo(raiseP: 0.29, callP: 0.71),
               'AJs':ProgressInfo(raiseP: 0.48, callP: 0.52),
               'ATs':ProgressInfo(raiseP: 0.27, callP: 0.73),
@@ -320,12 +320,12 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.32, callP: 0.68),
               'A4s':ProgressInfo(raiseP: 0.19, callP: 0.81),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.36),
+              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.9, alreadyP: 0.6),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.60, callP: 0.40),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.40, allinP: 0.45),
               'KQs':ProgressInfo(raiseP: 0.19, callP: 0.81),
-              'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'KJs':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'KTs':ProgressInfo(raiseP: 0.17, callP: 0.83),
 
 
@@ -349,19 +349,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.54),
+              '98s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.32),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.24),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.8),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.2 ),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0 , alreadyP: 0.8),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -381,7 +381,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.HJ:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.65, callP: 0.00, allinP: 0.35),
               'QQ' :ProgressInfo(raiseP: 0.25, callP: 0.75),
               'JJ' :ProgressInfo(raiseP: 0.29, callP: 0.71),
               'TT' :ProgressInfo(raiseP: 0.21, callP: 0.79),
@@ -390,12 +390,12 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.92),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.76),
-              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.64),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.51),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.56),
+              '44' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.4),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
-              'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'AKs':ProgressInfo(raiseP: 0.85, callP: 0.00, allinP: 0.15),
               'AQs':ProgressInfo(raiseP: 0.30, callP: 0.70),
               'AJs':ProgressInfo(raiseP: 0.40, callP: 0.60),
               'ATs':ProgressInfo(raiseP: 0.32, callP: 0.68),
@@ -405,10 +405,10 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.33, callP: 0.67),
               'A4s':ProgressInfo(raiseP: 0.23, callP: 0.77),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.32),
+              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.8, alreadyP: 0.6),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.55, callP: 0.45),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.45, allinP: 0.4),
               'KQs':ProgressInfo(raiseP: 0.13, callP: 0.87),
               'KJs':ProgressInfo(raiseP: 0.14, callP: 0.86),
               'KTs':ProgressInfo(raiseP: 0.17, callP: 0.83),
@@ -434,19 +434,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.54),
+              '98s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.32),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.24),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.8),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.2 ),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0 , alreadyP: 0.8),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -466,7 +466,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.CO:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.7, callP: 0.1, allinP: 0.2),
               'QQ' :ProgressInfo(raiseP: 0.24, callP: 0.76),
               'JJ' :ProgressInfo(raiseP: 0.23, callP: 0.77),
               'TT' :ProgressInfo(raiseP: 0.22, callP: 0.78),
@@ -475,9 +475,9 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.93),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.74),
-              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.64),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.51),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.56),
+              '44' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.4),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
@@ -490,10 +490,10 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.35, callP: 0.65),
               'A4s':ProgressInfo(raiseP: 0.21, callP: 0.79),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.41),
+              'A3s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.6),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.46, callP: 0.54),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.55, allinP: 0.3),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.28, callP: 0.72),
               'KTs':ProgressInfo(raiseP: 0.15, callP: 0.85),
@@ -501,7 +501,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
               'AQo':ProgressInfo(raiseP: 0.13, callP: 0.54),
               'KQo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'QJs':ProgressInfo(raiseP: 0.0 , callP: 0.84),
+              'QJs':ProgressInfo(raiseP: 0.1 , callP: 0.75),
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 0.74),
 
 
@@ -516,23 +516,23 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'QTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'T9s':ProgressInfo(raiseP: 0.17, callP: 0.72),
-              'T8s':ProgressInfo(raiseP: 0.00, callP: 0.19),
+              'T8s':ProgressInfo(raiseP: 0.00, callP: 0.25, alreadyP: 0.3),
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.54),
+              '98s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.32),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.24),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.8),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.2 ),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0 , alreadyP: 0.8),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -552,7 +552,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.BTN:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 0.89, callP: 0.11),
+              'KK' :ProgressInfo(raiseP: 0.7, callP: 0.1, allinP: 0.2),
               'QQ' :ProgressInfo(raiseP: 0.22, callP: 0.78),
               'JJ' :ProgressInfo(raiseP: 0.22, callP: 0.78),
               'TT' :ProgressInfo(raiseP: 0.14, callP: 0.86),
@@ -561,9 +561,9 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.78),
-              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.64),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.51),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.56),
+              '44' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.4),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
@@ -576,10 +576,10 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.38, callP: 0.62),
               'A4s':ProgressInfo(raiseP: 0.28, callP: 0.72),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.41),
+              'A3s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.6),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.45, callP: 0.55),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.55, allinP: 0.3),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.23, callP: 0.77),
               'KTs':ProgressInfo(raiseP: 0.13, callP: 0.87),
@@ -606,19 +606,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.54),
+              '98s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.32),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.24),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.8),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.2 ),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0 , alreadyP: 0.8),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -638,7 +638,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.SB:
             return {
               'AA' :ProgressInfo(raiseP: 0.31, callP: 0.69),
-              'KK' :ProgressInfo(raiseP: 0.34, callP: 0.66),
+              'KK' :ProgressInfo(raiseP: 0.1, callP: 0.55, allinP: 0.35),
               'QQ' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               'JJ' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               'TT' :ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -647,28 +647,28 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '77' :ProgressInfo(raiseP: 0.0 , callP: 0.63),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.60),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.38),
-              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.45),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.47),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.56),
+              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.7, alreadyP: 0.4),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.9, alreadyP: 0.5),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'AKs':ProgressInfo(raiseP: 0.24, callP: 0.76),
               'AQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'AJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'ATs':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0),
+              'ATs':ProgressInfo(raiseP: 0.1, callP: 0.90),
               'A9s':ProgressInfo(raiseP: 0.0 , callP: 0.90),
               'A8s':ProgressInfo(raiseP: 0.00, callP: 0.33),
               'A7s':ProgressInfo(raiseP: 0.0 , callP: 0.28),
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'A5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'A4s':ProgressInfo(raiseP: 0.00, callP: 0.64),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.00),
+              'A5s':ProgressInfo(raiseP: 0.10, callP: 0.9),
+              'A4s':ProgressInfo(raiseP: 0.10, callP: 0.55),
+              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.15, alreadyP: 0.6),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.45, callP: 0.55),
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.55, allinP: 0.45),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.10, callP: 0.90),
-              'KTs':ProgressInfo(raiseP: 0.13, callP: 0.38),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 0.38),
 
 
               'AQo':ProgressInfo(raiseP: 0.00, callP: 0.35),
@@ -692,19 +692,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.35),
+              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.65, alreadyP: 0.5),
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.32),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.24),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.8),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.2 ),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0 , alreadyP: 0.8),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -733,9 +733,9 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '77' :ProgressInfo(raiseP: 0.0 , callP: 0.56),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.58),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.30),
-              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.22),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.25),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.19),
+              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.35, alreadyP: 0.4),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.5, alreadyP: 0.5),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.35, alreadyP: 0.5),
 
 
               'AKs':ProgressInfo(raiseP: 0.42, callP: 0.58),
@@ -748,10 +748,10 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.11, callP: 0.89),
               'A4s':ProgressInfo(raiseP: 0.13, callP: 0.43),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.00),
+              'A3s':ProgressInfo(raiseP: 0.15 , callP: 0.00, alreadyP: 0.6),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.24, callP: 0.76),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.75, allinP: 0.1),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.15, callP: 0.85),
               'KTs':ProgressInfo(raiseP: 0.00, callP: 0.24),
@@ -778,19 +778,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.17),
+              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.3, alreadyP: 0.5),
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.32),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.24),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.8),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.2 ),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0 , alreadyP: 0.8),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -814,7 +814,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.LJ:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.55, callP: 0.00, alreadyP: 0.0, allinP: 0.45),
               'QQ' :ProgressInfo(raiseP: 0.28, callP: 0.72),
               'JJ' :ProgressInfo(raiseP: 0.32, callP: 0.68),
               'TT' :ProgressInfo(raiseP: 0.21, callP: 0.79),
@@ -824,11 +824,11 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '66' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.81),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 0.84),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.71),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.73),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.71, alreadyP: 0.3),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.73, alreadyP: 0.3),
 
 
-              'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'AKs':ProgressInfo(raiseP: 0.85, callP: 0.00, alreadyP: 0.0, allinP: 0.15),
               'AQs':ProgressInfo(raiseP: 0.35, callP: 0.65),
               'AJs':ProgressInfo(raiseP: 0.40, callP: 0.60),
               'ATs':ProgressInfo(raiseP: 0.32, callP: 0.68),
@@ -841,10 +841,11 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.39),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.65, callP: 0.35),
+              'AKo':ProgressInfo(raiseP: 0.1, callP: 0.35, alreadyP: 0.0, allinP: 0.55),
               'KQs':ProgressInfo(raiseP: 0.16, callP: 0.84),
               'KJs':ProgressInfo(raiseP: 0.20, callP: 0.80),
               'KTs':ProgressInfo(raiseP: 0.17, callP: 0.83),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
 
 
               'AQo':ProgressInfo(raiseP: 0.17, callP: 0.52),
@@ -873,15 +874,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.50),
+              '87s':ProgressInfo(raiseP: 0.1 , callP: 0.9, alreadyP: 0.5),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -901,7 +902,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.HJ:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.6, callP: 0.00, alreadyP: 0.0, allinP: 0.4),
               'QQ' :ProgressInfo(raiseP: 0.30, callP: 0.70),
               'JJ' :ProgressInfo(raiseP: 0.28, callP: 0.72),
               'TT' :ProgressInfo(raiseP: 0.23, callP: 0.77),
@@ -911,8 +912,8 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '66' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.71),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.73),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3, allinP: 0.0),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3, allinP: 0.0),
 
 
               'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
@@ -924,14 +925,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A7s':ProgressInfo(raiseP: 0.0 , callP: 0.30),
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.23, callP: 0.77),
-              'A4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'A4s':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.26),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.59, callP: 0.41),
-              'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'AKo':ProgressInfo(raiseP: 0.1, callP: 0.4, alreadyP: 0.0, allinP: 0.5),
+              'KQs':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'KJs':ProgressInfo(raiseP: 0.36, callP: 0.64),
               'KTs':ProgressInfo(raiseP: 0.17, callP: 0.83),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8, allinP: 0.0),
 
 
               'AQo':ProgressInfo(raiseP: 0.22, callP: 0.78),
@@ -960,15 +962,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.52),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5, allinP: 0.0),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7, allinP: 0.0),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7, allinP: 0.0),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -988,18 +990,18 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.CO:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.7, callP: 0.00, alreadyP: 0.0, allinP: 0.3),
               'QQ' :ProgressInfo(raiseP: 0.30, callP: 0.70),
               'JJ' :ProgressInfo(raiseP: 0.21, callP: 0.79),
               'TT' :ProgressInfo(raiseP: 0.21, callP: 0.79),
               '99' :ProgressInfo(raiseP: 0.00, callP: 1.00),
-              '88' :ProgressInfo(raiseP: 0.00, callP: 1.00),
+              '88' :ProgressInfo(raiseP: 0.1, callP: 0.9),
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.0),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.71),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.73),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3),
 
 
               'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
@@ -1015,10 +1017,12 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.44),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.56, callP: 0.44),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.45, alreadyP: 0.0, allinP: 0.4),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.39, callP: 0.61),
               'KTs':ProgressInfo(raiseP: 0.17, callP: 0.83),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8, allinP: 0.0),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 0.2, alreadyP: 0.7, allinP: 0.0),
 
 
               'AQo':ProgressInfo(raiseP: 0.24, callP: 0.76),
@@ -1047,15 +1051,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.54),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1075,18 +1079,18 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.BTN:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.7, callP: 0.00, alreadyP: 0.0, allinP: 0.3),
               'QQ' :ProgressInfo(raiseP: 0.27, callP: 0.73),
               'JJ' :ProgressInfo(raiseP: 0.20, callP: 0.80),
               'TT' :ProgressInfo(raiseP: 0.15, callP: 0.85),
-              '99' :ProgressInfo(raiseP: 0.00, callP: 1.00),
+              '99' :ProgressInfo(raiseP: 0.15, callP: 0.85),
               '88' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.0),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.71),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.73),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3, allinP: 0.0),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3, allinP: 0.0),
 
 
               'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
@@ -1095,27 +1099,29 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'ATs':ProgressInfo(raiseP: 0.45, callP: 0.55),
               'A9s':ProgressInfo(raiseP: 0.17, callP: 0.83),
               'A8s':ProgressInfo(raiseP: 0.15, callP: 0.85),
-              'A7s':ProgressInfo(raiseP: 0.0 , callP: 1.00),
+              'A7s':ProgressInfo(raiseP: 0.1 , callP: 0.9),
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.49),
               'A5s':ProgressInfo(raiseP: 0.27, callP: 0.73),
               'A4s':ProgressInfo(raiseP: 0.17, callP: 0.83),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.79),
+              'A3s':ProgressInfo(raiseP: 0.1 , callP: 0.7),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.56, callP: 0.44),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.45, alreadyP: 0.0, allinP: 0.4),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.26, callP: 0.74),
               'KTs':ProgressInfo(raiseP: 0.26, callP: 0.74),
               'K9s':ProgressInfo(raiseP: 0.00, callP: 0.44),
+              'K7s':ProgressInfo(raiseP: 0.00, callP: 0.2, alreadyP: 0.7),
+              'K6s':ProgressInfo(raiseP: 0.00, callP: 1.0, alreadyP: 0.8),
 
 
               'AQo':ProgressInfo(raiseP: 0.26, callP: 0.74),
-              'KQo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
+              'KQo':ProgressInfo(raiseP: 0.0 , callP: 0.1 ),
               'QJs':ProgressInfo(raiseP: 0.14, callP: 0.86),
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 1.00),
 
 
-              'AJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
+              'AJo':ProgressInfo(raiseP: 0.0 , callP: 0.1 ),
               'KJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTs':ProgressInfo(raiseP: 0.23, callP: 0.77),
@@ -1131,19 +1137,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 1.00),
+              '98s':ProgressInfo(raiseP: 0.1 , callP: 0.9),
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.54),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1163,41 +1169,41 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.SB:
             return {
               'AA' :ProgressInfo(raiseP: 0.36, callP: 0.64),
-              'KK' :ProgressInfo(raiseP: 0.45, callP: 0.55),
-              'QQ' :ProgressInfo(raiseP: 0.27, callP: 0.73),
-              'JJ' :ProgressInfo(raiseP: 0.20, callP: 0.80),
-              'TT' :ProgressInfo(raiseP: 0.15, callP: 0.85),
+              'KK' :ProgressInfo(raiseP: 0.1, callP: 0.55, allinP: 0.35),
+              'QQ' :ProgressInfo(raiseP: 0.0, callP: 1.0),
+              'JJ' :ProgressInfo(raiseP: 0.0, callP: 1.0),
+              'TT' :ProgressInfo(raiseP: 0.0, callP: 1.0),
               '99' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               '88' :ProgressInfo(raiseP: 0.00, callP: 0.80),
               '77' :ProgressInfo(raiseP: 0.0 , callP: 0.74),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.70),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.43),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 0.52),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.56),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.59),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.8, alreadyP: 0.3),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.8, alreadyP: 0.3),
 
 
               'AKs':ProgressInfo(raiseP: 0.27, callP: 0.73),
               'AQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'AJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'ATs':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'AJs':ProgressInfo(raiseP: 0.1, callP: 0.9),
+              'ATs':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'A9s':ProgressInfo(raiseP: 0.00, callP: 0.51),
               'A8s':ProgressInfo(raiseP: 0.00, callP: 0.41),
               'A7s':ProgressInfo(raiseP: 0.0 , callP: 0.18),
-              'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.49),
+
               'A5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A4s':ProgressInfo(raiseP: 0.00, callP: 0.85),
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.17),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.47, callP: 0.53),
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.5, allinP: 0.5),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'K9s':ProgressInfo(raiseP: 0.00, callP: 0.00),
 
 
-              'AQo':ProgressInfo(raiseP: 0.00, callP: 0.73),
+              'AQo':ProgressInfo(raiseP: 0.1, callP: 0.6),
               'KQo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 0.80),
@@ -1207,7 +1213,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'KJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'J9s':ProgressInfo(raiseP: 0.00, callP: 0.32),
+
 
 
               'ATo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1223,15 +1229,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.54),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1251,7 +1257,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.BB:
             return {
               'AA' :ProgressInfo(raiseP: 0.45, callP: 0.55),
-              'KK' :ProgressInfo(raiseP: 0.36, callP: 0.64),
+              'KK' :ProgressInfo(raiseP: 0.2, callP: 0.6, allinP:0.2),
               'QQ' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               'JJ' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               'TT' :ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -1261,8 +1267,8 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.63),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.35),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 0.37),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.28),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.20),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.4, alreadyP: 0.3),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.3, alreadyP: 0.3),
 
 
               'AKs':ProgressInfo(raiseP: 0.36, callP: 0.64),
@@ -1272,20 +1278,20 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A9s':ProgressInfo(raiseP: 0.12, callP: 0.88),
               'A8s':ProgressInfo(raiseP: 0.00, callP: 0.73),
               'A7s':ProgressInfo(raiseP: 0.0 , callP: 0.39),
-              'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.49),
-              'A5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'A4s':ProgressInfo(raiseP: 0.00, callP: 0.80),
+
+              'A5s':ProgressInfo(raiseP: 0.1, callP: 0.9),
+              'A4s':ProgressInfo(raiseP: 0.1, callP: 0.7),
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.00),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.32, callP: 0.68),
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.7, allinP: 0.3),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.10, callP: 0.90),
               'KTs':ProgressInfo(raiseP: 0.12, callP: 0.75),
               'K9s':ProgressInfo(raiseP: 0.00, callP: 0.00),
 
 
-              'AQo':ProgressInfo(raiseP: 0.00, callP: 0.23),
+              'AQo':ProgressInfo(raiseP: 0.1, callP: 0.15),
               'KQo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 0.77),
@@ -1295,7 +1301,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'KJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTs':ProgressInfo(raiseP: 0.00, callP: 0.80),
-              'J9s':ProgressInfo(raiseP: 0.00, callP: 0.32),
+
 
 
               'ATo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1311,15 +1317,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.45),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.85, alreadyP: 0.5),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.7),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.27),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.8, alreadyP: 0.7),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1342,7 +1348,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.HJ:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.6, callP: 0.00, allinP: 0.4),
               'QQ' :ProgressInfo(raiseP: 0.51, callP: 0.49),
               'JJ' :ProgressInfo(raiseP: 0.38, callP: 0.62),
               'TT' :ProgressInfo(raiseP: 0.35, callP: 0.65),
@@ -1352,8 +1358,8 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.84),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.68),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 0.72),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.74),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.70),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.25),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3),
 
 
               'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
@@ -1365,16 +1371,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A7s':ProgressInfo(raiseP: 0.0 , callP: 0.00),
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.18, callP: 0.82),
-              'A4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.67),
+              'A4s':ProgressInfo(raiseP: 0.00, callP: 0.65),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.63, callP: 0.37),
+              'AKo':ProgressInfo(raiseP: 0.1, callP: 0.3, allinP: 0.6),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.72, callP: 0.28),
               'KTs':ProgressInfo(raiseP: 0.41, callP: 0.59),
               'K9s':ProgressInfo(raiseP: 0.00, callP: 0.26),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.23),
+              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.5, alreadyP: 0.5),
 
 
               'AQo':ProgressInfo(raiseP: 0.56, callP: 0.44),
@@ -1403,15 +1408,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.61),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.4),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.43),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.6),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.35),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.65),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1431,8 +1436,8 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.CO:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'QQ' :ProgressInfo(raiseP: 0.55, callP: 0.45),
+              'KK' :ProgressInfo(raiseP: 0.7, callP: 0.00, allinP: 0.3),
+              'QQ' :ProgressInfo(raiseP: 0.4, callP: 0.45, allinP: 0.15),
               'JJ' :ProgressInfo(raiseP: 0.37, callP: 0.63),
               'TT' :ProgressInfo(raiseP: 0.39, callP: 0.61),
               '99' :ProgressInfo(raiseP: 0.20, callP: 0.80),
@@ -1441,8 +1446,8 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.89),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.64),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 0.83),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.74),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.70),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.25),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3),
 
 
               'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
@@ -1454,21 +1459,21 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A7s':ProgressInfo(raiseP: 0.0 , callP: 0.24),
               'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'A5s':ProgressInfo(raiseP: 0.28, callP: 0.72),
-              'A4s':ProgressInfo(raiseP: 0.00, callP: 0.87),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.67),
+              'A4s':ProgressInfo(raiseP: 0.00, callP: 0.8),
+              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.1),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.80, callP: 0.20),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.20, allinP: 0.65),
               'KQs':ProgressInfo(raiseP: 0.12, callP: 0.88),
               'KJs':ProgressInfo(raiseP: 0.47, callP: 0.53),
               'KTs':ProgressInfo(raiseP: 0.49, callP: 0.51),
               'K9s':ProgressInfo(raiseP: 0.11, callP: 0.52),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.38),
+              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.75, alreadyP: 0.5),
 
 
               'AQo':ProgressInfo(raiseP: 0.58, callP: 0.42),
-              'KQo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'QJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'KQo':ProgressInfo(raiseP: 0.0 , callP: 0.1 ),
+              'QJs':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 1.00),
 
 
@@ -1492,15 +1497,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.61),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.4),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.43),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.6),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.35),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.65),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1520,7 +1525,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.BTN:
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'KK' :ProgressInfo(raiseP: 0.65, callP: 0.00, allinP: 0.35),
               'QQ' :ProgressInfo(raiseP: 0.52, callP: 0.48),
               'JJ' :ProgressInfo(raiseP: 0.35, callP: 0.65),
               'TT' :ProgressInfo(raiseP: 0.35, callP: 0.65),
@@ -1530,8 +1535,8 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.89),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.70),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 0.83),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.74),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.70),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.25),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.3),
 
 
               'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00),
@@ -1547,13 +1552,13 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.61),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.85, callP: 0.15),
+              'AKo':ProgressInfo(raiseP: 0.2, callP: 0.15, allinP: 0.65),
               'KQs':ProgressInfo(raiseP: 0.14, callP: 0.86),
               'KJs':ProgressInfo(raiseP: 0.27, callP: 0.73),
               'KTs':ProgressInfo(raiseP: 0.52, callP: 0.48),
               'K9s':ProgressInfo(raiseP: 0.29, callP: 0.59),
               'K8s':ProgressInfo(raiseP: 0.00, callP: 0.17),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.39),
+              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.8, alreadyP: 0.5),
 
 
               'AQo':ProgressInfo(raiseP: 0.62, callP: 0.38),
@@ -1582,15 +1587,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.61),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.4),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.43),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.6),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.35),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.65),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1610,7 +1615,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.SB:
             return {
               'AA' :ProgressInfo(raiseP: 0.75, callP: 0.25),
-              'KK' :ProgressInfo(raiseP: 0.53, callP: 0.47),
+              'KK' :ProgressInfo(raiseP: 0.25, callP: 0.5, allinP: 0.25),
               'QQ' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               'JJ' :ProgressInfo(raiseP: 0.13, callP: 0.87),
               'TT' :ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -1620,8 +1625,8 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.66),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.39),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 0.39),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.41),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.48),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.55, alreadyP: 0.25),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.7, alreadyP: 0.3),
 
 
               'AKs':ProgressInfo(raiseP: 0.57, callP: 0.43),
@@ -1631,19 +1636,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A9s':ProgressInfo(raiseP: 0.00, callP: 0.58),
               'A8s':ProgressInfo(raiseP: 0.00, callP: 0.48),
               'A7s':ProgressInfo(raiseP: 0.00, callP: 0.31),
-              'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.28),
+
               'A5s':ProgressInfo(raiseP: 0.14, callP: 0.86),
               'A4s':ProgressInfo(raiseP: 0.13, callP: 0.87),
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.26),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.34, callP: 0.66),
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.7, allinP: 0.3),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.14, callP: 0.86),
               'K9s':ProgressInfo(raiseP: 0.13, callP: 0.00),
               'K8s':ProgressInfo(raiseP: 0.00, callP: 0.00),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.38),
+              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.75, alreadyP: 0.5),
 
 
               'AQo':ProgressInfo(raiseP: 0.23, callP: 0.77),
@@ -1672,15 +1677,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.52),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.85, alreadyP: 0.4),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.43),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.6),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.35),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.65),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1700,7 +1705,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           case TournaPosition.BB:
             return {
               'AA' :ProgressInfo(raiseP: 0.50, callP: 0.50),
-              'KK' :ProgressInfo(raiseP: 0.50, callP: 0.50),
+              'KK' :ProgressInfo(raiseP: 0.2, callP: 0.50, allinP: 0.3),
               'QQ' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               'JJ' :ProgressInfo(raiseP: 0.00, callP: 1.00),
               'TT' :ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -1710,30 +1715,29 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               '66' :ProgressInfo(raiseP: 0.0 , callP: 0.71),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 0.40),
               '44' :ProgressInfo(raiseP: 0.0 , callP: 0.36),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.23),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.09),
+              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.3, alreadyP: 0.25),
+              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.15, alreadyP: 0.3),
 
 
               'AKs':ProgressInfo(raiseP: 0.34, callP: 0.66),
               'AQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'AJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'ATs':ProgressInfo(raiseP: 0.11, callP: 0.89),
-              'A9s':ProgressInfo(raiseP: 0.13, callP: 0.87),
+              'A9s':ProgressInfo(raiseP: 0.15, callP: 0.8),
               'A8s':ProgressInfo(raiseP: 0.00, callP: 0.86),
-              'A7s':ProgressInfo(raiseP: 0.00, callP: 0.54),
-              'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.28),
+              'A7s':ProgressInfo(raiseP: 0.1, callP: 0.45),
               'A5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.34),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.50, callP: 0.50),
+              'AKo':ProgressInfo(raiseP: 0.0, callP: 0.55, allinP: 0.45),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'K9s':ProgressInfo(raiseP: 0.00, callP: 0.30),
               'K8s':ProgressInfo(raiseP: 0.00, callP: 0.00),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.00),
+              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.2, alreadyP: 0.5),
 
 
               'AQo':ProgressInfo(raiseP: 0.11, callP: 0.40),
@@ -1762,15 +1766,15 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 0.60),
+              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.4),
 
 
               'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 0.41),
+              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.6),
 
 
               'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.21),
+              '65s':ProgressInfo(raiseP: 0.0 , callP: 0.6, alreadyP: 0.65),
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1795,11 +1799,11 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
               'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'QQ' :ProgressInfo(raiseP: 0.80, callP: 0.20),
+              'QQ' :ProgressInfo(raiseP: 0.65, callP: 0.20, allinP: 0.15),
               'JJ' :ProgressInfo(raiseP: 0.45, callP: 0.55),
               'TT' :ProgressInfo(raiseP: 0.49, callP: 0.51),
               '99' :ProgressInfo(raiseP: 0.21, callP: 0.79),
-              '88' :ProgressInfo(raiseP: 0.00, callP: 1.00),
+              '88' :ProgressInfo(raiseP: 0.1, callP: 0.9),
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.0),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
@@ -1815,18 +1819,19 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A9s':ProgressInfo(raiseP: 0.34, callP: 0.66),
               'A8s':ProgressInfo(raiseP: 0.34, callP: 0.66),
               'A7s':ProgressInfo(raiseP: 0.31, callP: 0.69),
-              'A6s':ProgressInfo(raiseP: 0.00, callP: 0.31),
+              'A6s':ProgressInfo(raiseP: 0.1, callP: 0.2),
               'A5s':ProgressInfo(raiseP: 0.36, callP: 0.64),
               'A4s':ProgressInfo(raiseP: 0.20, callP: 0.80),
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.55),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
-              'AKo':ProgressInfo(raiseP: 0.80, callP: 0.20),
+              'AKo':ProgressInfo(raiseP: 0.45, callP: 0.25, allinP: 0.3),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.39, callP: 0.61),
               'KTs':ProgressInfo(raiseP: 0.68, callP: 0.32),
               'K9s':ProgressInfo(raiseP: 0.41, callP: 0.59),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.45),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 0.4),
+              'K6s':ProgressInfo(raiseP: 0.1, callP: 0.3),
 
 
               'AQo':ProgressInfo(raiseP: 0.61, callP: 0.39),
@@ -1867,7 +1872,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '54s':ProgressInfo(raiseP: 0.0 , callP: 0.51),
+              '54s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
               '53s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               '52s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
@@ -1884,11 +1889,11 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
             return {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
               'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'QQ' :ProgressInfo(raiseP: 0.80, callP: 0.20),
+              'QQ' :ProgressInfo(raiseP: 0.65, callP: 0.20, allinP: 0.15),
               'JJ' :ProgressInfo(raiseP: 0.41, callP: 0.59),
               'TT' :ProgressInfo(raiseP: 0.42, callP: 0.58),
               '99' :ProgressInfo(raiseP: 0.18, callP: 0.82),
-              '88' :ProgressInfo(raiseP: 0.00, callP: 1.00),
+              '88' :ProgressInfo(raiseP: 0.15, callP: 0.85),
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.0),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
               '55' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
@@ -1906,17 +1911,17 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A7s':ProgressInfo(raiseP: 0.37, callP: 0.63),
               'A6s':ProgressInfo(raiseP: 0.24, callP: 0.76),
               'A5s':ProgressInfo(raiseP: 0.31, callP: 0.69),
-              'A4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 1.00),
-              'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.26),
+              'A4s':ProgressInfo(raiseP: 0.1, callP: 0.9),
+              'A3s':ProgressInfo(raiseP: 0.1 , callP: 0.9),
+              'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.25),
 
-              'AKo':ProgressInfo(raiseP: 0.85, callP: 0.15),
+              'AKo':ProgressInfo(raiseP: 0.5, callP: 0.1, allinP: 0.4),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.55, callP: 0.45),
               'K9s':ProgressInfo(raiseP: 0.61, callP: 0.39),
               'K8s':ProgressInfo(raiseP: 0.00, callP: 0.71),
-              'K7s':ProgressInfo(raiseP: 0.00, callP: 0.38),
+              'K7s':ProgressInfo(raiseP: 0.1, callP: 0.3),
               'K6s':ProgressInfo(raiseP: 0.14, callP: 0.43),
 
 
@@ -1930,7 +1935,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'KJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTs':ProgressInfo(raiseP: 0.32, callP: 0.68),
-              'J9s':ProgressInfo(raiseP: 0.00, callP: 0.56),
+              'J9s':ProgressInfo(raiseP: 0.1, callP: 0.5),
 
 
               'ATo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
@@ -1958,7 +1963,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '54s':ProgressInfo(raiseP: 0.0 , callP: 0.51),
+              '54s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
               '53s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               '52s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
@@ -1997,7 +2002,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A7s':ProgressInfo(raiseP: 0.10, callP: 0.50),
               'A6s':ProgressInfo(raiseP: 0.00, callP: 0.00),
               'A5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'A4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'A4s':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'A3s':ProgressInfo(raiseP: 0.14, callP: 0.86),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.00),
 
@@ -2008,7 +2013,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'K9s':ProgressInfo(raiseP: 0.26, callP: 0.51),
               'K8s':ProgressInfo(raiseP: 0.00, callP: 0.00),
               'K7s':ProgressInfo(raiseP: 0.00, callP: 0.00),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 0.66),
+              'K6s':ProgressInfo(raiseP: 0.1, callP: 0.6),
 
 
               'AQo':ProgressInfo(raiseP: 0.23, callP: 0.77),
@@ -2021,14 +2026,14 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'KJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'J9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'J9s':ProgressInfo(raiseP: 0.1, callP: 0.9),
 
 
               'ATo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'KTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'T9s':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'T8s':ProgressInfo(raiseP: 0.14, callP: 0.30),
 
 
@@ -2049,7 +2054,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '54s':ProgressInfo(raiseP: 0.0 , callP: 0.51),
+              '54s':ProgressInfo(raiseP: 0.0 , callP: 1.0, alreadyP: 0.5),
               '53s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               '52s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
@@ -2088,16 +2093,16 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A7s':ProgressInfo(raiseP: 0.21, callP: 0.79),
               'A6s':ProgressInfo(raiseP: 0.00, callP: 0.33),
               'A5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'A4s':ProgressInfo(raiseP: 0.13, callP: 0.79),
+              'A4s':ProgressInfo(raiseP: 0.15, callP: 0.85),
               'A3s':ProgressInfo(raiseP: 0.21, callP: 0.64),
-              'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.00),
+              'A2s':ProgressInfo(raiseP: 0.1 , callP: 0.00),
 
-              'AKo':ProgressInfo(raiseP: 0.50, callP: 0.50),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.50, allinP: 0.35),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'K9s':ProgressInfo(raiseP: 0.16, callP: 0.61),
-              'K8s':ProgressInfo(raiseP: 0.00, callP: 0.00),
+              'K8s':ProgressInfo(raiseP: 0.00, callP: 0.15),
               'K7s':ProgressInfo(raiseP: 0.00, callP: 0.00),
               'K6s':ProgressInfo(raiseP: 0.15, callP: 0.67),
 
@@ -2141,7 +2146,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '54s':ProgressInfo(raiseP: 0.0 , callP: 0.47),
+              '54s':ProgressInfo(raiseP: 0.0 , callP: 0.9, alreadyP: 0.5),
               '53s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               '52s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
 
@@ -2162,7 +2167,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'AA' :ProgressInfo(raiseP: 1.00, callP: 0.00),
               'KK' :ProgressInfo(raiseP: 1.00, callP: 0.00),
               'QQ' :ProgressInfo(raiseP: 1.00, callP: 0.00),
-              'JJ' :ProgressInfo(raiseP: 0.75, callP: 0.25),
+              'JJ' :ProgressInfo(raiseP: 0.6, callP: 0.25, allinP: 0.15),
               'TT' :ProgressInfo(raiseP: 0.38, callP: 0.62),
               '99' :ProgressInfo(raiseP: 0.34, callP: 0.66),
               '88' :ProgressInfo(raiseP: 0.21, callP: 0.79),
@@ -2183,18 +2188,18 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A7s':ProgressInfo(raiseP: 0.36, callP: 0.64),
               'A6s':ProgressInfo(raiseP: 0.32, callP: 0.68),
               'A5s':ProgressInfo(raiseP: 0.39, callP: 0.61),
-              'A4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'A4s':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'A3s':ProgressInfo(raiseP: 0.0 , callP: 1.00),
               'A2s':ProgressInfo(raiseP: 0.0 , callP: 1.00),
 
-              'AKo':ProgressInfo(raiseP: 1.00, callP: 0.00),
+              'AKo':ProgressInfo(raiseP: 0.75, callP: 0.00, allinP: 0.25),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.18, callP: 0.82),
               'KTs':ProgressInfo(raiseP: 0.33, callP: 0.67),
               'K9s':ProgressInfo(raiseP: 0.82, callP: 0.18),
               'K8s':ProgressInfo(raiseP: 0.27, callP: 0.73),
-              'K7s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'K7s':ProgressInfo(raiseP: 0.15, callP: 0.85),
+              'K6s':ProgressInfo(raiseP: 0.15, callP: 0.85),
               'K5s':ProgressInfo(raiseP: 0.00, callP: 0.52),
 
 
@@ -2202,26 +2207,27 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'KQo':ProgressInfo(raiseP: 0.28, callP: 0.72),
               'QJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 1.00),
-              'Q9s':ProgressInfo(raiseP: 0.0 , callP: 1.00),
+              'Q9s':ProgressInfo(raiseP: 0.1 , callP: 0.9),
 
 
               'AJo':ProgressInfo(raiseP: 0.45, callP: 0.55),
-              'KJo':ProgressInfo(raiseP: 0.0 , callP: 0.49),
+              'KJo':ProgressInfo(raiseP: 0.1 , callP: 0.4),
               'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTs':ProgressInfo(raiseP: 0.41, callP: 0.59),
               'J9s':ProgressInfo(raiseP: 0.28, callP: 0.72),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.1),
 
 
-              'ATo':ProgressInfo(raiseP: 0.0 , callP: 0.37),
+              'ATo':ProgressInfo(raiseP: 0.1 , callP: 0.3),
               'KTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'QTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'T9s':ProgressInfo(raiseP: 0.33, callP: 0.67),
-              'T8s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'T8s':ProgressInfo(raiseP: 0.1, callP: 0.9),
 
 
               'A9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 1.00),
+              '98s':ProgressInfo(raiseP: 0.1 , callP: 0.9),
               '97s':ProgressInfo(raiseP: 0.0 , callP: 0.40),
 
 
@@ -2289,12 +2295,12 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'K9s':ProgressInfo(raiseP: 0.23, callP: 0.77),
               'K8s':ProgressInfo(raiseP: 0.00, callP: 0.50),
               'K7s':ProgressInfo(raiseP: 0.00, callP: 0.48),
-              'K6s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'K6s':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'K5s':ProgressInfo(raiseP: 0.00, callP: 0.40),
 
 
               'AQo':ProgressInfo(raiseP: 0.10, callP: 0.90),
-              'KQo':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'KQo':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'QJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 1.00),
               'Q9s':ProgressInfo(raiseP: 0.11, callP: 0.89),
@@ -2302,7 +2308,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'AJo':ProgressInfo(raiseP: 0.25, callP: 0.75),
-              'KJo':ProgressInfo(raiseP: 0.0 , callP: 0.47),
+              'KJo':ProgressInfo(raiseP: 0.1 , callP: 0.35),
               'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'J9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -2379,7 +2385,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'A3s':ProgressInfo(raiseP: 0.13, callP: 0.87),
               'A2s':ProgressInfo(raiseP: 0.25, callP: 0.39),
 
-              'AKo':ProgressInfo(raiseP: 0.60, callP: 0.40),
+              'AKo':ProgressInfo(raiseP: 0.15, callP: 0.40, allinP: 0.35),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -2391,10 +2397,10 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
 
               'AQo':ProgressInfo(raiseP: 0.19, callP: 0.81),
-              'KQo':ProgressInfo(raiseP: 0.10, callP: 1.90),
+              'KQo':ProgressInfo(raiseP: 0.10, callP: 0.90),
               'QJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 1.00),
-              'Q9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'Q9s':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'Q8s':ProgressInfo(raiseP: 0.00, callP: 0.00),
 
 
@@ -2403,7 +2409,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
               'JTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'J9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'J8s':ProgressInfo(raiseP: 0.00, callP: 0.30),
+              'J8s':ProgressInfo(raiseP: 0.1, callP: 0.3),
 
 
               'ATo':ProgressInfo(raiseP: 0.00, callP: 0.0 ),
@@ -2456,7 +2462,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'QQ' :ProgressInfo(raiseP: 0.52, callP: 0.48),
               'JJ' :ProgressInfo(raiseP: 0.30, callP: 0.70),
               'TT' :ProgressInfo(raiseP: 0.20, callP: 0.80),
-              '99' :ProgressInfo(raiseP: 0.30, callP: 0.70),
+              '99' :ProgressInfo(raiseP: 0.1, callP: 0.6, allinP: 0.3),
               '88' :ProgressInfo(raiseP: 0.13, callP: 0.87),
               '77' :ProgressInfo(raiseP: 0.0 , callP: 1.0),
               '66' :ProgressInfo(raiseP: 0.0 , callP: 1.00),
@@ -2472,14 +2478,14 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'ATs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A8s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'A7s':ProgressInfo(raiseP: 0.10, callP: 1.00),
-              'A6s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'A7s':ProgressInfo(raiseP: 0.0, callP: 1.00),
+              'A6s':ProgressInfo(raiseP: 0.1, callP: 0.9),
               'A5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A3s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A2s':ProgressInfo(raiseP: 0.11, callP: 0.89),
 
-              'AKo':ProgressInfo(raiseP: 0.80, callP: 0.20),
+              'AKo':ProgressInfo(raiseP: 0.55, callP: 0.15, allinP: 0.3),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -2502,7 +2508,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
               'AJo':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJo':ProgressInfo(raiseP: 0.13, callP: 0.87),
-              'QJo':ProgressInfo(raiseP: 0.40, callP: 0.60),
+              'QJo':ProgressInfo(raiseP: 0.25, callP: 0.60, allinP: 0.15),
               'JTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'J9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'J8s':ProgressInfo(raiseP: 0.30, callP: 0.70),
@@ -2514,7 +2520,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'JTo':ProgressInfo(raiseP: 0.0 , callP: 0.20),
               'T9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'T8s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'T7s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'T7s':ProgressInfo(raiseP: 0.1, callP: 0.9),
 
 
               'A9o':ProgressInfo(raiseP: 0.31, callP: 0.0 ),
@@ -2575,14 +2581,14 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'ATs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A8s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'A7s':ProgressInfo(raiseP: 0.10, callP: 1.00),
+              'A7s':ProgressInfo(raiseP: 0.0, callP: 1.00),
               'A6s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A3s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'A2s':ProgressInfo(raiseP: 0.13, callP: 0.87),
 
-              'AKo':ProgressInfo(raiseP: 0.90, callP: 0.10),
+              'AKo':ProgressInfo(raiseP: 0.4, callP: 0.10, allinP: 0.5),
               'KQs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KJs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'KTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -2601,8 +2607,8 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'QTs':ProgressInfo(raiseP: 0.0 , callP: 1.00),
               'Q9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'Q8s':ProgressInfo(raiseP: 0.16, callP: 0.84),
-              'Q7s':ProgressInfo(raiseP: 0.13, callP: 0.33),
-              'Q6s':ProgressInfo(raiseP: 0.13, callP: 0.48),
+              'Q7s':ProgressInfo(raiseP: 0.0, callP: 0.3),
+              'Q6s':ProgressInfo(raiseP: 0.0, callP: 0.5),
               'Q5s':ProgressInfo(raiseP: 0.20, callP: 0.00),
 
 
@@ -2612,15 +2618,16 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
               'JTs':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'J9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'J8s':ProgressInfo(raiseP: 0.13, callP: 0.87),
+              'J7s':ProgressInfo(raiseP: 0.1, callP: 0.0),
 
 
-              'ATo':ProgressInfo(raiseP: 0.35, callP: 0.65),
+              'ATo':ProgressInfo(raiseP: 0.15, callP: 0.65, allinP: 0.2),
               'KTo':ProgressInfo(raiseP: 0.09, callP: 0.51),
               'QTo':ProgressInfo(raiseP: 0.13, callP: 0.27),
               'JTo':ProgressInfo(raiseP: 0.12, callP: 0.49),
               'T9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
               'T8s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-              'T7s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+              'T7s':ProgressInfo(raiseP: 0.1, callP: 0.9),
 
 
               'A9o':ProgressInfo(raiseP: 0.14, callP: 0.0 ),
@@ -2663,189 +2670,87 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
         switch (tournaSelection.opponentTournaPosition) {
           case TournaPosition.BB:
             return {
-              'AA' :ProgressInfo(raiseP: 1.00, callP: 0.0 , alreadyP: 0.7),
-              'KK' :ProgressInfo(raiseP: 1.00, callP: 0.0 , alreadyP: 0.77),
-              'QQ' :ProgressInfo(raiseP: 1.00, callP: 0.0 , alreadyP: 0.75),
-              'JJ' :ProgressInfo(raiseP: 0.50, callP: 0.50, alreadyP: 0.71),
-              'TT' :ProgressInfo(raiseP: 0.40, callP: 0.60, alreadyP: 0.69),
-              '99' :ProgressInfo(raiseP: 0.15, callP: 0.85, alreadyP: 0.74),
-              '88' :ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.83),
-              '77' :ProgressInfo(raiseP: 0.0 , callP: 0.00, alreadyP: 0.00),
-              '66' :ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '55' :ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '44' :ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '33' :ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '22' :ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
+              'AA' :ProgressInfo(raiseP: 1.0, callP: 0.0, alreadyP: 0.7),
+              'KK' :ProgressInfo(raiseP: 1.0, callP: 0.0, alreadyP: 0.75),
+              'QQ' :ProgressInfo(raiseP: 1.0, callP: 0.0, alreadyP: 0.75),
+              'JJ' :ProgressInfo(raiseP: 0.5, callP: 0.5, alreadyP: 0.7),
+              'TT' :ProgressInfo(raiseP: 0.4, callP: 0.6, alreadyP: 0.7),
+              '99' :ProgressInfo(raiseP: 0.15, callP: 0.85, alreadyP: 0.75),
+              '88' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '77' :ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '66' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '55' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '44' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '33' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '22' :ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AKs':ProgressInfo(raiseP: 1.0, callP: 0.0, alreadyP: 0.5),
+              'AQs':ProgressInfo(raiseP: 1.0, callP: 0.0, alreadyP: 0.75),
+              'AJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'ATs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.35),
+              'A9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'A8s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.55),
+              'A7s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'A6s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'A5s':ProgressInfo(allinP: 0.1, callP: 0.9, alreadyP: 0.65),
+              'A4s':ProgressInfo(allinP: 0.3, callP: 0.7, alreadyP: 0.85),
+              'A3s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'A2s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AKo':ProgressInfo(raiseP: 0.7, allinP: 0.3, alreadyP: 0.8),
+              'KQs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'KJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'KTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'K9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'K8s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'K7s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              'K6s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'AQo':ProgressInfo(raiseP: 0.4, callP: 0.6, alreadyP: 0.7),
+              'KQo':ProgressInfo(raiseP: 0.6, callP: 0.4, alreadyP: 0.85),
+              'QJs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.4),
+              'QTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'Q9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              'Q8s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+
+              'AJo':ProgressInfo(raiseP: 1.0, callP: 0.0, alreadyP: 0.85),
+              'KJo':ProgressInfo(raiseP: 0.85, callP: 0.15, alreadyP: 0.9),
+              'QJo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTs':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.5),
+              'J9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              'J8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              'ATo':ProgressInfo(raiseP: 1.0, callP: 0.0, alreadyP: 0.85),
+              'A9o':ProgressInfo(raiseP: 0.2, callP: 0.0, alreadyP: 0.85),
+              'A5o':ProgressInfo(raiseP: 0.5, callP: 0.0, alreadyP: 0.9),
+              'KTo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'QTo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'JTo':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              'T9s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.7),
+              'T8s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.9),
+              'T7s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              '98s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.9),
+              '97s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '96s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              '87s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.85),
+              '86s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+
+              '76s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.8),
+              '75s':ProgressInfo(raiseP: 0.0, callP: 0.5, alreadyP: 0.9),
+
+              '65s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              '64s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              '54s':ProgressInfo(raiseP: 0.0, callP: 1.0, alreadyP: 0.75),
+              '53s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '52s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+
+              '43s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
+              '42s':ProgressInfo(raiseP: 0.0, callP: 0.0, alreadyP: 0.0),
 
 
-              'AKs':ProgressInfo(raiseP: 1.00, callP: 0.00, alreadyP: 0.52),
-              'AQs':ProgressInfo(raiseP: 1.00, callP: 0.0 , alreadyP: 0.76),
-              'AJs':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.40),
-              'ATs':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.35),
-              'A9s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.53),
-              'A8s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.54),
-              'A7s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.69),
-              'A6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'A5s':ProgressInfo(raiseP: 0.15, callP: 0.85, alreadyP: 0.65),
-              'A4s':ProgressInfo(raiseP: 0.30, callP: 0.70, alreadyP: 0.86),
-              'A3s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'A2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'AKo':ProgressInfo(raiseP: 1.00, callP: 0.0 ,alreadyP: 0.81),
-              'KQs':ProgressInfo(raiseP: 0.0 , callP: 1.00,alreadyP: 0.38),
-              'KJs':ProgressInfo(raiseP: 0.0 , callP: 1.00,alreadyP: 0.41),
-              'KTs':ProgressInfo(raiseP: 0.0 , callP: 1.00,alreadyP: 0.52),
-              'K9s':ProgressInfo(raiseP: 0.0 , callP: 1.00,alreadyP: 0.78),
-              'K8s':ProgressInfo(raiseP: 0.0 , callP: 1.00,alreadyP: 0.83),
-              'K7s':ProgressInfo(raiseP: 0.0 , callP: 0.00,alreadyP: 0.00),
-              'K6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ,alreadyP: 0.00),
-              'K5s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ,alreadyP: 0.00),
-              'K4s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ,alreadyP: 0.00),
-              'K3s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ,alreadyP: 0.00),
-              'K2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ,alreadyP: 0.00),
-
-              'AQo':ProgressInfo(raiseP: 0.40, callP: 0.60, alreadyP: 0.70),
-              'KQo':ProgressInfo(raiseP: 0.60, callP: 0.40, alreadyP: 0.85),
-              'QJs':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.42),
-              'QTs':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.50),
-              'Q9s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'Q8s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'Q7s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'Q6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'Q5s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'Q4s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'Q3s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'Q2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-
-              'AJo':ProgressInfo(raiseP: 1.00, callP: 0.00, alreadyP: 0.84),
-              'KJo':ProgressInfo(raiseP: 1.00, callP: 0.00, alreadyP: 0.80),
-              'QJo':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'JTs':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.48),
-              'J9s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.82),
-              'J8s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'J7s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'J6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'J5s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'J4s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'J3s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-              'J2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 , alreadyP: 0.00),
-
-              'ATo':ProgressInfo(raiseP: 1.00, callP: 0.0 , alreadyP: 0.85),
-              'KTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'QTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'JTo':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T9s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.72),
-              'T8s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T7s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T6s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T5s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T4s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T3s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T2s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'A9o':ProgressInfo(raiseP: 0.00, callP: 0.0 , alreadyP: 0.00),
-              'K9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'Q9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'J9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T9o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '97s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '96s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '95s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '94s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '93s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '92s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'A8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'K8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'Q8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'J8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T8o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '98o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.85),
-              '86s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.82),
-              '85s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '84s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '83s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '82s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'A7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'K7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'Q7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'J7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T7o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '97o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '87o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.80),
-              '75s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '74s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '73s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '72s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'A6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'K6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'Q6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'J6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T6o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '96o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '86o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '76o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.77),
-              '64s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '63s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '62s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'A5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'K5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'Q5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'J5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T5o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '95o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '85o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '75o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '65o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '54s':ProgressInfo(raiseP: 0.0 , callP: 1.00, alreadyP: 0.74),
-              '53s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '52s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'A4o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'K4o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'Q4o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'J4o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T4o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '94o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '84o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '74o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '64o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '54o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '43s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '42s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'A3o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'K3o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'Q3o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'J3o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T3o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '93o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '83o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '73o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '63o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '53o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '43o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '32s':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-
-              'A2o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'K2o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'Q2o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'J2o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              'T2o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '92o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '82o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '72o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '62o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '52o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '42o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
-              '32o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
             };
         }
       }
@@ -8781,7 +8686,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           'QJs':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'QTs':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'Q9s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
-          'Q8s':ProgressInfo(callP: 0.0 , raiseP: 0.5 ),
+          'Q8s':ProgressInfo(callP: 0.0 , raiseP: 0.45 ),
           'AJo':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'KJo':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'QJo':ProgressInfo(callP: 0.0 , raiseP: 0.8 ),
@@ -8804,10 +8709,10 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           '77' :ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           '76s':ProgressInfo(callP: 0.0 , raiseP: 0.4 ),
           '66' :ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
-          '65s':ProgressInfo(callP: 0.0 , raiseP: 0.3 ),
+          '65s':ProgressInfo(callP: 0.0 , raiseP: 0.35 ),
           '55' :ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           '44' :ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
-          '33' :ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
+          '33' :ProgressInfo(callP: 0.0 , raiseP: 0.75 ),
           '22' :ProgressInfo(callP: 0.0 , raiseP: 0.7 ),
         };
       case TournaPosition.HJ:
@@ -8920,7 +8825,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           'Q6s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'Q5s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'Q4s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
-          'Q3s':ProgressInfo(callP: 0.0 , raiseP: 0.00),
+          'Q3s':ProgressInfo(callP: 0.0 , raiseP: 0.15),
 
           'AJo':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'KJo':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
@@ -8931,7 +8836,7 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           'J8s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'J7s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'J6s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
-          'J5s':ProgressInfo(callP: 0.0 , raiseP: 0.46),
+          'J5s':ProgressInfo(callP: 0.0 , raiseP: 0.45),
 
           'ATo':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           'KTo':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
@@ -8954,11 +8859,11 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           '96s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
 
           'A8o':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
-          '98o':ProgressInfo(callP: 0.0 , raiseP: 0.00 ),
+          '98o':ProgressInfo(callP: 0.0 , raiseP: 0.15 ),
           '88' :ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           '87s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           '86s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
-          '86s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
+
           '85s':ProgressInfo(callP: 0.0 , raiseP: 0.5 ),
 
           'A7o':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
@@ -8968,9 +8873,9 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
 
           '66' :ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           '65s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
-          '64s':ProgressInfo(callP: 0.0 , raiseP: 0.44),
+          '64s':ProgressInfo(callP: 0.0 , raiseP: 0.45),
 
-          'A5o':ProgressInfo(callP: 0.0 , raiseP: 1.6 ),
+          'A5o':ProgressInfo(callP: 0.0 , raiseP: 0.6 ),
           '55' :ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
           '54s':ProgressInfo(callP: 0.0 , raiseP: 1.0 ),
 
@@ -9113,27 +9018,27 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
       case TournaPosition.SB:
         return {
           'AA' :ProgressInfo(raiseP: 0.3 , callP: 0.7 ),
-          'AKs':ProgressInfo(raiseP: 0.48, callP: 0.52),
-          'AQs':ProgressInfo(raiseP: 0.24, callP: 0.76),
+          'AKs':ProgressInfo(raiseP: 0.5, callP: 0.5),
+          'AQs':ProgressInfo(raiseP: 0.25, callP: 0.75),
           'AJs':ProgressInfo(raiseP: 0.6 , callP: 0.4 ),
           'ATs':ProgressInfo(raiseP: 0.65, callP: 0.35),
-          'A9s':ProgressInfo(raiseP: 0.47, callP: 0.53),
-          'A8s':ProgressInfo(raiseP: 0.46, callP: 0.54),
-          'A7s':ProgressInfo(raiseP: 0.31, callP: 0.69),
-          'A6s':ProgressInfo(raiseP: 0.00, callP: 1.0),
+          'A9s':ProgressInfo(raiseP: 0.5, callP: 0.5),
+          'A8s':ProgressInfo(raiseP: 0.45, callP: 0.55),
+          'A7s':ProgressInfo(raiseP: 0.3, callP: 0.7),
+          'A6s':ProgressInfo(raiseP: 0.1, callP: 0.9),
           'A5s':ProgressInfo(raiseP: 0.35, callP: 0.65),
-          'A4s':ProgressInfo(raiseP: 0.14, callP: 0.86),
+          'A4s':ProgressInfo(raiseP: 0.15, callP: 0.85),
           'A3s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'A2s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
 
-          'AKo':ProgressInfo(raiseP: 0.19, callP: 0.81),
-          'KK' :ProgressInfo(raiseP: 0.23, callP: 0.77),
-          'KQs':ProgressInfo(raiseP: 0.62, callP: 0.38),
-          'KJs':ProgressInfo(raiseP: 0.59, callP: 0.41),
-          'KTs':ProgressInfo(raiseP: 0.48, callP: 0.52),
-          'K9s':ProgressInfo(raiseP: 0.22, callP: 0.78),
-          'K8s':ProgressInfo(raiseP: 0.17, callP: 0.83),
-          'K7s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          'AKo':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'KK' :ProgressInfo(raiseP: 0.25, callP: 0.75),
+          'KQs':ProgressInfo(raiseP: 0.6, callP: 0.4),
+          'KJs':ProgressInfo(raiseP: 0.6, callP: 0.4),
+          'KTs':ProgressInfo(raiseP: 0.5, callP: 0.5),
+          'K9s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'K8s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'K7s':ProgressInfo(raiseP: 0.15, callP: 0.85),
           'K6s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'K5s':ProgressInfo(raiseP: 0.00, callP: 1.00),
           'K4s':ProgressInfo(raiseP: 0.00, callP: 1.00),
@@ -9143,103 +9048,103 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           'AQo':ProgressInfo(raiseP: 0.3 , callP: 0.7 ),
           'KQo':ProgressInfo(raiseP: 0.15, callP: 0.85),
           'QQ' :ProgressInfo(raiseP: 0.25, callP: 0.75),
-          'QJs':ProgressInfo(raiseP: 0.58, callP: 0.42),
+          'QJs':ProgressInfo(raiseP: 0.6, callP: 0.4),
           'QTs':ProgressInfo(raiseP: 0.5 , callP: 0.5 ),
-          'Q9s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-          'Q8s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          'Q9s':ProgressInfo(raiseP: 0.1, callP: 0.9),
+          'Q8s':ProgressInfo(raiseP: 0.1, callP: 0.9),
           'Q7s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'Q6s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'Q5s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'Q4s':ProgressInfo(raiseP: 0.10, callP: 0.90),
           'Q3s':ProgressInfo(raiseP: 0.10, callP: 0.90),
-          'Q2s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          'Q2s':ProgressInfo(raiseP: 0.1, callP: 0.9),
 
-          'AJo':ProgressInfo(raiseP: 0.16, callP: 0.84),
-          'KJo':ProgressInfo(raiseP: 0.20, callP: 0.80),
+          'AJo':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'KJo':ProgressInfo(raiseP: 0.1, callP: 0.9),
           'QJo':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
-          'JJ' :ProgressInfo(raiseP: 0.29, callP: 0.71),
-          'JTs':ProgressInfo(raiseP: 0.52, callP: 0.48),
-          'J9s':ProgressInfo(raiseP: 0.18, callP: 0.82),
+          'JJ' :ProgressInfo(raiseP: 0.3, callP: 0.7),
+          'JTs':ProgressInfo(raiseP: 0.5, callP: 0.5),
+          'J9s':ProgressInfo(raiseP: 0.2, callP: 0.8),
           'J8s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'J7s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
-          'J6s':ProgressInfo(raiseP: 0.19, callP: 0.81),
-          'J5s':ProgressInfo(raiseP: 0.13, callP: 0.87),
-          'J4s':ProgressInfo(raiseP: 0.21, callP: 0.79),
-          'J3s':ProgressInfo(raiseP: 0.14, callP: 0.86),
-          'J2s':ProgressInfo(raiseP: 0.14, callP: 0.86),
+          'J6s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'J5s':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'J4s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'J3s':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'J2s':ProgressInfo(raiseP: 0.15, callP: 0.85),
 
           'ATo':ProgressInfo(raiseP: 0.15, callP: 0.85),
-          'KTo':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'KTo':ProgressInfo(raiseP: 0.0, callP: 1.0),
           'QTo':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'JTo':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
-          'TT' :ProgressInfo(raiseP: 0.31, callP: 0.69),
-          'T9s':ProgressInfo(raiseP: 0.28, callP: 0.72),
-          'T8s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          'TT' :ProgressInfo(raiseP: 0.3, callP: 0.7),
+          'T9s':ProgressInfo(raiseP: 0.3, callP: 0.7),
+          'T8s':ProgressInfo(raiseP: 0.1, callP: 0.9),
           'T7s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
-          'T6s':ProgressInfo(raiseP: 0.18, callP: 0.82),
-          'T5s':ProgressInfo(raiseP: 0.21, callP: 0.79),
-          'T4s':ProgressInfo(raiseP: 0.22, callP: 0.78),
-          'T3s':ProgressInfo(raiseP: 0.17, callP: 0.83),
-          'T2s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          'T6s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'T5s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'T4s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'T3s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'T2s':ProgressInfo(raiseP: 0.1, callP: 0.9),
 
-          'A9o':ProgressInfo(raiseP: 0.20, callP: 0.80),
+          'A9o':ProgressInfo(raiseP: 0.15, callP: 0.85),
           'K9o':ProgressInfo(raiseP: 0.20, callP: 0.80),
-          'Q9o':ProgressInfo(raiseP: 0.16, callP: 0.84),
+          'Q9o':ProgressInfo(raiseP: 0.15, callP: 0.85),
           'J9o':ProgressInfo(raiseP: 0.15, callP: 0.85),
-          'T9o':ProgressInfo(raiseP: 0.11, callP: 0.89),
-          '99' :ProgressInfo(raiseP: 0.26, callP: 0.74),
-          '98s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          'T9o':ProgressInfo(raiseP: 0.1, callP: 0.9),
+          '99' :ProgressInfo(raiseP: 0.25, callP: 0.75),
+          '98s':ProgressInfo(raiseP: 0.1, callP: 0.9),
           '97s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-          '96s':ProgressInfo(raiseP: 0.00, callP: 1.00),
-          '95s':ProgressInfo(raiseP: 0.26, callP: 0.74),
+          '96s':ProgressInfo(raiseP: 0.1, callP: 0.9),
+          '95s':ProgressInfo(raiseP: 0.25, callP: 0.75),
           '94s':ProgressInfo(raiseP: 0.2 , callP: 0.8 ),
           '93s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '92s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
 
-          'A8o':ProgressInfo(raiseP: 0.20, callP: 0.80),
-          'K8o':ProgressInfo(raiseP: 0.20, callP: 0.80),
-          'Q8o':ProgressInfo(raiseP: 0.19, callP: 0.81),
-          'J8o':ProgressInfo(raiseP: 0.23, callP: 0.77),
-          'T8o':ProgressInfo(raiseP: 0.19, callP: 0.81),
-          '98o':ProgressInfo(raiseP: 0.17, callP: 0.83),
-          '88' :ProgressInfo(raiseP: 0.18, callP: 0.82),
+          'A8o':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'K8o':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'Q8o':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'J8o':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'T8o':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          '98o':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          '88' :ProgressInfo(raiseP: 0.2, callP: 0.8),
           '87s':ProgressInfo(raiseP: 0.15, callP: 0.85),
-          '86s':ProgressInfo(raiseP: 0.18, callP: 0.82),
-          '85s':ProgressInfo(raiseP: 0.16, callP: 0.84),
-          '84s':ProgressInfo(raiseP: 0.24, callP: 0.76),
+          '86s':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          '85s':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          '84s':ProgressInfo(raiseP: 0.25, callP: 0.75),
           '83s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '82s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
 
-          'A7o':ProgressInfo(raiseP: 0.20, callP: 0.80),
-          'K7o':ProgressInfo(raiseP: 0.20, callP: 0.80),
-          'Q7o':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'A7o':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          'K7o':ProgressInfo(raiseP: 0.1, callP: 0.9),
+          'Q7o':ProgressInfo(raiseP: 0.1, callP: 0.9),
           'J7o':ProgressInfo(raiseP: 0.15, callP: 0.85),
-          'T7o':ProgressInfo(raiseP: 0.18, callP: 0.82),
-          '97o':ProgressInfo(raiseP: 0.16, callP: 0.84),
+          'T7o':ProgressInfo(raiseP: 0.2, callP: 0.8),
+          '97o':ProgressInfo(raiseP: 0.15, callP: 0.85),
           '87o':ProgressInfo(raiseP: 0.14, callP: 0.86),
-          '77' :ProgressInfo(raiseP: 0.00, callP: 1.00),
+          '77' :ProgressInfo(raiseP: 0.15, callP: 0.85),
           '76s':ProgressInfo(raiseP: 0.2 , callP: 0.8 ),
           '75s':ProgressInfo(raiseP: 0.10, callP: 0.90),
           '74s':ProgressInfo(raiseP: 0.2 , callP: 0.8 ),
-          '73s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          '73s':ProgressInfo(raiseP: 0.1, callP: 0.9),
           '72s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
 
           'A6o':ProgressInfo(raiseP: 0.20, callP: 0.80),
           'K6o':ProgressInfo(raiseP: 0.20, callP: 0.80),
-          'Q6o':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          'Q6o':ProgressInfo(raiseP: 0.1, callP: 0.9),
           'J6o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'T6o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '96o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '86o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '76o':ProgressInfo(raiseP: 0.00, callP: 1.00),
           '66' :ProgressInfo(raiseP: 0.00, callP: 1.00),
-          '65s':ProgressInfo(raiseP: 0.23, callP: 0.77),
+          '65s':ProgressInfo(raiseP: 0.25, callP: 0.75),
           '64s':ProgressInfo(raiseP: 0.25, callP: 0.75),
-          '63s':ProgressInfo(raiseP: 0.21, callP: 0.79),
+          '63s':ProgressInfo(raiseP: 0.2, callP: 0.8),
           '62s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
 
-          'A5o':ProgressInfo(raiseP: 0.20, callP: 0.80),
-          'K5o':ProgressInfo(raiseP: 0.20, callP: 0.80),
+          'A5o':ProgressInfo(raiseP: 0.1, callP: 0.9),
+          'K5o':ProgressInfo(raiseP: 0.15, callP: 0.85),
           'Q5o':ProgressInfo(raiseP: 0.00, callP: 1.00),
           'J5o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'T5o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
@@ -9248,25 +9153,25 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           '75o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '65o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '55' :ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
-          '54s':ProgressInfo(raiseP: 0.26, callP: 0.74),
+          '54s':ProgressInfo(raiseP: 0.25, callP: 0.75),
           '53s':ProgressInfo(raiseP: 0.25, callP: 0.75),
-          '52s':ProgressInfo(raiseP: 0.23, callP: 0.77),
+          '52s':ProgressInfo(raiseP: 0.25, callP: 0.75),
 
-          'A4o':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'A4o':ProgressInfo(raiseP: 0.1, callP: 0.9),
           'K4o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'Q4o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'J4o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'T4o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
-          '94o':ProgressInfo(raiseP: 0.0 , callP: 0.28),
-          '84o':ProgressInfo(raiseP: 0.0 , callP: 0.74),
+          '94o':ProgressInfo(raiseP: 0.0 , callP: 0.3),
+          '84o':ProgressInfo(raiseP: 0.0 , callP: 0.75),
           '74o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '64o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '54o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '44' :ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '43s':ProgressInfo(raiseP: 0.15, callP: 0.85),
-          '42s':ProgressInfo(raiseP: 0.00, callP: 1.00),
+          '42s':ProgressInfo(raiseP: 0.15, callP: 0.85),
 
-          'A3o':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'A3o':ProgressInfo(raiseP: 0.1, callP: 0.9),
           'K3o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'Q3o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'J3o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
@@ -9276,11 +9181,11 @@ Map<String, ProgressInfo> hundredStack(Selection tournaSelection) {
           '73o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
           '63o':ProgressInfo(raiseP: 0.0 , callP: 0.0 ),
           '53o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
-          '43o':ProgressInfo(raiseP: 0.0 , callP: 0.00),
+          '43o':ProgressInfo(raiseP: 0.0 , callP: 0.15),
           '33' :ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           '32s':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
 
-          'A2o':ProgressInfo(raiseP: 0.15, callP: 0.85),
+          'A2o':ProgressInfo(raiseP: 0.0, callP: 1.0),
           'K2o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'Q2o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
           'J2o':ProgressInfo(raiseP: 0.0 , callP: 1.0 ),
