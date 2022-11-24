@@ -32,6 +32,7 @@ class _ChartGridState extends State<ChartGrid> {
   int callPercentt = 0;
 
   int raisePercentt = 0;
+  int allinPercentt = 0;
 
   @override
   Widget build(BuildContext context) =>
@@ -119,6 +120,7 @@ class _ChartGridState extends State<ChartGrid> {
                                         );
                                         callPercentt = callPercent.round().toInt();
                                         raisePercentt = raisePercent.round().toInt();
+                                        allinPercentt = allinPercent.round().toInt();
 
                                       });
 
@@ -149,6 +151,31 @@ class _ChartGridState extends State<ChartGrid> {
                         //   style: TextStyle(
                         //       fontSize: 16, color: Colors.red, fontWeight: FontWeight.bold),
                         // ),
+                        Container(
+                            width: 12.w,
+                            height: 12.w,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(
+                                    Radius.circular(3)
+                                ),
+                                color: ZeplinColors.allInColor
+                            )
+                        ),
+                        SizedBox(width: 2.0.h),
+                        ReusableText(
+                          text: ' All-in',
+                          fontWeight: FontWeight.w500,
+                          fontSize: 13.sp,
+                        ),
+                        Container(
+                          width: 42.sp,
+                          child: ReusableText(
+                            text: ' $allinPercentt%',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13.sp,
+                          ),
+                        ),
+
                         Container(
                             width: 12.w,
                             height: 12.w,

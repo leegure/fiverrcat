@@ -116,7 +116,7 @@ class _TournamentState extends State<Tournament> {
             tournaSelection.opponentTournaPosition =
                 selectedOpponentTournaPosition;
             if (tournaSelection.myTournaPosition != TournaPosition.SB &&
-                tournaSelection.myTournaPosition.index < selectedOpponentTournaPosition.index || tournaSelection.tournaStack ==TournaStack.twentyfive &&tournaSelection.myTournaPosition.index < selectedOpponentTournaPosition.index) {
+                tournaSelection.myTournaPosition.index < selectedOpponentTournaPosition.index ) {
               tournaSelection.opponentAction = OpponentAction.threeBet;
             } else {
               tournaSelection.opponentAction = OpponentAction.none;
@@ -235,7 +235,7 @@ class _TournamentState extends State<Tournament> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          tournaSelection.myTournaPosition == TournaPosition.SB && tournaSelection.tournaStack != TournaStack.twentyfive
+                          tournaSelection.myTournaPosition == TournaPosition.SB
                               ? Flexible(
                                   child:
                                   MyElevatedButton(

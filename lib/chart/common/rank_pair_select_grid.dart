@@ -149,7 +149,7 @@ class _RankPairSelectGridState extends State<RankPairSelectGrid> {
                       borderRadius: BorderRadius.all(
                           Radius.circular(3)
                       ),
-                      color: ZeplinColors.raiseColor
+                      color: ZeplinColors.allInColor
                   )
               ),
               SizedBox(width: 2.0.h),
