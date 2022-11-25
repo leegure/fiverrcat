@@ -106,12 +106,14 @@ class _ChartGridState extends State<ChartGrid> {
 
 
                                         double noraise = 100-raisePercent;
+                                        double nocall = 100-callPercent;
                                         print(
                                             '전체 : alreadyP=${alreadyPercent.toStringAsFixed(1)}'
                                                 ', allinP=${allinPercent.toStringAsFixed(0)}'
                                                 ', raiseP=${raisePercent.toStringAsFixed(0)}'
                                                 ', callP=${callPercent.toStringAsFixed(0)}'
-                                                ',레이즈안한영역 = ${noraise.toStringAsFixed(0)}'
+                                                ',레이즈안한영역(콜+올인) = ${noraise.toStringAsFixed(0)}'
+
                                                 // '// already빼고 : already progress2=$alreadyP2'
                                                 // ', allin2=$allinP2'
                                                 // ', raise2=$raiseP2'
