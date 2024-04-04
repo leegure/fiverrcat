@@ -2,13 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-///There are mainly 2 styles of TextField.
-///[PcTextFieldStyle.underlined] -  It gives underline to the textField.
-///[PcTextFieldStyle.outlined] -  It gives outline to the textField.
-
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 import '../../imports.dart';
@@ -60,7 +54,7 @@ class PcTextField extends StatefulWidget {
   final int? maxLines;
 
   PcTextField(
-      {this.controller,
+      {super.key, this.controller,
         this.onChanged,
         this.cursorColor,
         this.labelText,
@@ -139,7 +133,7 @@ class _PcTextFieldState extends State<PcTextField> {
     fillColor = widget.fillColor;
     filled = widget.filled;
     fillColor = fillColor ??
-        PcAppTheme.pcBlue1Alpha20;
+        AppTheme.pcBlue1Alpha20;
     prefixIcon = widget.prefixIcon;
     enabledBorderColor = widget.enabledBorderColor;
     focusedBorderColor = widget.focusedBorderColor;
@@ -170,7 +164,7 @@ class _PcTextFieldState extends State<PcTextField> {
           InputDecoration(
             prefixIcon: prefixIcon,
             alignLabelWithHint: true,
-            contentPadding: widget.contentPadding ?? EdgeInsets.all(16),//
+            contentPadding: widget.contentPadding ?? const EdgeInsets.all(16),//
             fillColor: fillColor,//
             filled: filled,//
             floatingLabelBehavior: widget.floatingLabelBehavior,//
@@ -205,24 +199,37 @@ class _PcTextFieldState extends State<PcTextField> {
       case PcTextFieldStyle.outlined:
         filled = filled ?? false;
         fillColor = fillColor ??
-            PcAppTheme.pcBlue1Alpha20;//
+            AppTheme.pcBlue1Alpha20;//
         enabledBorder = enabledBorder ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.all(
+              borderRadius: const BorderRadius.all(
                   Radius.circular(8)),
               borderSide: BorderSide(
                 color: autoFocusedBorder ? Colors.transparent :  enabledBorderColor ??
-                    PcAppTheme.pcBlue1
+                    AppTheme.pcBlue1
+              ),
+            );
+      case PcTextFieldStyle.underlined:
+        filled = filled ?? false;
+        fillColor = fillColor ??
+            AppTheme.pcBlue1Alpha20;//
+        enabledBorder = enabledBorder ??
+            OutlineInputBorder(
+              borderRadius: const BorderRadius.all(
+                  Radius.circular(8)),
+              borderSide: BorderSide(
+                  color: autoFocusedBorder ? Colors.transparent :  enabledBorderColor ??
+                      AppTheme.pcBlue1
               ),
             );
 
         focusedBorder = focusedBorder ??
             OutlineInputBorder(
               borderRadius:
-              BorderRadius.all(Radius.circular(8)),
+              const BorderRadius.all(Radius.circular(8)),
               borderSide: BorderSide(
                 color: focusedBorderColor ??
-                    PcAppTheme.pcBlue1,
+                    AppTheme.pcBlue1,
               ),
             );
         border = enabledBorder;

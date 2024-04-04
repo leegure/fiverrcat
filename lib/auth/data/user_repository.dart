@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide User;
 import '../../../../imports.dart';
-import '../models/user.dart';
 
 mixin UserRepository {
   static FirebaseAuth get auth => FirebaseAuth.instance;

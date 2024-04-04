@@ -7,11 +7,11 @@ import 'card_pair_draft.dart';
 extension Open on HandRange {
   Set<CardPair> get onlyCardPairs => components.whereType<CardPair>().toSet();
 
-  bool get hasCardPair => onlyCardPairs.length >= 1;
+  bool get hasCardPair => onlyCardPairs.isNotEmpty;
 
   Set<RankPair> get onlyRankPairs => components.whereType<RankPair>().toSet();
 
-  bool get hasRankPair => onlyRankPairs.length >= 1;
+  bool get hasRankPair => onlyRankPairs.isNotEmpty;
 }
 
 class HandRangeDraft extends ChangeNotifier {
@@ -39,7 +39,7 @@ class HandRangeDraft extends ChangeNotifier {
                 ? HandRangeDraftInputType.mixed
                 : HandRangeDraftInputType.cardPair
             : HandRangeDraftInputType.rankPairs,
-        _cardPairs = handRange.onlyCardPairs.length >= 1
+        _cardPairs = handRange.onlyCardPairs.isNotEmpty
             ? handRange.onlyCardPairs
                 .map((cp) => CardPairDraft(cp.first, cp.last))
                 .toList()

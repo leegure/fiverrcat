@@ -24,25 +24,24 @@ static Future<bool> saveName(String username) async{
 
   static Future<String?> getName() async{
   SharedPreferences preferences = await SharedPreferences.getInstance();
-  return await preferences.getString(nameKey);
+  return preferences.getString(nameKey);
   }
 
 
   static Future<String?> getEmail() async{
     SharedPreferences preferences = await SharedPreferences.getInstance();
-    return await preferences.getString(emailKey);
+    return preferences.getString(emailKey);
   }
 
 
   static Future<String?> getImg() async{
     SharedPreferences preferences = await SharedPreferences.getInstance();
-    return await preferences.getString(imgKey);
+    return preferences.getString(imgKey);
   }
 
 
   static Future<bool> saveLoginData(bool isUserLoggedIn)
   async {
-  print('isuserloggendin?$isUserLoggedIn');
     SharedPreferences preferences = await SharedPreferences.getInstance();
     return await preferences.setBool(logKey, isUserLoggedIn);
   }
@@ -50,7 +49,7 @@ static Future<bool> saveName(String username) async{
   static Future<bool?> getLogData() async
   {
     SharedPreferences preferences = await SharedPreferences.getInstance();
-    return await preferences.getBool(logKey);
+    return preferences.getBool(logKey);
   }
 }
 

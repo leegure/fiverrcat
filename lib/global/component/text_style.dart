@@ -37,7 +37,7 @@ class PcTextStyle {
   };
 
 
-  static Map<PcTextSize, double> _defaultLetterSpacing = {
+  static final Map<PcTextSize, double> _defaultLetterSpacing = {
 
     PcTextSize.sh2: 0.15,
     PcTextSize.b1: 0.15,
@@ -58,11 +58,11 @@ class PcTextStyle {
     double? height,
     double wordSpacing = 0,
     double? fontSize}) {
-    double? finalFontSize = fontSize != null ? fontSize : textStyle!.fontSize;
+    double? finalFontSize = fontSize ?? textStyle!.fontSize;
 
     Color? finalColor;
     if (color == null) {
-      Color themeColor = PcAppTheme.pcBlue1;
+      Color themeColor = AppTheme.pcBlue1;
       finalColor = xMuted
           ? themeColor.withAlpha(160)
           : (muted ? themeColor.withAlpha(200) : themeColor);

@@ -27,7 +27,7 @@ class ChartContainer extends StatelessWidget {
 
           case Position.MP:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -642,7 +642,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.CO:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -1258,7 +1258,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.BTN:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -1872,7 +1872,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.SB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -2489,7 +2489,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.BB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -3105,13 +3105,18 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+        default :
+          {
+            return Container();
+              }
+
         }
       } else if (selection.myPosition == Position.MP) {
         switch (selection.opponentPosition) {
 
           case Position.CO:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -3725,7 +3730,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.BTN:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -4338,7 +4343,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.SB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -4949,7 +4954,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.BB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -5560,13 +5565,581 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       } else if (selection.myPosition == Position.CO) {
         switch (selection.opponentPosition) {
 
           case Position.BTN:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -6188,7 +6761,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.SB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -6802,7 +7375,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.BB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -7417,6 +7990,574 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       } else if (selection.myPosition == Position.BTN) {
         switch (selection.opponentPosition) {
@@ -7424,7 +8565,7 @@ class ChartContainer extends StatelessWidget {
 
           case Position.SB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -8046,7 +9187,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.BB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -8670,12 +9811,580 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       } else if (selection.myPosition == Position.SB) {
         switch (selection.opponentPosition) {
           case Position.BB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -9316,6 +11025,574 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       }
 
@@ -9325,7 +11602,7 @@ class ChartContainer extends StatelessWidget {
 
             case Position.UTG:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -9920,6 +12197,574 @@ class ChartContainer extends StatelessWidget {
                   ],
                 ),
               );
+            default : {
+              return Container(
+                child: const Column(
+                  children: [
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AA',
+                          raiseP: 1,
+                        ),
+                        MyCustomContainer(
+                          hand: 'AKs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'ATs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AKo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KK',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QQ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JJ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'ATo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'TT',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9o',
+                        ),
+                        MyCustomContainer(
+                          hand: '99',
+                        ),
+                        MyCustomContainer(
+                          hand: '98s',
+                        ),
+                        MyCustomContainer(
+                          hand: '97s',
+                        ),
+                        MyCustomContainer(
+                          hand: '96s',
+                        ),
+                        MyCustomContainer(
+                          hand: '95s',
+                        ),
+                        MyCustomContainer(
+                          hand: '94s',
+                        ),
+                        MyCustomContainer(
+                          hand: '93s',
+                        ),
+                        MyCustomContainer(
+                          hand: '92s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8o',
+                        ),
+                        MyCustomContainer(
+                          hand: '98o',
+                        ),
+                        MyCustomContainer(
+                          hand: '88',
+                        ),
+                        MyCustomContainer(
+                          hand: '87s',
+                        ),
+                        MyCustomContainer(
+                          hand: '86s',
+                        ),
+                        MyCustomContainer(
+                          hand: '85s',
+                        ),
+                        MyCustomContainer(
+                          hand: '84s',
+                        ),
+                        MyCustomContainer(
+                          hand: '83s',
+                        ),
+                        MyCustomContainer(
+                          hand: '82s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7o',
+                        ),
+                        MyCustomContainer(
+                          hand: '97o',
+                        ),
+                        MyCustomContainer(
+                          hand: '87o',
+                        ),
+                        MyCustomContainer(
+                          hand: '77',
+                        ),
+                        MyCustomContainer(
+                          hand: '76s',
+                        ),
+                        MyCustomContainer(
+                          hand: '75s',
+                        ),
+                        MyCustomContainer(
+                          hand: '74s',
+                        ),
+                        MyCustomContainer(
+                          hand: '73s',
+                        ),
+                        MyCustomContainer(
+                          hand: '72s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6o',
+                        ),
+                        MyCustomContainer(
+                          hand: '96o',
+                        ),
+                        MyCustomContainer(
+                          hand: '86o',
+                        ),
+                        MyCustomContainer(
+                          hand: '76o',
+                        ),
+                        MyCustomContainer(
+                          hand: '66',
+                        ),
+                        MyCustomContainer(
+                          hand: '65s',
+                        ),
+                        MyCustomContainer(
+                          hand: '64s',
+                        ),
+                        MyCustomContainer(
+                          hand: '63s',
+                        ),
+                        MyCustomContainer(
+                          hand: '62s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5o',
+                        ),
+                        MyCustomContainer(
+                          hand: '95o',
+                        ),
+                        MyCustomContainer(
+                          hand: '85o',
+                        ),
+                        MyCustomContainer(
+                          hand: '75o',
+                        ),
+                        MyCustomContainer(
+                          hand: '65o',
+                        ),
+                        MyCustomContainer(
+                          hand: '55',
+                        ),
+                        MyCustomContainer(
+                          hand: '54s',
+                        ),
+                        MyCustomContainer(
+                          hand: '53s',
+                        ),
+                        MyCustomContainer(
+                          hand: '52s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4o',
+                        ),
+                        MyCustomContainer(
+                          hand: '94o',
+                        ),
+                        MyCustomContainer(
+                          hand: '84o',
+                        ),
+                        MyCustomContainer(
+                          hand: '74o',
+                        ),
+                        MyCustomContainer(
+                          hand: '64o',
+                        ),
+                        MyCustomContainer(
+                          hand: '54o',
+                        ),
+                        MyCustomContainer(
+                          hand: '44',
+                        ),
+                        MyCustomContainer(
+                          hand: '43s',
+                        ),
+                        MyCustomContainer(
+                          hand: '42s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3o',
+                        ),
+                        MyCustomContainer(
+                          hand: '93o',
+                        ),
+                        MyCustomContainer(
+                          hand: '83o',
+                        ),
+                        MyCustomContainer(
+                          hand: '73o',
+                        ),
+                        MyCustomContainer(
+                          hand: '63o',
+                        ),
+                        MyCustomContainer(
+                          hand: '53o',
+                        ),
+                        MyCustomContainer(
+                          hand: '43o',
+                        ),
+                        MyCustomContainer(
+                          hand: '33',
+                        ),
+                        MyCustomContainer(
+                          hand: '32s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2o',
+                        ),
+                        MyCustomContainer(
+                          hand: '92o',
+                        ),
+                        MyCustomContainer(
+                          hand: '82o',
+                        ),
+                        MyCustomContainer(
+                          hand: '72o',
+                        ),
+                        MyCustomContainer(
+                          hand: '62o',
+                        ),
+                        MyCustomContainer(
+                          hand: '52o',
+                        ),
+                        MyCustomContainer(
+                          hand: '42o',
+                        ),
+                        MyCustomContainer(
+                          hand: '32o',
+                        ),
+                        MyCustomContainer(
+                          hand: '22',
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              );
+            }
 
           }
         } else if (selection.myPosition == Position.CO) {
@@ -9927,7 +12772,7 @@ class ChartContainer extends StatelessWidget {
 
             case Position.UTG:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -10531,7 +13376,7 @@ class ChartContainer extends StatelessWidget {
 
             case Position.MP:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -11134,6 +13979,574 @@ class ChartContainer extends StatelessWidget {
                   ],
                 ),
               );
+            default : {
+              return Container(
+                child: const Column(
+                  children: [
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AA',
+                          raiseP: 1,
+                        ),
+                        MyCustomContainer(
+                          hand: 'AKs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'ATs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AKo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KK',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QQ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JJ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'ATo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'TT',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9o',
+                        ),
+                        MyCustomContainer(
+                          hand: '99',
+                        ),
+                        MyCustomContainer(
+                          hand: '98s',
+                        ),
+                        MyCustomContainer(
+                          hand: '97s',
+                        ),
+                        MyCustomContainer(
+                          hand: '96s',
+                        ),
+                        MyCustomContainer(
+                          hand: '95s',
+                        ),
+                        MyCustomContainer(
+                          hand: '94s',
+                        ),
+                        MyCustomContainer(
+                          hand: '93s',
+                        ),
+                        MyCustomContainer(
+                          hand: '92s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8o',
+                        ),
+                        MyCustomContainer(
+                          hand: '98o',
+                        ),
+                        MyCustomContainer(
+                          hand: '88',
+                        ),
+                        MyCustomContainer(
+                          hand: '87s',
+                        ),
+                        MyCustomContainer(
+                          hand: '86s',
+                        ),
+                        MyCustomContainer(
+                          hand: '85s',
+                        ),
+                        MyCustomContainer(
+                          hand: '84s',
+                        ),
+                        MyCustomContainer(
+                          hand: '83s',
+                        ),
+                        MyCustomContainer(
+                          hand: '82s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7o',
+                        ),
+                        MyCustomContainer(
+                          hand: '97o',
+                        ),
+                        MyCustomContainer(
+                          hand: '87o',
+                        ),
+                        MyCustomContainer(
+                          hand: '77',
+                        ),
+                        MyCustomContainer(
+                          hand: '76s',
+                        ),
+                        MyCustomContainer(
+                          hand: '75s',
+                        ),
+                        MyCustomContainer(
+                          hand: '74s',
+                        ),
+                        MyCustomContainer(
+                          hand: '73s',
+                        ),
+                        MyCustomContainer(
+                          hand: '72s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6o',
+                        ),
+                        MyCustomContainer(
+                          hand: '96o',
+                        ),
+                        MyCustomContainer(
+                          hand: '86o',
+                        ),
+                        MyCustomContainer(
+                          hand: '76o',
+                        ),
+                        MyCustomContainer(
+                          hand: '66',
+                        ),
+                        MyCustomContainer(
+                          hand: '65s',
+                        ),
+                        MyCustomContainer(
+                          hand: '64s',
+                        ),
+                        MyCustomContainer(
+                          hand: '63s',
+                        ),
+                        MyCustomContainer(
+                          hand: '62s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5o',
+                        ),
+                        MyCustomContainer(
+                          hand: '95o',
+                        ),
+                        MyCustomContainer(
+                          hand: '85o',
+                        ),
+                        MyCustomContainer(
+                          hand: '75o',
+                        ),
+                        MyCustomContainer(
+                          hand: '65o',
+                        ),
+                        MyCustomContainer(
+                          hand: '55',
+                        ),
+                        MyCustomContainer(
+                          hand: '54s',
+                        ),
+                        MyCustomContainer(
+                          hand: '53s',
+                        ),
+                        MyCustomContainer(
+                          hand: '52s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4o',
+                        ),
+                        MyCustomContainer(
+                          hand: '94o',
+                        ),
+                        MyCustomContainer(
+                          hand: '84o',
+                        ),
+                        MyCustomContainer(
+                          hand: '74o',
+                        ),
+                        MyCustomContainer(
+                          hand: '64o',
+                        ),
+                        MyCustomContainer(
+                          hand: '54o',
+                        ),
+                        MyCustomContainer(
+                          hand: '44',
+                        ),
+                        MyCustomContainer(
+                          hand: '43s',
+                        ),
+                        MyCustomContainer(
+                          hand: '42s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3o',
+                        ),
+                        MyCustomContainer(
+                          hand: '93o',
+                        ),
+                        MyCustomContainer(
+                          hand: '83o',
+                        ),
+                        MyCustomContainer(
+                          hand: '73o',
+                        ),
+                        MyCustomContainer(
+                          hand: '63o',
+                        ),
+                        MyCustomContainer(
+                          hand: '53o',
+                        ),
+                        MyCustomContainer(
+                          hand: '43o',
+                        ),
+                        MyCustomContainer(
+                          hand: '33',
+                        ),
+                        MyCustomContainer(
+                          hand: '32s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2o',
+                        ),
+                        MyCustomContainer(
+                          hand: '92o',
+                        ),
+                        MyCustomContainer(
+                          hand: '82o',
+                        ),
+                        MyCustomContainer(
+                          hand: '72o',
+                        ),
+                        MyCustomContainer(
+                          hand: '62o',
+                        ),
+                        MyCustomContainer(
+                          hand: '52o',
+                        ),
+                        MyCustomContainer(
+                          hand: '42o',
+                        ),
+                        MyCustomContainer(
+                          hand: '32o',
+                        ),
+                        MyCustomContainer(
+                          hand: '22',
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              );
+            }
 
           }
         } else if (selection.myPosition == Position.BTN) {
@@ -11141,7 +14554,7 @@ class ChartContainer extends StatelessWidget {
 
             case Position.UTG:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -11747,7 +15160,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.MP:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -12349,7 +15762,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.CO:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -12950,14 +16363,580 @@ class ChartContainer extends StatelessWidget {
                   ],
                 ),
               );
+            default : {
+              return Container(
+                child: const Column(
+                  children: [
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AA',
+                          raiseP: 1,
+                        ),
+                        MyCustomContainer(
+                          hand: 'AKs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'ATs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AKo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KK',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QQ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JJ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'ATo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'TT',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9o',
+                        ),
+                        MyCustomContainer(
+                          hand: '99',
+                        ),
+                        MyCustomContainer(
+                          hand: '98s',
+                        ),
+                        MyCustomContainer(
+                          hand: '97s',
+                        ),
+                        MyCustomContainer(
+                          hand: '96s',
+                        ),
+                        MyCustomContainer(
+                          hand: '95s',
+                        ),
+                        MyCustomContainer(
+                          hand: '94s',
+                        ),
+                        MyCustomContainer(
+                          hand: '93s',
+                        ),
+                        MyCustomContainer(
+                          hand: '92s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8o',
+                        ),
+                        MyCustomContainer(
+                          hand: '98o',
+                        ),
+                        MyCustomContainer(
+                          hand: '88',
+                        ),
+                        MyCustomContainer(
+                          hand: '87s',
+                        ),
+                        MyCustomContainer(
+                          hand: '86s',
+                        ),
+                        MyCustomContainer(
+                          hand: '85s',
+                        ),
+                        MyCustomContainer(
+                          hand: '84s',
+                        ),
+                        MyCustomContainer(
+                          hand: '83s',
+                        ),
+                        MyCustomContainer(
+                          hand: '82s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7o',
+                        ),
+                        MyCustomContainer(
+                          hand: '97o',
+                        ),
+                        MyCustomContainer(
+                          hand: '87o',
+                        ),
+                        MyCustomContainer(
+                          hand: '77',
+                        ),
+                        MyCustomContainer(
+                          hand: '76s',
+                        ),
+                        MyCustomContainer(
+                          hand: '75s',
+                        ),
+                        MyCustomContainer(
+                          hand: '74s',
+                        ),
+                        MyCustomContainer(
+                          hand: '73s',
+                        ),
+                        MyCustomContainer(
+                          hand: '72s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6o',
+                        ),
+                        MyCustomContainer(
+                          hand: '96o',
+                        ),
+                        MyCustomContainer(
+                          hand: '86o',
+                        ),
+                        MyCustomContainer(
+                          hand: '76o',
+                        ),
+                        MyCustomContainer(
+                          hand: '66',
+                        ),
+                        MyCustomContainer(
+                          hand: '65s',
+                        ),
+                        MyCustomContainer(
+                          hand: '64s',
+                        ),
+                        MyCustomContainer(
+                          hand: '63s',
+                        ),
+                        MyCustomContainer(
+                          hand: '62s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5o',
+                        ),
+                        MyCustomContainer(
+                          hand: '95o',
+                        ),
+                        MyCustomContainer(
+                          hand: '85o',
+                        ),
+                        MyCustomContainer(
+                          hand: '75o',
+                        ),
+                        MyCustomContainer(
+                          hand: '65o',
+                        ),
+                        MyCustomContainer(
+                          hand: '55',
+                        ),
+                        MyCustomContainer(
+                          hand: '54s',
+                        ),
+                        MyCustomContainer(
+                          hand: '53s',
+                        ),
+                        MyCustomContainer(
+                          hand: '52s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4o',
+                        ),
+                        MyCustomContainer(
+                          hand: '94o',
+                        ),
+                        MyCustomContainer(
+                          hand: '84o',
+                        ),
+                        MyCustomContainer(
+                          hand: '74o',
+                        ),
+                        MyCustomContainer(
+                          hand: '64o',
+                        ),
+                        MyCustomContainer(
+                          hand: '54o',
+                        ),
+                        MyCustomContainer(
+                          hand: '44',
+                        ),
+                        MyCustomContainer(
+                          hand: '43s',
+                        ),
+                        MyCustomContainer(
+                          hand: '42s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3o',
+                        ),
+                        MyCustomContainer(
+                          hand: '93o',
+                        ),
+                        MyCustomContainer(
+                          hand: '83o',
+                        ),
+                        MyCustomContainer(
+                          hand: '73o',
+                        ),
+                        MyCustomContainer(
+                          hand: '63o',
+                        ),
+                        MyCustomContainer(
+                          hand: '53o',
+                        ),
+                        MyCustomContainer(
+                          hand: '43o',
+                        ),
+                        MyCustomContainer(
+                          hand: '33',
+                        ),
+                        MyCustomContainer(
+                          hand: '32s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2o',
+                        ),
+                        MyCustomContainer(
+                          hand: '92o',
+                        ),
+                        MyCustomContainer(
+                          hand: '82o',
+                        ),
+                        MyCustomContainer(
+                          hand: '72o',
+                        ),
+                        MyCustomContainer(
+                          hand: '62o',
+                        ),
+                        MyCustomContainer(
+                          hand: '52o',
+                        ),
+                        MyCustomContainer(
+                          hand: '42o',
+                        ),
+                        MyCustomContainer(
+                          hand: '32o',
+                        ),
+                        MyCustomContainer(
+                          hand: '22',
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              );
+            }
           }
         } else if (selection.myPosition == Position.SB) {
           switch (selection.opponentPosition) {
-
-
             case Position.UTG:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -13566,7 +17545,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.MP:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -14172,7 +18151,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.CO:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -14779,7 +18758,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.BTN:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -15388,13 +19367,581 @@ class ChartContainer extends StatelessWidget {
                   ],
                 ),
               );
+            default : {
+              return Container(
+                child: const Column(
+                  children: [
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AA',
+                          raiseP: 1,
+                        ),
+                        MyCustomContainer(
+                          hand: 'AKs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'ATs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AKo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KK',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QQ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JJ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'ATo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'TT',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9o',
+                        ),
+                        MyCustomContainer(
+                          hand: '99',
+                        ),
+                        MyCustomContainer(
+                          hand: '98s',
+                        ),
+                        MyCustomContainer(
+                          hand: '97s',
+                        ),
+                        MyCustomContainer(
+                          hand: '96s',
+                        ),
+                        MyCustomContainer(
+                          hand: '95s',
+                        ),
+                        MyCustomContainer(
+                          hand: '94s',
+                        ),
+                        MyCustomContainer(
+                          hand: '93s',
+                        ),
+                        MyCustomContainer(
+                          hand: '92s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8o',
+                        ),
+                        MyCustomContainer(
+                          hand: '98o',
+                        ),
+                        MyCustomContainer(
+                          hand: '88',
+                        ),
+                        MyCustomContainer(
+                          hand: '87s',
+                        ),
+                        MyCustomContainer(
+                          hand: '86s',
+                        ),
+                        MyCustomContainer(
+                          hand: '85s',
+                        ),
+                        MyCustomContainer(
+                          hand: '84s',
+                        ),
+                        MyCustomContainer(
+                          hand: '83s',
+                        ),
+                        MyCustomContainer(
+                          hand: '82s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7o',
+                        ),
+                        MyCustomContainer(
+                          hand: '97o',
+                        ),
+                        MyCustomContainer(
+                          hand: '87o',
+                        ),
+                        MyCustomContainer(
+                          hand: '77',
+                        ),
+                        MyCustomContainer(
+                          hand: '76s',
+                        ),
+                        MyCustomContainer(
+                          hand: '75s',
+                        ),
+                        MyCustomContainer(
+                          hand: '74s',
+                        ),
+                        MyCustomContainer(
+                          hand: '73s',
+                        ),
+                        MyCustomContainer(
+                          hand: '72s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6o',
+                        ),
+                        MyCustomContainer(
+                          hand: '96o',
+                        ),
+                        MyCustomContainer(
+                          hand: '86o',
+                        ),
+                        MyCustomContainer(
+                          hand: '76o',
+                        ),
+                        MyCustomContainer(
+                          hand: '66',
+                        ),
+                        MyCustomContainer(
+                          hand: '65s',
+                        ),
+                        MyCustomContainer(
+                          hand: '64s',
+                        ),
+                        MyCustomContainer(
+                          hand: '63s',
+                        ),
+                        MyCustomContainer(
+                          hand: '62s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5o',
+                        ),
+                        MyCustomContainer(
+                          hand: '95o',
+                        ),
+                        MyCustomContainer(
+                          hand: '85o',
+                        ),
+                        MyCustomContainer(
+                          hand: '75o',
+                        ),
+                        MyCustomContainer(
+                          hand: '65o',
+                        ),
+                        MyCustomContainer(
+                          hand: '55',
+                        ),
+                        MyCustomContainer(
+                          hand: '54s',
+                        ),
+                        MyCustomContainer(
+                          hand: '53s',
+                        ),
+                        MyCustomContainer(
+                          hand: '52s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4o',
+                        ),
+                        MyCustomContainer(
+                          hand: '94o',
+                        ),
+                        MyCustomContainer(
+                          hand: '84o',
+                        ),
+                        MyCustomContainer(
+                          hand: '74o',
+                        ),
+                        MyCustomContainer(
+                          hand: '64o',
+                        ),
+                        MyCustomContainer(
+                          hand: '54o',
+                        ),
+                        MyCustomContainer(
+                          hand: '44',
+                        ),
+                        MyCustomContainer(
+                          hand: '43s',
+                        ),
+                        MyCustomContainer(
+                          hand: '42s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3o',
+                        ),
+                        MyCustomContainer(
+                          hand: '93o',
+                        ),
+                        MyCustomContainer(
+                          hand: '83o',
+                        ),
+                        MyCustomContainer(
+                          hand: '73o',
+                        ),
+                        MyCustomContainer(
+                          hand: '63o',
+                        ),
+                        MyCustomContainer(
+                          hand: '53o',
+                        ),
+                        MyCustomContainer(
+                          hand: '43o',
+                        ),
+                        MyCustomContainer(
+                          hand: '33',
+                        ),
+                        MyCustomContainer(
+                          hand: '32s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2o',
+                        ),
+                        MyCustomContainer(
+                          hand: '92o',
+                        ),
+                        MyCustomContainer(
+                          hand: '82o',
+                        ),
+                        MyCustomContainer(
+                          hand: '72o',
+                        ),
+                        MyCustomContainer(
+                          hand: '62o',
+                        ),
+                        MyCustomContainer(
+                          hand: '52o',
+                        ),
+                        MyCustomContainer(
+                          hand: '42o',
+                        ),
+                        MyCustomContainer(
+                          hand: '32o',
+                        ),
+                        MyCustomContainer(
+                          hand: '22',
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              );
+            }
           }
         } else if (selection.myPosition == Position.BB) {
           switch (selection.opponentPosition) {
 
             case Position.UTG:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -16001,7 +20548,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.MP:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -16593,7 +21140,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.CO:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -17190,7 +21737,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.BTN:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -17806,7 +22353,7 @@ class ChartContainer extends StatelessWidget {
               );
             case Position.SB:
               return Container(
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
@@ -18434,6 +22981,574 @@ class ChartContainer extends StatelessWidget {
                   ],
                 ),
               );
+            default : {
+              return Container(
+                child: const Column(
+                  children: [
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AA',
+                          raiseP: 1,
+                        ),
+                        MyCustomContainer(
+                          hand: 'AKs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'AJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'ATs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'A2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AKo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KK',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KQo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QQ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'AJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QJo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JJ',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTs',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'ATo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'KTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'QTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'JTo',
+                        ),
+                        MyCustomContainer(
+                          hand: 'TT',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3s',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J9o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T9o',
+                        ),
+                        MyCustomContainer(
+                          hand: '99',
+                        ),
+                        MyCustomContainer(
+                          hand: '98s',
+                        ),
+                        MyCustomContainer(
+                          hand: '97s',
+                        ),
+                        MyCustomContainer(
+                          hand: '96s',
+                        ),
+                        MyCustomContainer(
+                          hand: '95s',
+                        ),
+                        MyCustomContainer(
+                          hand: '94s',
+                        ),
+                        MyCustomContainer(
+                          hand: '93s',
+                        ),
+                        MyCustomContainer(
+                          hand: '92s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J8o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T8o',
+                        ),
+                        MyCustomContainer(
+                          hand: '98o',
+                        ),
+                        MyCustomContainer(
+                          hand: '88',
+                        ),
+                        MyCustomContainer(
+                          hand: '87s',
+                        ),
+                        MyCustomContainer(
+                          hand: '86s',
+                        ),
+                        MyCustomContainer(
+                          hand: '85s',
+                        ),
+                        MyCustomContainer(
+                          hand: '84s',
+                        ),
+                        MyCustomContainer(
+                          hand: '83s',
+                        ),
+                        MyCustomContainer(
+                          hand: '82s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J7o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T7o',
+                        ),
+                        MyCustomContainer(
+                          hand: '97o',
+                        ),
+                        MyCustomContainer(
+                          hand: '87o',
+                        ),
+                        MyCustomContainer(
+                          hand: '77',
+                        ),
+                        MyCustomContainer(
+                          hand: '76s',
+                        ),
+                        MyCustomContainer(
+                          hand: '75s',
+                        ),
+                        MyCustomContainer(
+                          hand: '74s',
+                        ),
+                        MyCustomContainer(
+                          hand: '73s',
+                        ),
+                        MyCustomContainer(
+                          hand: '72s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J6o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T6o',
+                        ),
+                        MyCustomContainer(
+                          hand: '96o',
+                        ),
+                        MyCustomContainer(
+                          hand: '86o',
+                        ),
+                        MyCustomContainer(
+                          hand: '76o',
+                        ),
+                        MyCustomContainer(
+                          hand: '66',
+                        ),
+                        MyCustomContainer(
+                          hand: '65s',
+                        ),
+                        MyCustomContainer(
+                          hand: '64s',
+                        ),
+                        MyCustomContainer(
+                          hand: '63s',
+                        ),
+                        MyCustomContainer(
+                          hand: '62s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J5o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T5o',
+                        ),
+                        MyCustomContainer(
+                          hand: '95o',
+                        ),
+                        MyCustomContainer(
+                          hand: '85o',
+                        ),
+                        MyCustomContainer(
+                          hand: '75o',
+                        ),
+                        MyCustomContainer(
+                          hand: '65o',
+                        ),
+                        MyCustomContainer(
+                          hand: '55',
+                        ),
+                        MyCustomContainer(
+                          hand: '54s',
+                        ),
+                        MyCustomContainer(
+                          hand: '53s',
+                        ),
+                        MyCustomContainer(
+                          hand: '52s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J4o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T4o',
+                        ),
+                        MyCustomContainer(
+                          hand: '94o',
+                        ),
+                        MyCustomContainer(
+                          hand: '84o',
+                        ),
+                        MyCustomContainer(
+                          hand: '74o',
+                        ),
+                        MyCustomContainer(
+                          hand: '64o',
+                        ),
+                        MyCustomContainer(
+                          hand: '54o',
+                        ),
+                        MyCustomContainer(
+                          hand: '44',
+                        ),
+                        MyCustomContainer(
+                          hand: '43s',
+                        ),
+                        MyCustomContainer(
+                          hand: '42s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J3o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T3o',
+                        ),
+                        MyCustomContainer(
+                          hand: '93o',
+                        ),
+                        MyCustomContainer(
+                          hand: '83o',
+                        ),
+                        MyCustomContainer(
+                          hand: '73o',
+                        ),
+                        MyCustomContainer(
+                          hand: '63o',
+                        ),
+                        MyCustomContainer(
+                          hand: '53o',
+                        ),
+                        MyCustomContainer(
+                          hand: '43o',
+                        ),
+                        MyCustomContainer(
+                          hand: '33',
+                        ),
+                        MyCustomContainer(
+                          hand: '32s',
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyCustomContainer(
+                          hand: 'A2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'K2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'Q2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'J2o',
+                        ),
+                        MyCustomContainer(
+                          hand: 'T2o',
+                        ),
+                        MyCustomContainer(
+                          hand: '92o',
+                        ),
+                        MyCustomContainer(
+                          hand: '82o',
+                        ),
+                        MyCustomContainer(
+                          hand: '72o',
+                        ),
+                        MyCustomContainer(
+                          hand: '62o',
+                        ),
+                        MyCustomContainer(
+                          hand: '52o',
+                        ),
+                        MyCustomContainer(
+                          hand: '42o',
+                        ),
+                        MyCustomContainer(
+                          hand: '32o',
+                        ),
+                        MyCustomContainer(
+                          hand: '22',
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              );
+            }
           }
         }
       }
@@ -18443,14 +23558,11 @@ class ChartContainer extends StatelessWidget {
     else if (selection.myPosition != Position.none &&
         selection.opponentPosition != Position.none) {
 
-
-      
-      
       if (selection.myPosition == Position.MP) {
         switch (selection.opponentPosition) {
           case Position.UTG:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -19049,12 +24161,580 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       } else if (selection.myPosition == Position.CO) {
         switch (selection.opponentPosition) {
           case Position.UTG:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -19682,7 +25362,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.MP:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -20301,12 +25981,580 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       } else if (selection.myPosition == Position.BTN) {
         switch (selection.opponentPosition) {
           case Position.UTG:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -20956,7 +27204,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.MP:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -21602,7 +27850,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.CO:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -22246,12 +28494,580 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       } else if (selection.myPosition == Position.SB) {
         switch (selection.opponentPosition) {
           case Position.UTG:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -22895,7 +29711,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.MP:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -23536,7 +30352,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.CO:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -24168,7 +30984,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.BTN:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -24779,12 +31595,581 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       } else if (selection.myPosition == Position.BB) {
         switch (selection.opponentPosition) {
           case Position.UTG:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -25502,7 +32887,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.MP:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -26211,7 +33596,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.CO:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -26908,7 +34293,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.BTN:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -27603,7 +34988,7 @@ class ChartContainer extends StatelessWidget {
             );
           case Position.SB:
             return Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -28320,6 +35705,574 @@ class ChartContainer extends StatelessWidget {
                 ],
               ),
             );
+          default : {
+            return Container(
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AA',
+                        raiseP: 1,
+                      ),
+                      MyCustomContainer(
+                        hand: 'AKs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'AJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'ATs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'A2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AKo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KK',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KQo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QQ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'AJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QJo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JJ',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTs',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'ATo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'KTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'QTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'JTo',
+                      ),
+                      MyCustomContainer(
+                        hand: 'TT',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3s',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J9o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T9o',
+                      ),
+                      MyCustomContainer(
+                        hand: '99',
+                      ),
+                      MyCustomContainer(
+                        hand: '98s',
+                      ),
+                      MyCustomContainer(
+                        hand: '97s',
+                      ),
+                      MyCustomContainer(
+                        hand: '96s',
+                      ),
+                      MyCustomContainer(
+                        hand: '95s',
+                      ),
+                      MyCustomContainer(
+                        hand: '94s',
+                      ),
+                      MyCustomContainer(
+                        hand: '93s',
+                      ),
+                      MyCustomContainer(
+                        hand: '92s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J8o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T8o',
+                      ),
+                      MyCustomContainer(
+                        hand: '98o',
+                      ),
+                      MyCustomContainer(
+                        hand: '88',
+                      ),
+                      MyCustomContainer(
+                        hand: '87s',
+                      ),
+                      MyCustomContainer(
+                        hand: '86s',
+                      ),
+                      MyCustomContainer(
+                        hand: '85s',
+                      ),
+                      MyCustomContainer(
+                        hand: '84s',
+                      ),
+                      MyCustomContainer(
+                        hand: '83s',
+                      ),
+                      MyCustomContainer(
+                        hand: '82s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J7o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T7o',
+                      ),
+                      MyCustomContainer(
+                        hand: '97o',
+                      ),
+                      MyCustomContainer(
+                        hand: '87o',
+                      ),
+                      MyCustomContainer(
+                        hand: '77',
+                      ),
+                      MyCustomContainer(
+                        hand: '76s',
+                      ),
+                      MyCustomContainer(
+                        hand: '75s',
+                      ),
+                      MyCustomContainer(
+                        hand: '74s',
+                      ),
+                      MyCustomContainer(
+                        hand: '73s',
+                      ),
+                      MyCustomContainer(
+                        hand: '72s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J6o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T6o',
+                      ),
+                      MyCustomContainer(
+                        hand: '96o',
+                      ),
+                      MyCustomContainer(
+                        hand: '86o',
+                      ),
+                      MyCustomContainer(
+                        hand: '76o',
+                      ),
+                      MyCustomContainer(
+                        hand: '66',
+                      ),
+                      MyCustomContainer(
+                        hand: '65s',
+                      ),
+                      MyCustomContainer(
+                        hand: '64s',
+                      ),
+                      MyCustomContainer(
+                        hand: '63s',
+                      ),
+                      MyCustomContainer(
+                        hand: '62s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J5o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T5o',
+                      ),
+                      MyCustomContainer(
+                        hand: '95o',
+                      ),
+                      MyCustomContainer(
+                        hand: '85o',
+                      ),
+                      MyCustomContainer(
+                        hand: '75o',
+                      ),
+                      MyCustomContainer(
+                        hand: '65o',
+                      ),
+                      MyCustomContainer(
+                        hand: '55',
+                      ),
+                      MyCustomContainer(
+                        hand: '54s',
+                      ),
+                      MyCustomContainer(
+                        hand: '53s',
+                      ),
+                      MyCustomContainer(
+                        hand: '52s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J4o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T4o',
+                      ),
+                      MyCustomContainer(
+                        hand: '94o',
+                      ),
+                      MyCustomContainer(
+                        hand: '84o',
+                      ),
+                      MyCustomContainer(
+                        hand: '74o',
+                      ),
+                      MyCustomContainer(
+                        hand: '64o',
+                      ),
+                      MyCustomContainer(
+                        hand: '54o',
+                      ),
+                      MyCustomContainer(
+                        hand: '44',
+                      ),
+                      MyCustomContainer(
+                        hand: '43s',
+                      ),
+                      MyCustomContainer(
+                        hand: '42s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J3o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T3o',
+                      ),
+                      MyCustomContainer(
+                        hand: '93o',
+                      ),
+                      MyCustomContainer(
+                        hand: '83o',
+                      ),
+                      MyCustomContainer(
+                        hand: '73o',
+                      ),
+                      MyCustomContainer(
+                        hand: '63o',
+                      ),
+                      MyCustomContainer(
+                        hand: '53o',
+                      ),
+                      MyCustomContainer(
+                        hand: '43o',
+                      ),
+                      MyCustomContainer(
+                        hand: '33',
+                      ),
+                      MyCustomContainer(
+                        hand: '32s',
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyCustomContainer(
+                        hand: 'A2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'K2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'Q2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'J2o',
+                      ),
+                      MyCustomContainer(
+                        hand: 'T2o',
+                      ),
+                      MyCustomContainer(
+                        hand: '92o',
+                      ),
+                      MyCustomContainer(
+                        hand: '82o',
+                      ),
+                      MyCustomContainer(
+                        hand: '72o',
+                      ),
+                      MyCustomContainer(
+                        hand: '62o',
+                      ),
+                      MyCustomContainer(
+                        hand: '52o',
+                      ),
+                      MyCustomContainer(
+                        hand: '42o',
+                      ),
+                      MyCustomContainer(
+                        hand: '32o',
+                      ),
+                      MyCustomContainer(
+                        hand: '22',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+          }
         }
       }
     }
@@ -28328,7 +36281,7 @@ class ChartContainer extends StatelessWidget {
       switch (selection.myPosition) {
         case Position.UTG:
           return Container(
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   children: [
@@ -28946,7 +36899,7 @@ class ChartContainer extends StatelessWidget {
           );
         case Position.MP:
           return Container(
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   children: [
@@ -29571,7 +37524,7 @@ class ChartContainer extends StatelessWidget {
           );
         case Position.CO:
           return Container(
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   children: [
@@ -30208,7 +38161,7 @@ class ChartContainer extends StatelessWidget {
           );
         case Position.BTN:
           return Container(
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   children: [
@@ -30867,7 +38820,7 @@ class ChartContainer extends StatelessWidget {
           );
         case Position.SB:
           return Container(
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   children: [
@@ -31526,7 +39479,7 @@ class ChartContainer extends StatelessWidget {
           );
         case Position.BB:
           return Container(
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   children: [
@@ -32090,10 +40043,578 @@ class ChartContainer extends StatelessWidget {
               ],
             ),
           );
+        default : {
+          return Container(
+            child: const Column(
+              children: [
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'AA',
+                      raiseP: 1,
+                    ),
+                    MyCustomContainer(
+                      hand: 'AKs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'AQs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'AJs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'ATs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'A9s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'A8s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'A7s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'A6s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'A5s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'A4s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'A3s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'A2s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'AKo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'KK',
+                    ),
+                    MyCustomContainer(
+                      hand: 'KQs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'KJs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'KTs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K9s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K8s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K7s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K6s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K5s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K4s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K3s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K2s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'AQo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'KQo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'QQ',
+                    ),
+                    MyCustomContainer(
+                      hand: 'QJs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'QTs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q9s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q8s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q7s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q6s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q5s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q4s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q3s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q2s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'AJo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'KJo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'QJo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'JJ',
+                    ),
+                    MyCustomContainer(
+                      hand: 'JTs',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J9s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J8s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J7s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J6s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J5s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J4s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J3s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J2s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'ATo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'KTo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'QTo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'JTo',
+                    ),
+                    MyCustomContainer(
+                      hand: 'TT',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T9s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T8s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T7s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T6s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T5s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T4s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T3s',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T2s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'A9o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K9o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q9o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J9o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T9o',
+                    ),
+                    MyCustomContainer(
+                      hand: '99',
+                    ),
+                    MyCustomContainer(
+                      hand: '98s',
+                    ),
+                    MyCustomContainer(
+                      hand: '97s',
+                    ),
+                    MyCustomContainer(
+                      hand: '96s',
+                    ),
+                    MyCustomContainer(
+                      hand: '95s',
+                    ),
+                    MyCustomContainer(
+                      hand: '94s',
+                    ),
+                    MyCustomContainer(
+                      hand: '93s',
+                    ),
+                    MyCustomContainer(
+                      hand: '92s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'A8o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K8o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q8o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J8o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T8o',
+                    ),
+                    MyCustomContainer(
+                      hand: '98o',
+                    ),
+                    MyCustomContainer(
+                      hand: '88',
+                    ),
+                    MyCustomContainer(
+                      hand: '87s',
+                    ),
+                    MyCustomContainer(
+                      hand: '86s',
+                    ),
+                    MyCustomContainer(
+                      hand: '85s',
+                    ),
+                    MyCustomContainer(
+                      hand: '84s',
+                    ),
+                    MyCustomContainer(
+                      hand: '83s',
+                    ),
+                    MyCustomContainer(
+                      hand: '82s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'A7o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K7o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q7o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J7o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T7o',
+                    ),
+                    MyCustomContainer(
+                      hand: '97o',
+                    ),
+                    MyCustomContainer(
+                      hand: '87o',
+                    ),
+                    MyCustomContainer(
+                      hand: '77',
+                    ),
+                    MyCustomContainer(
+                      hand: '76s',
+                    ),
+                    MyCustomContainer(
+                      hand: '75s',
+                    ),
+                    MyCustomContainer(
+                      hand: '74s',
+                    ),
+                    MyCustomContainer(
+                      hand: '73s',
+                    ),
+                    MyCustomContainer(
+                      hand: '72s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'A6o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K6o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q6o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J6o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T6o',
+                    ),
+                    MyCustomContainer(
+                      hand: '96o',
+                    ),
+                    MyCustomContainer(
+                      hand: '86o',
+                    ),
+                    MyCustomContainer(
+                      hand: '76o',
+                    ),
+                    MyCustomContainer(
+                      hand: '66',
+                    ),
+                    MyCustomContainer(
+                      hand: '65s',
+                    ),
+                    MyCustomContainer(
+                      hand: '64s',
+                    ),
+                    MyCustomContainer(
+                      hand: '63s',
+                    ),
+                    MyCustomContainer(
+                      hand: '62s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'A5o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K5o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q5o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J5o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T5o',
+                    ),
+                    MyCustomContainer(
+                      hand: '95o',
+                    ),
+                    MyCustomContainer(
+                      hand: '85o',
+                    ),
+                    MyCustomContainer(
+                      hand: '75o',
+                    ),
+                    MyCustomContainer(
+                      hand: '65o',
+                    ),
+                    MyCustomContainer(
+                      hand: '55',
+                    ),
+                    MyCustomContainer(
+                      hand: '54s',
+                    ),
+                    MyCustomContainer(
+                      hand: '53s',
+                    ),
+                    MyCustomContainer(
+                      hand: '52s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'A4o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K4o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q4o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J4o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T4o',
+                    ),
+                    MyCustomContainer(
+                      hand: '94o',
+                    ),
+                    MyCustomContainer(
+                      hand: '84o',
+                    ),
+                    MyCustomContainer(
+                      hand: '74o',
+                    ),
+                    MyCustomContainer(
+                      hand: '64o',
+                    ),
+                    MyCustomContainer(
+                      hand: '54o',
+                    ),
+                    MyCustomContainer(
+                      hand: '44',
+                    ),
+                    MyCustomContainer(
+                      hand: '43s',
+                    ),
+                    MyCustomContainer(
+                      hand: '42s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'A3o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K3o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q3o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J3o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T3o',
+                    ),
+                    MyCustomContainer(
+                      hand: '93o',
+                    ),
+                    MyCustomContainer(
+                      hand: '83o',
+                    ),
+                    MyCustomContainer(
+                      hand: '73o',
+                    ),
+                    MyCustomContainer(
+                      hand: '63o',
+                    ),
+                    MyCustomContainer(
+                      hand: '53o',
+                    ),
+                    MyCustomContainer(
+                      hand: '43o',
+                    ),
+                    MyCustomContainer(
+                      hand: '33',
+                    ),
+                    MyCustomContainer(
+                      hand: '32s',
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    MyCustomContainer(
+                      hand: 'A2o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'K2o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'Q2o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'J2o',
+                    ),
+                    MyCustomContainer(
+                      hand: 'T2o',
+                    ),
+                    MyCustomContainer(
+                      hand: '92o',
+                    ),
+                    MyCustomContainer(
+                      hand: '82o',
+                    ),
+                    MyCustomContainer(
+                      hand: '72o',
+                    ),
+                    MyCustomContainer(
+                      hand: '62o',
+                    ),
+                    MyCustomContainer(
+                      hand: '52o',
+                    ),
+                    MyCustomContainer(
+                      hand: '42o',
+                    ),
+                    MyCustomContainer(
+                      hand: '32o',
+                    ),
+                    MyCustomContainer(
+                      hand: '22',
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          );
+        }
       }
     } else {
       return Container(
-        child: Column(
+        child: const Column(
           children: [
             Row(
               children: [
@@ -32662,7 +41183,7 @@ class ChartContainer extends StatelessWidget {
     }
 
     return Container(
-      child: Column(
+      child: const Column(
         children: [
           Row(
             children: [
@@ -33297,7 +41818,7 @@ class MyCustomContainer extends StatelessWidget {
                 ),
 
                 Text(hand,
-                  style: TextStyle(
+                  style: const TextStyle(
                   fontSize: 11.0,
                 ),)
               ],

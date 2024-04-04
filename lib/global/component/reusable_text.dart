@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokercat/constant.dart';
 
 class ReusableText extends StatelessWidget {
   String text;
@@ -9,7 +10,7 @@ class ReusableText extends StatelessWidget {
   ReusableText({
     required this.text,
     this.fontWeight = FontWeight.w600,
-    this.textColor = Colors.white,
+    this.textColor = AppTheme.descriptionText,
     this.fontSize = 16.0,
     Key? key,
   }) : super(key: key);

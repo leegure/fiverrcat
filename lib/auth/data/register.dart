@@ -31,7 +31,7 @@ mixin RegisterRepository {
 
       final fUser = FirebaseAuth.instance.currentUser!;// fUser는 authentication을 받은 현재유저의 정보가 담기는것.
 
-    final _user = User.createNew(
+    final user = User.createNew(
       uid: fUser.uid,
       username: username,
       authMethod: authMethod,
@@ -41,13 +41,13 @@ mixin RegisterRepository {
       gender: gender,
     );
 
-    if (!doc.exists) await doc.reference.set(_user);
+    if (!doc.exists) await doc.reference.set(user);
     fUser
-      ..updatePhotoURL(_user.photoURL)
-      ..updateDisplayName(_user.username);
+      ..updatePhotoURL(user.photoURL)
+      ..updateDisplayName(user.username);
 
-    if (_user.email.isNotEmpty) {
-      fUser.updateEmail(_user.email);
+    if (user.email.isNotEmpty) {
+      fUser.updateEmail(user.email);
     }
   }
 

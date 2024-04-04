@@ -11,7 +11,7 @@ class StretchableButton extends StatelessWidget {
   final List<Widget> children;
   final bool centered;
 
-  StretchableButton({
+  const StretchableButton({super.key, 
     required this.buttonColor,
     required this.borderRadius,
     required this.children,
@@ -29,12 +29,12 @@ class StretchableButton extends StatelessWidget {
         var contents = List<Widget>.from(children);
 
         if (constraints.minWidth == 0) {
-          contents.add(SizedBox.shrink());
+          contents.add(const SizedBox.shrink());
         } else {
           if (centered) {
-            contents.insert(0, Spacer());
+            contents.insert(0, const Spacer());
           }
-          contents.add(Spacer());
+          contents.add(const Spacer());
         }
 
         BorderSide bs;
@@ -47,19 +47,24 @@ class StretchableButton extends StatelessWidget {
         }
 
         return ButtonTheme(
-          height: 40.0,
+
           padding: EdgeInsets.all(buttonPadding??0),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(borderRadius),
             side: bs,
           ),
-          child: RaisedButton(
-            onPressed: onPressed,
-            color: buttonColor,
-            splashColor: splashColor,
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: contents,
+          child: Container(
+
+            child: TextButton(
+              onPressed: onPressed,
+              style: ButtonStyle(backgroundColor: MaterialStateProperty.resolveWith((states) => buttonColor)),
+              // color: buttonColor,
+              // splashColor: splashColor,
+              // 일시적 비활성화
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: contents,
+              ),
             ),
           ),
         );

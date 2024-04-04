@@ -1,6 +1,4 @@
 
-import 'package:flutter/material.dart';
-import '../constarants/selection.dart';
 
 class ProgressInfo{
   const ProgressInfo({

@@ -1,8 +1,5 @@
 
-import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
-import '../getx_route/routes.dart';
-import 'package:get/get.dart';
 import '../imports.dart';
 
 
@@ -14,7 +11,7 @@ class HomeDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
         width: Get.width*0.7,
-        child: HomeDrawer2(),
+        child: const HomeDrawer2(),
       );
   }
 }
@@ -43,7 +40,7 @@ class _HomeDrawerState extends State<HomeDrawer2> {
         
         labelName: 'Home',
         routeName: '/home',
-        icon: Icon(Icons.home),
+        icon: const Icon(Icons.home),
       ),
       DrawerList(
         labelName: authProvider.isLoggedIn()?'Edit Profile':'Login',
@@ -53,22 +50,22 @@ class _HomeDrawerState extends State<HomeDrawer2> {
       ),
       DrawerList(
         labelName: 'FeedBack',
-        icon: Icon(Icons.help),
+        icon: const Icon(Icons.help),
       ),
       DrawerList(
         
         labelName: 'Invite Friend',
-        icon: Icon(Icons.group),
+        icon: const Icon(Icons.group),
       ),
       DrawerList(
         
         labelName: 'Rate the app',
-        icon: Icon(Icons.share),
+        icon: const Icon(Icons.share),
       ),
       DrawerList(
         
         labelName: 'About Us',
-        icon: Icon(Icons.info),
+        icon: const Icon(Icons.info),
       ),
     ];
   }
@@ -114,8 +111,8 @@ class _HomeDrawerState extends State<HomeDrawer2> {
                                 child: Image.asset('assets/images/userImage.png'),
                               ),
                             ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8, left: 4),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 8, left: 4),
                       child: Text(
                         'Chris Hemsworth',
                         style: TextStyle(
@@ -154,7 +151,7 @@ class _HomeDrawerState extends State<HomeDrawer2> {
             Column(
               children: <Widget>[
                 ListTile(
-                  title: Text(
+                  title: const Text(
                     'Sign Out',
                     style: TextStyle(
                       fontFamily: AppTheme.fontName,
@@ -164,7 +161,7 @@ class _HomeDrawerState extends State<HomeDrawer2> {
                     ),
                     textAlign: TextAlign.left,
                   ),
-                  trailing: Icon(
+                  trailing: const Icon(
                     Icons.power_settings_new,
                     color: Colors.red,
                   ),
@@ -215,7 +212,7 @@ class _HomeDrawerState extends State<HomeDrawer2> {
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: Row(
                 children: <Widget>[
-                  Container(
+                  const SizedBox(
                     width: 6.0,
                     height: 46.0,
                     // decoration: BoxDecoration(
@@ -234,7 +231,7 @@ class _HomeDrawerState extends State<HomeDrawer2> {
                     padding: EdgeInsets.all(4.0),
                   ),
                   listData.isAssetsImage
-                      ? Container(
+                      ? SizedBox(
                           width: 24,
                           height: 24,
                           child: Image.asset(listData.imageName, color: Get.currentRoute == listData.routeName ? Colors.blue : AppTheme.nearlyBlack),
@@ -257,13 +254,13 @@ class _HomeDrawerState extends State<HomeDrawer2> {
             ),
             if(Get.currentRoute == listData.routeName)
                 Padding(
-                  padding: EdgeInsets.only(top: 8, bottom: 8),
+                  padding: const EdgeInsets.only(top: 8, bottom: 8),
                   child: Container(
                     width: MediaQuery.of(context).size.width * 0.75 - 64,
                     height: 46,
                     decoration: BoxDecoration(
                       color: Colors.blue.withOpacity(0.2),
-                      borderRadius: new BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(0),
                         topRight: Radius.circular(28),
                         bottomLeft: Radius.circular(0),

@@ -1,27 +1,20 @@
 import 'dart:math';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:provider/provider.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pokercat/chart/common/chart_grid.dart';
-import '../chart/common/cash_chart_brain.dart';
-import '../chart/common/chart_brain.dart';
-import '../chart/common/fill.dart';
-import '../chart/constarants/selection.dart';
-import '../global/button_handling.dart';
+
 import '../global/component/appbar.dart';
-import '../global/component/pcapptheme.dart';
 import '../global/component/reusable_button.dart';
 import '../global/component/reusable_text.dart';
 import '../imports.dart';
 
 class CashGame extends StatefulWidget {
+  const CashGame({super.key});
+
   @override
   _CashGameState createState() => _CashGameState();
 }
 
-final CashChartBrain cashChartBrain = CashChartBrain();
-Selection cashSelection = Selection();
+
 
 class _CashGameState extends State<CashGame> {
   Random random = Random();
@@ -40,74 +33,13 @@ class _CashGameState extends State<CashGame> {
   //   return buttonList;
   // }
 
-  List<MyElevatedButton> getHeroButton(double width) {
-    List<MyElevatedButton> buttonList = [];
-    for (Position selectedMyPosition in Position.values) {
-      if (selectedMyPosition.index == 0) continue;
-      buttonList.add(
-          MyElevatedButton(
-              fontsize: 12.sp,
-          width: width,
-          selectedButtonLabel: selectedMyPosition.name,
-          onPressed: () {
-            setState(() {
-              cashSelection.myPosition = selectedMyPosition;
-              print('myPosition=${cashSelection.myPosition}');
-              cashSelection.opponentPosition = Position.none; //바꿔야함
-              cashSelection.opponentAction = OpponentAction.none;
-            });
-          },
-          isButtonSelected:
-              cashSelection.myPosition == selectedMyPosition ? true : false));
-    }
-    return buttonList;
-  }
 
-  List<MyElevatedButton> getVillainButton(double width) {
-    List<MyElevatedButton> buttonList = [];
-    for (Position selectedOpponentPosition in Position.values) {
-      if (selectedOpponentPosition.index == 0) continue;
-      buttonList.add(MyElevatedButton(
-          fontsize: 12.sp,
-width: width,
-          selectedButtonLabel: selectedOpponentPosition.name,
-          onPressed: cashSelection.myPosition != selectedOpponentPosition
-              ? () {
-                  setState(() {
-                    cashSelection.opponentPosition = selectedOpponentPosition;
-                    if (cashSelection.myPosition.index <
-                        selectedOpponentPosition.index) {
-                      cashSelection.opponentAction = OpponentAction.threeBet;
-                      // Provider.of<ButtonHandling>(context, listen: false)
-                      //     .deActivateFourBetButton(disabled);
-
-                    } else {
-                      cashSelection.opponentAction = OpponentAction.none;
-                    }
-                  });
-                }
-              : null,
-          isButtonSelected:
-              cashSelection.opponentPosition == selectedOpponentPosition
-                  ? true
-                  : false));
-    }
-    return buttonList;
-  }
-
-  @override
-  void initState() {
-    cashSelection.myPosition = Position.UTG;
-    cashSelection.opponentPosition = Position.none;
-    cashSelection.opponentAction = OpponentAction.none;
-    // TODO: implement initState
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
+        backgroundColor: AppTheme.pcScafoldColor,
       appBar: Appbar(
         titleStr: 'CashGame',
         // title: Container(
@@ -128,6 +60,7 @@ width: width,
         actions: <Widget>[
           Row(
             children: [
+
               ReusableText(
                 text: '$randomNumber',
                 fontSize: 14.sp,
@@ -169,142 +102,7 @@ width: width,
       //     )
       //   ],
       // ),
-      body: Container(
-        color: Color(0xff262848),
-        child: LayoutBuilder(
-
-          builder: (context, constraints) {
-            return Column(
-              children: [
-
-                // Container(
-                //   decoration: BoxDecoration(
-                //     boxShadow: [
-                //       BoxShadow(
-                //           color: Color(0x2d9596cf),
-                //           offset: Offset(-10, -10),
-                //           blurRadius: 32,
-                //           spreadRadius: 0),
-                //       BoxShadow(
-                //           color: Colors.black,
-                //           offset: Offset(15, -10),
-                //           blurRadius: 340.8,
-                //           spreadRadius: 10),
-                //       BoxShadow(
-                //           color: Color(0x19000000),
-                //           offset: Offset(30, 20),
-                //           blurRadius: 27,
-                //           spreadRadius: 0)
-                //     ],
-                //   ),
-                // ),
-
-                Expanded(
-                  flex: 100,
-                    child: ChartGrid(painting: cashChartBrain.paintingProgress(cashSelection))),
-                Expanded(
-                  flex: 57,
-                  child: Fill(
-                    child: Container(
-
-                      decoration: new BoxDecoration(
-                        color: ZeplinColors.dark,
-                      ),
-                      child: Column(
-
-                         mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Expanded(child: ReusableText(text: 'Hero',fontSize: 13.0.sp)),
-                          // Row(children: getButtonJH()),
-                          Expanded(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: getHeroButton(constraints.maxWidth*0.16),
-                            ),
-                          ),
-                          SizedBox(height: 3.0.h),
-                          Expanded(child: ReusableText(text: 'Villain',fontSize: 13.0.sp)),
-                          // Row(
-                          //   children: [
-                          //     opponentPositionFlexible(Position.UTG),
-                          //     opponentPositionFlexible(Position.MP),
-                          //     opponentPositionFlexible(Position.CO),
-                          //     opponentPositionFlexible(Position.BTN),
-                          //     opponentPositionFlexible(Position.SB),
-                          //     opponentPositionFlexible(Position.BB),
-                          //   ],
-                          // ),
-                          Expanded(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: getVillainButton(constraints.maxWidth*0.16),
-                            ),
-                          ),
-                          SizedBox(height: 3.0.h),
-                          Expanded(
-                            child: ReusableText(
-                              text: 'Villain\'s Action',fontSize: 13.0.sp
-                            ),
-                          ),
-                          Expanded(
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                MyElevatedButton(
-                                  fontsize: 12.sp,
-                                  width: constraints.maxWidth*0.16,
-                                  isButtonSelected: cashSelection.opponentAction ==
-                                          OpponentAction.threeBet
-                                      ? true
-                                      : false,
-                                  onPressed: cashSelection.myPosition.index <=
-                                              cashSelection.opponentPosition.index ||
-                                          cashSelection.opponentPosition ==
-                                              Position.none
-                                      ? () {
-                                          setState(() {
-                                            cashSelection.opponentAction =
-                                                OpponentAction.threeBet;
-                                          });
-                                        }
-                                      : null,
-                                  selectedButtonLabel: OpponentAction.threeBet.name
-                                      .replaceAll("three", "3"),
-                                ),
-                                MyElevatedButton(
-                                  fontsize: 12.sp,
-                                  width: constraints.maxWidth*0.16,
-                                  isButtonSelected: cashSelection.opponentAction ==
-                                          OpponentAction.fourBet
-                                      ? true
-                                      : false,
-                                  onPressed: cashSelection.myPosition.index >=
-                                          cashSelection.opponentPosition.index
-                                      ? () {
-                                          setState(() {
-                                            cashSelection.opponentAction =
-                                                OpponentAction.fourBet;
-                                          });
-                                        }
-                                      : null,
-                                  selectedButtonLabel: OpponentAction.fourBet.name
-                                      .replaceAll("four", "4"),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 8.h),
-
-              ],
-            );
-          }
-        ),
-      ),
+      body: Container()
     );
   }
 

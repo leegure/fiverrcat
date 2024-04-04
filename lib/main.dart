@@ -1,24 +1,51 @@
 import 'dart:async';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:pokercat/addexpense/db/functions/category_functions.dart';
+import 'package:pokercat/addexpense/db/models/account_group/account_group_model_db.dart';
+import 'package:pokercat/addexpense/db/models/transactions/transaction_model_db.dart';
+import 'package:pokercat/pages/app_settings_screen/income_category_settings/app_default.dart';
+import 'package:pokercat/pages/app_settings_screen/income_category_settings/income_category_provider.dart';
+import 'package:pokercat/pages/bankroll.dart';
+import 'package:pokercat/pages/btmnavigation.dart';
 import 'package:pokercat/pages/splash_screen.dart';
-import 'package:provider/provider.dart';
-import 'auth/data/auth_provider.dart';
-import 'auth/data/localdb.dart';
-import 'getx_route/routes.dart';
-import 'global/button_handling.dart';
+import 'addexpense/db/models/category/category_model_db.dart';
+import 'addexpense/db/models/currency/curency_model.db.dart';
 import 'global/component/preferences.dart';
 import 'imports.dart';
 
 
-//test1
-
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await Hive.initFlutter();
+
+  if (!Hive.isAdapterRegistered(CategoryTypeAdapter().typeId)) {
+    Hive.registerAdapter(CategoryTypeAdapter());
+  }
+  if (!Hive.isAdapterRegistered(CategoryModelAdapter().typeId)) {
+    Hive.registerAdapter(CategoryModelAdapter());
+  }
+  if (!Hive.isAdapterRegistered(CurrencyModelAdapter().typeId)) {
+    Hive.registerAdapter(CurrencyModelAdapter());
+  }
+  if (!Hive.isAdapterRegistered(AccountTypeAdapter().typeId)) {
+    Hive.registerAdapter(AccountTypeAdapter());
+  }
+  if (!Hive.isAdapterRegistered(AccountGroupModelAdapter().typeId)) {
+    Hive.registerAdapter(AccountGroupModelAdapter());
+  }
+  if (!Hive.isAdapterRegistered(TransactionModelAdapter().typeId)) {
+    Hive.registerAdapter(TransactionModelAdapter());
+  }
+
+
+
   //LocaleSettings.useDeviceLocale();
   // Initalize Fire
   // base Core for app, necessary for firebase to work
@@ -29,11 +56,14 @@ Future<void> main() async {
 
   await AuthProvider.init();
 
-  //Load App Configs
-  runApp(App());
+  unawaited(MobileAds.instance.initialize());
+
+  runApp(const App());
 }
 
 class App extends StatefulWidget {
+  const App({super.key});
+
   @override
   _AppState createState() => _AppState();
 }
@@ -57,6 +87,10 @@ class _AppState extends State<App> {
 
   @override
   void initState() {
+    IncomeCategoryProvider().addDefaultCategory(
+        AppDefaultIncomeCategory()
+            .appDefaultIncomeCategory);
+    CategoryDB().getAllCategory();
     // TODO: implement initState
     super.initState();
     // getLoggedInState();
@@ -76,12 +110,12 @@ class _AppState extends State<App> {
           // builder: (_, w) => BotToastInit()(_, w),
           builder: (context, w) {
             return MediaQuery(
-                data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+                data: MediaQuery.of(context).copyWith(textScaler: const TextScaler.linear(1.0)),
                 child: BotToastInit()(context, w)); },
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             primarySwatch: Colors.grey,
-            textTheme: AppTheme.textTheme,
+            // textTheme: AppTheme.textTheme,
             platform: TargetPlatform.iOS,
           ),
           navigatorObservers: [
@@ -96,8 +130,10 @@ class _AppState extends State<App> {
           // initialRoute: AppLinks.splash,
           home: AnimatedSplashScreen(
             splash: 'assets/images/catpic3.png',
-            backgroundColor: ZeplinColors.dark,
-            nextScreen: SplashScreen(),
+            backgroundColor: AppTheme.pcScafoldColor,
+            // nextScreen: const SplashScreen(),
+            //- for task 테스크를 위해 임시
+            nextScreen: const BtmNavi(),
             duration: 100,
             splashTransition: SplashTransition.fadeTransition,
           ),

@@ -1,13 +1,13 @@
 
 import "package:flutter/widgets.dart";
 import "package:poker/poker.dart";
+import 'package:pokercat/constant.dart';
 
-import '../../global/component/pcapptheme.dart';
 import '../constarants/card.dart';
 
 
 class ReadonlyRankPairGrid extends StatelessWidget {
-  ReadonlyRankPairGrid({required this.rankPairs, Key? key}) : super(key: key);
+  const ReadonlyRankPairGrid({required this.rankPairs, Key? key}) : super(key: key);
 
   final Set<RankPair> rankPairs;
 
@@ -17,7 +17,7 @@ class ReadonlyRankPairGrid extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) => DecoratedBox(
         decoration: BoxDecoration(
-          color: PcAppTheme.pcWhite1,
+
           borderRadius: BorderRadius.circular(constraints.maxWidth * 0.05),
         ),
         child: Table(
@@ -64,7 +64,7 @@ class ReadonlyRankPairGrid extends StatelessWidget {
                     height: constraints.maxWidth / 13,
                     decoration: BoxDecoration(
                       color: rankPairs.contains(rankPairsPart)
-                          ? PcAppTheme.pcWhite1
+                          ? AppTheme.white
                           : null,
                       borderRadius: borderRadius,
                     ),

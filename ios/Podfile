@@ -1,6 +1,17 @@
 # Uncomment this line to define a global platform for your project
 platform :ios, '15.2'
 
+pod 'GoogleUtilities', :modular_headers => true
+pod 'FirebaseFunctions', :modular_headers => true
+pod 'FirebaseCore', :modular_headers => true
+pod 'FirebaseCoreExtension', :modular_headers => true
+pod 'FirebaseAppCheckInterop', :modular_headers => true
+pod 'FirebaseAuthInterop', :modular_headers => true
+pod 'FirebaseMessagingInterop', :modular_headers => true
+pod 'GTMSessionFetcher', :modular_headers => true
+
+use_frameworks! :linkage => :static
+
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 

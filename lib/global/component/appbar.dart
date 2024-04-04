@@ -1,9 +1,9 @@
 import 'dart:math';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pokercat/global/component/pcapptheme.dart';
+import 'package:pokercat/constant.dart';
+
 
 import 'reusable_text.dart';
 Random random = Random();
@@ -34,15 +34,15 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: backgroundColor??ZeplinColors.dark,
-      elevation: 20.0,
+      backgroundColor: backgroundColor??AppTheme.pcAppBarColor,
+      // elevation: 20.0,
       automaticallyImplyLeading:automaticallyImplyLeading,
       leadingWidth:28,
       leading: leading,
       centerTitle: centerTitle,
       title: title ??
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               boxShadow: [
                 BoxShadow(
                   color: Color(0x7f000000),
@@ -69,5 +69,5 @@ class Appbar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);//kToolbarHeight 값은 material에서 제공하는 constant 값
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);//kToolbarHeight 값은 material에서 제공하는 constant 값
 }

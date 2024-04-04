@@ -1,19 +1,16 @@
 
 import "package:flutter/material.dart";
-import "package:flutter/services.dart";
-import "package:flutter/widgets.dart";
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import "package:poker/poker.dart";
 
-import '../../global/component/pcapptheme.dart';
+import '../../constant.dart';
 import '../../global/component/reusable_text.dart';
 import '../constarants/card.dart';
 
 
-import 'fill.dart';
 
 class RankPairSelectGrid extends StatefulWidget {
-  RankPairSelectGrid({
+  const RankPairSelectGrid({
     Key? key,
     required this.onChanged,
 
@@ -61,7 +58,7 @@ class _RankPairSelectGridState extends State<RankPairSelectGrid> {
     child: Column(
       children: [
         AspectRatio(
-          aspectRatio: 1.2,
+          aspectRatio: 1.05,
           child: LayoutBuilder(
             builder: (context, constraints) => GestureDetector(
               onPanStart: (details) {
@@ -105,12 +102,12 @@ class _RankPairSelectGridState extends State<RankPairSelectGrid> {
               behavior: HitTestBehavior.opaque,
               child: Column(
                 children: List.generate(Rank.values.length * 2 - 1, (i) {
-                  if (i % 2 == 1) return SizedBox(height: 2);
+                  if (i % 2 == 1) return const SizedBox(height: 2);
                   final y = i ~/ 2;
                   return Expanded(
                     child: Row(
                       children: List.generate(Rank.values.length * 2 - 1, (j) {
-                        if (j % 2 == 1) return SizedBox(width: 2);
+                        if (j % 2 == 1) return const SizedBox(width: 2);
                         final x = j ~/ 2;
                         final rankPairsPart = x > y
                             ? RankPair.suited(
@@ -137,7 +134,7 @@ class _RankPairSelectGridState extends State<RankPairSelectGrid> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.fromLTRB(0.0, 2.h, 0.0,0.0),
+          padding: EdgeInsets.fromLTRB(0.0, 6.h, 0.0,0.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -145,11 +142,11 @@ class _RankPairSelectGridState extends State<RankPairSelectGrid> {
               Container(
                   width: 12.w,
                   height: 12.w,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       borderRadius: BorderRadius.all(
                           Radius.circular(3)
                       ),
-                      color: ZeplinColors.allInColor
+                      color: AppTheme.allInColor
                   )
               ),
               SizedBox(width: 2.0.h),
@@ -164,7 +161,7 @@ class _RankPairSelectGridState extends State<RankPairSelectGrid> {
             ],
           ),
         ),
-        Divider(
+        const Divider(
           color: Colors.grey,
           thickness: 0.5,
         ),
@@ -174,7 +171,7 @@ class _RankPairSelectGridState extends State<RankPairSelectGrid> {
 }
 
 class RankPairSelectGridItem extends StatelessWidget {
-  RankPairSelectGridItem({
+  const RankPairSelectGridItem({
     required this.rankPairsPart,
     this.isSelected = false,
     Key? key,
@@ -189,8 +186,8 @@ class RankPairSelectGridItem extends StatelessWidget {
       builder: (context, constraints) => DecoratedBox(
         decoration: BoxDecoration(
           color: isSelected
-              ? ZeplinColors.allInColor
-              : ZeplinColors.foldColor,
+              ? AppTheme.allInColor
+              : AppTheme.pcFoldColor,
 
         ),
         child: Center(

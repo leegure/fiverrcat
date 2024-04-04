@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:pokercat/pages/app_settings_screen/app_settings_screen.dart';
 
 
-import '../chart/common/poker_icon_icons.dart';
-import '../global/component/pcapptheme.dart';
-import 'appgame.dart';
+
+
+import '../constant.dart';
+import 'bankroll.dart';
 import 'cashgame.dart';
 import 'tournament.dart';
 import 'profile.dart';
@@ -11,6 +13,8 @@ import 'pushfold.dart';
 
 
 class BtmNavi extends StatefulWidget {
+  const BtmNavi({super.key});
+
   @override
   _BtmNaviState createState() => _BtmNaviState();
 }
@@ -20,11 +24,12 @@ class _BtmNaviState extends State<BtmNavi> {
   int _currentIndex = 0;
 
   final tabs = [
-    Center(child: CashGame(),),
-    Center(child: PushFold(),),
-    Center(child: Tournament(),),
-    Center(child: AppGame(),),
-    Center(child: ProfileScreen(),),
+    const Center(child: CashGame(),),
+    const Center(child: PushFold(),),
+    const Center(child: Tournament(),),
+    const Center(child: Bankroll(),),
+    const Center(child: AppSettingsScreen(),),
+
 
 
   ];
@@ -42,19 +47,22 @@ class _BtmNaviState extends State<BtmNavi> {
       body: tabs[_currentIndex],
 
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           boxShadow: <BoxShadow>[
             BoxShadow(
-              color: Colors.black,
+
               blurRadius: 10,
             ),
           ],
         ),
         child: BottomNavigationBar(
 
-          backgroundColor: ZeplinColors.dark,
-          unselectedItemColor: Color(0xff53558a),
-          selectedItemColor: Color(0xff59d1ff),
+          // backgroundColor: ZeplinColors.dark,
+          backgroundColor: AppTheme.gray,
+          // unselectedItemColor: const Color(0xff53558a),
+          unselectedItemColor: AppTheme.pcBottomNavigatorUnSelectorColor,
+          selectedItemColor: const Color(0xff59d1ff),
+          // selectedItemColor: AppTheme.pcBottomNavigatorSelectorColor,
 
 
           currentIndex : _currentIndex,
@@ -65,7 +73,7 @@ class _BtmNaviState extends State<BtmNavi> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               backgroundColor: Colors.grey,
-              icon: Icon(PokerIcon.money_1),
+              icon: Icon(Icons.money),
               label: 'Cash Game',
             ),
             BottomNavigationBarItem(
@@ -74,7 +82,7 @@ class _BtmNaviState extends State<BtmNavi> {
 
             ),
             BottomNavigationBarItem(
-              icon: Icon(PokerIcon.trophy),
+              icon: Icon(Icons.troubleshoot_outlined),
               label: 'Tournament',
             ),
             // BottomNavigationBarItem(
@@ -83,19 +91,19 @@ class _BtmNaviState extends State<BtmNavi> {
             // ),
             BottomNavigationBarItem(
               icon: Icon(Icons.attach_money_sharp),
-              label: 'App Games',
+              label: 'Bankroll',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: 'Profile',
+              icon: Icon(Icons.settings),
+              label: 'Settings',
             ),
 
           ],
-          selectedLabelStyle:TextStyle(
+          selectedLabelStyle:const TextStyle(
             fontFamily: 'Quasimoda',
             fontWeight: FontWeight.w700,
           ) ,
-          unselectedLabelStyle: TextStyle(
+          unselectedLabelStyle: const TextStyle(
 
             fontFamily: 'Quasimoda',
             fontWeight: FontWeight.w500,

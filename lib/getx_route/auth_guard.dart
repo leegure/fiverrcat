@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../imports.dart';
-import 'routes.dart';
 
 class AuthGuard extends GetMiddleware {
 //   Get the auth service
@@ -16,7 +15,8 @@ class AuthGuard extends GetMiddleware {
   RouteSettings? redirect(String? route) {
       
       // 로그인 되어 있으면 route를 하고 안되어 있으면 로그인 페이지로 넘긴다. 
-      if (!authProvider.isAuthenticated()) return RouteSettings(name: AppLinks.login);
+      if (!authProvider.isAuthenticated()) return const RouteSettings(name: AppLinks.login);
+      return null;
       // 로그인 되었을 경우 특정 페이지로 강제로 보내는 코드
       //return RouteSettings(name: AppLinks.hotelHomeScreen);
   }

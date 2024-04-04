@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart' hide User;
 import 'package:flutter/material.dart';
 import '../../../../imports.dart';
 import 'user_repository.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 AuthProvider get authProvider => Get.find();
 
@@ -62,7 +61,7 @@ class AuthProvider {
       rxUser.value = null;
       await auth.signOut();
 
-    } catch (e, s) {
+    } catch (e) {
       debugPrint(e.toString());
     }
   }

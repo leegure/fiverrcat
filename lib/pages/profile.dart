@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:pokercat/global/component/reusable_text.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import '../../imports.dart';
 import '../auth/data/constant.dart';
 import '../auth/data/sns_firebase_auth.dart';
 import '../global/common_size.dart';
 import '../global/component/appbar.dart';
+import '../global/widget/banner_ad.dart';
 
 class ProfileScreen extends StatefulWidget {
+  const ProfileScreen({super.key});
+
   @override
   _ProfileScreenState createState() => _ProfileScreenState();
 }
@@ -17,8 +19,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
         r"^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?))\://)?(www.|[a-zA-Z0-9].)[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,6}(\:[0-9]{1,5})*(/($|[a-zA-Z0-9\.\,\;\?\'\\\+&amp;%\$#\=~_\-]+))*$",
       ).hasMatch(s);
 
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _nameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
 
   User? edited;
   User? get user => edited ?? authProvider.user;
@@ -33,8 +35,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ZeplinColors.dark,
-      appBar: Appbar(
+      backgroundColor: AppTheme.pcScafoldColor,
+      appBar: const Appbar(
         titleStr: 'Profile body',
       ),
       body: Center(
@@ -46,49 +48,55 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     radius: 60,
                     backgroundImage: NetworkImage(Constant.img),
                   )
-                : CircleAvatar(
+                : const CircleAvatar(
                     radius: 60,
-                    backgroundImage:
-                        AssetImage('assets/images/human_000.png'),
+                    backgroundImage: AssetImage('assets/images/catpic3.png'),
                   ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             _username(context),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             _userBio(),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: AppTheme.pcScafoldColor,
+                boxShadow: const [
+                  BoxShadow(
+                    color: AppTheme.pcShadowColor,
+                    spreadRadius: 0,
+                    blurRadius: 5,
+                    offset: Offset(0, 5),
+                  ),
+                ],
+              ),
+              child: TextButton(
+                style: ElevatedButton.styleFrom(
+                 fixedSize: Size(200,50),
 
-            Center(
-              child: GestureDetector(
-                onTap: () async {
+                ),
+                onPressed: () async {
                   await authProvider.logout();
                   await SnsAuthWithFirebase().googleLogout();
 
                   AppRoutes.moveToPage(AppLinks.signIn, getOffAll: true);
                 },
-                child: Container(
-                  height: 45,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    color: Color(0xff004e6d),
-                    borderRadius: BorderRadius.circular(15),
-
-                  ),
-                  child: Center(
-                    child: ReusableText(
-                      fontWeight: FontWeight.w700,
-                      text: 'Log Out',
-
-                    ),
+                child: Center(
+                  child: ReusableText(
+                    fontWeight: FontWeight.w700,
+                    text: 'Log Out',
+                    textColor: Colors.white70,
                   ),
                 ),
               ),
             ),
+
 
           ],
         ),
@@ -97,11 +105,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   Row _appbar() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          'headachee',
+          'headache',
           textAlign: TextAlign.center,
         ),
       ],
@@ -147,12 +155,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget _username(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: common_gap),
-      child: ReusableText(
-        text:
-        '${Constant.name}'
-        // '${authProvider.user!.username}',
-      ),
-
+      child: ReusableText(text: Constant.name
+          // '${authProvider.user!.username}',
+          ),
     );
   }
 
@@ -160,8 +165,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: common_gap),
       child: ReusableText(
-        text: '${Constant.email}',
-
+        text: Constant.email,
       ),
     );
   }

@@ -1,19 +1,14 @@
-import 'dart:convert';
 
 
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 
-import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 import '../../../imports.dart';
-import 'package:http/http.dart' as http;
 import 'package:firebase_auth/firebase_auth.dart' hide User;
 
-import 'dart:io';
 
 import '../../global/utils.dart';
 import 'localdb.dart';
@@ -29,22 +24,22 @@ class SnsAuthWithFirebase {
   Future<void> signInWithGoogle() async {
 
       BotToast.showLoading();
-
+      //indicator 돈다
       // Trigger the authentication flow
       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
       // Obtain the auth details from the request
       final GoogleSignInAuthentication? googleAuth = await googleUser?.authentication;
-      final credential;
+      final OAuthCredential credential;
       try {
         // Create a new credential
         credential = GoogleAuthProvider.credential(
           accessToken: googleAuth?.accessToken,
           idToken: googleAuth?.idToken,
         );
-      } on AssertionError catch(e){
+      } on AssertionError {
         BotToast.showText(text: 'Cancelled');
         BotToast.closeAllLoading();
-        // toast
+
         // 취소되었습니다.
         return;
       }
@@ -63,24 +58,19 @@ class SnsAuthWithFirebase {
         "authMethod": 'google',
       };
       final user = await UserRepository.fetchUser();
-
-
       if (user != null) {
         await authProvider.login();
       } else {
         String username = userData['displayName'];
-
         //만약 username이 겹치면 random 값을 자동으로 할당 한다.
         while(true){
           if (await RegisterRepository.checkIfUsernameTaken(username)) {
 
             username='${username}_${getRandomString(3)}';
           } else {
-
             break;
           }
         }
-
         await RegisterRepository.createNewUser(
           username: username,
           authMethod: 'google',
@@ -89,7 +79,6 @@ class SnsAuthWithFirebase {
           phoneNumber:userData['phoneNumber'].toString().replaceAll("-", ""),
           photoURL:userData['photoURL'].toString(),
         );
-
         BotToast.closeAllLoading();
         await authProvider.login();
 
@@ -133,6 +122,9 @@ class SnsAuthWithFirebase {
           //이부분은 이해가 높지않아서 100점은 아니다
         ),
       );
+
+
+
     } on SignInWithAppleAuthorizationException catch(e){
 
       switch (e.code) {
@@ -161,7 +153,6 @@ class SnsAuthWithFirebase {
           BotToast.closeAllLoading();
       //알수없는 에러
       }
-      //toast message
       //코드에 맞게 적절한 메시지 보내기.
       return;
     }catch(e){
@@ -184,7 +175,7 @@ class SnsAuthWithFirebase {
     userresult = await FirebaseAuth.instance.signInWithCredential(oauthCredential);
 
     Map<String, dynamic> userData={
-      "displayName":'${credential.givenName} ${credential.familyName}',
+      "displayName":'${credential.givenName}${credential.familyName}',
       "email":userresult.user!.email??'',
       "emailVerified":userresult.user!.emailVerified,
       "phoneNumber":'',
@@ -195,6 +186,10 @@ class SnsAuthWithFirebase {
     print('credential=$credential');
     print('userresult=$userresult');
     print('credential familyName:${credential.familyName} givenName:${credential.givenName}');
+
+    LocalDataSaver.saveLoginData(true);
+    LocalDataSaver.saveName('${credential.givenName??'${'user'}${getRandomString(5)}'}');
+    LocalDataSaver.saveMail(userresult.user!.email??'');
 
     final user = await UserRepository.fetchUser();
 

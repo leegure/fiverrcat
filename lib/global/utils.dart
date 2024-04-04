@@ -59,8 +59,8 @@ bool parseBool(dynamic v, [bool d = false]) => v is bool ? v : d;
 String parseString(dynamic v, [String d = '']) => v is String ? v : '${v ?? d}';
 
 String getRandomString(int length) {
-  Random _rnd = Random();
-  String _chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890';
+  Random rnd = Random();
+  String chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890';
   return String.fromCharCodes(Iterable.generate(
-      length, (_) => _chars.codeUnitAt(_rnd.nextInt(_chars.length))));
+      length, (_) => chars.codeUnitAt(rnd.nextInt(chars.length))));
 }

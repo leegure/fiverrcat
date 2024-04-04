@@ -1,17 +1,12 @@
 import "package:flutter/material.dart";
-import "package:flutter/widgets.dart";
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import "package:poker/poker.dart";
 import 'package:pokercat/chart/common/tourna_chart_brain.dart';
-import 'package:pokercat/chart/constarants/selection.dart';
-import 'package:pokercat/global/component/pcapptheme.dart';
-import 'package:pokercat/pages/cashgame.dart';
+
 import '../../global/component/reusable_text.dart';
 import '../../imports.dart';
 import '../constarants/card.dart';
-import 'fill.dart';
 import 'progress_info_model.dart';
-import 'package:provider/provider.dart';
 
 class ChartGrid extends StatefulWidget {
   ChartGrid({Key? key, this.value = const {}, required this.painting})
@@ -49,13 +44,13 @@ class _ChartGridState extends State<ChartGrid> {
                     child: LayoutBuilder(
                       builder: (context, constraints) => Column(
                         children: List.generate(Rank.values.length * 2 - 1, (i) {
-                          if (i % 2 == 1) return SizedBox(height: 2);
+                          if (i % 2 == 1) return const SizedBox(height: 2);
                           final x = i ~/ 2;
                           return Expanded(
                             child: Row(
                               children:
                                   List.generate(Rank.values.length * 2 - 1, (j) {
-                                if (j % 2 == 1) return SizedBox(width: 2);
+                                if (j % 2 == 1) return const SizedBox(width: 2);
                                 final y = j ~/ 2;
                                 final rankPairsPart = y > x
                                     ? RankPair.suited(
@@ -72,7 +67,7 @@ class _ChartGridState extends State<ChartGrid> {
                                     child: ChartGridItem(
                                       rankPairsPart: rankPairsPart,
                                       progressInfo: widget.painting[xyToCard()['$x,$y']]
-                                          ?? ProgressInfo(
+                                          ?? const ProgressInfo(
                                               raiseP: 0.0,
                                               callP: 0.0,
                                               alreadyP: 0.0,
@@ -156,11 +151,11 @@ class _ChartGridState extends State<ChartGrid> {
                         Container(
                             width: 12.w,
                             height: 12.w,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.all(
                                     Radius.circular(3)
                                 ),
-                                color: ZeplinColors.allInColor
+                                color: AppTheme.allInColor
                             )
                         ),
                         SizedBox(width: 2.0.h),
@@ -169,7 +164,7 @@ class _ChartGridState extends State<ChartGrid> {
                           fontWeight: FontWeight.w500,
                           fontSize: 13.sp,
                         ),
-                        Container(
+                        SizedBox(
                           width: 42.sp,
                           child: ReusableText(
                             text: ' $allinPercentt%',
@@ -181,11 +176,11 @@ class _ChartGridState extends State<ChartGrid> {
                         Container(
                             width: 12.w,
                             height: 12.w,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.all(
                                     Radius.circular(3)
                                 ),
-                                color: ZeplinColors.raiseColor
+                                color: AppTheme.raiseColor
                             )
                         ),
                         SizedBox(width: 2.0.h),
@@ -194,7 +189,7 @@ class _ChartGridState extends State<ChartGrid> {
                           fontWeight: FontWeight.w500,
                           fontSize: 13.sp,
                         ),
-                        Container(
+                        SizedBox(
                           width: 42.sp,
                           child: ReusableText(
                             text: ' $raisePercentt%',
@@ -206,11 +201,11 @@ class _ChartGridState extends State<ChartGrid> {
                         Container(
                             width: 12.w,
                             height: 12.w,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.all(
                                     Radius.circular(3)
                                 ),
-                                color: ZeplinColors.callColor
+                                color: AppTheme.callColor
                             )
                         ),
                         SizedBox(width: 2.0.h),
@@ -220,7 +215,7 @@ class _ChartGridState extends State<ChartGrid> {
                           fontSize: 13.sp,
                         ),
 
-                        Container(
+                        SizedBox(
                           width: 40.sp,
                           child: ReusableText(
                             text: ' $callPercentt%',
@@ -233,7 +228,7 @@ class _ChartGridState extends State<ChartGrid> {
                     ),
                   ),
                 ),
-                Divider(
+                const Divider(
                   color: Colors.grey,
                   thickness: 0.5,
                 ),
@@ -253,20 +248,22 @@ class ChartGridItem extends StatelessWidget {
     Key? key,
     required this.rankPairsPart,
     this.progressInfo,
-  }) : super(key: key) {}
+  }) : super(key: key);
 
-  final Color backgroundColor = ZeplinColors.foldColor;
-  final Color allInPColor = ZeplinColors.allInColor;
-  final Color callPColor = ZeplinColors.callColor;
-  final Color raisePColor =  ZeplinColors.raiseColor;
-  final Color alreadyPColor = ZeplinColors.alreadyPColor;
+  // final Color backgroundColor = ZeplinColors.foldColor;
+  final Color backgroundColor = AppTheme.pcFoldColor;
+  final Color allInPColor = AppTheme.allInColor;
+  final Color callPColor = AppTheme.callColor;
+  // final Color raisePColor =  ZeplinColors.raiseColor;
+  final Color raisePColor =  AppTheme.raiseColor;
+  final Color alreadyPColor = AppTheme.alreadyPColor;
   final RankPair rankPairsPart;
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) => DecoratedBox(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ),
         child: Stack(
@@ -316,7 +313,7 @@ class ChartGridItem extends StatelessWidget {
                 text: "${rankChars[rankPairsPart.high]}${rankChars[rankPairsPart.kicker]}${rankPairsPart.isPocketPair ? "" : rankPairsPart.isSuited ? "s" : "o"}",
                 textColor: progressInfo!.raiseP == 0.0 && progressInfo!.callP == 0.0 && progressInfo!.alreadyP == 0.0 && progressInfo!.allinP == 0
                     ? Colors.grey[700]
-                    : Colors.white,
+                    : AppTheme.pcChartText,
                 fontWeight: progressInfo!.raiseP == 0.0 && progressInfo!.callP == 0.0 && progressInfo!.alreadyP == 0.0 && progressInfo!.allinP == 0
                     ?FontWeight.w500:FontWeight.w700,
                 fontSize: constraints.maxWidth / 2.6,
